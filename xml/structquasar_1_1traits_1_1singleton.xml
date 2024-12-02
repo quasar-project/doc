@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structquasar_1_1traits_1_1singleton" kind="struct" language="C++" prot="public">
+    <compoundname>quasar::traits::singleton</compoundname>
+    <basecompoundref refid="classpin" prot="public" virt="non-virtual">pin</basecompoundref>
+    <includes refid="traits_8h" local="no">quasar/traits.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structquasar_1_1traits_1_1singleton_1afce897b3503cc4e00c72624f156c04d2" prot="public" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto ptr_mut</definition>
+        <argsstring>() noexcept -&gt; T *</argsstring>
+        <name>ptr_mut</name>
+        <briefdescription>
+<para>Возвращает <emphasis>изменяемый указатель</emphasis> на объект класса. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Изменяемый указатель на объект класса. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="structquasar_1_1traits_1_1singleton_1a3668e49f287d02953577eeb995ab64e2" kindref="member">ptr</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/traits.h" line="48" column="18" bodyfile="quasar/traits.h" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1traits_1_1singleton_1a3668e49f287d02953577eeb995ab64e2" prot="public" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto ptr</definition>
+        <argsstring>() noexcept -&gt; T const *</argsstring>
+        <name>ptr</name>
+        <briefdescription>
+<para>Возвращает <emphasis>константный указатель</emphasis> на объект класса. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константный указатель на объект класса. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="structquasar_1_1traits_1_1singleton_1afce897b3503cc4e00c72624f156c04d2" kindref="member">ptr_mut</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/traits.h" line="56" column="18" bodyfile="quasar/traits.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1traits_1_1singleton_1af0163e5dd2cfaabe6e1126542874859a" prot="public" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto ref</definition>
+        <argsstring>() noexcept -&gt; T const &amp;</argsstring>
+        <name>ref</name>
+        <briefdescription>
+<para>Возвращает <emphasis>константную ссылку</emphasis> на объект класса. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константная ссылка на объект класса. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="structquasar_1_1traits_1_1singleton_1a2df12143bc88306c1f341d9f54877319" kindref="member">ref_mut</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/traits.h" line="61" column="18" bodyfile="quasar/traits.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1traits_1_1singleton_1a2df12143bc88306c1f341d9f54877319" prot="public" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto ref_mut</definition>
+        <argsstring>() noexcept -&gt; T &amp;</argsstring>
+        <name>ref_mut</name>
+        <briefdescription>
+<para>Возвращает <emphasis>изменяемую ссылку</emphasis> на объект класса. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Изменяемая ссылка на объект класса. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="structquasar_1_1traits_1_1singleton_1af0163e5dd2cfaabe6e1126542874859a" kindref="member">ref</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/traits.h" line="66" column="18" bodyfile="quasar/traits.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structquasar_1_1traits_1_1singleton_1a3c3d5b0b7cc4cf739ae51f3f8d9bd825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>singleton</definition>
+        <argsstring>()=default</argsstring>
+        <name>singleton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/traits.h" line="68" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Паттерн <emphasis>Singleton</emphasis> </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Реализация паттерна <bold>Singleton</bold> в виде шаблона. Пример использования: <programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">TestSingleton<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="structquasar_1_1traits_1_1singleton" kindref="compound">quasar::traits::singleton</ref>&lt;TestSingleton&gt;</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquasar_1_1traits_1_1singleton" kindref="compound">quasar::traits::singleton</ref>&lt;TestSingleton&gt;;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>~TestSingleton()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>add(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>-&gt;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>+<sp/>b;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>TestSingleton()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+</programlisting></para>
+<para>Пример вызова методов: <programlisting filename=".cpp"><codeline><highlight class="normal">TestSingleton::ref().add(1,<sp/>2);</highlight></codeline>
+<codeline><highlight class="normal">TestSingleton::ref_mut().add(1,<sp/>2);</highlight></codeline>
+<codeline><highlight class="normal">TestSingleton::ptr()-&gt;add(1,<sp/>2);</highlight></codeline>
+<codeline><highlight class="normal">TestSingleton::ptr_mut()-&gt;add(1,<sp/>2);</highlight></codeline>
+</programlisting> <simplesect kind="note"><para>Получившийся синглтон имеет гарантию потокобезопасности. </para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип класса, реализующего паттерн <bold>Singleton</bold>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>pin</label>
+        <link refid="classpin"/>
+      </node>
+      <node id="1">
+        <label>singleton&lt; T &gt;</label>
+        <link refid="structquasar_1_1traits_1_1singleton"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>pin</label>
+        <link refid="classpin"/>
+      </node>
+      <node id="1">
+        <label>singleton&lt; T &gt;</label>
+        <link refid="structquasar_1_1traits_1_1singleton"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="quasar/traits.h" line="44" column="22" bodyfile="quasar/traits.h" bodystart="44" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structquasar_1_1traits_1_1singleton_1a3668e49f287d02953577eeb995ab64e2" prot="public" virt="non-virtual"><scope>quasar::traits::singleton</scope><name>ptr</name></member>
+      <member refid="structquasar_1_1traits_1_1singleton_1afce897b3503cc4e00c72624f156c04d2" prot="public" virt="non-virtual"><scope>quasar::traits::singleton</scope><name>ptr_mut</name></member>
+      <member refid="structquasar_1_1traits_1_1singleton_1af0163e5dd2cfaabe6e1126542874859a" prot="public" virt="non-virtual"><scope>quasar::traits::singleton</scope><name>ref</name></member>
+      <member refid="structquasar_1_1traits_1_1singleton_1a2df12143bc88306c1f341d9f54877319" prot="public" virt="non-virtual"><scope>quasar::traits::singleton</scope><name>ref_mut</name></member>
+      <member refid="structquasar_1_1traits_1_1singleton_1a3c3d5b0b7cc4cf739ae51f3f8d9bd825" prot="public" virt="non-virtual"><scope>quasar::traits::singleton</scope><name>singleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

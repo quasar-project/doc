@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="memcpy_8h" kind="file" language="C++">
+    <compoundname>memcpy.h</compoundname>
+    <includes local="no">new</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">stdexcept</includes>
+    <includes local="no">rolly/contracts.h</includes>
+    <includes local="no">quasar/api/dsp.h</includes>
+    <includedby refid="backprojection_8cc" local="no">backprojection.cc</includedby>
+    <includedby refid="image_8cc" local="no">image.cc</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdexcept</label>
+      </node>
+      <node id="1">
+        <label>memcpy.h</label>
+        <link refid="memcpy_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>new</label>
+      </node>
+      <node id="5">
+        <label>rolly/contracts.h</label>
+      </node>
+      <node id="6">
+        <label>quasar/api/dsp.h</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>image.cc</label>
+        <link refid="image_8cc"/>
+      </node>
+      <node id="2">
+        <label>backprojection.cc</label>
+        <link refid="backprojection_8cc"/>
+      </node>
+      <node id="1">
+        <label>memcpy.h</label>
+        <link refid="memcpy_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classquasar_1_1mem_1_1copy" prot="public">quasar::mem::copy</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1mem">quasar::mem</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/memcpy.h"/>
+  </compounddef>
+</doxygen>

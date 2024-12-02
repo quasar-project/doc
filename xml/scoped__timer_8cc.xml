@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="scoped__timer_8cc" kind="file" language="C++">
+    <compoundname>scoped_timer.cc</compoundname>
+    <includes refid="scoped__timer_8h" local="no">private/logging/scoped_timer.h</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="ansi__iomanip_8h" local="no">private/logging/ansi_iomanip.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>quasar/base/logging.h</label>
+        <link refid="base_2logging_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>fmt/format.h</label>
+      </node>
+      <node id="15">
+        <label>private/logging/ansi_iomanip.h</label>
+        <link refid="ansi__iomanip_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="5">
+        <label>string_view</label>
+      </node>
+      <node id="1">
+        <label>scoped_timer.cc</label>
+        <link refid="scoped__timer_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>quasar/base/export.h</label>
+        <link refid="export_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="14">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>chrono</label>
+      </node>
+      <node id="13">
+        <label>rolly/global/export.h</label>
+      </node>
+      <node id="2">
+        <label>private/logging/scoped_timer.h</label>
+        <link refid="scoped__timer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>quasar/logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1logging">quasar::logging</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="scoped_timer.cc"/>
+  </compounddef>
+</doxygen>

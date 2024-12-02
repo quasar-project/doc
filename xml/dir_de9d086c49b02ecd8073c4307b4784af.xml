@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_de9d086c49b02ecd8073c4307b4784af" kind="dir">
+    <compoundname>strip_senders</compoundname>
+    <innerfile refid="AbstractSender_8hpp">AbstractSender.hpp</innerfile>
+    <innerfile refid="IntoFileSender_8hpp">IntoFileSender.hpp</innerfile>
+    <innerfile refid="UdpSender_8hpp">UdpSender.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="strip_senders/"/>
+  </compounddef>
+</doxygen>

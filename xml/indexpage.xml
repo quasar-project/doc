@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>QuaSAR</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><image type="html" name="C-00599C?style=for-the-badge&amp;logo=c&amp;logoColor=white" inline="yes"></image>
+<image type="html" name="C%2B%2B-00599C?style=for-the-badge&amp;logo=c%2B%2B&amp;logoColor=white" inline="yes"></image>
+<image type="html" name="CMake-064F8C?style=for-the-badge&amp;logo=cmake&amp;logoColor=white" inline="yes"></image>
+<image type="html" name="nVIDIA-%2376B900.svg?style=for-the-badge&amp;logo=nVIDIA&amp;logoColor=white" inline="yes"></image>
+</para>
+<para><image type="html" name="Linux-FCC624?style=for-the-badge&amp;logo=linux&amp;logoColor=black" inline="yes"></image>
+<image type="html" name="Windows-0078D6?style=for-the-badge&amp;logo=windows&amp;logoColor=white" inline="yes"></image>
+</para>
+<sect1 id="index_1autotoc_md1">
+<title>Документация</title>
+<para><image type="html" name="documentation-doxygen-white?style=for-the-badge&amp;logo=readthedocs" inline="yes"></image>
+</para>
+<para>К проекту есть документация для разработчиков. Ее можно найти в виде статического HTML-сайта в ветке <computeroutput>gh-pages</computeroutput> (только для мастер-ветки). Открыть ее можно в любом браузере.</para>
+<para>Установить Doxygen на Ubuntu можно следующей командой: <programlisting filename=".shell"><codeline><highlight class="normal">sudo<sp/>apt<sp/>install<sp/>-y<sp/>--no-install-recommends<sp/>doxygen<sp/>graphviz</highlight></codeline>
+</programlisting></para>
+<para>Если вам нужна актуальная документация для другой ветки, вы легко можете ее сгенерировать командой: <programlisting filename=".shell"><codeline><highlight class="normal">doxygen<sp/>./Doxyfile<sp/></highlight></codeline>
+</programlisting></para>
+<para>Сгенерированная документация появится в директории <computeroutput>docs/html</computeroutput>.</para>
+</sect1>
+<sect1 id="index_1autotoc_md2">
+<title>Сборка</title>
+<para><image type="html" name="Ubuntu-E95420?style=for-the-badge&amp;logo=ubuntu&amp;logoColor=white" inline="yes"></image>
+<image type="html" name="Debian-D70A53?style=for-the-badge&amp;logo=debian&amp;logoColor=white" inline="yes"></image>
+</para>
+<sect2 id="index_1autotoc_md3">
+<title>Кратко</title>
+<para>Для упрощения процесса сборки и конфигурации системы был написан скрипт <computeroutput>build.py</computeroutput>. Он принимает следующие три команды в качестве аргументов командной строки:<itemizedlist>
+<listitem><para><computeroutput>verify-env</computeroutput> - проверяет системные пакеты, символические ссылки и зависимости.</para>
+</listitem><listitem><para><computeroutput>setup-env</computeroutput> - устанавливает системные пакеты, символические ссылки и зависимости. Необходимо запускать от имени администратора. (<emphasis>Только для Ubuntu Linux</emphasis>)</para>
+</listitem><listitem><para><computeroutput>build</computeroutput> - собирает библиотеку в релизном режиме.</para>
+</listitem></itemizedlist>
+</para>
+<para>Стандартный порядок сборки библиотеки таков:<orderedlist>
+<listitem><para>Устанавливаем все необходимые <computeroutput>pip</computeroutput>-пакеты. Для этого в корне проекта выполняем команду: <programlisting filename=".shell"><codeline><highlight class="normal">pip<sp/>install<sp/>-r<sp/>requirements.txt</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para>Проверяем системные пакеты, символические ссылки и зависимости <programlisting filename=".shell"><codeline><highlight class="normal">./build.py<sp/>verify-env</highlight></codeline>
+</programlisting></para>
+</listitem></orderedlist>
+</para>
+<para>Если были сообщения об ошибках, то выполняем конфигурацию системы автоматически или вручную. Для автоконфигурации выполняем команду: <programlisting filename=".shell"><codeline><highlight class="normal">sudo<sp/>./build.py<sp/>setup-env</highlight></codeline>
+</programlisting></para>
+<para><blockquote><para>[!TIP] Все необходимые пакеты можно установить вручную.Их список можно вывести командой <computeroutput>verify-env</computeroutput>. </para>
+</blockquote></para>
+<para><orderedlist>
+<listitem><para>Сборка библиотеки</para>
+<para>Примеры:</para>
+</listitem></orderedlist>
+</para>
+<para><programlisting filename=".shell"><codeline><highlight class="normal">./build.py<sp/>#<sp/>собирает<sp/>CUDA-версию<sp/>со<sp/>стандартными<sp/>опциями</highlight></codeline>
+<codeline><highlight class="normal">./build.py<sp/>build<sp/>#<sp/>псевдоним<sp/>для<sp/>команды<sp/>выше</highlight></codeline>
+<codeline><highlight class="normal">./build.py<sp/>--debug<sp/>#<sp/>собирает<sp/>версию<sp/>для<sp/>отладки</highlight></codeline>
+<codeline><highlight class="normal">./build.py<sp/>--no-cuda<sp/>#<sp/>собирает<sp/>FFTW-версию</highlight></codeline>
+<codeline><highlight class="normal">./build.py<sp/>--native-pybind<sp/>--no-cuda<sp/>#<sp/>собирает<sp/>FFTW-версию<sp/>с<sp/>системным<sp/>pybind11</highlight></codeline>
+</programlisting></para>
+<para><blockquote><para>[!TIP] Команды <computeroutput>build.py build</computeroutput> и <computeroutput>build.py</computeroutput> - синонимичны. </para>
+</blockquote></para>
+<para>Команда <computeroutput>build</computeroutput> принимает следующие опции:</para>
+<para><table rows="7" cols="4"><row>
+<entry thead="yes"><para>Аргумент </para>
+</entry><entry thead="yes"><para>Противоположный аргумент </para>
+</entry><entry thead="yes"><para>По умолчанию </para>
+</entry><entry thead="yes"><para>Описание  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>--shared</computeroutput> </para>
+</entry><entry thead="no"><para><computeroutput>--static</computeroutput> </para>
+</entry><entry thead="no"><para>**<computeroutput>--shared</computeroutput>** </para>
+</entry><entry thead="no"><para>Динамическая или статическая библиотека  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>--test</computeroutput> </para>
+</entry><entry thead="no"><para><computeroutput>--no-test</computeroutput> </para>
+</entry><entry thead="no"><para>**<computeroutput>--no-test</computeroutput>** </para>
+</entry><entry thead="no"><para>Сборка тестов (Google Test)  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>--cuda</computeroutput> </para>
+</entry><entry thead="no"><para><computeroutput>--no-cuda</computeroutput> </para>
+</entry><entry thead="no"><para>**<computeroutput>--cuda</computeroutput>** </para>
+</entry><entry thead="no"><para>Сборка CUDA-DSP  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>--python-bindings</computeroutput> </para>
+</entry><entry thead="no"><para><computeroutput>--no-python-bindings</computeroutput> </para>
+</entry><entry thead="no"><para>**<computeroutput>--python-bindings</computeroutput>** </para>
+</entry><entry thead="no"><para>Сборка биндингов для Python 3  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>--release</computeroutput> </para>
+</entry><entry thead="no"><para><computeroutput>--debug</computeroutput> </para>
+</entry><entry thead="no"><para>**<computeroutput>--release</computeroutput>** </para>
+</entry><entry thead="no"><para>Релизная или отладочная версия  </para>
+</entry></row>
+<row>
+<entry thead="no"><para><computeroutput>--native-pybind</computeroutput> </para>
+</entry><entry thead="no"><para><computeroutput>--builtin-pybind</computeroutput> </para>
+</entry><entry thead="no"><para>**<computeroutput>--builtin-pybind</computeroutput>** </para>
+</entry><entry thead="no"><para>Использовать системный <emphasis>pybind11</emphasis> или встроенный  </para>
+</entry></row>
+</table>
+</para>
+<para><orderedlist>
+<listitem><para>После успешной сборки библиотеки в папке <computeroutput>py3</computeroutput> появится нужный файл модуля Python.</para>
+</listitem></orderedlist>
+</para>
+</sect2>
+<sect2 id="index_1autotoc_md4">
+<title>Требования</title>
+<para><itemizedlist>
+<listitem><para>Python версии 3.7 и выше. Доступен режим совместимости с Python 3.5. (необходимы тесты).</para>
+</listitem><listitem><para>CMake версии 3.20 и выше.</para>
+</listitem><listitem><para>NVIDIA CUDA Toolkit в системном пути поиска библиотек. <blockquote><para>[!NOTE]</para>
+<para>Если при сборке возникают ошибки, связанные с невозможностью задания стандарта CUDA17 для &gt; CUDA-файлов проекта, обновите <computeroutput>cmake</computeroutput>.</para>
+<para>Гайд для Ubuntu: <ulink url="https://askubuntu.com/questions/355565/how-do-i-install-the-latest-version-of-cmake-from-the-command-line">ссылка</ulink> </para>
+</blockquote></para>
+</listitem></itemizedlist>
+</para>
+<sect3 id="index_1autotoc_md5">
+<title>Рекомендации</title>
+<para><orderedlist>
+<listitem><para>Добавить директорию с <computeroutput>nvcc</computeroutput> в системный <bold>PATH</bold>, например: <programlisting filename=".shell"><codeline><highlight class="normal">export<sp/>PATH=&quot;/usr/local/cuda-12.2/bin:$PATH&quot;<sp/><sp/>#<sp/>для<sp/>записи<sp/>в<sp/>PATH</highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>&quot;export<sp/>PATH=\&quot;/usr/local/cuda-12.2/bin:$PATH\&quot;&quot;<sp/>&gt;&gt;<sp/>~/.profile<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>&quot;export<sp/>PATH=\&quot;/usr/local/cuda-12.2/bin:$PATH\&quot;&quot;<sp/>&gt;&gt;<sp/>~/.bashrc<sp/><sp/><sp/><sp/>#<sp/>для<sp/>сохранения<sp/>после<sp/>перезагрузки</highlight></codeline>
+</programlisting></para>
+</listitem><listitem><para>Установить следующие <emphasis>apt</emphasis>-пакеты:<itemizedlist>
+<listitem><para><computeroutput>build-essentials</computeroutput></para>
+</listitem><listitem><para><computeroutput>python3</computeroutput>, <computeroutput>python3-dev</computeroutput></para>
+</listitem><listitem><para><computeroutput>cmake</computeroutput></para>
+</listitem><listitem><para><computeroutput>pybind11</computeroutput> - если использовать <computeroutput>--native-pybind</computeroutput></para>
+</listitem></itemizedlist>
+</para>
+</listitem></orderedlist>
+</para>
+</sect3>
+</sect2>
+<sect2 id="index_1autotoc_md6">
+<title>@ref ./docs/CMake.md &quot;CMake&quot;</title>
+</sect2>
+<sect2 id="index_1autotoc_md7">
+<title>@ref ./docs/Conan.md &quot;Conan&quot;</title>
+</sect2>
+<sect2 id="index_1autotoc_md8">
+<title>@ref ./docs/Docker.md &quot;Docker/Podman&quot;</title>
+</sect2>
+</sect1>
+<sect1 id="index_1autotoc_md9">
+<title>Полезные команды</title>
+<sect3 id="index_1autotoc_md10">
+<title>Запуск скрипта Python в режиме отладки:</title>
+<para><programlisting filename=".shell"><codeline><highlight class="normal">gdb</highlight></codeline>
+<codeline><highlight class="normal">file<sp/>python3<sp/></highlight></codeline>
+<codeline><highlight class="normal">run<sp/>main_bp_&lt;ИМЯ<sp/>СКРИПТА&gt;.py<sp/>-f<sp/>m1_&lt;ФАЙЛ&gt;<sp/>&lt;АРГУМЕНТЫ&gt;</highlight></codeline>
+</programlisting></para>
+<para><heading level="5">Вывод стактрейса при системном сигнале:</heading>
+</para>
+<para><programlisting filename=".shell"><codeline><highlight class="normal">bt<sp/>3<sp/>#<sp/>количество<sp/>функций<sp/>в<sp/>стактрейсе</highlight></codeline>
+</programlisting></para>
+<para><heading level="5">Вывод локальных переменных и аргументов функций:</heading>
+</para>
+<para><programlisting filename=".shell"><codeline><highlight class="normal">bt<sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>получаем<sp/>стактрейс</highlight></codeline>
+<codeline><highlight class="normal">select-frame<sp/>1<sp/>#<sp/>выбираем<sp/>функцию<sp/>для<sp/>вывода</highlight></codeline>
+<codeline><highlight class="normal">info<sp/>locals<sp/><sp/><sp/><sp/>#<sp/>выводим<sp/>локальные<sp/>переменные</highlight></codeline>
+<codeline><highlight class="normal">info<sp/>args<sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>выводим<sp/>аргументы</highlight></codeline>
+</programlisting></para>
+</sect3>
+</sect1>
+<sect1 id="index_1autotoc_md11">
+<title>API</title>
+<para>Проект предоставляет публичные независимые заголовочные файлы для разработчиков фронтендов! Их можно найти в директории <computeroutput>include/quasar/api</computeroutput> внутри проекта.<itemizedlist>
+<listitem><para><ulink url="./api/include/quasar/api/span.h"><computeroutput>quasar/api/span.h</computeroutput></ulink> - платформонезависимый <computeroutput>std::span</computeroutput>-контейнер.</para>
+</listitem><listitem><para><ulink url="./api/include/quasar/api/image.h"><computeroutput>quasar/api/image.h</computeroutput></ulink> - API для работы с радиолокационными изображениями.</para>
+</listitem><listitem><para><ulink url="./api/include/quasar/api/format.h"><computeroutput>quasar/api/format.h</computeroutput></ulink> - форматтеры для сериализуемых типов.</para>
+</listitem><listitem><para><ulink url="./api/include/quasar/api/dsp.h"><computeroutput>quasar/api/dsp.h</computeroutput></ulink> - API для работы с ЦОС.</para>
+</listitem><listitem><para><ulink url="./api/include/quasar/api/checksum.h"><computeroutput>quasar/api/checksum.h</computeroutput></ulink> - API для работы с контрольными суммами.</para>
+</listitem></itemizedlist>
+</para>
+<para>Для их использования должен поддерживаться хотя бы C++17. </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

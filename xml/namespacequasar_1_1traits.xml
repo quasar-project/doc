@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacequasar_1_1traits" kind="namespace" language="C++">
+    <compoundname>quasar::traits</compoundname>
+    <innerclass refid="structquasar_1_1traits_1_1singleton" prot="public">quasar::traits::singleton</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__traits_1gae07ca9586c03c7e8397931b6bffc610f" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::experimental::propagate_const&lt; <ref refid="cpp/memory/unique_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::unique_ptr</ref>&lt; T &gt; &gt;</type>
+        <definition>using pimpl =  std::experimental::propagate_const&lt;std::unique_ptr&lt;T&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>pimpl</name>
+        <briefdescription>
+<para>Шаблон <emphasis>Pimpl</emphasis> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Позволяет использовать паттерн <bold>Pimpl</bold> без лишнего кода. Пример использования: <programlisting filename=".cpp"><codeline><highlight class="keyword">class<sp/></highlight><highlight class="normal">TestPimpl<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>quasar::traits::pin&lt;TestPimpl&gt;</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>TestPimpl()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>add(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>-&gt;<sp/>int;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Impl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>traits::pimpl&lt;struct<sp/>Impl&gt;<sp/>impl;</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">TestPimpl::Impl<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>add(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>-&gt;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>+<sp/>b;<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>TestPimpl::add(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>-&gt;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;impl-&gt;add(a,<sp/>b);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип, реализующий паттерн <bold>Pimpl</bold>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/traits.h" line="99" column="3" bodyfile="quasar/traits.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/traits.h" line="13" column="24"/>
+  </compounddef>
+</doxygen>

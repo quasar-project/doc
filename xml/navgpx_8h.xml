@@ -1,0 +1,645 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="navgpx_8h" kind="file" language="C++">
+    <compoundname>navgpx.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes local="no">rolly/types/stdint.h</includes>
+    <includedby refid="navgpx_8cc" local="no">navgpx.cc</includedby>
+    <includedby refid="legacy_8pybind_8cc" local="no">legacy.pybind.cc</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="1">
+        <label>navgpx.h</label>
+        <link refid="navgpx_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>navgpx.cc</label>
+        <link refid="navgpx_8cc"/>
+      </node>
+      <node id="3">
+        <label>legacy.pybind.cc</label>
+        <link refid="legacy_8pybind_8cc"/>
+      </node>
+      <node id="1">
+        <label>navgpx.h</label>
+        <link refid="navgpx_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classquasar_1_1CNavGPX" prot="public">quasar::CNavGPX</innerclass>
+    <innerclass refid="structquasar_1_1CNavGPX_1_1nav__pack__t" prot="private">quasar::CNavGPX::nav_pack_t</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="navgpx_8h_1a3ef51e81d255c2fdf0e98a2916cfabb7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _marker</definition>
+        <argsstring></argsstring>
+        <name>_marker</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="36" column="16" bodyfile="quasar/nav/navgpx.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1ab22abc2906422da61885ac6c8e6a1a59" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="37" column="15" bodyfile="quasar/nav/navgpx.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a332780bfeff83b27224c8ac4cb07cb70" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double _lat</definition>
+        <argsstring></argsstring>
+        <name>_lat</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="38" column="14" bodyfile="quasar/nav/navgpx.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a6635613d883206228ad2e5ebda478b4b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double _lon</definition>
+        <argsstring></argsstring>
+        <name>_lon</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="39" column="14" bodyfile="quasar/nav/navgpx.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a7a8d3cfb4a4376673bffe5834d9c3750" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double _ele</definition>
+        <argsstring></argsstring>
+        <name>_ele</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="40" column="14" bodyfile="quasar/nav/navgpx.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1abb866f6163dce956c5640786d3739893" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double _velocity_course</definition>
+        <argsstring></argsstring>
+        <name>_velocity_course</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="41" column="14" bodyfile="quasar/nav/navgpx.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a0ce2b0f27a32b1844f356c7c0160408c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _pressure</definition>
+        <argsstring></argsstring>
+        <name>_pressure</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="42" column="13" bodyfile="quasar/nav/navgpx.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a9a582007f8cc81f1c109c6eebbebfafb" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _temperature</definition>
+        <argsstring></argsstring>
+        <name>_temperature</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="43" column="15" bodyfile="quasar/nav/navgpx.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a189baf32120021de6e52cfde283ce679" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _gx</definition>
+        <argsstring></argsstring>
+        <name>_gx</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="44" column="15" bodyfile="quasar/nav/navgpx.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1ae153b018f38fe73499559bcd8ffd0a28" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _gy</definition>
+        <argsstring></argsstring>
+        <name>_gy</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="45" column="15" bodyfile="quasar/nav/navgpx.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1ad4201340ddd51e8fd09c2dea19dc777e" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _gz</definition>
+        <argsstring></argsstring>
+        <name>_gz</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="46" column="15" bodyfile="quasar/nav/navgpx.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a89b4e771fe2a4cfc34318b6379326289" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _ax</definition>
+        <argsstring></argsstring>
+        <name>_ax</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="47" column="15" bodyfile="quasar/nav/navgpx.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a80c0cbf92041481d35e45b6bcfba3509" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _ay</definition>
+        <argsstring></argsstring>
+        <name>_ay</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="48" column="15" bodyfile="quasar/nav/navgpx.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a7a61d74cf61145a558acb50f24244c21" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _az</definition>
+        <argsstring></argsstring>
+        <name>_az</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="49" column="15" bodyfile="quasar/nav/navgpx.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1ad37f06b97626e8120cade38a8f102ae3" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _cx</definition>
+        <argsstring></argsstring>
+        <name>_cx</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="50" column="15" bodyfile="quasar/nav/navgpx.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a25559f4dc12b3ca33cb5c531477b8b45" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _cy</definition>
+        <argsstring></argsstring>
+        <name>_cy</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="51" column="15" bodyfile="quasar/nav/navgpx.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1aa3678525251db4c122154485d8145e1b" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t _cz</definition>
+        <argsstring></argsstring>
+        <name>_cz</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="52" column="15" bodyfile="quasar/nav/navgpx.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a34c057a0378030db67bd6a129f37d938" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pitch</definition>
+        <argsstring></argsstring>
+        <name>pitch</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="53" column="14" bodyfile="quasar/nav/navgpx.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a1d3228afa3a1d6773954f40c1e519eb9" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double roll</definition>
+        <argsstring></argsstring>
+        <name>roll</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="54" column="14" bodyfile="quasar/nav/navgpx.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a21cd490f6191f66678f55b4c242a10cf" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double yaw</definition>
+        <argsstring></argsstring>
+        <name>yaw</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="55" column="14" bodyfile="quasar/nav/navgpx.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a936bf1543c90bf3267b32cc38d32371a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double _course</definition>
+        <argsstring></argsstring>
+        <name>_course</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="56" column="14" bodyfile="quasar/nav/navgpx.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a8caf9980c4813537860a5b30eced28ff" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t _time</definition>
+        <argsstring></argsstring>
+        <name>_time</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="57" column="16" bodyfile="quasar/nav/navgpx.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1a75adb1881fa5da948723d7b8807b78cd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t valid</definition>
+        <argsstring></argsstring>
+        <name>valid</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="58" column="15" bodyfile="quasar/nav/navgpx.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="navgpx_8h_1aa60093a9a5d5d17864cfda66c47733e3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t crc</definition>
+        <argsstring></argsstring>
+        <name>crc</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="59" column="16" bodyfile="quasar/nav/navgpx.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1a34f5171a846ea990327c2fee1e12aad0" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classquasar_1_1CNavGPX" kindref="compound">quasar::CNavGPX</ref></type>
+        <definition>quasar::IAbstractRadar __attribute__</definition>
+        <argsstring></argsstring>
+        <name>__attribute__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="101" column="3"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="navgpx_8h_1ade68a02c4962034cb1ca23c4a132813b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::pressure</definition>
+        <argsstring>() const -&gt; float</argsstring>
+        <name>pressure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="61" column="13" declfile="quasar/nav/navgpx.h" declline="61" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1afa54ac3bdb8488fa774d23f1e5d3118b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::temperature</definition>
+        <argsstring>() const -&gt; float</argsstring>
+        <name>temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="62" column="13" declfile="quasar/nav/navgpx.h" declline="62" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1a8f43c9c9896488ddc16253c2ebf312d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::gx</definition>
+        <argsstring>() const -&gt; int16_t</argsstring>
+        <name>gx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="63" column="13" declfile="quasar/nav/navgpx.h" declline="63" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1a7bedbdfbd59e0ea27cd4e1404957461c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::gy</definition>
+        <argsstring>() const -&gt; int16_t</argsstring>
+        <name>gy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="64" column="13" declfile="quasar/nav/navgpx.h" declline="64" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1a485c04f2236c51153e463cf519bf1aa8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::gz</definition>
+        <argsstring>() const -&gt; int16_t</argsstring>
+        <name>gz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="65" column="13" declfile="quasar/nav/navgpx.h" declline="65" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1ab37aa648acca2b6aaa73e5a0dc7dd0a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::ax</definition>
+        <argsstring>() const -&gt; int16_t</argsstring>
+        <name>ax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="66" column="13" declfile="quasar/nav/navgpx.h" declline="66" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1a61bca383feadf2eebfb92f9ac87937a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::ay</definition>
+        <argsstring>() const -&gt; int16_t</argsstring>
+        <name>ay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="67" column="13" declfile="quasar/nav/navgpx.h" declline="67" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1a8756acf40fe706be26bd4e7c5b1328dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::az</definition>
+        <argsstring>() const -&gt; int16_t</argsstring>
+        <name>az</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="68" column="13" declfile="quasar/nav/navgpx.h" declline="68" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1a39c57ced75b6aaf6413385af9244ad95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::cx</definition>
+        <argsstring>() const -&gt; int16_t</argsstring>
+        <name>cx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="69" column="13" declfile="quasar/nav/navgpx.h" declline="69" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1a89112b8a53a5e15fb849ddb4a10f3997" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::cy</definition>
+        <argsstring>() const -&gt; int16_t</argsstring>
+        <name>cy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="70" column="13" declfile="quasar/nav/navgpx.h" declline="70" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1ac2bfcea43ac9483135d5dbb67954e87d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::cz</definition>
+        <argsstring>() const -&gt; int16_t</argsstring>
+        <name>cz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="71" column="13" declfile="quasar/nav/navgpx.h" declline="71" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1a123fc49864b2b14f8d13ccbf7d1be2c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::lat</definition>
+        <argsstring>() const -&gt; double</argsstring>
+        <name>lat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="72" column="13" declfile="quasar/nav/navgpx.h" declline="72" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1a163e2e2251e3ffcbd3e98a1ef8b8e8ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::lon</definition>
+        <argsstring>() const -&gt; double</argsstring>
+        <name>lon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="73" column="13" declfile="quasar/nav/navgpx.h" declline="73" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1a9cb1a82c54803b52a78ad06630200c4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::course</definition>
+        <argsstring>() const -&gt; double</argsstring>
+        <name>course</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="74" column="13" declfile="quasar/nav/navgpx.h" declline="74" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1a1e660cf370d612b7248a6911e7b9dc5d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::velocity_course</definition>
+        <argsstring>() const -&gt; double</argsstring>
+        <name>velocity_course</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="75" column="13" declfile="quasar/nav/navgpx.h" declline="75" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1a06489621edb6a135624ccfc47537bb54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::ele</definition>
+        <argsstring>() const -&gt; double</argsstring>
+        <name>ele</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="76" column="13" declfile="quasar/nav/navgpx.h" declline="76" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1adaf4f5f2c863cc2563efbfcdbc6ea8b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::marker</definition>
+        <argsstring>() const -&gt; uint32_t</argsstring>
+        <name>marker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="77" column="13" declfile="quasar/nav/navgpx.h" declline="77" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="navgpx_8h_1aa9655b64b7791f5c828d50baec8cfd09" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto __attribute__::time</definition>
+        <argsstring>() const -&gt; uint64_t</argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="78" column="13" declfile="quasar/nav/navgpx.h" declline="78" declcolumn="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/nav/navgpx.h"/>
+  </compounddef>
+</doxygen>

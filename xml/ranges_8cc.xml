@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="ranges_8cc" kind="file" language="C++">
+    <compoundname>ranges.cc</compoundname>
+    <includes refid="ranges_8h" local="no">private/ranges.h</includes>
+    <incdepgraph>
+      <node id="17">
+        <label>limits</label>
+      </node>
+      <node id="7">
+        <label>iterator</label>
+      </node>
+      <node id="21">
+        <label>private/constants.h</label>
+        <link refid="constants_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>quasar/misc/cuda_qualifiers.h</label>
+        <link refid="cuda__qualifiers_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>rolly/bit.h</label>
+      </node>
+      <node id="10">
+        <label>cmath</label>
+      </node>
+      <node id="5">
+        <label>numeric</label>
+      </node>
+      <node id="14">
+        <label>string</label>
+      </node>
+      <node id="20">
+        <label>rolly/math.h</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="9">
+        <label>quasar/misc/complex.h</label>
+        <link refid="complex_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>quasar/base/export.h</label>
+        <link refid="export_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="22">
+        <label>rolly/numbers.h</label>
+      </node>
+      <node id="16">
+        <label>private/math.h</label>
+        <link refid="math_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>quasar/api/span.h</label>
+      </node>
+      <node id="3">
+        <label>cstddef</label>
+      </node>
+      <node id="15">
+        <label>rolly/global/export.h</label>
+      </node>
+      <node id="2">
+        <label>private/ranges.h</label>
+        <link refid="ranges_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ranges.cc</label>
+        <link refid="ranges_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>type_traits</label>
+      </node>
+      <node id="6">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1ranges">quasar::ranges</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacequasar_1_1ranges_1a99a3125f5b2d279b0b8a5beadcf48f23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto complex_magnitude</definition>
+        <argsstring>(span&lt; math::Complex &gt; data, u32 n, u32 m) -&gt; std::vector&lt; f32 &gt;</argsstring>
+        <name>complex_magnitude</name>
+        <param>
+          <type>span&lt; math::Complex &gt;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ranges.cc" line="4" column="8" bodyfile="ranges.cc" bodystart="4" bodyend="12" declfile="private/ranges.h" declline="61" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1ranges_1a5f8d4e2b4f87e06865ac12b1626e8933" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto complex_magnitude_unsafe</definition>
+        <argsstring>(math::Complex const *in, f32 *out, u32 n, u32 m) -&gt; void</argsstring>
+        <name>complex_magnitude_unsafe</name>
+        <param>
+          <type>math::Complex const *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>f32 *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ranges.cc" line="14" column="8" bodyfile="ranges.cc" bodystart="14" bodyend="21" declfile="private/ranges.h" declline="62" declcolumn="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ranges.cc"/>
+  </compounddef>
+</doxygen>

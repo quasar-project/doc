@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Class <ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/>Закончить остальные операторы </para>
+</listitem>
+<varlistentry><term>Module <ref refid="group__traits" kindref="compound">traits</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000002"/>Более подробное описание. </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

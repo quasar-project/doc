@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="data__holder__ram_8hh" kind="file" language="C++">
+    <compoundname>data_holder_ram.hh</compoundname>
+    <includes local="no">memory</includes>
+    <includes refid="data__holder__interface_8hh" local="no">quasar/image/data_holder_interface.hh</includes>
+    <includedby refid="data__holder_8hh" local="no">data_holder.hh</includedby>
+    <includedby refid="data__holder__ram_8cc" local="no">data_holder_ram.cc</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>quasar/image/data_holder_interface.hh</label>
+        <link refid="data__holder__interface_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>fmt/format.h</label>
+      </node>
+      <node id="1">
+        <label>data_holder_ram.hh</label>
+        <link refid="data__holder__ram_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="18">
+        <label>quasar/api/image.h</label>
+      </node>
+      <node id="16">
+        <label>experimental/propagate_const</label>
+      </node>
+      <node id="4">
+        <label>quasar/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>rolly/source_location.h</label>
+      </node>
+      <node id="11">
+        <label>quasar/base/corefn.h</label>
+        <link refid="corefn_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>quasar/traits.h</label>
+        <link refid="traits_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>rolly/traits.h</label>
+      </node>
+      <node id="8">
+        <label>quasar/base/export.h</label>
+        <link refid="export_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="15">
+        <label>iostream</label>
+      </node>
+      <node id="20">
+        <label>quasar/api/span.h</label>
+      </node>
+      <node id="6">
+        <label>rolly/utility.h</label>
+      </node>
+      <node id="10">
+        <label>rolly/global/export.h</label>
+      </node>
+      <node id="13">
+        <label>fmt/color.h</label>
+      </node>
+      <node id="19">
+        <label>quasar/api/dsp.h</label>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>CStripStream.hpp</label>
+        <link refid="CStripStream_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>image.cc</label>
+        <link refid="image_8cc"/>
+      </node>
+      <node id="14">
+        <label>abstract_dsp.cc</label>
+        <link refid="abstract__dsp_8cc"/>
+      </node>
+      <node id="3">
+        <label>window.h</label>
+        <link refid="window_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>data_holder.hh</label>
+        <link refid="data__holder_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>sar.cc</label>
+        <link refid="sar_8cc"/>
+      </node>
+      <node id="1">
+        <label>data_holder_ram.hh</label>
+        <link refid="data__holder__ram_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>backprojection.cc</label>
+        <link refid="backprojection_8cc"/>
+      </node>
+      <node id="12">
+        <label>dsp_fftw.h</label>
+        <link refid="dsp__fftw_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>CStripStream.cpp</label>
+        <link refid="CStripStream_8cpp"/>
+      </node>
+      <node id="5">
+        <label>sar.h</label>
+        <link refid="sar_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>dsp_fftw.cc</label>
+        <link refid="dsp__fftw_8cc"/>
+      </node>
+      <node id="6">
+        <label>backprojection.h</label>
+        <link refid="backprojection_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>window.pybind.cc</label>
+        <link refid="window_8pybind_8cc"/>
+      </node>
+      <node id="17">
+        <label>window.cc</label>
+        <link refid="window_8cc"/>
+      </node>
+      <node id="8">
+        <label>legacy.pybind.cc</label>
+        <link refid="legacy_8pybind_8cc"/>
+      </node>
+      <node id="15">
+        <label>dsp.pybind.cc</label>
+        <link refid="dsp_8pybind_8cc"/>
+      </node>
+      <node id="4">
+        <label>abstract_dsp.h</label>
+        <link refid="abstract__dsp_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>data_holder_ram.cc</label>
+        <link refid="data__holder__ram_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classquasar_1_1CImageDataHolderRAM" prot="public">quasar::CImageDataHolderRAM</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/image/data_holder_ram.hh"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="module_8pybind_8hh" kind="file" language="C++">
+    <compoundname>module.pybind.hh</compoundname>
+    <includes local="no">pybind11/pybind11.h</includes>
+    <includedby refid="dsp_8pybind_8cc" local="no">dsp.pybind.cc</includedby>
+    <includedby refid="enums_8pybind_8cc" local="no">enums.pybind.cc</includedby>
+    <includedby refid="image_8pybind_8cc" local="no">image.pybind.cc</includedby>
+    <includedby refid="legacy_8pybind_8cc" local="no">legacy.pybind.cc</includedby>
+    <includedby refid="logger_8pybind_8cc" local="no">logger.pybind.cc</includedby>
+    <includedby refid="module_8pybind_8cc" local="no">module.pybind.cc</includedby>
+    <includedby refid="radar_8pybind_8cc" local="no">radar.pybind.cc</includedby>
+    <includedby refid="utils_8pybind_8cc" local="no">utils.pybind.cc</includedby>
+    <includedby refid="window_8pybind_8cc" local="no">window.pybind.cc</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>module.pybind.hh</label>
+        <link refid="module_8pybind_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pybind11/pybind11.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>image.pybind.cc</label>
+        <link refid="image_8pybind_8cc"/>
+      </node>
+      <node id="8">
+        <label>radar.pybind.cc</label>
+        <link refid="radar_8pybind_8cc"/>
+      </node>
+      <node id="3">
+        <label>enums.pybind.cc</label>
+        <link refid="enums_8pybind_8cc"/>
+      </node>
+      <node id="6">
+        <label>logger.pybind.cc</label>
+        <link refid="logger_8pybind_8cc"/>
+      </node>
+      <node id="1">
+        <label>module.pybind.hh</label>
+        <link refid="module_8pybind_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>window.pybind.cc</label>
+        <link refid="window_8pybind_8cc"/>
+      </node>
+      <node id="5">
+        <label>legacy.pybind.cc</label>
+        <link refid="legacy_8pybind_8cc"/>
+      </node>
+      <node id="7">
+        <label>module.pybind.cc</label>
+        <link refid="module_8pybind_8cc"/>
+      </node>
+      <node id="2">
+        <label>dsp.pybind.cc</label>
+        <link refid="dsp_8pybind_8cc"/>
+      </node>
+      <node id="9">
+        <label>utils.pybind.cc</label>
+        <link refid="utils_8pybind_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1pybind">quasar::pybind</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacequasar_1_1pybind_1ab1b972462cfb9a1cdc7d1032afdc7f77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto quasar::pybind::register_legacy</definition>
+        <argsstring>(py::module &amp;m) -&gt; void</argsstring>
+        <name>register_legacy</name>
+        <param>
+          <type>py::module &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pybind/module.pybind.hh" line="6" column="15" declfile="pybind/module.pybind.hh" declline="6" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1pybind_1a40b9f5178dd71813d0b2fb01d9feaf12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto quasar::pybind::register_logger</definition>
+        <argsstring>(py::module &amp;m) -&gt; void</argsstring>
+        <name>register_logger</name>
+        <param>
+          <type>py::module &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pybind/module.pybind.hh" line="7" column="15" declfile="pybind/module.pybind.hh" declline="7" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1pybind_1aef80fe89cbddc4555d87934c303c0a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto register_enums</definition>
+        <argsstring>(py::module &amp;m) -&gt; void</argsstring>
+        <name>register_enums</name>
+        <param>
+          <type>py::module &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pybind/module.pybind.hh" line="8" column="15" bodyfile="pybind/enums.pybind.cc" bodystart="6" bodyend="49" declfile="pybind/module.pybind.hh" declline="8" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1pybind_1a1ce10a3d540686b809e0cdc6222cbdcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto register_dsp</definition>
+        <argsstring>(py::module &amp;m) -&gt; void</argsstring>
+        <name>register_dsp</name>
+        <param>
+          <type>py::module &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pybind/module.pybind.hh" line="9" column="15" bodyfile="pybind/dsp.pybind.cc" bodystart="6" bodyend="21" declfile="pybind/module.pybind.hh" declline="9" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1pybind_1a4b0c7bd50d680a344a18a47214fa1bfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto quasar::pybind::register_image</definition>
+        <argsstring>(py::module &amp;m) -&gt; void</argsstring>
+        <name>register_image</name>
+        <param>
+          <type>py::module &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pybind/module.pybind.hh" line="10" column="15" declfile="pybind/module.pybind.hh" declline="10" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1pybind_1a8f3afcfae5ed081a98182ebc249fde6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto quasar::pybind::register_radar</definition>
+        <argsstring>(py::module &amp;m) -&gt; void</argsstring>
+        <name>register_radar</name>
+        <param>
+          <type>py::module &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pybind/module.pybind.hh" line="11" column="15" declfile="pybind/module.pybind.hh" declline="11" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1pybind_1a22fcecc081bd1743b2d42d65a1af9733" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto quasar::pybind::register_window</definition>
+        <argsstring>(py::module &amp;m) -&gt; void</argsstring>
+        <name>register_window</name>
+        <param>
+          <type>py::module &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pybind/module.pybind.hh" line="12" column="15" declfile="pybind/module.pybind.hh" declline="12" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1pybind_1ae5529d3e331a862537d0265f68d2a33e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto quasar::pybind::register_utils</definition>
+        <argsstring>(py::module &amp;m) -&gt; void</argsstring>
+        <name>register_utils</name>
+        <param>
+          <type>py::module &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pybind/module.pybind.hh" line="13" column="15" declfile="pybind/module.pybind.hh" declline="13" declcolumn="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="pybind/module.pybind.hh"/>
+  </compounddef>
+</doxygen>
