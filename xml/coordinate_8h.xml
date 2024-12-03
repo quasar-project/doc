@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="coordinate_8h" kind="file" language="C++">
+    <compoundname>coordinate.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">rolly/types/stdint.h</includes>
+    <includes local="no">rolly/types/optional.h</includes>
+    <includes local="no">rolly/format.h</includes>
+    <includes local="no">rolly/contracts.h</includes>
+    <includes refid="export_8h" local="no">quasar/base/export.h</includes>
+    <includedby refid="coordinate_8cc" local="no">coordinate.cc</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>coordinate.h</label>
+        <link refid="coordinate_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>rolly/format.h</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>rolly/types/optional.h</label>
+      </node>
+      <node id="7">
+        <label>quasar/base/export.h</label>
+        <link refid="export_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="8">
+        <label>rolly/global/export.h</label>
+      </node>
+      <node id="6">
+        <label>rolly/contracts.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>coordinate.h</label>
+        <link refid="coordinate_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>coordinate.cc</label>
+        <link refid="coordinate_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classquasar_1_1Coordinate" prot="public">quasar::Coordinate</innerclass>
+    <innerclass refid="structstd_1_1hash_3_01quasar_1_1Coordinate_01_4" prot="public">std::hash&lt; quasar::Coordinate &gt;</innerclass>
+    <innerclass refid="structfmt_1_1formatter_3_01quasar_1_1Coordinate_01_4" prot="public">fmt::formatter&lt; quasar::Coordinate &gt;</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacequasar_1a694c3bdf741a5030a7054530e16d4b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename To</type>
+          </param>
+          <param>
+            <type>typename From</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::coordinate_cast</definition>
+        <argsstring>(From const &amp;coordinate) -&gt; To</argsstring>
+        <name>coordinate_cast</name>
+        <param>
+          <type>From const &amp;</type>
+          <declname>coordinate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="75" column="9" bodyfile="quasar/types/coordinate.h" bodystart="75" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/types/coordinate.h"/>
+  </compounddef>
+</doxygen>

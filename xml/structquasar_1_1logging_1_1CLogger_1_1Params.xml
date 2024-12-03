@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structquasar_1_1logging_1_1CLogger_1_1Params" kind="struct" language="C++" prot="public">
+    <compoundname>quasar::logging::CLogger::Params</compoundname>
+    <includes refid="logger_8h" local="no">quasar/misc/logger.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1CLogger_1_1Params_1a0c9f19a7b68ad0dad836ee153d3a230a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool is_default</definition>
+        <argsstring></argsstring>
+        <name>is_default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="27" column="12" bodyfile="quasar/misc/logger.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1CLogger_1_1Params_1a8ccf841cb59e451791bcb2e1ac4f1edc" prot="public" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref></type>
+        <definition>string name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="28" column="14" bodyfile="quasar/misc/logger.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1CLogger_1_1Params_1a62570d61898c241c65d73156e6654bfc" prot="public" static="no" mutable="no">
+        <type>llog::level::level_enum</type>
+        <definition>llog::level::level_enum level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="29" column="31" bodyfile="quasar/misc/logger.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1CLogger_1_1Params_1a2a7ca82c5e74421cb45f17e936abf964" prot="public" static="no" mutable="no">
+        <type><ref refid="structquasar_1_1logging_1_1CLogger_1a31488d29805a596498c0234ae392d35d" kindref="member">Target</ref></type>
+        <definition>Target target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="30" column="14" bodyfile="quasar/misc/logger.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1CLogger_1_1Params_1adda924e32cbf1bac7e76eeeaa84ff20c" prot="public" static="no" mutable="no">
+        <type>optional&lt; <ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> &gt;</type>
+        <definition>optional&lt;string&gt; filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="31" column="16" bodyfile="quasar/misc/logger.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1CLogger_1_1Params_1a806b1742f703413ce17758810977dc83" prot="public" static="no" mutable="no">
+        <type>optional&lt; fs::path &gt;</type>
+        <definition>optional&lt;fs::path&gt; folder</definition>
+        <argsstring></argsstring>
+        <name>folder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="32" column="16" bodyfile="quasar/misc/logger.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1CLogger_1_1Params_1aa99902b0891afdf9fa14234d320e53ef" prot="public" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 max_file_size_mb</definition>
+        <argsstring></argsstring>
+        <name>max_file_size_mb</name>
+        <initializer>= 10.0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="33" column="11" bodyfile="quasar/misc/logger.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1CLogger_1_1Params_1ac8490fd9b29a5480455ccf5092100e3d" prot="public" static="no" mutable="no">
+        <type>usize</type>
+        <definition>usize max_files</definition>
+        <argsstring></argsstring>
+        <name>max_files</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="34" column="13" bodyfile="quasar/misc/logger.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>level_enum</label>
+      </node>
+      <node id="2">
+        <label>optional&lt; fs::path &gt;</label>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; fs::path &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>string</label>
+        <link refid="cpp/string/basic_string" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="6">
+        <label>optional&lt; std::string &gt;</label>
+        <childnode refid="3" relation="template-instance">
+          <edgelabel>&lt; std::string &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>optional</label>
+      </node>
+      <node id="4">
+        <label>Target</label>
+      </node>
+      <node id="10">
+        <label>f32</label>
+      </node>
+      <node id="5">
+        <label>usize</label>
+      </node>
+      <node id="1">
+        <label>CLogger::Params</label>
+        <link refid="structquasar_1_1logging_1_1CLogger_1_1Params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>folder</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>max_files</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>filename</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>level</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>is_default</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>max_file_size_mb</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>bool</label>
+      </node>
+    </collaborationgraph>
+    <location file="quasar/misc/logger.h" line="26" column="17" bodyfile="quasar/misc/logger.h" bodystart="26" bodyend="35"/>
+    <listofallmembers>
+      <member refid="structquasar_1_1logging_1_1CLogger_1_1Params_1adda924e32cbf1bac7e76eeeaa84ff20c" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger::Params</scope><name>filename</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1_1Params_1a806b1742f703413ce17758810977dc83" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger::Params</scope><name>folder</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1_1Params_1a0c9f19a7b68ad0dad836ee153d3a230a" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger::Params</scope><name>is_default</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1_1Params_1a62570d61898c241c65d73156e6654bfc" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger::Params</scope><name>level</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1_1Params_1aa99902b0891afdf9fa14234d320e53ef" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger::Params</scope><name>max_file_size_mb</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1_1Params_1ac8490fd9b29a5480455ccf5092100e3d" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger::Params</scope><name>max_files</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1_1Params_1a8ccf841cb59e451791bcb2e1ac4f1edc" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger::Params</scope><name>name</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1_1Params_1a2a7ca82c5e74421cb45f17e936abf964" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger::Params</scope><name>target</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

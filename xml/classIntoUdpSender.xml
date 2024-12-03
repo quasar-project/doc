@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classIntoUdpSender" kind="class" language="C++" prot="public">
+    <compoundname>IntoUdpSender</compoundname>
+    <basecompoundref refid="classAbstractSender" prot="public" virt="virtual">AbstractSender</basecompoundref>
+    <includes refid="UdpSender_8hpp" local="no">/home/runner/work/quasar/quasar/src/strip_senders/UdpSender.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIntoUdpSender_1a5903d0b282fc5eae503de618f896b5e1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sock</definition>
+        <argsstring></argsstring>
+        <name>sock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strip_senders/UdpSender.hpp" line="16" column="9" bodyfile="strip_senders/UdpSender.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIntoUdpSender_1a2e58fa3f4fdc2b17320549ea0d1462f1" prot="private" static="no" mutable="no">
+        <type>struct sockaddr_in</type>
+        <definition>struct sockaddr_in serverAddr</definition>
+        <argsstring></argsstring>
+        <name>serverAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strip_senders/UdpSender.hpp" line="16" column="9" bodyfile="strip_senders/UdpSender.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIntoUdpSender_1aabe45d5b490fa274050c8f98a5a36eb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IntoUdpSender</definition>
+        <argsstring>(char *ip, int port)</argsstring>
+        <name>IntoUdpSender</name>
+        <param>
+          <type>char *</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strip_senders/UdpSender.hpp" line="20" column="5" bodyfile="strip_senders/UdpSender.hpp" bodystart="20" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntoUdpSender_1afbc5598181edeff7b797c01a718f4825" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void send</definition>
+        <argsstring>(uint8_t *data, size_t len)</argsstring>
+        <name>send</name>
+        <reimplements refid="classAbstractSender_1a888aad34f661055d7b9a5ed5e2981040">send</reimplements>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strip_senders/UdpSender.hpp" line="32" column="10" bodyfile="strip_senders/UdpSender.hpp" bodystart="32" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntoUdpSender_1ab90e248c7c1907f3a836def046bf739a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~IntoUdpSender</definition>
+        <argsstring>()</argsstring>
+        <name>~IntoUdpSender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strip_senders/UdpSender.hpp" line="41" column="5" bodyfile="strip_senders/UdpSender.hpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AbstractSender</label>
+        <link refid="classAbstractSender"/>
+      </node>
+      <node id="1">
+        <label>IntoUdpSender</label>
+        <link refid="classIntoUdpSender"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AbstractSender</label>
+        <link refid="classAbstractSender"/>
+      </node>
+      <node id="1">
+        <label>IntoUdpSender</label>
+        <link refid="classIntoUdpSender"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="strip_senders/UdpSender.hpp" line="14" column="50" bodyfile="strip_senders/UdpSender.hpp" bodystart="14" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classAbstractSender_1ac2fc598358281e6cb20f961c1d276d53" prot="public" virt="non-virtual"><scope>IntoUdpSender</scope><name>AbstractSender</name></member>
+      <member refid="classIntoUdpSender_1aabe45d5b490fa274050c8f98a5a36eb3" prot="public" virt="non-virtual"><scope>IntoUdpSender</scope><name>IntoUdpSender</name></member>
+      <member refid="classIntoUdpSender_1afbc5598181edeff7b797c01a718f4825" prot="public" virt="virtual"><scope>IntoUdpSender</scope><name>send</name></member>
+      <member refid="classIntoUdpSender_1a2e58fa3f4fdc2b17320549ea0d1462f1" prot="private" virt="non-virtual"><scope>IntoUdpSender</scope><name>serverAddr</name></member>
+      <member refid="classIntoUdpSender_1a5903d0b282fc5eae503de618f896b5e1" prot="private" virt="non-virtual"><scope>IntoUdpSender</scope><name>sock</name></member>
+      <member refid="classIntoUdpSender_1ab90e248c7c1907f3a836def046bf739a" prot="public" virt="non-virtual"><scope>IntoUdpSender</scope><name>~IntoUdpSender</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

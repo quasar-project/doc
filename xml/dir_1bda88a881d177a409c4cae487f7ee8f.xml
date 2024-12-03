@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_1bda88a881d177a409c4cae487f7ee8f" kind="dir">
+    <compoundname>types</compoundname>
+    <innerfile refid="coordinate_8h">coordinate.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/types/"/>
+  </compounddef>
+</doxygen>

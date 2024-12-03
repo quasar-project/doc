@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacequasar_1_1utils" kind="namespace" language="C++">
+    <compoundname>quasar::utils</compoundname>
+    <innernamespace refid="namespacequasar_1_1utils_1_1hw__info">quasar::utils::hw_info</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="hw_info.cc" line="87" column="32"/>
+  </compounddef>
+</doxygen>

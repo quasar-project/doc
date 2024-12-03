@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classnoncopyable" kind="class" language="C++" prot="public">
+    <compoundname>noncopyable</compoundname>
+    <derivedcompoundref refid="classquasar_1_1IAbstractRadar" prot="private" virt="non-virtual">IAbstractRadar</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>CRadarSTT</label>
+        <link refid="classquasar_1_1CRadarSTT"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>noncopyable</label>
+        <link refid="classnoncopyable"/>
+      </node>
+      <node id="2">
+        <label>IAbstractRadar</label>
+        <link refid="classquasar_1_1IAbstractRadar"/>
+        <childnode refid="1" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="quasar/radar/abstract_radar.h" line="44" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
