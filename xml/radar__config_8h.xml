@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="radar__config_8h" kind="file" language="C++">
+    <compoundname>radar_config.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">string_view</includes>
+    <includes refid="base_8h" local="no">quasar/base.h</includes>
+    <includedby refid="abstract__radar_8cc" local="no">abstract_radar.cc</includedby>
+    <includedby refid="radar__config_8cc" local="no">radar_config.cc</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>quasar/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>rolly/source_location.h</label>
+      </node>
+      <node id="3">
+        <label>string_view</label>
+      </node>
+      <node id="8">
+        <label>quasar/base/export.h</label>
+        <link refid="export_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="6">
+        <label>rolly/utility.h</label>
+      </node>
+      <node id="9">
+        <label>rolly/global/export.h</label>
+      </node>
+      <node id="1">
+        <label>radar_config.h</label>
+        <link refid="radar__config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>radar_config.h</label>
+        <link refid="radar__config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>abstract_radar.cc</label>
+        <link refid="abstract__radar_8cc"/>
+      </node>
+      <node id="3">
+        <label>radar_config.cc</label>
+        <link refid="radar__config_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structquasar_1_1CRadarConfiguration" prot="public">quasar::CRadarConfiguration</innerclass>
+    <innerclass refid="structquasar_1_1CRadarConfiguration_1_1Hardware" prot="public">quasar::CRadarConfiguration::Hardware</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/radar_config.h"/>
+  </compounddef>
+</doxygen>

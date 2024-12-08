@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_394624e27c49fced17264995d3988044" kind="dir">
+    <compoundname>quasar</compoundname>
+    <innerdir refid="dir_4343ba257753f0821c90424a869c8d1c">base</innerdir>
+    <innerdir refid="dir_f23c1fceb5264fa4b5bafa1f5df0f287">dsp</innerdir>
+    <innerdir refid="dir_2182c8f3633d083beee1d5ffd09613ce">image</innerdir>
+    <innerdir refid="dir_308af55427d728e50fa501272f55a4b1">misc</innerdir>
+    <innerdir refid="dir_8824d792ef6d29924dce92cf1a84e855">nav</innerdir>
+    <innerdir refid="dir_aeb40a379a2ec6c9010ff16034e4d43d">radar</innerdir>
+    <innerdir refid="dir_1bda88a881d177a409c4cae487f7ee8f">types</innerdir>
+    <innerfile refid="backprojection_8h">backprojection.h</innerfile>
+    <innerfile refid="base_8h">base.h</innerfile>
+    <innerfile refid="logging_8h">logging.h</innerfile>
+    <innerfile refid="sar_8h">sar.h</innerfile>
+    <innerfile refid="traits_8h">traits.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/"/>
+  </compounddef>
+</doxygen>

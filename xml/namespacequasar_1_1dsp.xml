@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacequasar_1_1dsp" kind="namespace" language="C++">
+    <compoundname>quasar::dsp</compoundname>
+    <innerclass refid="classquasar_1_1dsp_1_1CDSP__FFTW" prot="public">quasar::dsp::CDSP_FFTW</innerclass>
+    <innerclass refid="classquasar_1_1dsp_1_1IDSP" prot="public">quasar::dsp::IDSP</innerclass>
+    <innerclass refid="classquasar_1_1dsp_1_1IMemoryEntity" prot="public">quasar::dsp::IMemoryEntity</innerclass>
+    <innerclass refid="classquasar_1_1dsp_1_1Window" prot="public">quasar::dsp::Window</innerclass>
+    <innernamespace refid="namespacequasar_1_1dsp_1_1cuda">quasar::dsp::cuda</innernamespace>
+    <innernamespace refid="namespacequasar_1_1dsp_1_1impl">quasar::dsp::impl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/dsp/abstract_dsp.h" line="20" column="21"/>
+  </compounddef>
+</doxygen>

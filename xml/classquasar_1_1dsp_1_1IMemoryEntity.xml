@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1dsp_1_1IMemoryEntity" kind="class" language="C++" prot="public">
+    <compoundname>quasar::dsp::IMemoryEntity</compoundname>
+    <derivedcompoundref refid="classquasar_1_1dsp_1_1Window" prot="public" virt="non-virtual">Window</derivedcompoundref>
+    <includes refid="memory__entity_8h" local="no">quasar/dsp/memory_entity.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classquasar_1_1dsp_1_1IMemoryEntity_1afb8fe0fbb1970b4e8c59d92cff54f2cd" prot="private" static="no" mutable="no">
+        <type>enum DSP</type>
+        <definition>enum DSP memory_space_</definition>
+        <argsstring></argsstring>
+        <name>memory_space_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/memory_entity.h" line="22" column="18" bodyfile="quasar/dsp/memory_entity.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IMemoryEntity_1a2689bd45588e40ea8538b51dc641f8be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMemoryEntity</definition>
+        <argsstring>()</argsstring>
+        <name>IMemoryEntity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/memory_entity.h" line="8" column="5" bodyfile="quasar/dsp/memory_entity.h" bodystart="8" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IMemoryEntity_1ae69d2aaf6304efc5e850e089a02d1688" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IMemoryEntity</definition>
+        <argsstring>(DSP memory_space)</argsstring>
+        <name>IMemoryEntity</name>
+        <param>
+          <type>DSP</type>
+          <declname>memory_space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/memory_entity.h" line="11" column="14" bodyfile="quasar/dsp/memory_entity.h" bodystart="11" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IMemoryEntity_1a992f86e7cf110c2966c8a1a843ecae1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~IMemoryEntity</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IMemoryEntity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/memory_entity.h" line="14" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IMemoryEntity_1a7860132cdb59545f548c8b4022d26451" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMemoryEntity</definition>
+        <argsstring>(IMemoryEntity const &amp;)=default</argsstring>
+        <name>IMemoryEntity</name>
+        <param>
+          <type><ref refid="classquasar_1_1dsp_1_1IMemoryEntity" kindref="compound">IMemoryEntity</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/memory_entity.h" line="15" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IMemoryEntity_1ac96a0d3f5772c71a06bdec7455588203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto operator=</definition>
+        <argsstring>(IMemoryEntity const &amp;) -&gt; IMemoryEntity &amp;=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classquasar_1_1dsp_1_1IMemoryEntity" kindref="compound">IMemoryEntity</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/memory_entity.h" line="16" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IMemoryEntity_1a5e75dd287d595aad658466ebd220a95c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMemoryEntity</definition>
+        <argsstring>(IMemoryEntity &amp;&amp;)=default</argsstring>
+        <name>IMemoryEntity</name>
+        <param>
+          <type><ref refid="classquasar_1_1dsp_1_1IMemoryEntity" kindref="compound">IMemoryEntity</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/memory_entity.h" line="17" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IMemoryEntity_1abe8d8840f7e8ae66dbbac80d2184094d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto operator=</definition>
+        <argsstring>(IMemoryEntity &amp;&amp;) -&gt; IMemoryEntity &amp;=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classquasar_1_1dsp_1_1IMemoryEntity" kindref="compound">IMemoryEntity</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/memory_entity.h" line="18" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IMemoryEntity_1a61a20cc3b4d5be85be8dbe890192bd9a" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="virtual">
+        <type>auto</type>
+        <definition>virtual auto memory_space</definition>
+        <argsstring>() const noexcept -&gt; DSP</argsstring>
+        <name>memory_space</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/memory_entity.h" line="20" column="19" bodyfile="quasar/dsp/memory_entity.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IMemoryEntity_1afa6e5ec06006203614970d06db4bb277" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void set_memory_space</definition>
+        <argsstring>(DSP memory_space)</argsstring>
+        <name>set_memory_space</name>
+        <param>
+          <type>DSP</type>
+          <declname>memory_space</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/memory_entity.h" line="22" column="18" bodyfile="quasar/dsp/memory_entity.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Window</label>
+        <link refid="classquasar_1_1dsp_1_1Window"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IMemoryEntity</label>
+        <link refid="classquasar_1_1dsp_1_1IMemoryEntity"/>
+      </node>
+    </inheritancegraph>
+    <location file="quasar/dsp/memory_entity.h" line="6" column="22" bodyfile="quasar/dsp/memory_entity.h" bodystart="6" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1dsp_1_1IMemoryEntity_1a2689bd45588e40ea8538b51dc641f8be" prot="public" virt="non-virtual"><scope>quasar::dsp::IMemoryEntity</scope><name>IMemoryEntity</name></member>
+      <member refid="classquasar_1_1dsp_1_1IMemoryEntity_1ae69d2aaf6304efc5e850e089a02d1688" prot="public" virt="non-virtual"><scope>quasar::dsp::IMemoryEntity</scope><name>IMemoryEntity</name></member>
+      <member refid="classquasar_1_1dsp_1_1IMemoryEntity_1a7860132cdb59545f548c8b4022d26451" prot="public" virt="non-virtual"><scope>quasar::dsp::IMemoryEntity</scope><name>IMemoryEntity</name></member>
+      <member refid="classquasar_1_1dsp_1_1IMemoryEntity_1a5e75dd287d595aad658466ebd220a95c" prot="public" virt="non-virtual"><scope>quasar::dsp::IMemoryEntity</scope><name>IMemoryEntity</name></member>
+      <member refid="classquasar_1_1dsp_1_1IMemoryEntity_1a61a20cc3b4d5be85be8dbe890192bd9a" prot="public" virt="virtual"><scope>quasar::dsp::IMemoryEntity</scope><name>memory_space</name></member>
+      <member refid="classquasar_1_1dsp_1_1IMemoryEntity_1afb8fe0fbb1970b4e8c59d92cff54f2cd" prot="private" virt="non-virtual"><scope>quasar::dsp::IMemoryEntity</scope><name>memory_space_</name></member>
+      <member refid="classquasar_1_1dsp_1_1IMemoryEntity_1ac96a0d3f5772c71a06bdec7455588203" prot="public" virt="non-virtual"><scope>quasar::dsp::IMemoryEntity</scope><name>operator=</name></member>
+      <member refid="classquasar_1_1dsp_1_1IMemoryEntity_1abe8d8840f7e8ae66dbbac80d2184094d" prot="public" virt="non-virtual"><scope>quasar::dsp::IMemoryEntity</scope><name>operator=</name></member>
+      <member refid="classquasar_1_1dsp_1_1IMemoryEntity_1afa6e5ec06006203614970d06db4bb277" prot="public" virt="virtual"><scope>quasar::dsp::IMemoryEntity</scope><name>set_memory_space</name></member>
+      <member refid="classquasar_1_1dsp_1_1IMemoryEntity_1a992f86e7cf110c2966c8a1a843ecae1a" prot="public" virt="virtual"><scope>quasar::dsp::IMemoryEntity</scope><name>~IMemoryEntity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

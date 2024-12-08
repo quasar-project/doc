@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="module_8pybind_8cc" kind="file" language="C++">
+    <compoundname>module.pybind.cc</compoundname>
+    <includes refid="module_8pybind_8hh" local="no">pybind/module.pybind.hh</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>pybind/module.pybind.hh</label>
+        <link refid="module_8pybind_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pybind11/pybind11.h</label>
+      </node>
+      <node id="1">
+        <label>module.pybind.cc</label>
+        <link refid="module_8pybind_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="module_8pybind_8cc_1a1a66b42a94a0539633f1e1f922f29384" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PYBIND11_MODULE</definition>
+        <argsstring>(quasar, m)</argsstring>
+        <name>PYBIND11_MODULE</name>
+        <param>
+          <type>quasar</type>
+        </param>
+        <param>
+          <type>m</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pybind/module.pybind.cc" line="3" column="1" bodyfile="pybind/module.pybind.cc" bodystart="3" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="pybind/module.pybind.cc"/>
+  </compounddef>
+</doxygen>

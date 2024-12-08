@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="progress__bar_8h" kind="file" language="C++">
+    <compoundname>progress_bar.h</compoundname>
+    <includes local="no">chrono</includes>
+    <includes local="no">string</includes>
+    <includes local="no">string_view</includes>
+    <includes local="no">rolly/types/stdint.h</includes>
+    <includes local="no">rolly/traits.h</includes>
+    <includedby refid="dsp__fftw_8cc" local="no">dsp_fftw.cc</includedby>
+    <includedby refid="progress__bar_8cc" local="no">progress_bar.cc</includedby>
+    <includedby refid="utils_8pybind_8cc" local="no">utils.pybind.cc</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>string_view</label>
+      </node>
+      <node id="1">
+        <label>progress_bar.h</label>
+        <link refid="progress__bar_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>rolly/traits.h</label>
+      </node>
+      <node id="5">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="2">
+        <label>chrono</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>dsp_fftw.cc</label>
+        <link refid="dsp__fftw_8cc"/>
+      </node>
+      <node id="1">
+        <label>progress_bar.h</label>
+        <link refid="progress__bar_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>progress_bar.cc</label>
+        <link refid="progress__bar_8cc"/>
+      </node>
+      <node id="4">
+        <label>utils.pybind.cc</label>
+        <link refid="utils_8pybind_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classquasar_1_1logging_1_1progress__bar" prot="public">quasar::logging::progress_bar</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1logging">quasar::logging</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/logging/progress_bar.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,779 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCStripStream" kind="class" language="C++" prot="public">
+    <compoundname>CStripStream</compoundname>
+    <includes refid="CStripStream_8hpp" local="no">/home/runner/work/quasar/quasar/src/CStripStream.hpp</includes>
+    <innerclass refid="structCStripStream_1_1head__t" prot="private">CStripStream::head_t</innerclass>
+    <innerclass refid="structCStripStream_1_1img__t" prot="private">CStripStream::img_t</innerclass>
+    <innerclass refid="structCStripStream_1_1nav__t" prot="private">CStripStream::nav_t</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classCStripStream_1a8b182988d497b07d1e06a1707b67897f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DataFormat</name>
+        <enumvalue id="classCStripStream_1a8b182988d497b07d1e06a1707b67897fa13759b5b800cc50a6e10f73681f6fe9b" prot="public">
+          <name>UINT8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCStripStream_1a8b182988d497b07d1e06a1707b67897fa8ed234b18120112ac09d0219a8f60d1b" prot="public">
+          <name>UINT16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classCStripStream_1a8b182988d497b07d1e06a1707b67897fab48e815f9d64a180ffb0616e40ebc4ce" prot="public">
+          <name>COMPRESSED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="23" column="20" bodyfile="CStripStream.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCStripStream_1aa83702786547f0a1bab3b3ee576edbd1" prot="private" static="no" mutable="no">
+        <type><ref refid="classCStripSender" kindref="compound">CStripSender</ref> *</type>
+        <definition>CStripSender* sender</definition>
+        <argsstring></argsstring>
+        <name>sender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="43" column="18" bodyfile="CStripStream.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1adba14d6ee1228f1ecb81c65606cd9077" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int PACKAGE_LEN</definition>
+        <argsstring></argsstring>
+        <name>PACKAGE_LEN</name>
+        <initializer>= 1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="44" column="15" bodyfile="CStripStream.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1af74547a1be2edc6d0ee8e97b8116b9e8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int word_size</definition>
+        <argsstring></argsstring>
+        <name>word_size</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="84" column="9" bodyfile="CStripStream.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1aa3c0c21424512432f6b11e55c1006295" prot="private" static="no" mutable="no">
+        <type>float(CStripStream::*</type>
+        <definition>float(CStripStream::* float_to_word(float *src, uint8_t *dest, int len)</definition>
+        <argsstring>)(float *src, uint8_t *dest, int len)</argsstring>
+        <name>float_to_word</name>
+        <initializer>=
+        &amp;CStripStream::float_to_uint8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="85" column="5" bodyfile="CStripStream.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a6611e2d8ca8a40b6bf1e4abf7db8511d" prot="private" static="no" mutable="no">
+        <type>struct head_t</type>
+        <definition>struct head_t pack_head</definition>
+        <argsstring></argsstring>
+        <name>pack_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="85" column="5" bodyfile="CStripStream.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a1f04c9a43a71ad068b9d8978fe6eb0dd" prot="private" static="no" mutable="no">
+        <type>struct nav_t</type>
+        <definition>struct nav_t pack_nav</definition>
+        <argsstring></argsstring>
+        <name>pack_nav</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="85" column="5" bodyfile="CStripStream.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1aaf4f193c52764022a0ef2db1ca343cdf" prot="private" static="no" mutable="no">
+        <type>struct img_t</type>
+        <definition>struct img_t pack_img</definition>
+        <argsstring></argsstring>
+        <name>pack_img</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="85" column="5" bodyfile="CStripStream.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a3efb0e1a16208deecbd84c15401f7cf8" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="92" column="10" bodyfile="CStripStream.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1aa18093cac42480458eae6ad0bb3b2f4f" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; diffx</definition>
+        <argsstring></argsstring>
+        <name>diffx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="95" column="17" bodyfile="CStripStream.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1adcd4af827d094787935495cb30b404f4" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; elevation</definition>
+        <argsstring></argsstring>
+        <name>elevation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="96" column="17" bodyfile="CStripStream.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a3c7c3f51836f00d7587ca1b5275ee294" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="97" column="17" bodyfile="CStripStream.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a687129fed4a24fd554d8d02dbaa2e8d2" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="98" column="17" bodyfile="CStripStream.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1ae071524f1b6704f00d62cbfe3a921d78" prot="private" static="no" mutable="no">
+        <type><ref refid="classquasar_1_1SAR" kindref="compound">SAR</ref> *</type>
+        <definition>SAR* sar_</definition>
+        <argsstring></argsstring>
+        <name>sar_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="100" column="9" bodyfile="CStripStream.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a5b085f3ac1f2f1d957e4ba13aefe6d3c" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/memory/unique_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::unique_ptr</ref>&lt; <ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;CImage&gt; strip_image_</definition>
+        <argsstring></argsstring>
+        <name>strip_image_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="101" column="21" bodyfile="CStripStream.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a64258ca2e16f5222297dbd2d4ff1a5ce" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/memory/unique_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::unique_ptr</ref>&lt; <ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;CImage&gt; acc_image_</definition>
+        <argsstring></argsstring>
+        <name>acc_image_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="102" column="21" bodyfile="CStripStream.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a003dfe617d123d5155a41d48597a4c56" prot="private" static="no" mutable="no">
+        <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+        <definition>CImage* image_</definition>
+        <argsstring></argsstring>
+        <name>image_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="103" column="11" bodyfile="CStripStream.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a0d27aa6dae5888ec9247483b83ddb14d" prot="private" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* Window</definition>
+        <argsstring></argsstring>
+        <name>Window</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="105" column="11" bodyfile="CStripStream.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a9eae6c1f38db98ab568f3ed3771a969d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dx</definition>
+        <argsstring></argsstring>
+        <name>dx</name>
+        <initializer>= 1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="107" column="11" bodyfile="CStripStream.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a8f461b6142ce8725218813abb23b06a3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dy</definition>
+        <argsstring></argsstring>
+        <name>dy</name>
+        <initializer>= 1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="108" column="11" bodyfile="CStripStream.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a02d47a4f36ec0bcce348696534567e30" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int nx</definition>
+        <argsstring></argsstring>
+        <name>nx</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="109" column="9" bodyfile="CStripStream.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a67bfb58034aded5422ecb5fd4027a9d1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int chunk_height</definition>
+        <argsstring></argsstring>
+        <name>chunk_height</name>
+        <initializer>= <ref refid="CStripStream_8hpp_1a708996a6ab44089275abf1fc88d45cf8" kindref="member">CHUNK_HEIGHT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="111" column="9" bodyfile="CStripStream.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripStream_1a90d42a197d89d2f046a1ee2d0ace4b56" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int compress_quality</definition>
+        <argsstring></argsstring>
+        <name>compress_quality</name>
+        <initializer>= 80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="112" column="9" bodyfile="CStripStream.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCStripStream_1ae527dbab4abe1d00eb7368b5f0cf3f90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CStripStream</definition>
+        <argsstring>()</argsstring>
+        <name>CStripStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="25" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1af3c2bbb1405dfadab4991266efbc6fe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CStripStream</definition>
+        <argsstring>(SAR *sar, CImage *Image, float _lx, float step_size, float Ts, AbstractSender *sender_)</argsstring>
+        <name>CStripStream</name>
+        <param>
+          <type><ref refid="classquasar_1_1SAR" kindref="compound">SAR</ref> *</type>
+          <declname>sar</declname>
+        </param>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>Image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>_lx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>step_size</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Ts</declname>
+        </param>
+        <param>
+          <type><ref refid="classAbstractSender" kindref="compound">AbstractSender</ref> *</type>
+          <declname>sender_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="26" column="5" bodyfile="CStripStream.cpp" bodystart="11" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1aeff7b871896ef28ad67f66dc26aad466" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~CStripStream</definition>
+        <argsstring>()</argsstring>
+        <name>~CStripStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="28" column="13" bodyfile="CStripStream.cpp" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1ad6f2902cab464477ec44f34a1c3cf830" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int strip</definition>
+        <argsstring>(float x0, float angle, float v, float h, float x)</argsstring>
+        <name>strip</name>
+        <param>
+          <type>float</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="31" column="9" bodyfile="CStripStream.cpp" bodystart="192" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1a69e97be8c4f8e2bcfa310ead7bafbcd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt; uint8_t &gt; strip_raw</definition>
+        <argsstring>(float x0, float angle, float v, float h, float x)</argsstring>
+        <name>strip_raw</name>
+        <param>
+          <type>float</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="32" column="17" bodyfile="CStripStream.cpp" bodystart="205" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1a792ba0ff7f77184a1bd371bb4b3f7f5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pybind11::array_t&lt; uint8_t &gt;</type>
+        <definition>pybind11::array_t&lt; uint8_t &gt; strip_compressed</definition>
+        <argsstring>(float x0, float angle, float v, float h, float x)</argsstring>
+        <name>strip_compressed</name>
+        <param>
+          <type>float</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="34" column="23" bodyfile="CStripStream.cpp" bodystart="271" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1a208c7c30a8513f74eec8ff72129d1d5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_nav_data</definition>
+        <argsstring>(double lat, double lon, float velocity, float ele, float course, float drift_ang, float pitch, float roll)</argsstring>
+        <name>set_nav_data</name>
+        <param>
+          <type>double</type>
+          <declname>lat</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lon</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ele</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>course</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>drift_ang</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>roll</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="36" column="10" bodyfile="CStripStream.cpp" bodystart="64" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1ace8ec8855e283a8c6dd2600edf6fdd5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_format</definition>
+        <argsstring>(DataFormat format, int _chunk_height=CHUNK_HEIGHT)</argsstring>
+        <name>set_format</name>
+        <param>
+          <type><ref refid="classCStripStream_1a8b182988d497b07d1e06a1707b67897f" kindref="member">DataFormat</ref></type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_chunk_height</declname>
+          <defval><ref refid="CStripStream_8hpp_1a708996a6ab44089275abf1fc88d45cf8" kindref="member">CHUNK_HEIGHT</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="38" column="10" bodyfile="CStripStream.cpp" bodystart="84" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1a5dacd32bc0434aa89032d20414b7ed23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pack_len</definition>
+        <argsstring>()</argsstring>
+        <name>pack_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="39" column="9" bodyfile="CStripStream.cpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1ad38ef9721b527f60db57b81dad0c6a52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_compress_quality</definition>
+        <argsstring>(int cq)</argsstring>
+        <name>set_compress_quality</name>
+        <param>
+          <type>int</type>
+          <declname>cq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="40" column="10" bodyfile="CStripStream.cpp" bodystart="108" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCStripStream_1ac8d79f229a852c013874b44aefa97d0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float float_to_uint8</definition>
+        <argsstring>(float *src, uint8_t *dest, int len)</argsstring>
+        <name>float_to_uint8</name>
+        <param>
+          <type>float *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="46" column="11" bodyfile="CStripStream.cpp" bodystart="110" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1a1fe71e67c8563830d5723fa474f705bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float float_to_uint16</definition>
+        <argsstring>(float *src, uint8_t *dest, int len)</argsstring>
+        <name>float_to_uint16</name>
+        <param>
+          <type>float *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="47" column="11" bodyfile="CStripStream.cpp" bodystart="122" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1adaf5ca110964f3df001e9bcff0e5f42d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pack</definition>
+        <argsstring>(uint8_t *data, uint8_t **out, uint16_t len)</argsstring>
+        <name>pack</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint8_t **</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="48" column="9" bodyfile="CStripStream.cpp" bodystart="140" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1a980c9988dcd92e95f8471108ba0423da" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct CStripStream::nav_t</type>
+        <definition>struct CStripStream::nav_t __attribute__</definition>
+        <argsstring>((packed))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(packed)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="48" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1ac401d7c6178c03d1a0f035a57c182bed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct CStripStream::img_t</type>
+        <definition>struct CStripStream::img_t __attribute__</definition>
+        <argsstring>((packed))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(packed)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="48" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripStream_1ad26483dd1db2384442ba10768592cdd5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct CStripStream::head_t</type>
+        <definition>struct CStripStream::head_t __attribute__</definition>
+        <argsstring>((packed))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(packed)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="48" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CStripStream.hpp" line="21" column="19" bodyfile="CStripStream.hpp" bodystart="21" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classCStripStream_1a980c9988dcd92e95f8471108ba0423da" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>__attribute__</name></member>
+      <member refid="classCStripStream_1ac401d7c6178c03d1a0f035a57c182bed" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>__attribute__</name></member>
+      <member refid="classCStripStream_1ad26483dd1db2384442ba10768592cdd5" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>__attribute__</name></member>
+      <member refid="classCStripStream_1a64258ca2e16f5222297dbd2d4ff1a5ce" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>acc_image_</name></member>
+      <member refid="classCStripStream_1a67bfb58034aded5422ecb5fd4027a9d1" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>chunk_height</name></member>
+      <member refid="classCStripStream_1a90d42a197d89d2f046a1ee2d0ace4b56" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>compress_quality</name></member>
+      <member refid="classCStripStream_1a8b182988d497b07d1e06a1707b67897fab48e815f9d64a180ffb0616e40ebc4ce" prot="public" virt="non-virtual"><scope>CStripStream</scope><name>COMPRESSED</name></member>
+      <member refid="classCStripStream_1ae527dbab4abe1d00eb7368b5f0cf3f90" prot="public" virt="non-virtual"><scope>CStripStream</scope><name>CStripStream</name></member>
+      <member refid="classCStripStream_1af3c2bbb1405dfadab4991266efbc6fe6" prot="public" virt="non-virtual"><scope>CStripStream</scope><name>CStripStream</name></member>
+      <member refid="classCStripStream_1a8b182988d497b07d1e06a1707b67897f" prot="public" virt="non-virtual"><scope>CStripStream</scope><name>DataFormat</name></member>
+      <member refid="classCStripStream_1aa18093cac42480458eae6ad0bb3b2f4f" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>diffx</name></member>
+      <member refid="classCStripStream_1a9eae6c1f38db98ab568f3ed3771a969d" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>dx</name></member>
+      <member refid="classCStripStream_1a8f461b6142ce8725218813abb23b06a3" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>dy</name></member>
+      <member refid="classCStripStream_1adcd4af827d094787935495cb30b404f4" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>elevation</name></member>
+      <member refid="classCStripStream_1a3efb0e1a16208deecbd84c15401f7cf8" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>f</name></member>
+      <member refid="classCStripStream_1a1fe71e67c8563830d5723fa474f705bb" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>float_to_uint16</name></member>
+      <member refid="classCStripStream_1ac8d79f229a852c013874b44aefa97d0c" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>float_to_uint8</name></member>
+      <member refid="classCStripStream_1aa3c0c21424512432f6b11e55c1006295" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>float_to_word</name></member>
+      <member refid="classCStripStream_1a003dfe617d123d5155a41d48597a4c56" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>image_</name></member>
+      <member refid="classCStripStream_1a02d47a4f36ec0bcce348696534567e30" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>nx</name></member>
+      <member refid="classCStripStream_1adaf5ca110964f3df001e9bcff0e5f42d" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>pack</name></member>
+      <member refid="classCStripStream_1a6611e2d8ca8a40b6bf1e4abf7db8511d" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>pack_head</name></member>
+      <member refid="classCStripStream_1aaf4f193c52764022a0ef2db1ca343cdf" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>pack_img</name></member>
+      <member refid="classCStripStream_1a5dacd32bc0434aa89032d20414b7ed23" prot="public" virt="non-virtual"><scope>CStripStream</scope><name>pack_len</name></member>
+      <member refid="classCStripStream_1a1f04c9a43a71ad068b9d8978fe6eb0dd" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>pack_nav</name></member>
+      <member refid="classCStripStream_1adba14d6ee1228f1ecb81c65606cd9077" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>PACKAGE_LEN</name></member>
+      <member refid="classCStripStream_1ae071524f1b6704f00d62cbfe3a921d78" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>sar_</name></member>
+      <member refid="classCStripStream_1aa83702786547f0a1bab3b3ee576edbd1" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>sender</name></member>
+      <member refid="classCStripStream_1ad38ef9721b527f60db57b81dad0c6a52" prot="public" virt="non-virtual"><scope>CStripStream</scope><name>set_compress_quality</name></member>
+      <member refid="classCStripStream_1ace8ec8855e283a8c6dd2600edf6fdd5e" prot="public" virt="non-virtual"><scope>CStripStream</scope><name>set_format</name></member>
+      <member refid="classCStripStream_1a208c7c30a8513f74eec8ff72129d1d5d" prot="public" virt="non-virtual"><scope>CStripStream</scope><name>set_nav_data</name></member>
+      <member refid="classCStripStream_1ad6f2902cab464477ec44f34a1c3cf830" prot="public" virt="non-virtual"><scope>CStripStream</scope><name>strip</name></member>
+      <member refid="classCStripStream_1a792ba0ff7f77184a1bd371bb4b3f7f5a" prot="public" virt="non-virtual"><scope>CStripStream</scope><name>strip_compressed</name></member>
+      <member refid="classCStripStream_1a5b085f3ac1f2f1d957e4ba13aefe6d3c" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>strip_image_</name></member>
+      <member refid="classCStripStream_1a69e97be8c4f8e2bcfa310ead7bafbcd9" prot="public" virt="non-virtual"><scope>CStripStream</scope><name>strip_raw</name></member>
+      <member refid="classCStripStream_1a687129fed4a24fd554d8d02dbaa2e8d2" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>time</name></member>
+      <member refid="classCStripStream_1a8b182988d497b07d1e06a1707b67897fa8ed234b18120112ac09d0219a8f60d1b" prot="public" virt="non-virtual"><scope>CStripStream</scope><name>UINT16</name></member>
+      <member refid="classCStripStream_1a8b182988d497b07d1e06a1707b67897fa13759b5b800cc50a6e10f73681f6fe9b" prot="public" virt="non-virtual"><scope>CStripStream</scope><name>UINT8</name></member>
+      <member refid="classCStripStream_1a3c7c3f51836f00d7587ca1b5275ee294" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>velocity</name></member>
+      <member refid="classCStripStream_1a0d27aa6dae5888ec9247483b83ddb14d" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>Window</name></member>
+      <member refid="classCStripStream_1af74547a1be2edc6d0ee8e97b8116b9e8" prot="private" virt="non-virtual"><scope>CStripStream</scope><name>word_size</name></member>
+      <member refid="classCStripStream_1aeff7b871896ef28ad67f66dc26aad466" prot="public" virt="virtual"><scope>CStripStream</scope><name>~CStripStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

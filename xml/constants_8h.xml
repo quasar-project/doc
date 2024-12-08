@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="constants_8h" kind="file" language="C++">
+    <compoundname>constants.h</compoundname>
+    <includes local="no">limits</includes>
+    <includes local="no">type_traits</includes>
+    <includes local="no">rolly/types/stdint.h</includes>
+    <includes local="no">rolly/numbers.h</includes>
+    <includedby refid="math_8h" local="no">math.h</includedby>
+    <includedby refid="coordinate_8cc" local="no">coordinate.cc</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>limits</label>
+      </node>
+      <node id="1">
+        <label>constants.h</label>
+        <link refid="constants_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="5">
+        <label>rolly/numbers.h</label>
+      </node>
+      <node id="3">
+        <label>type_traits</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>CStripStream.hpp</label>
+        <link refid="CStripStream_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>constants.h</label>
+        <link refid="constants_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>image.cc</label>
+        <link refid="image_8cc"/>
+      </node>
+      <node id="3">
+        <label>abstract_dsp.cc</label>
+        <link refid="abstract__dsp_8cc"/>
+      </node>
+      <node id="17">
+        <label>coordinate.cc</label>
+        <link refid="coordinate_8cc"/>
+      </node>
+      <node id="15">
+        <label>sar.cc</label>
+        <link refid="sar_8cc"/>
+      </node>
+      <node id="5">
+        <label>backprojection.cc</label>
+        <link refid="backprojection_8cc"/>
+      </node>
+      <node id="7">
+        <label>CStripStream.cpp</label>
+        <link refid="CStripStream_8cpp"/>
+      </node>
+      <node id="11">
+        <label>navgpx.cc</label>
+        <link refid="navgpx_8cc"/>
+      </node>
+      <node id="10">
+        <label>math.cc</label>
+        <link refid="math_8cc"/>
+      </node>
+      <node id="16">
+        <label>radar_stt.cc</label>
+        <link refid="radar__stt_8cc"/>
+      </node>
+      <node id="9">
+        <label>dsp_fftw.cc</label>
+        <link refid="dsp__fftw_8cc"/>
+      </node>
+      <node id="8">
+        <label>legacy.pybind.cc</label>
+        <link refid="legacy_8pybind_8cc"/>
+      </node>
+      <node id="2">
+        <label>math.h</label>
+        <link refid="math_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>abstract_radar.cc</label>
+        <link refid="abstract__radar_8cc"/>
+      </node>
+      <node id="12">
+        <label>ranges.h</label>
+        <link refid="ranges_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ranges.cc</label>
+        <link refid="ranges_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1numbers">quasar::numbers</innernamespace>
+    <innernamespace refid="namespacerolly_1_1numbers">rolly::numbers</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacequasar_1_1numbers_1a9c4bdfeac6596bf86f791768ec1a50bb" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto speed_of_light</definition>
+        <argsstring></argsstring>
+        <name>speed_of_light</name>
+        <initializer>= 299&apos;792&apos;458.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/constants.h" line="11" column="25" bodyfile="private/constants.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1numbers_1af319a0de8b6db153d3b226670271c158" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto earth_radius</definition>
+        <argsstring></argsstring>
+        <name>earth_radius</name>
+        <initializer>= 6&apos;371&apos;007.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/constants.h" line="12" column="25" bodyfile="private/constants.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1numbers_1a999db8b578d5cd8c951d06f132e2be8f" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto earth_radius_km</definition>
+        <argsstring></argsstring>
+        <name>earth_radius_km</name>
+        <initializer>= earth_radius / 1&apos;000.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/constants.h" line="13" column="25" bodyfile="private/constants.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1numbers_1abbe0b9353b5dc5986f9a0bd7b9d2f297" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto earth_circumference</definition>
+        <argsstring></argsstring>
+        <name>earth_circumference</name>
+        <initializer>= earth_radius * 2.f * pi</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/constants.h" line="14" column="25" bodyfile="private/constants.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1numbers_1a33d455624a782396efa5f426ad3b403c" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto earth_circumference_km</definition>
+        <argsstring></argsstring>
+        <name>earth_circumference_km</name>
+        <initializer>= earth_circumference / 1&apos;000.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/constants.h" line="15" column="25" bodyfile="private/constants.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/constants.h"/>
+  </compounddef>
+</doxygen>

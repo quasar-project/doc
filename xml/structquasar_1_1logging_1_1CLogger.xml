@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structquasar_1_1logging_1_1CLogger" kind="struct" language="C++" prot="public">
+    <compoundname>quasar::logging::CLogger</compoundname>
+    <basecompoundref refid="classpin" prot="public" virt="non-virtual">pin</basecompoundref>
+    <includes refid="logger_8h" local="no">quasar/misc/logger.h</includes>
+    <innerclass refid="structquasar_1_1logging_1_1CLogger_1_1Params" prot="public">quasar::logging::CLogger::Params</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structquasar_1_1logging_1_1CLogger_1a31488d29805a596498c0234ae392d35d" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Target</name>
+        <enumvalue id="structquasar_1_1logging_1_1CLogger_1a31488d29805a596498c0234ae392d35dabccaa4aa80831b76c11240a16447975f" prot="public">
+          <name>Console</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structquasar_1_1logging_1_1CLogger_1a31488d29805a596498c0234ae392d35da0b27918290ff5323bea1e3b78a9cf04e" prot="public">
+          <name>File</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structquasar_1_1logging_1_1CLogger_1a31488d29805a596498c0234ae392d35dab1c94ca2fbc3e78fc30069c8d0f01680" prot="public">
+          <name>All</name>
+          <initializer>= Console | File</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="20" column="22" bodyfile="quasar/misc/logger.h" bodystart="20" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1CLogger_1a4bc4dfd5031298812119a3a4d1612af5" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/memory/shared_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">shared_ptr</ref>&lt; spdlog::logger &gt;</type>
+        <definition>shared_ptr&lt;spdlog::logger&gt; logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="68" column="16" bodyfile="quasar/misc/logger.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1CLogger_1a8fd631837551ddfbc1e61d2308adc883" prot="private" static="no" mutable="no">
+        <type><ref refid="structquasar_1_1logging_1_1CLogger_1_1Params" kindref="compound">Params</ref></type>
+        <definition>Params params_</definition>
+        <argsstring></argsstring>
+        <name>params_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="69" column="12" bodyfile="quasar/misc/logger.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1ab870ead124da17fdb224e3cd3c1493b0" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CLogger</definition>
+        <argsstring>(llog::level::level_enum level)</argsstring>
+        <name>CLogger</name>
+        <param>
+          <type>llog::level::level_enum</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="37" column="14" bodyfile="logger.cc" bodystart="11" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1a8eace08869fa404f2189ac1cd92df5a5" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CLogger</definition>
+        <argsstring>(Params params)</argsstring>
+        <name>CLogger</name>
+        <param>
+          <type><ref refid="structquasar_1_1logging_1_1CLogger_1_1Params" kindref="compound">Params</ref></type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="38" column="14" bodyfile="logger.cc" bodystart="23" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1a2194b267c570803e872a92e7480332cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~CLogger</definition>
+        <argsstring>()</argsstring>
+        <name>~CLogger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="39" column="5" bodyfile="logger.cc" bodystart="99" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1a8b8493e2c5f082662ba20f38566cc65d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto get</definition>
+        <argsstring>() -&gt; shared_ptr&lt; spdlog::logger &gt; &amp;</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="41" column="11" bodyfile="quasar/misc/logger.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1a6dc61177b58c1c76a04c4bf8326b938e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto get</definition>
+        <argsstring>() const -&gt; shared_ptr&lt; spdlog::logger &gt; const &amp;</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="43" column="11" bodyfile="quasar/misc/logger.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1a063e3a1f48f492a1911d6ad922346904" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto params</definition>
+        <argsstring>() const -&gt; Params const &amp;</argsstring>
+        <name>params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="45" column="11" bodyfile="quasar/misc/logger.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1a67b76affb3b5d35fa419ac234144038b" prot="public" static="no" const="yes" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="47" column="15" bodyfile="quasar/misc/logger.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1acf3f1e85acb8dbca172e5d26ed23bdd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto operator*</definition>
+        <argsstring>() -&gt; shared_ptr&lt; spdlog::logger &gt; &amp;</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="49" column="11" bodyfile="quasar/misc/logger.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1a16f86319c1578fe4d1326fc9f0a3a126" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto operator*</definition>
+        <argsstring>() const -&gt; shared_ptr&lt; spdlog::logger &gt; const &amp;</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="51" column="11" bodyfile="quasar/misc/logger.h" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1ad32244a11d5b2c16d92c0c8f8bfc58ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto operator-&gt;</definition>
+        <argsstring>() -&gt; shared_ptr&lt; spdlog::logger &gt; &amp;</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="55" column="11" bodyfile="quasar/misc/logger.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1a1b87b4e87a7b0275f594194a3918c53f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto operator-&gt;</definition>
+        <argsstring>() const -&gt; shared_ptr&lt; spdlog::logger &gt; const &amp;</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="57" column="11" bodyfile="quasar/misc/logger.h" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1a9733dac36095cf1478b14c33ac85f36e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto level</definition>
+        <argsstring>() const -&gt; llog::level::level_enum</argsstring>
+        <name>level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="64" column="11" bodyfile="logger.cc" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1a061e7a0789903958c24c81578f27b521" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto set_level</definition>
+        <argsstring>(llog::level::level_enum level) -&gt; void</argsstring>
+        <name>set_level</name>
+        <param>
+          <type>llog::level::level_enum</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="65" column="10" bodyfile="logger.cc" bodystart="113" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1a7c81b93c2282437f54a16b41f491fefa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto make</definition>
+        <argsstring>(Params const &amp;params) -&gt; CLogger</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="structquasar_1_1logging_1_1CLogger_1_1Params" kindref="compound">Params</ref> const &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="61" column="18" bodyfile="logger.cc" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1CLogger_1a43578f0afc474b75ca62f7ded1bca16e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto make_default</definition>
+        <argsstring>(llog::level::level_enum level) -&gt; CLogger</argsstring>
+        <name>make_default</name>
+        <param>
+          <type>llog::level::level_enum</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="62" column="18" bodyfile="logger.cc" bodystart="109" bodyend="109"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CLogger</label>
+        <link refid="structquasar_1_1logging_1_1CLogger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pin</label>
+        <link refid="classpin"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CLogger</label>
+        <link refid="structquasar_1_1logging_1_1CLogger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pin</label>
+        <link refid="classpin"/>
+      </node>
+    </collaborationgraph>
+    <location file="quasar/misc/logger.h" line="18" column="1" bodyfile="quasar/misc/logger.h" bodystart="17" bodyend="70"/>
+    <listofallmembers>
+      <member refid="structquasar_1_1logging_1_1CLogger_1ab870ead124da17fdb224e3cd3c1493b0" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>CLogger</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a8eace08869fa404f2189ac1cd92df5a5" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>CLogger</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a8b8493e2c5f082662ba20f38566cc65d" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>get</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a6dc61177b58c1c76a04c4bf8326b938e" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>get</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a9733dac36095cf1478b14c33ac85f36e" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>level</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a4bc4dfd5031298812119a3a4d1612af5" prot="private" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>logger_</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a7c81b93c2282437f54a16b41f491fefa" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>make</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a43578f0afc474b75ca62f7ded1bca16e" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>make_default</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a67b76affb3b5d35fa419ac234144038b" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>operator bool</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1acf3f1e85acb8dbca172e5d26ed23bdd8" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>operator*</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a16f86319c1578fe4d1326fc9f0a3a126" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>operator*</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1ad32244a11d5b2c16d92c0c8f8bfc58ef" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>operator-&gt;</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a1b87b4e87a7b0275f594194a3918c53f" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>operator-&gt;</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a063e3a1f48f492a1911d6ad922346904" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>params</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a8fd631837551ddfbc1e61d2308adc883" prot="private" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>params_</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a061e7a0789903958c24c81578f27b521" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>set_level</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a31488d29805a596498c0234ae392d35d" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>Target</name></member>
+      <member refid="structquasar_1_1logging_1_1CLogger_1a2194b267c570803e872a92e7480332cd" prot="public" virt="non-virtual"><scope>quasar::logging::CLogger</scope><name>~CLogger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

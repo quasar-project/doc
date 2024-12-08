@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1Dim3" kind="class" language="C++" prot="public">
+    <compoundname>quasar::Dim3</compoundname>
+    <includes refid="nav_8h" local="no">quasar/nav/nav.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classquasar_1_1Dim3_1ae1c2d516777e6b42af0d281c9ecc7375" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="191" column="13" bodyfile="quasar/nav/nav.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Dim3_1af77b1a54442f2443cf64a4766f916bcd" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="192" column="13" bodyfile="quasar/nav/nav.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Dim3_1abd938edbea27ed4f351dc19d69039222" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="193" column="13" bodyfile="quasar/nav/nav.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classquasar_1_1Dim3_1a77eb1d0c55122cc2fcaadbac6e161c84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Dim3</definition>
+        <argsstring>()</argsstring>
+        <name>Dim3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="183" column="5" bodyfile="quasar/nav/nav.h" bodystart="183" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Dim3_1ae0959d600fb92702757d806e25cbfb64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Dim3</definition>
+        <argsstring>(int16_t _x, int16_t _y, int16_t _z)</argsstring>
+        <name>Dim3</name>
+        <param>
+          <type>int16_t</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>_y</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>_z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="185" column="5" bodyfile="quasar/nav/nav.h" bodystart="185" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>int16_t</label>
+      </node>
+      <node id="1">
+        <label>Dim3</label>
+        <link refid="classquasar_1_1Dim3"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="quasar/nav/nav.h" line="181" column="13" bodyfile="quasar/nav/nav.h" bodystart="181" bodyend="194"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1Dim3_1a77eb1d0c55122cc2fcaadbac6e161c84" prot="public" virt="non-virtual"><scope>quasar::Dim3</scope><name>Dim3</name></member>
+      <member refid="classquasar_1_1Dim3_1ae0959d600fb92702757d806e25cbfb64" prot="public" virt="non-virtual"><scope>quasar::Dim3</scope><name>Dim3</name></member>
+      <member refid="classquasar_1_1Dim3_1ae1c2d516777e6b42af0d281c9ecc7375" prot="public" virt="non-virtual"><scope>quasar::Dim3</scope><name>x</name></member>
+      <member refid="classquasar_1_1Dim3_1af77b1a54442f2443cf64a4766f916bcd" prot="public" virt="non-virtual"><scope>quasar::Dim3</scope><name>y</name></member>
+      <member refid="classquasar_1_1Dim3_1abd938edbea27ed4f351dc19d69039222" prot="public" virt="non-virtual"><scope>quasar::Dim3</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacequasar_1_1utils_1_1hw__info_1_1mem" kind="namespace" language="C++">
+    <compoundname>quasar::utils::hw_info::mem</compoundname>
+    <innerclass refid="structquasar_1_1utils_1_1hw__info_1_1mem_1_1MemInfo" prot="public">quasar::utils::hw_info::mem::MemInfo</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacequasar_1_1utils_1_1hw__info_1_1mem_1aa027c898a0cb11055f0f21b1cfcb2dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto quasar::utils::hw_info::mem::parse_from_sysconf</definition>
+        <argsstring>() -&gt; MemInfo</argsstring>
+        <name>parse_from_sysconf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="186" column="10" bodyfile="hw_info.cc" bodystart="186" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1utils_1_1hw__info_1_1mem_1a2357c5aeb6e57d7f0517f6cc2a9e5841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto quasar::utils::hw_info::mem::set</definition>
+        <argsstring>(string const &amp;line, int64_t *dst) -&gt; void</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> const &amp;</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>int64_t *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="203" column="10" bodyfile="hw_info.cc" bodystart="203" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1utils_1_1hw__info_1_1mem_1abb85d47cec8994b0c445dd08cf454664" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto quasar::utils::hw_info::mem::parse_meminfo</definition>
+        <argsstring>() -&gt; MemInfo</argsstring>
+        <name>parse_meminfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="214" column="10" bodyfile="hw_info.cc" bodystart="214" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="hw_info.cc" line="179" column="15"/>
+  </compounddef>
+</doxygen>

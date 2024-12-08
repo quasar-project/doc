@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_f10874f496ff26550afe383935d026da" kind="dir">
+    <compoundname>window</compoundname>
+    <innerfile refid="window__impl__fftw_8cc">window_impl_fftw.cc</innerfile>
+    <innerfile refid="window__impl__fftw_8hh">window_impl_fftw.hh</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/window/"/>
+  </compounddef>
+</doxygen>

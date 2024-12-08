@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="coordinate_8cc" kind="file" language="C++">
+    <compoundname>coordinate.cc</compoundname>
+    <includes refid="coordinate_8h" local="no">quasar/types/coordinate.h</includes>
+    <includes local="no">rolly/math.h</includes>
+    <includes refid="constants_8h" local="no">private/constants.h</includes>
+    <includes local="yes">rolly/global/definitions.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>quasar/types/coordinate.h</label>
+        <link refid="coordinate_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>limits</label>
+      </node>
+      <node id="11">
+        <label>private/constants.h</label>
+        <link refid="constants_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>coordinate.cc</label>
+        <link refid="coordinate_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>rolly/format.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>rolly/types/optional.h</label>
+      </node>
+      <node id="10">
+        <label>rolly/math.h</label>
+      </node>
+      <node id="15">
+        <label>rolly/global/definitions.h</label>
+      </node>
+      <node id="8">
+        <label>quasar/base/export.h</label>
+        <link refid="export_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="14">
+        <label>rolly/numbers.h</label>
+      </node>
+      <node id="9">
+        <label>rolly/global/export.h</label>
+      </node>
+      <node id="13">
+        <label>type_traits</label>
+      </node>
+      <node id="7">
+        <label>rolly/contracts.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacequasar_1ab2bbcf74d317cd2b8fdc6efc8bee1e19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool quasar::operator==</definition>
+        <argsstring>(Coordinate const &amp;lhs, Coordinate const &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>Coordinate const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>Coordinate const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/types/coordinate.cc" line="154" column="8" bodyfile="private/types/coordinate.cc" bodystart="154" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a8b23d277ab9838d5a1245c4c93124809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool quasar::operator!=</definition>
+        <argsstring>(Coordinate const &amp;lhs, Coordinate const &amp;rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>Coordinate const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>Coordinate const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/types/coordinate.cc" line="162" column="8" bodyfile="private/types/coordinate.cc" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a2c795607ca866bf1e3836f2650a8fd5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool quasar::operator&lt;</definition>
+        <argsstring>(Coordinate const &amp;lhs, Coordinate const &amp;rhs)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>Coordinate const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>Coordinate const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/types/coordinate.cc" line="164" column="3" bodyfile="private/types/coordinate.cc" bodystart="164" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a94c7b079d3223025e8a56d960523c3eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/io/basic_ostream" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::ostream</ref> &amp;</type>
+        <definition>std::ostream&amp; quasar::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, Coordinate const &amp;coordinate)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type><ref refid="cpp/io/basic_ostream" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::ostream</ref> &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>Coordinate const &amp;</type>
+          <declname>coordinate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/types/coordinate.cc" line="171" column="3" bodyfile="private/types/coordinate.cc" bodystart="171" bodyend="173"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/types/coordinate.cc"/>
+  </compounddef>
+</doxygen>

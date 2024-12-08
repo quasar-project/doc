@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="ansi__iomanip_8h" kind="file" language="C++">
+    <compoundname>ansi_iomanip.h</compoundname>
+    <includes local="no">string_view</includes>
+    <includes refid="logging_8h" local="no">quasar/logging.h</includes>
+    <includedby refid="scoped__timer_8cc" local="no">scoped_timer.cc</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>quasar/base/logging.h</label>
+        <link refid="base_2logging_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ansi_iomanip.h</label>
+        <link refid="ansi__iomanip_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="2">
+        <label>string_view</label>
+      </node>
+      <node id="7">
+        <label>quasar/base/export.h</label>
+        <link refid="export_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="9">
+        <label>rolly/global/export.h</label>
+      </node>
+      <node id="3">
+        <label>quasar/logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>ansi_iomanip.h</label>
+        <link refid="ansi__iomanip_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>scoped_timer.cc</label>
+        <link refid="scoped__timer_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1logging">quasar::logging</innernamespace>
+    <innernamespace refid="namespacestd_1_1string__view__literals">std::string_view_literals</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacequasar_1_1logging_1a86bb1b7007cf5e302e820561225d23c5" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto line_up</definition>
+        <argsstring></argsstring>
+        <name>line_up</name>
+        <initializer>= &quot;\033[A&quot;sv</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/ansi_iomanip.h" line="9" column="18" bodyfile="private/logging/ansi_iomanip.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1logging_1a66366a03f4bb930ed352fc155a93703c" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto line_clear</definition>
+        <argsstring></argsstring>
+        <name>line_clear</name>
+        <initializer>= &quot;\033[2K&quot;sv</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/ansi_iomanip.h" line="10" column="18" bodyfile="private/logging/ansi_iomanip.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1logging_1a7566318e3683d626eb13f9fcc8174026" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto rewrite</definition>
+        <argsstring></argsstring>
+        <name>rewrite</name>
+        <initializer>= &quot;\033[2K\r&quot;sv</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/ansi_iomanip.h" line="11" column="18" bodyfile="private/logging/ansi_iomanip.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1logging_1aa620221d90ccc17a7a328fb63f718a73" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto clean</definition>
+        <argsstring></argsstring>
+        <name>clean</name>
+        <initializer>= &quot;\033[2K\r&quot;sv</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/ansi_iomanip.h" line="12" column="18" bodyfile="private/logging/ansi_iomanip.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/logging/ansi_iomanip.h"/>
+  </compounddef>
+</doxygen>

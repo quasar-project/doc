@@ -1,0 +1,805 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1dsp_1_1IDSP" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>quasar::dsp::IDSP</compoundname>
+    <derivedcompoundref refid="classquasar_1_1dsp_1_1CDSP__FFTW" prot="public" virt="non-virtual">CDSP_FFTW</derivedcompoundref>
+    <includes refid="abstract__dsp_8h" local="no">quasar/dsp/abstract_dsp.h</includes>
+    <innerclass refid="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams" prot="public">quasar::dsp::IDSP::PixelProcParams</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a14595a2dd2106bcf0f828434d046d13c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IDSP</definition>
+        <argsstring>()=default</argsstring>
+        <name>IDSP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="39" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1aa7b7e4311103834415cad7bd7e0fb0f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~IDSP</definition>
+        <argsstring>()=default</argsstring>
+        <name>~IDSP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="40" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a3745839ff29ffce7fdf021e04dc5b234" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto print_description</definition>
+        <argsstring>(std::FILE *out) const noexcept -&gt; void=0</argsstring>
+        <name>print_description</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1ac6686af819ea47989f5b075552007338">print_description</reimplementedby>
+        <param>
+          <type><ref refid="cpp/io/c" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::FILE</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="42" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a4ae81cf1d910210e18e858bc3579d6a5" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto type</definition>
+        <argsstring>() const noexcept -&gt; enum DSP=0</argsstring>
+        <name>type</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1a7435f470bc3589f9b9a8cba2726a7981">type</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="43" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a1f01781429ebd0cdab7a264e8f89874b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int removeDC</definition>
+        <argsstring>(math::Complex *pImageData, int W, int W0, int H)=0</argsstring>
+        <name>removeDC</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1aa3621835a52e0d2f43c7aa068912056a">removeDC</reimplementedby>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>pImageData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>W</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>W0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="45" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a7bafcefc9e34e0a2fe938da9e8c3e71d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float mean</definition>
+        <argsstring>(f32 *pImageData, int N)=0</argsstring>
+        <name>mean</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1ad27b533ed14b669d7151ac24776a2dcd">mean</reimplementedby>
+        <param>
+          <type>f32 *</type>
+          <declname>pImageData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="46" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a8c47478afb9b5269736bcf7c57e02539" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int hamming</definition>
+        <argsstring>(f32 *pImageData, int W, int H, int W0, int H0)=0</argsstring>
+        <name>hamming</name>
+        <param>
+          <type>f32 *</type>
+          <declname>pImageData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>W</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>W0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>H0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="47" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a67a3a278637e7fd9eeb41363ff643d84" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int hamming</definition>
+        <argsstring>(math::Complex *pImageData, int W, int H, int W0, int H0)=0</argsstring>
+        <name>hamming</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1a2d39f516775bcde83927d3992fb3b763">hamming</reimplementedby>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>pImageData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>W</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>W0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>H0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="48" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a66b013ed2c44160935adaf60c64a6c88" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto fft</definition>
+        <argsstring>(f32 *data, int n, int m) -&gt; void=0</argsstring>
+        <name>fft</name>
+        <param>
+          <type>f32 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="49" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1af9453de19ec7ffad409622f1b25729cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int fft</definition>
+        <argsstring>(math::Complex *pImageData, int N, int M)</argsstring>
+        <name>fft</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1a9b80a9ae8906396312a56a6b42a42057">fft</reimplementedby>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>pImageData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="51" column="17" bodyfile="quasar/dsp/abstract_dsp.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a8e44c62208c9340b12b564ceaa042654" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int ifft</definition>
+        <argsstring>(math::Complex *pImageData, int N, int M)</argsstring>
+        <name>ifft</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1a12196617a67ddb82e479665fb7871668">ifft</reimplementedby>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>pImageData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="53" column="17" bodyfile="quasar/dsp/abstract_dsp.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1abd870e4f862d498f95eea70f5ae2500b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int fftshift</definition>
+        <argsstring>(math::Complex *pImageData, int N, int M)=0</argsstring>
+        <name>fftshift</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1a7b9c188c616c6be936798b9ef3b38fe8">fftshift</reimplementedby>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>pImageData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="55" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a17609b7903d9b4542ef1539368d87335" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int transpose</definition>
+        <argsstring>(math::Complex *pImageData, int N, int M)=0</argsstring>
+        <name>transpose</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1afc64daff20f7e372605efaa599cb2ce0">transpose</reimplementedby>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>pImageData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="56" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a6ec1963b541d0372c26f92148aa7b178" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int transpose</definition>
+        <argsstring>(f32 *pImageData, int N, int M)=0</argsstring>
+        <name>transpose</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1aaab78c6fa910562834b80c0abf843f43">transpose</reimplementedby>
+        <param>
+          <type>f32 *</type>
+          <declname>pImageData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="57" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a2e81e3216072b7943119b04273cc9328" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int rmc</definition>
+        <argsstring>(math::Complex *pData, int w, int h, int hb, float lambda, float tp, float v)=0</argsstring>
+        <name>rmc</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1a150c8171b8778a0b060fbeaa49671156">rmc</reimplementedby>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>pData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hb</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lambda</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="58" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1aca8f61104cbb24ebc463a42e90fea8ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int phocus</definition>
+        <argsstring>(math::Complex *pData, int W, int H, int Hmax, float Rb, float Tp, float lambda, float V, float Rmax, int Np)=0</argsstring>
+        <name>phocus</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1a56860558a27e9c42a1f18119b56eea26">phocus</reimplementedby>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>pData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>W</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Hmax</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Rb</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Tp</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lambda</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Rmax</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Np</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="67" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a4ca1f6231809bf8d249c1c80f247a128" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float entropy</definition>
+        <argsstring>(math::Complex *pData, int W, int H)=0</argsstring>
+        <name>entropy</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1abbffa12175b8789ab3b368c426416adf">entropy</reimplementedby>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>pData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>W</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="79" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a33e7f9f891c2907162ad154bdcf26822" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float entropyf</definition>
+        <argsstring>(f32 *pData, int W, int H)=0</argsstring>
+        <name>entropyf</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1a800b9b9a05d3677b4437c08fdad11d91">entropyf</reimplementedby>
+        <param>
+          <type>f32 *</type>
+          <declname>pData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>W</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="80" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a42fee39572d329af607a9a1f8a23e50d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int complexMul</definition>
+        <argsstring>(math::Complex *SrcDst1, math::Complex *Src2, int len)=0</argsstring>
+        <name>complexMul</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1acf3ca71732a0bad212bba2dc035c9d41">complexMul</reimplementedby>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>SrcDst1</declname>
+        </param>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>Src2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="81" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1ac3826be91fe7e728ac9d15f1c4e0d78e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int complexMul</definition>
+        <argsstring>(math::Complex *SrcDst1, float *Src2, int len)=0</argsstring>
+        <name>complexMul</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1afdabbc94870db1b86bf5bdf6950686e2">complexMul</reimplementedby>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>SrcDst1</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>Src2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="82" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a120cc1bd18abe520834883a3984ffef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int complexSum</definition>
+        <argsstring>(math::Complex *Src, math::Complex *Dst, int len)=0</argsstring>
+        <name>complexSum</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1aee9234212d72c68a17df0b5bdd8c1174">complexSum</reimplementedby>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>Src</declname>
+        </param>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>Dst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="83" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a128eb1a50abe224d76a913cb35516aba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto window_weighting</definition>
+        <argsstring>(CImage &amp;image, Window const &amp;window) const -&gt; void=0</argsstring>
+        <name>window_weighting</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1a8bc9330f4eef3f3a159545c362202b28">window_weighting</reimplementedby>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type><ref refid="classquasar_1_1dsp_1_1Window" kindref="compound">Window</ref> const &amp;</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="85" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1ac232ee1b9e8b7321cb0d8e366562ddfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>auto</type>
+        <definition>auto range_compress</definition>
+        <argsstring>(CImage &amp;image) -&gt; void</argsstring>
+        <name>range_compress</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="86" column="18" bodyfile="abstract_dsp.cc" bodystart="27" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1ad60472764730a476031db00301285abe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto bp</definition>
+        <argsstring>(CImage *image, IAbstractRadar *radar, f32 *outdata, f32 *wnd, std::vector&lt; f32 &gt; const &amp;velocity, f32 x0, f32 y0, f32 dx, f32 dy, std::vector&lt; f32 &gt; const &amp;elevation, std::vector&lt; f32 &gt; const &amp;diffx, int nx, int ny, bool bCorr, f32 angle, f32 div, math::Complex *pc) -&gt; int=0</argsstring>
+        <name>bp</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1ac55376f2fb0ec87f546d595280eb3889">bp</reimplementedby>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type><ref refid="classquasar_1_1IAbstractRadar" kindref="compound">IAbstractRadar</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>f32 *</type>
+          <declname>outdata</declname>
+        </param>
+        <param>
+          <type>f32 *</type>
+          <declname>wnd</declname>
+        </param>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; f32 &gt; const &amp;</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; f32 &gt; const &amp;</type>
+          <declname>elevation</declname>
+        </param>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; f32 &gt; const &amp;</type>
+          <declname>diffx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ny</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bCorr</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>div</declname>
+        </param>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>pc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="87" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1dsp_1_1IDSP_1a7b9890ab7c1b86b9acc3b960c5c860a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>auto</type>
+        <definition>virtual auto bp_strip</definition>
+        <argsstring>(CImage *in, CImage *out, IAbstractRadar *radar, f32 *window, std::vector&lt; f32 &gt; const &amp;velocity, f32 x0, f32 dx, std::vector&lt; f32 &gt; const &amp;elevation, std::vector&lt; f32 &gt; const &amp;diffx, int nx, int line, bool bCorr, math::Complex *pc, f32 angle) -&gt; int=0</argsstring>
+        <name>bp_strip</name>
+        <reimplementedby refid="classquasar_1_1dsp_1_1CDSP__FFTW_1aadae3399f5d70040eb2fee5bb2740b6e">bp_strip</reimplementedby>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="classquasar_1_1IAbstractRadar" kindref="compound">IAbstractRadar</ref> *</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>f32 *</type>
+          <declname>window</declname>
+        </param>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; f32 &gt; const &amp;</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; f32 &gt; const &amp;</type>
+          <declname>elevation</declname>
+        </param>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; f32 &gt; const &amp;</type>
+          <declname>diffx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bCorr</declname>
+        </param>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>pc</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="107" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Виртуальный класс, предоставляющий функции системы ЦОС. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CDSP_FFTW</label>
+        <link refid="classquasar_1_1dsp_1_1CDSP__FFTW"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IDSP</label>
+        <link refid="classquasar_1_1dsp_1_1IDSP"/>
+      </node>
+    </inheritancegraph>
+    <location file="quasar/dsp/abstract_dsp.h" line="26" column="13" bodyfile="quasar/dsp/abstract_dsp.h" bodystart="26" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1ad60472764730a476031db00301285abe" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>bp</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a7b9890ab7c1b86b9acc3b960c5c860a5" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>bp_strip</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a42fee39572d329af607a9a1f8a23e50d" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>complexMul</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1ac3826be91fe7e728ac9d15f1c4e0d78e" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>complexMul</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a120cc1bd18abe520834883a3984ffef5" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>complexSum</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a4ca1f6231809bf8d249c1c80f247a128" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>entropy</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a33e7f9f891c2907162ad154bdcf26822" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>entropyf</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a66b013ed2c44160935adaf60c64a6c88" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>fft</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1af9453de19ec7ffad409622f1b25729cf" prot="public" virt="virtual"><scope>quasar::dsp::IDSP</scope><name>fft</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1abd870e4f862d498f95eea70f5ae2500b" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>fftshift</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a8c47478afb9b5269736bcf7c57e02539" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>hamming</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a67a3a278637e7fd9eeb41363ff643d84" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>hamming</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a14595a2dd2106bcf0f828434d046d13c" prot="public" virt="non-virtual"><scope>quasar::dsp::IDSP</scope><name>IDSP</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a8e44c62208c9340b12b564ceaa042654" prot="public" virt="virtual"><scope>quasar::dsp::IDSP</scope><name>ifft</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a7bafcefc9e34e0a2fe938da9e8c3e71d" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>mean</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1aca8f61104cbb24ebc463a42e90fea8ca" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>phocus</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a3745839ff29ffce7fdf021e04dc5b234" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>print_description</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1ac232ee1b9e8b7321cb0d8e366562ddfd" prot="public" virt="virtual"><scope>quasar::dsp::IDSP</scope><name>range_compress</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a1f01781429ebd0cdab7a264e8f89874b" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>removeDC</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a2e81e3216072b7943119b04273cc9328" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>rmc</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a17609b7903d9b4542ef1539368d87335" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>transpose</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a6ec1963b541d0372c26f92148aa7b178" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>transpose</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a4ae81cf1d910210e18e858bc3579d6a5" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>type</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1a128eb1a50abe224d76a913cb35516aba" prot="public" virt="pure-virtual"><scope>quasar::dsp::IDSP</scope><name>window_weighting</name></member>
+      <member refid="classquasar_1_1dsp_1_1IDSP_1aa7b7e4311103834415cad7bd7e0fb0f1" prot="public" virt="virtual"><scope>quasar::dsp::IDSP</scope><name>~IDSP</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

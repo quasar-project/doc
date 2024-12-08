@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="AbstractSender_8hpp" kind="file" language="C++">
+    <compoundname>AbstractSender.hpp</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="CStripSender_8hpp" local="yes">CStripSender.hpp</includedby>
+    <includedby refid="legacy_8pybind_8cc" local="yes">legacy.pybind.cc</includedby>
+    <includedby refid="IntoFileSender_8hpp" local="yes">IntoFileSender.hpp</includedby>
+    <includedby refid="UdpSender_8hpp" local="yes">UdpSender.hpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>AbstractSender.hpp</label>
+        <link refid="AbstractSender_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>CStripStream.hpp</label>
+        <link refid="CStripStream_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>IntoFileSender.hpp</label>
+        <link refid="IntoFileSender_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CStripStream.cpp</label>
+        <link refid="CStripStream_8cpp"/>
+      </node>
+      <node id="2">
+        <label>CStripSender.hpp</label>
+        <link refid="CStripSender_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>legacy.pybind.cc</label>
+        <link refid="legacy_8pybind_8cc"/>
+      </node>
+      <node id="7">
+        <label>UdpSender.hpp</label>
+        <link refid="UdpSender_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AbstractSender.hpp</label>
+        <link refid="AbstractSender_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classAbstractSender" prot="public">AbstractSender</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="strip_senders/AbstractSender.hpp"/>
+  </compounddef>
+</doxygen>

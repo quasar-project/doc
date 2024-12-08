@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_2182c8f3633d083beee1d5ffd09613ce" kind="dir">
+    <compoundname>image</compoundname>
+    <innerfile refid="data__holder_8hh">data_holder.hh</innerfile>
+    <innerfile refid="data__holder__cuda_8hh">data_holder_cuda.hh</innerfile>
+    <innerfile refid="data__holder__interface_8hh">data_holder_interface.hh</innerfile>
+    <innerfile refid="data__holder__ram_8hh">data_holder_ram.hh</innerfile>
+    <innerfile refid="image_8h">image.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/image/"/>
+  </compounddef>
+</doxygen>

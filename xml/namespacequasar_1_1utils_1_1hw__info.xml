@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacequasar_1_1utils_1_1hw__info" kind="namespace" language="C++">
+    <compoundname>quasar::utils::hw_info</compoundname>
+    <innerclass refid="classquasar_1_1utils_1_1hw__info_1_1CPU" prot="public">quasar::utils::hw_info::CPU</innerclass>
+    <innerclass refid="classquasar_1_1utils_1_1hw__info_1_1RAM" prot="public">quasar::utils::hw_info::RAM</innerclass>
+    <innernamespace refid="namespacequasar_1_1utils_1_1hw__info_1_1mem">quasar::utils::hw_info::mem</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="hw_info.cc" line="87" column="32"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="hw__info_8cc" kind="file" language="C++">
+    <compoundname>hw_info.cc</compoundname>
+    <includes refid="hw__info_8h" local="no">private/hw_info.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">filesystem</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">sstream</includes>
+    <includes refid="logging_8h" local="no">quasar/logging.h</includes>
+    <includes local="no">unistd.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>quasar/base/logging.h</label>
+        <link refid="base_2logging_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>filesystem</label>
+      </node>
+      <node id="7">
+        <label>stdexcept</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>map</label>
+      </node>
+      <node id="1">
+        <label>hw_info.cc</label>
+        <link refid="hw__info_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>fstream</label>
+      </node>
+      <node id="15">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="18">
+        <label>unistd.h</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>array</label>
+      </node>
+      <node id="12">
+        <label>sstream</label>
+      </node>
+      <node id="16">
+        <label>quasar/base/export.h</label>
+        <link refid="export_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="17">
+        <label>rolly/global/export.h</label>
+      </node>
+      <node id="2">
+        <label>private/hw_info.h</label>
+        <link refid="hw__info_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>quasar/logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structquasar_1_1utils_1_1hw__info_1_1mem_1_1MemInfo" prot="public">quasar::utils::hw_info::mem::MemInfo</innerclass>
+    <innernamespace refid="namespaceu">u</innernamespace>
+    <innernamespace refid="namespaceu_1_1fs">u::fs</innernamespace>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1utils">quasar::utils</innernamespace>
+    <innernamespace refid="namespacequasar_1_1utils_1_1hw__info">quasar::utils::hw_info</innernamespace>
+    <innernamespace refid="namespacequasar_1_1utils_1_1hw__info_1_1mem">quasar::utils::hw_info::mem</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceu_1afff37fd6148a76bd6cafc47ce411f6d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto u::starts_with</definition>
+        <argsstring>(string const &amp;input, string const &amp;prefix) -&gt; bool</argsstring>
+        <name>starts_with</name>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> const &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> const &amp;</type>
+          <declname>prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="21" column="15" bodyfile="hw_info.cc" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu_1aa1735c23bfe6336ea6d1ff25d18cd25c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto u::strip</definition>
+        <argsstring>(string &amp;input) -&gt; void</argsstring>
+        <name>strip</name>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="25" column="15" bodyfile="hw_info.cc" bodystart="25" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu_1a41fa2c28bd16b25ee106b5c3e89a2adc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto u::split</definition>
+        <argsstring>(string const &amp;input, string const &amp;delimiter) -&gt; vector&lt; string &gt;</argsstring>
+        <name>split</name>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> const &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> const &amp;</type>
+          <declname>delimiter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="57" column="15" bodyfile="hw_info.cc" bodystart="57" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu_1_1fs_1a06ed8dd51df36364729838f2bcfe34d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto u::fs::get_specs_by_file_path</definition>
+        <argsstring>(string const &amp;path) -&gt; std::int64_t</argsstring>
+        <name>get_specs_by_file_path</name>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="71" column="10" bodyfile="hw_info.cc" bodystart="71" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1utils_1_1hw__info_1_1mem_1aa027c898a0cb11055f0f21b1cfcb2dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto quasar::utils::hw_info::mem::parse_from_sysconf</definition>
+        <argsstring>() -&gt; MemInfo</argsstring>
+        <name>parse_from_sysconf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="186" column="10" bodyfile="hw_info.cc" bodystart="186" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1utils_1_1hw__info_1_1mem_1a2357c5aeb6e57d7f0517f6cc2a9e5841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto quasar::utils::hw_info::mem::set</definition>
+        <argsstring>(string const &amp;line, int64_t *dst) -&gt; void</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> const &amp;</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>int64_t *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="203" column="10" bodyfile="hw_info.cc" bodystart="203" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1utils_1_1hw__info_1_1mem_1abb85d47cec8994b0c445dd08cf454664" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto quasar::utils::hw_info::mem::parse_meminfo</definition>
+        <argsstring>() -&gt; MemInfo</argsstring>
+        <name>parse_meminfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="214" column="10" bodyfile="hw_info.cc" bodystart="214" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="hw_info.cc"/>
+  </compounddef>
+</doxygen>

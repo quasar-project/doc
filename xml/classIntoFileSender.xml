@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classIntoFileSender" kind="class" language="C++" prot="public">
+    <compoundname>IntoFileSender</compoundname>
+    <basecompoundref refid="classAbstractSender" prot="public" virt="virtual">AbstractSender</basecompoundref>
+    <includes refid="IntoFileSender_8hpp" local="no">/home/runner/work/quasar/quasar/src/strip_senders/IntoFileSender.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIntoFileSender_1a907c37fbdba2639a31838bbcd0579849" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/io/basic_ofstream" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::ofstream</ref> *</type>
+        <definition>std::ofstream* file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strip_senders/IntoFileSender.hpp" line="25" column="19" bodyfile="strip_senders/IntoFileSender.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIntoFileSender_1a8a69f58622080743480388cf61710b93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IntoFileSender</definition>
+        <argsstring>(char *fn)</argsstring>
+        <name>IntoFileSender</name>
+        <param>
+          <type>char *</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strip_senders/IntoFileSender.hpp" line="11" column="5" bodyfile="strip_senders/IntoFileSender.hpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntoFileSender_1a9bbf603a753d778bd5aad422e9a03641" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~IntoFileSender</definition>
+        <argsstring>()</argsstring>
+        <name>~IntoFileSender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strip_senders/IntoFileSender.hpp" line="15" column="5" bodyfile="strip_senders/IntoFileSender.hpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntoFileSender_1afbc5598181edeff7b797c01a718f4825" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void send</definition>
+        <argsstring>(uint8_t *data, size_t len)</argsstring>
+        <name>send</name>
+        <reimplements refid="classAbstractSender_1a888aad34f661055d7b9a5ed5e2981040">send</reimplements>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strip_senders/IntoFileSender.hpp" line="20" column="10" bodyfile="strip_senders/IntoFileSender.hpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IntoFileSender</label>
+        <link refid="classIntoFileSender"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AbstractSender</label>
+        <link refid="classAbstractSender"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IntoFileSender</label>
+        <link refid="classIntoFileSender"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>AbstractSender</label>
+        <link refid="classAbstractSender"/>
+      </node>
+    </collaborationgraph>
+    <location file="strip_senders/IntoFileSender.hpp" line="9" column="51" bodyfile="strip_senders/IntoFileSender.hpp" bodystart="9" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classAbstractSender_1ac2fc598358281e6cb20f961c1d276d53" prot="public" virt="non-virtual"><scope>IntoFileSender</scope><name>AbstractSender</name></member>
+      <member refid="classIntoFileSender_1a907c37fbdba2639a31838bbcd0579849" prot="private" virt="non-virtual"><scope>IntoFileSender</scope><name>file</name></member>
+      <member refid="classIntoFileSender_1a8a69f58622080743480388cf61710b93" prot="public" virt="non-virtual"><scope>IntoFileSender</scope><name>IntoFileSender</name></member>
+      <member refid="classIntoFileSender_1afbc5598181edeff7b797c01a718f4825" prot="public" virt="virtual"><scope>IntoFileSender</scope><name>send</name></member>
+      <member refid="classIntoFileSender_1a9bbf603a753d778bd5aad422e9a03641" prot="public" virt="non-virtual"><scope>IntoFileSender</scope><name>~IntoFileSender</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

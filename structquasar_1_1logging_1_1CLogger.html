@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>quasar::logging::CLogger struct | QuaSAR SAR image processing library</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <span id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">
+        <a href="http://quasar-project.github.io/doc"><img src="logo.png" alt="" />QuaSAR</a> <span class="m-breadcrumb">|</span> <a href="index.html" class="m-thin">SAR image processing library</a>
+      </span>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Handbook</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="4">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacequasar.html">quasar</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacequasar_1_1logging.html">logging</a>::<wbr/></span>CLogger <span class="m-thin">struct</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="logger_8h.html">&lt;quasar/misc/logger.h&gt;</a></div>
+        </h1>
+        <p><span></span></p>
+        <nav class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#base-classes">Base classes</a></li>
+                <li><a href="#pub-types">Public types</a></li>
+                <li><a href="#pub-static-methods">Public static functions</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <section id="base-classes">
+          <h2><a href="#base-classes">Base classes</a></h2>
+          <dl class="m-doc">
+            <dt>
+              class <a href="classpin.html" class="m-doc">pin</a>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-types">
+          <h2><a href="#pub-types">Public types</a></h2>
+          <dl class="m-doc">
+            <dt>
+              struct <a href="structquasar_1_1logging_1_1CLogger_1_1Params.html" class="m-doc">Params</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a31488d29805a596498c0234ae392d35d">
+              <span class="m-doc-wrap-bumper">enum class <a href="#a31488d29805a596498c0234ae392d35d" class="m-doc-self">Target</a> { </span><span class="m-doc-wrap"><a href="#a31488d29805a596498c0234ae392d35dabccaa4aa80831b76c11240a16447975f" class="m-doc">Console</a> = 1 &lt;&lt; 0,
+              <a href="#a31488d29805a596498c0234ae392d35da0b27918290ff5323bea1e3b78a9cf04e" class="m-doc">File</a> = 1 &lt;&lt; 1,
+              <a href="#a31488d29805a596498c0234ae392d35dab1c94ca2fbc3e78fc30069c8d0f01680" class="m-doc">All</a> = Console | File }</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-static-methods">
+          <h2><a href="#pub-static-methods">Public static functions</a></h2>
+          <dl class="m-doc">
+            <dt id="a7c81b93c2282437f54a16b41f491fefa">
+              <span class="m-dox-wrap-bumper">static auto <a href="#a7c81b93c2282437f54a16b41f491fefa" class="m-dox-self" name="a7c81b93c2282437f54a16b41f491fefa">make</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1logging_1_1CLogger_1_1Params.html" class="m-doc">Params</a> const&amp; params) -&gt; CLogger</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a43578f0afc474b75ca62f7ded1bca16e">
+              <span class="m-dox-wrap-bumper">static auto <a href="#a43578f0afc474b75ca62f7ded1bca16e" class="m-dox-self" name="a43578f0afc474b75ca62f7ded1bca16e">make_default</a>(</span><span class="m-dox-wrap">llog::level::level_enum level) -&gt; CLogger</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt id="ab870ead124da17fdb224e3cd3c1493b0">
+              <span class="m-dox-wrap-bumper"><a href="#ab870ead124da17fdb224e3cd3c1493b0" class="m-dox-self" name="ab870ead124da17fdb224e3cd3c1493b0">CLogger</a>(</span><span class="m-dox-wrap">llog::level::level_enum level) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a8eace08869fa404f2189ac1cd92df5a5">
+              <span class="m-dox-wrap-bumper"><a href="#a8eace08869fa404f2189ac1cd92df5a5" class="m-dox-self" name="a8eace08869fa404f2189ac1cd92df5a5">CLogger</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1logging_1_1CLogger_1_1Params.html" class="m-doc">Params</a> params) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a2194b267c570803e872a92e7480332cd">
+              <span class="m-dox-wrap-bumper"><a href="#a2194b267c570803e872a92e7480332cd" class="m-dox-self" name="a2194b267c570803e872a92e7480332cd">~CLogger</a>(</span><span class="m-dox-wrap">)</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a67b76affb3b5d35fa419ac234144038b">
+              <span class="m-dox-wrap-bumper"><a href="#a67b76affb3b5d35fa419ac234144038b" class="m-dox-self" name="a67b76affb3b5d35fa419ac234144038b">operator bool</a>(</span><span class="m-dox-wrap">) const <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt id="a8b8493e2c5f082662ba20f38566cc65d">
+              <span class="m-dox-wrap-bumper">auto <a href="#a8b8493e2c5f082662ba20f38566cc65d" class="m-dox-self" name="a8b8493e2c5f082662ba20f38566cc65d">get</a>(</span><span class="m-dox-wrap">) -&gt; shared_ptr&lt; spdlog::logger &gt; &amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a6dc61177b58c1c76a04c4bf8326b938e">
+              <span class="m-dox-wrap-bumper">auto <a href="#a6dc61177b58c1c76a04c4bf8326b938e" class="m-dox-self" name="a6dc61177b58c1c76a04c4bf8326b938e">get</a>(</span><span class="m-dox-wrap">) const -&gt; shared_ptr&lt; spdlog::logger &gt; const &amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a063e3a1f48f492a1911d6ad922346904">
+              <span class="m-dox-wrap-bumper">auto <a href="#a063e3a1f48f492a1911d6ad922346904" class="m-dox-self" name="a063e3a1f48f492a1911d6ad922346904">params</a>(</span><span class="m-dox-wrap">) const -&gt; Params const &amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="acf3f1e85acb8dbca172e5d26ed23bdd8">
+              <span class="m-dox-wrap-bumper">auto <a href="#acf3f1e85acb8dbca172e5d26ed23bdd8" class="m-dox-self" name="acf3f1e85acb8dbca172e5d26ed23bdd8">operator*</a>(</span><span class="m-dox-wrap">) -&gt; shared_ptr&lt; spdlog::logger &gt; &amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a16f86319c1578fe4d1326fc9f0a3a126">
+              <span class="m-dox-wrap-bumper">auto <a href="#a16f86319c1578fe4d1326fc9f0a3a126" class="m-dox-self" name="a16f86319c1578fe4d1326fc9f0a3a126">operator*</a>(</span><span class="m-dox-wrap">) const -&gt; shared_ptr&lt; spdlog::logger &gt; const &amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ad32244a11d5b2c16d92c0c8f8bfc58ef">
+              <span class="m-dox-wrap-bumper">auto <a href="#ad32244a11d5b2c16d92c0c8f8bfc58ef" class="m-dox-self" name="ad32244a11d5b2c16d92c0c8f8bfc58ef">operator-&gt;</a>(</span><span class="m-dox-wrap">) -&gt; shared_ptr&lt; spdlog::logger &gt; &amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a1b87b4e87a7b0275f594194a3918c53f">
+              <span class="m-dox-wrap-bumper">auto <a href="#a1b87b4e87a7b0275f594194a3918c53f" class="m-dox-self" name="a1b87b4e87a7b0275f594194a3918c53f">operator-&gt;</a>(</span><span class="m-dox-wrap">) const -&gt; shared_ptr&lt; spdlog::logger &gt; const &amp;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a9733dac36095cf1478b14c33ac85f36e">
+              <span class="m-dox-wrap-bumper">auto <a href="#a9733dac36095cf1478b14c33ac85f36e" class="m-dox-self" name="a9733dac36095cf1478b14c33ac85f36e">level</a>(</span><span class="m-dox-wrap">) const -&gt; llog::level::level_enum</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a061e7a0789903958c24c81578f27b521">
+              <span class="m-dox-wrap-bumper">auto <a href="#a061e7a0789903958c24c81578f27b521" class="m-dox-self" name="a061e7a0789903958c24c81578f27b521">set_level</a>(</span><span class="m-dox-wrap">llog::level::level_enum level) -&gt; void</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>QuaSAR handbook is part of the <a href="https://github.com/Nikitamuraviev10/quasar">QuaSAR project</a><br />Generated by <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>
