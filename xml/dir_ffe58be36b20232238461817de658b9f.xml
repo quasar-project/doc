@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_ffe58be36b20232238461817de658b9f" kind="dir">
+    <compoundname>logging</compoundname>
+    <innerfile refid="ansi__iomanip_8h">ansi_iomanip.h</innerfile>
+    <innerfile refid="progress__bar_8h">progress_bar.h</innerfile>
+    <innerfile refid="scoped__timer_8h">scoped_timer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/logging/"/>
+  </compounddef>
+</doxygen>

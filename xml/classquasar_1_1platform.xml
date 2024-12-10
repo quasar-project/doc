@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1platform" kind="class" language="C++" prot="public">
+    <compoundname>quasar::platform</compoundname>
+    <includes refid="platform_8h" local="no">/home/runner/work/quasar/quasar/src/private/platform.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classquasar_1_1platform_1a2d604dd25620d1a785a91a3725a59c32" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>constexpr auto</type>
+        <definition>static constexpr auto swap_endian</definition>
+        <argsstring>(T u) noexcept -&gt; T</argsstring>
+        <name>swap_endian</name>
+        <param>
+          <type>T</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/platform.h" line="12" column="28" bodyfile="private/platform.h" bodystart="12" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/platform.h" line="9" column="17" bodyfile="private/platform.h" bodystart="9" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1platform_1a2d604dd25620d1a785a91a3725a59c32" prot="public" virt="non-virtual"><scope>quasar::platform</scope><name>swap_endian</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structquasar_1_1utils_1_1hw__info_1_1mem_1_1MemInfo" kind="struct" language="C++" prot="public">
+    <compoundname>quasar::utils::hw_info::mem::MemInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structquasar_1_1utils_1_1hw__info_1_1mem_1_1MemInfo_1ada2222472616048c35fdf2060807b532" prot="public" static="no" mutable="no">
+        <type>i64</type>
+        <definition>i64 total</definition>
+        <argsstring></argsstring>
+        <name>total</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="179" column="11" bodyfile="hw_info.cc" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1utils_1_1hw__info_1_1mem_1_1MemInfo_1a97f9a5f8209395383167ed90c8f64894" prot="public" static="no" mutable="no">
+        <type>i64</type>
+        <definition>i64 free</definition>
+        <argsstring></argsstring>
+        <name>free</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="180" column="11" bodyfile="hw_info.cc" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1utils_1_1hw__info_1_1mem_1_1MemInfo_1ac544e41ce7cfd7dbbf1c4208ff0a954e" prot="public" static="no" mutable="no">
+        <type>i64</type>
+        <definition>i64 available</definition>
+        <argsstring></argsstring>
+        <name>available</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="181" column="11" bodyfile="hw_info.cc" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MemInfo</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>available</edgelabel>
+          <edgelabel>free</edgelabel>
+          <edgelabel>total</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>i64</label>
+      </node>
+    </collaborationgraph>
+    <location file="hw_info.cc" line="178" column="18" bodyfile="hw_info.cc" bodystart="178" bodyend="182"/>
+    <listofallmembers>
+      <member refid="structquasar_1_1utils_1_1hw__info_1_1mem_1_1MemInfo_1ac544e41ce7cfd7dbbf1c4208ff0a954e" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::mem::MemInfo</scope><name>available</name></member>
+      <member refid="structquasar_1_1utils_1_1hw__info_1_1mem_1_1MemInfo_1a97f9a5f8209395383167ed90c8f64894" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::mem::MemInfo</scope><name>free</name></member>
+      <member refid="structquasar_1_1utils_1_1hw__info_1_1mem_1_1MemInfo_1ada2222472616048c35fdf2060807b532" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::mem::MemInfo</scope><name>total</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

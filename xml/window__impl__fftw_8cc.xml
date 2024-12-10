@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="window__impl__fftw_8cc" kind="file" language="C++">
+    <compoundname>window_impl_fftw.cc</compoundname>
+    <includes refid="window__impl__fftw_8hh" local="no">private/window/window_impl_fftw.hh</includes>
+    <includes local="no">taskflow/taskflow.hpp</includes>
+    <includes local="no">taskflow/algorithm/for_each.hpp</includes>
+    <includes local="no">rolly/math.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>window_impl_fftw.cc</label>
+        <link refid="window__impl__fftw_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>private/window/window_impl_fftw.hh</label>
+        <link refid="window__impl__fftw_8hh"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>taskflow/algorithm/for_each.hpp</label>
+      </node>
+      <node id="7">
+        <label>rolly/math.h</label>
+      </node>
+      <node id="5">
+        <label>taskflow/taskflow.hpp</label>
+      </node>
+      <node id="3">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="4">
+        <label>quasar/api/span.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1dsp">quasar::dsp</innernamespace>
+    <innernamespace refid="namespacequasar_1_1dsp_1_1impl">quasar::dsp::impl</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacequasar_1_1dsp_1_1impl_1aa840ffd9cedd236989287a05c30038ab" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto two_pi</definition>
+        <argsstring></argsstring>
+        <name>two_pi</name>
+        <initializer>= 2.f * numbers::pi</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="8" column="25" bodyfile="private/window/window_impl_fftw.cc" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1dsp_1_1impl_1a2b2f4d39fb2af010c30ce31feb98caa7" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto four_pi</definition>
+        <argsstring></argsstring>
+        <name>four_pi</name>
+        <initializer>= 4.f * numbers::pi</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="9" column="25" bodyfile="private/window/window_impl_fftw.cc" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1dsp_1_1impl_1a065bc7e7488dce1eaf9e6951aaf30ed5" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto six_pi</definition>
+        <argsstring></argsstring>
+        <name>six_pi</name>
+        <initializer>= 6.f * numbers::pi</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="10" column="25" bodyfile="private/window/window_impl_fftw.cc" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacequasar_1_1dsp_1_1impl_1abdc4b9d4c110a0d4ebe67aa493f49168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto hamming_ram</definition>
+        <argsstring>(f32 *out, usize size) -&gt; void</argsstring>
+        <name>hamming_ram</name>
+        <param>
+          <type>f32 *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="12" column="8" bodyfile="private/window/window_impl_fftw.cc" bodystart="12" bodyend="21" declfile="private/window/window_impl_fftw.hh" declline="9" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1dsp_1_1impl_1a416dcf2e8689d62747f70cc1986d5939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto blackman_ram</definition>
+        <argsstring>(f32 *out, usize size) -&gt; void</argsstring>
+        <name>blackman_ram</name>
+        <param>
+          <type>f32 *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="23" column="8" bodyfile="private/window/window_impl_fftw.cc" bodystart="23" bodyend="36" declfile="private/window/window_impl_fftw.hh" declline="10" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1dsp_1_1impl_1ad84fa355f8792d4dadab38421c304d63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto nuttall_ram</definition>
+        <argsstring>(f32 *out, usize size) -&gt; void</argsstring>
+        <name>nuttall_ram</name>
+        <param>
+          <type>f32 *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="38" column="8" bodyfile="private/window/window_impl_fftw.cc" bodystart="38" bodyend="53" declfile="private/window/window_impl_fftw.hh" declline="11" declcolumn="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/window/window_impl_fftw.cc"/>
+  </compounddef>
+</doxygen>

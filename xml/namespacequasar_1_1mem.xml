@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacequasar_1_1mem" kind="namespace" language="C++">
+    <compoundname>quasar::mem</compoundname>
+    <innerclass refid="classquasar_1_1mem_1_1copy" prot="public">quasar::mem::copy</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/memcpy.h" line="15" column="21"/>
+  </compounddef>
+</doxygen>

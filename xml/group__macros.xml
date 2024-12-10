@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="group__macros" kind="group">
+    <compoundname>macros</compoundname>
+    <title>Macros</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__macros_1ga6e11a89bbdb2eb0d95b0780607e0a370" prot="public" static="no">
+        <name>QUASAR_NVCC_RUN</name>
+        <briefdescription>
+<para>Этот макрос определен при выполнении компиляции CUDA кода. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/cuda_qualifiers.h" line="17" column="11"/>
+      </memberdef>
+      <memberdef kind="define" id="group__macros_1ga10818ca7b8de84a019cb213af68fef83" prot="public" static="no">
+        <name>__cmath_namespace</name>
+        <briefdescription>
+<para>Раскрывается в пространство имен <computeroutput>std::</computeroutput> при выполнении компиляции обычного кода, или в пустое пространство при компиляции CUDA кода. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/cuda_qualifiers.h" line="21" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

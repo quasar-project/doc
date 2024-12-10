@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>quasar::dsp::CDSP_FFTW class | QuaSAR SAR image processing library</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <span id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">
+        <a href="http://quasar-project.github.io/doc"><img src="logo.png" alt="" />QuaSAR</a> <span class="m-breadcrumb">|</span> <a href="index.html" class="m-thin">SAR image processing library</a>
+      </span>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Handbook</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="4">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacequasar.html">quasar</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacequasar_1_1dsp.html">dsp</a>::<wbr/></span>CDSP_FFTW <span class="m-thin">class</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="dsp__fftw_8h.html">&lt;quasar/dsp/dsp_fftw.h&gt;</a></div>
+        </h1>
+        <p><span></span></p>
+        <nav class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#base-classes">Base classes</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <section id="base-classes">
+          <h2><a href="#base-classes">Base classes</a></h2>
+          <dl class="m-doc">
+            <dt>
+              class <a href="classquasar_1_1dsp_1_1IDSP.html" class="m-doc">IDSP</a>
+            </dt>
+            <dd>Виртуальный класс, предоставляющий функции системы ЦОС.</dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt id="addc3181b9e53f26636ad0d3cafddd970">
+              <span class="m-dox-wrap-bumper"><a href="#addc3181b9e53f26636ad0d3cafddd970" class="m-dox-self" name="addc3181b9e53f26636ad0d3cafddd970">CDSP_FFTW</a>(</span><span class="m-dox-wrap">)</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aa6498892bcd25c3219770d0243c48d96">
+              <span class="m-dox-wrap-bumper"><a href="#aa6498892bcd25c3219770d0243c48d96" class="m-dox-self" name="aa6498892bcd25c3219770d0243c48d96">~CDSP_FFTW</a>(</span><span class="m-dox-wrap">) <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt id="ac6686af819ea47989f5b075552007338">
+              <span class="m-dox-wrap-bumper">auto <a href="#ac6686af819ea47989f5b075552007338" class="m-dox-self" name="ac6686af819ea47989f5b075552007338">print_description</a>(</span><span class="m-dox-wrap"><a href="http://en.cppreference.com/w/cpp/io/c.html" class="m-doc-external">std::<wbr />FILE</a>* out) const noexcept -&gt; void <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a7435f470bc3589f9b9a8cba2726a7981">
+              <span class="m-dox-wrap-bumper">auto <a href="#a7435f470bc3589f9b9a8cba2726a7981" class="m-dox-self" name="a7435f470bc3589f9b9a8cba2726a7981">type</a>(</span><span class="m-dox-wrap">) const noexcept -&gt; DSP <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aa3621835a52e0d2f43c7aa068912056a">
+              <span class="m-dox-wrap-bumper">auto <a href="#aa3621835a52e0d2f43c7aa068912056a" class="m-dox-self" name="aa3621835a52e0d2f43c7aa068912056a">removeDC</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* pImageData,
+              int W,
+              int W0,
+              int H) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ad27b533ed14b669d7151ac24776a2dcd">
+              <span class="m-dox-wrap-bumper">auto <a href="#ad27b533ed14b669d7151ac24776a2dcd" class="m-dox-self" name="ad27b533ed14b669d7151ac24776a2dcd">mean</a>(</span><span class="m-dox-wrap">f32* pImageData,
+              int N) -&gt; float <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a39261e14f7f212d9b3f10a0b8ffd37a1">
+              <span class="m-dox-wrap-bumper">auto <a href="#a39261e14f7f212d9b3f10a0b8ffd37a1" class="m-dox-self" name="a39261e14f7f212d9b3f10a0b8ffd37a1">fft</a>(</span><span class="m-dox-wrap">f32* data,
+              i32 n,
+              i32 m) -&gt; void <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a9b80a9ae8906396312a56a6b42a42057">
+              <span class="m-dox-wrap-bumper">auto <a href="#a9b80a9ae8906396312a56a6b42a42057" class="m-dox-self" name="a9b80a9ae8906396312a56a6b42a42057">fft</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* pImageData,
+              int N,
+              int M) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a12196617a67ddb82e479665fb7871668">
+              <span class="m-dox-wrap-bumper">auto <a href="#a12196617a67ddb82e479665fb7871668" class="m-dox-self" name="a12196617a67ddb82e479665fb7871668">ifft</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* pImageData,
+              int N,
+              int M) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a2d39f516775bcde83927d3992fb3b763">
+              <span class="m-dox-wrap-bumper">auto <a href="#a2d39f516775bcde83927d3992fb3b763" class="m-dox-self" name="a2d39f516775bcde83927d3992fb3b763">hamming</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* pImageData,
+              int W,
+              int H,
+              int W0,
+              int H0) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a66bc1bbe73461707cdbc24487b7b3b7a">
+              <span class="m-dox-wrap-bumper">auto <a href="#a66bc1bbe73461707cdbc24487b7b3b7a" class="m-dox-self" name="a66bc1bbe73461707cdbc24487b7b3b7a">hamming</a>(</span><span class="m-dox-wrap">float* pImageData,
+              int W,
+              int H,
+              int W0,
+              int H0) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a7b9c188c616c6be936798b9ef3b38fe8">
+              <span class="m-dox-wrap-bumper">auto <a href="#a7b9c188c616c6be936798b9ef3b38fe8" class="m-dox-self" name="a7b9c188c616c6be936798b9ef3b38fe8">fftshift</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* pImageData,
+              int N,
+              int M) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="afc64daff20f7e372605efaa599cb2ce0">
+              <span class="m-dox-wrap-bumper">auto <a href="#afc64daff20f7e372605efaa599cb2ce0" class="m-dox-self" name="afc64daff20f7e372605efaa599cb2ce0">transpose</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* pImageData,
+              int N,
+              int M) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aaab78c6fa910562834b80c0abf843f43">
+              <span class="m-dox-wrap-bumper">auto <a href="#aaab78c6fa910562834b80c0abf843f43" class="m-dox-self" name="aaab78c6fa910562834b80c0abf843f43">transpose</a>(</span><span class="m-dox-wrap">f32* pImageData,
+              int N,
+              int M) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a150c8171b8778a0b060fbeaa49671156">
+              <span class="m-dox-wrap-bumper">auto <a href="#a150c8171b8778a0b060fbeaa49671156" class="m-dox-self" name="a150c8171b8778a0b060fbeaa49671156">rmc</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* pData,
+              int w,
+              int h,
+              int hb,
+              float lambda,
+              float tp,
+              float v) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a56860558a27e9c42a1f18119b56eea26">
+              <span class="m-dox-wrap-bumper">auto <a href="#a56860558a27e9c42a1f18119b56eea26" class="m-dox-self" name="a56860558a27e9c42a1f18119b56eea26">phocus</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* pData,
+              int W,
+              int H,
+              int Hmax,
+              float Rb,
+              float Tp,
+              float lambda,
+              float V,
+              float Rmax,
+              int Np) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="abbffa12175b8789ab3b368c426416adf">
+              <span class="m-dox-wrap-bumper">auto <a href="#abbffa12175b8789ab3b368c426416adf" class="m-dox-self" name="abbffa12175b8789ab3b368c426416adf">entropy</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* pData,
+              int W,
+              int H) -&gt; float <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a800b9b9a05d3677b4437c08fdad11d91">
+              <span class="m-dox-wrap-bumper">auto <a href="#a800b9b9a05d3677b4437c08fdad11d91" class="m-dox-self" name="a800b9b9a05d3677b4437c08fdad11d91">entropyf</a>(</span><span class="m-dox-wrap">f32* pData,
+              int W,
+              int H) -&gt; float <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="acf3ca71732a0bad212bba2dc035c9d41">
+              <span class="m-dox-wrap-bumper">auto <a href="#acf3ca71732a0bad212bba2dc035c9d41" class="m-dox-self" name="acf3ca71732a0bad212bba2dc035c9d41">complexMul</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* SrcDst1,
+              <a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* Src2,
+              int len) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="afdabbc94870db1b86bf5bdf6950686e2">
+              <span class="m-dox-wrap-bumper">auto <a href="#afdabbc94870db1b86bf5bdf6950686e2" class="m-dox-self" name="afdabbc94870db1b86bf5bdf6950686e2">complexMul</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* SrcDst1,
+              float* Src2,
+              int len) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aee9234212d72c68a17df0b5bdd8c1174">
+              <span class="m-dox-wrap-bumper">auto <a href="#aee9234212d72c68a17df0b5bdd8c1174" class="m-dox-self" name="aee9234212d72c68a17df0b5bdd8c1174">complexSum</a>(</span><span class="m-dox-wrap"><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* Src,
+              <a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* Dst,
+              int len) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a8bc9330f4eef3f3a159545c362202b28">
+              <span class="m-dox-wrap-bumper">auto <a href="#a8bc9330f4eef3f3a159545c362202b28" class="m-dox-self" name="a8bc9330f4eef3f3a159545c362202b28">window_weighting</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a>&amp; image,
+              <a href="classquasar_1_1dsp_1_1Window.html" class="m-doc">Window</a> const&amp; window) const -&gt; void <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ac55376f2fb0ec87f546d595280eb3889">
+              <span class="m-dox-wrap-bumper">auto <a href="#ac55376f2fb0ec87f546d595280eb3889" class="m-dox-self" name="ac55376f2fb0ec87f546d595280eb3889">bp</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a>* image,
+              <a href="classquasar_1_1IAbstractRadar.html" class="m-doc">IAbstractRadar</a>* radar,
+              f32* outdata,
+              f32* wnd,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; velocity,
+              f32 x0,
+              f32 y0,
+              f32 dx,
+              f32 dy,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; elevation,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; diffx,
+              int nx,
+              int ny,
+              bool bCorr,
+              f32 angle,
+              f32 div,
+              <a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* pc) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aadae3399f5d70040eb2fee5bb2740b6e">
+              <span class="m-dox-wrap-bumper">auto <a href="#aadae3399f5d70040eb2fee5bb2740b6e" class="m-dox-self" name="aadae3399f5d70040eb2fee5bb2740b6e">bp_strip</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a>* in,
+              <a href="classquasar_1_1CImage.html" class="m-doc">CImage</a>* out,
+              <a href="classquasar_1_1IAbstractRadar.html" class="m-doc">IAbstractRadar</a>* radar,
+              f32* window,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; velocity,
+              f32 x0,
+              f32 dx,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; elevation,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; diffx,
+              int nx,
+              int line,
+              bool bCorr,
+              <a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a>* pc,
+              f32 angle) -&gt; int <span class="m-label m-flat m-warning">override</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="classquasar_1_1dsp_1_1IDSP.html#a8c47478afb9b5269736bcf7c57e02539" class="m-dox">hamming</a>(</span><span class="m-dox-wrap">f32* pImageData,
+              int W,
+              int H,
+              int W0,
+              int H0) -&gt; int <span class="m-label m-flat m-warning">pure virtual</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="classquasar_1_1dsp_1_1IDSP.html#a66b013ed2c44160935adaf60c64a6c88" class="m-dox">fft</a>(</span><span class="m-dox-wrap">f32* data,
+              int n,
+              int m) -&gt; void <span class="m-label m-flat m-warning">pure virtual</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="classquasar_1_1dsp_1_1IDSP.html#ac232ee1b9e8b7321cb0d8e366562ddfd" class="m-dox">range_compress</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a>&amp; image) -&gt; void <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a8c47478afb9b5269736bcf7c57e02539"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">int quasar::<wbr />dsp::<wbr />CDSP_FFTW::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8c47478afb9b5269736bcf7c57e02539" class="m-doc-self">hamming</a>(</span><span class="m-doc-wrap">f32* pImageData,
+              int W,
+              int H,
+              int W0,
+              int H0) <span class="m-label m-warning">pure virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="abstract__dsp_8h.html">&lt;quasar/dsp/abstract_dsp.h&gt;</a></div>
+            </h3>
+            <p><span></span></p>
+          </div></section>
+          <section class="m-doc-details" id="a66b013ed2c44160935adaf60c64a6c88"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />dsp::<wbr />CDSP_FFTW::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a66b013ed2c44160935adaf60c64a6c88" class="m-doc-self">fft</a>(</span><span class="m-doc-wrap">f32* data,
+              int n,
+              int m) -&gt; void <span class="m-label m-warning">pure virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="abstract__dsp_8h.html">&lt;quasar/dsp/abstract_dsp.h&gt;</a></div>
+            </h3>
+            <p><span></span></p>
+          </div></section>
+          <section class="m-doc-details" id="ac232ee1b9e8b7321cb0d8e366562ddfd"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />dsp::<wbr />CDSP_FFTW::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac232ee1b9e8b7321cb0d8e366562ddfd" class="m-doc-self">range_compress</a>(</span><span class="m-doc-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a>&amp; image) -&gt; void <span class="m-label m-warning">virtual</span></span></span>
+              <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="abstract__dsp_8h.html">&lt;quasar/dsp/abstract_dsp.h&gt;</a></div>
+            </h3>
+            <p><span></span></p>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>QuaSAR handbook is part of the <a href="https://github.com/Nikitamuraviev10/quasar">QuaSAR project</a><br />Generated by <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

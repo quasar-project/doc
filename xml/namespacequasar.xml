@@ -1,0 +1,810 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacequasar" kind="namespace" language="C++">
+    <compoundname>quasar</compoundname>
+    <innerclass refid="classquasar_1_1CBackProjection" prot="public">quasar::CBackProjection</innerclass>
+    <innerclass refid="classquasar_1_1CImage" prot="public">quasar::CImage</innerclass>
+    <innerclass refid="classquasar_1_1CImageDataHolderCUDA" prot="public">quasar::CImageDataHolderCUDA</innerclass>
+    <innerclass refid="classquasar_1_1CImageDataHolderRAM" prot="public">quasar::CImageDataHolderRAM</innerclass>
+    <innerclass refid="classquasar_1_1CNav" prot="public">quasar::CNav</innerclass>
+    <innerclass refid="classquasar_1_1CNavGPX" prot="public">quasar::CNavGPX</innerclass>
+    <innerclass refid="structquasar_1_1CRadarConfiguration" prot="public">quasar::CRadarConfiguration</innerclass>
+    <innerclass refid="classquasar_1_1CRadarSTT" prot="public">quasar::CRadarSTT</innerclass>
+    <innerclass refid="classquasar_1_1Dim3" prot="public">quasar::Dim3</innerclass>
+    <innerclass refid="classquasar_1_1Elevation" prot="public">quasar::Elevation</innerclass>
+    <innerclass refid="classquasar_1_1IAbstractRadar" prot="public">quasar::IAbstractRadar</innerclass>
+    <innerclass refid="classquasar_1_1IImageDataHolder" prot="public">quasar::IImageDataHolder</innerclass>
+    <innerclass refid="structquasar_1_1initializer" prot="public">quasar::initializer</innerclass>
+    <innerclass refid="classquasar_1_1ParameterBase" prot="public">quasar::ParameterBase</innerclass>
+    <innerclass refid="classquasar_1_1platform" prot="public">quasar::platform</innerclass>
+    <innerclass refid="classquasar_1_1SAR" prot="public">quasar::SAR</innerclass>
+    <innerclass refid="classquasar_1_1Velocity" prot="public">quasar::Velocity</innerclass>
+    <innernamespace refid="namespacequasar_1_1detail">quasar::detail</innernamespace>
+    <innernamespace refid="namespacequasar_1_1dsp">quasar::dsp</innernamespace>
+    <innernamespace refid="namespacequasar_1_1logging">quasar::logging</innernamespace>
+    <innernamespace refid="namespacequasar_1_1math">quasar::math</innernamespace>
+    <innernamespace refid="namespacequasar_1_1mem">quasar::mem</innernamespace>
+    <innernamespace refid="namespacequasar_1_1numbers">quasar::numbers</innernamespace>
+    <innernamespace refid="namespacequasar_1_1pybind">quasar::pybind</innernamespace>
+    <innernamespace refid="namespacequasar_1_1ranges">quasar::ranges</innernamespace>
+    <innernamespace refid="namespacequasar_1_1traits">quasar::traits</innernamespace>
+    <innernamespace refid="namespacequasar_1_1utils">quasar::utils</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacequasar_1a34f5171a846ea990327c2fee1e12aad0" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classquasar_1_1CNavGPX" kindref="compound">quasar::CNavGPX</ref></type>
+        <definition>quasar::IAbstractRadar __attribute__</definition>
+        <argsstring></argsstring>
+        <name>__attribute__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="101" column="3"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1a3e6c1da51b5917b58cd6b68379af5f08" prot="public" static="no" mutable="no">
+        <type>sig_atomic_t volatile</type>
+        <definition>sig_atomic_t volatile flag</definition>
+        <argsstring></argsstring>
+        <name>flag</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sar.cc" line="352" column="25" bodyfile="sar.cc" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacequasar_1a35a460d5d3de100610781f828a0555b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto quasar::panic</definition>
+        <argsstring>(std::string_view message, source_location location=source_location::current()) -&gt; void</argsstring>
+        <name>panic</name>
+        <param>
+          <type>std::string_view</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>source_location</type>
+          <declname>location</declname>
+          <defval>source_location::current()</defval>
+        </param>
+        <briefdescription>
+<para>Terminates program execution with detailed error message. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Logs the error message and terminates program execution via <computeroutput><ref refid="cpp/error/terminate" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::terminate</ref></computeroutput> <simplesect kind="note"><para>You can catch the panic via <computeroutput><ref refid="cpp/error/set_terminate" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::set_terminate</ref></computeroutput> custom handler, but it&apos;s not recommended. </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://en.cppreference.com/w/cpp/error/terminate">https://en.cppreference.com/w/cpp/error/terminate</ulink> </para>
+</simplesect>
+<simplesect kind="see"><para><ulink url="https://en.cppreference.com/w/cpp/error/terminate_handler@param">https://en.cppreference.com/w/cpp/error/terminate_handler@param</ulink> message Error message.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source location of the panic. Defaults to current location. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/corefn.h" line="34" column="5" bodyfile="quasar/base/corefn.h" bodystart="34" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a2fc107e6b8a9a85d3cabc5dedae578d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::make_data_holder</definition>
+        <argsstring>(enum DSP type, Args &amp;&amp;... args) -&gt; std::unique_ptr&lt; IImageDataHolder &gt;</argsstring>
+        <name>make_data_holder</name>
+        <param>
+          <type>enum DSP</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder.hh" line="13" column="9" bodyfile="quasar/image/data_holder.hh" bodystart="13" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1af322afd7c44b74019328919471d28a3a" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>constexpr auto</type>
+        <definition>constexpr auto quasar::as_c_str</definition>
+        <argsstring>(IAbstractRadar::SampleSize const &amp;type) -&gt; char const *</argsstring>
+        <name>as_c_str</name>
+        <param>
+          <type><ref refid="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6" kindref="member">IAbstractRadar::SampleSize</ref> const &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Реализация интерфейса <computeroutput><ref refid="namespacequasar_1af322afd7c44b74019328919471d28a3a" kindref="member">quasar::as_c_str</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="327" column="19" bodyfile="quasar/radar/abstract_radar.h" bodystart="327" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a110463344e3c9d63392ee49e941be3b7" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>constexpr auto</type>
+        <definition>constexpr auto quasar::as_c_str</definition>
+        <argsstring>(IAbstractRadar::Ramp const &amp;type) -&gt; char const *</argsstring>
+        <name>as_c_str</name>
+        <param>
+          <type><ref refid="classquasar_1_1IAbstractRadar_1ad24111e9445bd94b798ec7f942df7164" kindref="member">IAbstractRadar::Ramp</ref> const &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Реализация интерфейса <computeroutput><ref refid="namespacequasar_1af322afd7c44b74019328919471d28a3a" kindref="member">quasar::as_c_str</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="342" column="19" bodyfile="quasar/radar/abstract_radar.h" bodystart="342" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1afd2347a8d8fe6f872890adcf340328c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::to_string</definition>
+        <argsstring>(IAbstractRadar::SampleSize const &amp;type) -&gt; std::string</argsstring>
+        <name>to_string</name>
+        <param>
+          <type><ref refid="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6" kindref="member">IAbstractRadar::SampleSize</ref> const &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Реализация интерфейса <computeroutput><ref refid="namespacequasar_1afd2347a8d8fe6f872890adcf340328c5" kindref="member">quasar::to_string</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="354" column="16" bodyfile="quasar/radar/abstract_radar.h" bodystart="354" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1af821c9173e2d22df94d2da05f960aea8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::to_string</definition>
+        <argsstring>(IAbstractRadar::Ramp const &amp;type) -&gt; std::string</argsstring>
+        <name>to_string</name>
+        <param>
+          <type><ref refid="classquasar_1_1IAbstractRadar_1ad24111e9445bd94b798ec7f942df7164" kindref="member">IAbstractRadar::Ramp</ref> const &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Реализация интерфейса <computeroutput><ref refid="namespacequasar_1afd2347a8d8fe6f872890adcf340328c5" kindref="member">quasar::to_string</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="361" column="16" bodyfile="quasar/radar/abstract_radar.h" bodystart="361" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a9d57cb7312636486232fc73d57c18ffb" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>constexpr auto</type>
+        <definition>constexpr auto quasar::as_str</definition>
+        <argsstring>(IAbstractRadar::SampleSize const &amp;type) -&gt; std::string_view</argsstring>
+        <name>as_str</name>
+        <param>
+          <type><ref refid="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6" kindref="member">IAbstractRadar::SampleSize</ref> const &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Реализация интерфейса <computeroutput><ref refid="namespacequasar_1a9d57cb7312636486232fc73d57c18ffb" kindref="member">quasar::as_str</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="368" column="19" bodyfile="quasar/radar/abstract_radar.h" bodystart="368" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a0c745cbd3a72b9ad0c89df48e37e61c0" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>constexpr auto</type>
+        <definition>constexpr auto quasar::as_str</definition>
+        <argsstring>(IAbstractRadar::Ramp const &amp;type) -&gt; std::string_view</argsstring>
+        <name>as_str</name>
+        <param>
+          <type><ref refid="classquasar_1_1IAbstractRadar_1ad24111e9445bd94b798ec7f942df7164" kindref="member">IAbstractRadar::Ramp</ref> const &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Реализация интерфейса <computeroutput><ref refid="namespacequasar_1a9d57cb7312636486232fc73d57c18ffb" kindref="member">quasar::as_str</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="375" column="19" bodyfile="quasar/radar/abstract_radar.h" bodystart="375" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a428ce08ce4b7c1349cde6774fa563aaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; quasar::linspace</definition>
+        <argsstring>(T start_in, T end_in, int num_in)</argsstring>
+        <name>linspace</name>
+        <param>
+          <type>T</type>
+          <declname>start_in</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>end_in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="backprojection.cc" line="21" column="15" bodyfile="backprojection.cc" bodystart="21" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a257be1461c0b0a26600746bc3deae7c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ForwardIterator</type>
+          </param>
+        </templateparamlist>
+        <type>ForwardIterator</type>
+        <definition>ForwardIterator quasar::min_element</definition>
+        <argsstring>(ForwardIterator first, ForwardIterator last)</argsstring>
+        <name>min_element</name>
+        <param>
+          <type>ForwardIterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>ForwardIterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="backprojection.cc" line="44" column="19" bodyfile="backprojection.cc" bodystart="44" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a9e5afe4b7138409e925593ea1d2650c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void quasar::unwrap</definition>
+        <argsstring>(float *out, float *in, int len)</argsstring>
+        <name>unwrap</name>
+        <param>
+          <type>float *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="backprojection.cc" line="131" column="8" bodyfile="backprojection.cc" bodystart="131" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a855aece05f0007dfc38966ed3dbf083c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void quasar::complexAngle</definition>
+        <argsstring>(float *out, math::Complex *in, int len)</argsstring>
+        <name>complexAngle</name>
+        <param>
+          <type>float *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="backprojection.cc" line="140" column="8" bodyfile="backprojection.cc" bodystart="140" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a39676a844c3cdb7eea257813fca1677c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>template auto</type>
+        <definition>template auto quasar::CImage::to_vec&lt; math::Complex &gt;</definition>
+        <argsstring>() const -&gt; std::vector&lt; math::Complex &gt;</argsstring>
+        <name>CImage::to_vec&lt; math::Complex &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image.cc" line="867" column="12" declfile="image.cc" declline="867" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1ad4e012550af85a3cbdee71d8a4962f63" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>template auto</type>
+        <definition>template auto quasar::CImage::to_vec&lt; math::Complex &gt;</definition>
+        <argsstring>(usize, usize) const -&gt; std::vector&lt; math::Complex &gt;</argsstring>
+        <name>CImage::to_vec&lt; math::Complex &gt;</name>
+        <param>
+          <type>usize</type>
+        </param>
+        <param>
+          <type>usize</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image.cc" line="873" column="12" declfile="image.cc" declline="873" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a04a2bbcbc62d4056ee1f544f2b950aca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>template auto</type>
+        <definition>template auto quasar::CImage::to_vec_impl&lt; math::Complex &gt;</definition>
+        <argsstring>() const -&gt; std::vector&lt; math::Complex &gt;</argsstring>
+        <name>CImage::to_vec_impl&lt; math::Complex &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image.cc" line="879" column="12" declfile="image.cc" declline="879" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a13e65aa3b0a3c4ecf6bb558c4d6132ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>template auto</type>
+        <definition>template auto quasar::CImage::to_vec_impl&lt; math::Complex &gt;</definition>
+        <argsstring>(usize, usize) const -&gt; std::vector&lt; math::Complex &gt;</argsstring>
+        <name>CImage::to_vec_impl&lt; math::Complex &gt;</name>
+        <param>
+          <type>usize</type>
+        </param>
+        <param>
+          <type>usize</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image.cc" line="885" column="12" declfile="image.cc" declline="885" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a1e73d1a6422c835df77df5129a52c51e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>template auto</type>
+        <definition>template auto quasar::CImage::to_vec_impl_cuda&lt; math::Complex &gt;</definition>
+        <argsstring>() const -&gt; std::vector&lt; math::Complex &gt;</argsstring>
+        <name>CImage::to_vec_impl_cuda&lt; math::Complex &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image.cc" line="892" column="12" declfile="image.cc" declline="892" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a1614aa28d8c4b194e165efd06d7bad39" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>template auto</type>
+        <definition>template auto quasar::CImage::to_vec_impl_cuda&lt; math::Complex &gt;</definition>
+        <argsstring>(usize, usize) const -&gt; std::vector&lt; math::Complex &gt;</argsstring>
+        <name>CImage::to_vec_impl_cuda&lt; math::Complex &gt;</name>
+        <param>
+          <type>usize</type>
+        </param>
+        <param>
+          <type>usize</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="image.cc" line="898" column="12" declfile="image.cc" declline="898" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a7ce77ea849708ff5efde3205bb9333ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ForwardIterator</type>
+          </param>
+        </templateparamlist>
+        <type>ForwardIterator</type>
+        <definition>ForwardIterator quasar::remove_duplicates</definition>
+        <argsstring>(ForwardIterator first, ForwardIterator last)</argsstring>
+        <name>remove_duplicates</name>
+        <param>
+          <type>ForwardIterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>ForwardIterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="navgpx.cc" line="21" column="19" bodyfile="navgpx.cc" bodystart="21" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a4455c723d4d143dbc8c67b3507af1d5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void quasar::vectorCopy</definition>
+        <argsstring>(T *dst, T const *src)</argsstring>
+        <name>vectorCopy</name>
+        <param>
+          <type>T *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>T const *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="navgpx.cc" line="34" column="8" bodyfile="navgpx.cc" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1ad7aef167e970105b24c5ca9550636110" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename Iter</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void quasar::removeIndicesFromVector</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;v, Iter begin, Iter end)</argsstring>
+        <name>removeIndicesFromVector</name>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>Iter</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>Iter</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="navgpx.cc" line="43" column="8" bodyfile="navgpx.cc" bodystart="43" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1ae1f9128f53481367df0283bd14c7b995" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::string</ref> &gt;</type>
+        <definition>std::vector&lt;std::string&gt; quasar::split_string</definition>
+        <argsstring>(std::string const &amp;s, char delim)</argsstring>
+        <name>split_string</name>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::string</ref> const &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>delim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="navgpx.cc" line="63" column="15" bodyfile="navgpx.cc" bodystart="63" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a91ec2c237ccdc5c6256af781c861aa10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void quasar::my_function</definition>
+        <argsstring>(int sig)</argsstring>
+        <name>my_function</name>
+        <param>
+          <type>int</type>
+          <declname>sig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sar.cc" line="354" column="8" bodyfile="sar.cc" bodystart="354" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a6b209af4e0304e23b3a2f481c1ba67ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int quasar::get_extra_width</definition>
+        <argsstring>(float *data, float r, float step, int width)</argsstring>
+        <name>get_extra_width</name>
+        <param>
+          <type>float *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sar.cc" line="551" column="7" bodyfile="sar.cc" bodystart="551" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a8037c667c81d280053fa5d800a685913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int quasar::findK</definition>
+        <argsstring>(float *data, int *index_list, float *k_list, float r, float step, int width)</argsstring>
+        <name>findK</name>
+        <param>
+          <type>float *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>index_list</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>k_list</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sar.cc" line="568" column="7" bodyfile="sar.cc" bodystart="568" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a845cf607640ff698569ae1a0d377ff64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int quasar::correctY</definition>
+        <argsstring>(int x, int y, float r, float k, float x0, float dmax, int height)</argsstring>
+        <name>correctY</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dmax</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>// Угловая коррекция по допплеровской частоте (RDA) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр <ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">x0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Начальная координата по оси x </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">lx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Дальность изображения</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 - успешное выполнение; -1 - ошибка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sar.cc" line="680" column="14" bodyfile="sar.cc" bodystart="680" bodyend="683"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1ad2b4f24003c76c013c79189853bf4139" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void quasar::smooth</definition>
+        <argsstring>(float *addr_in_t, int m, int n)</argsstring>
+        <name>smooth</name>
+        <param>
+          <type>float *</type>
+          <declname>addr_in_t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sar.cc" line="760" column="8" bodyfile="sar.cc" bodystart="760" bodyend="780"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a571cb79e574b4d96dfb47602adee1004" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int quasar::argmax</definition>
+        <argsstring>(float *arr, int n)</argsstring>
+        <name>argmax</name>
+        <param>
+          <type>float *</type>
+          <declname>arr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sar.cc" line="782" column="7" bodyfile="sar.cc" bodystart="782" bodyend="793"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a4b0f2a1daeeea383ee285c5f51ddf411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float quasar::median_of</definition>
+        <argsstring>(float newVal, float *buffer, int w_size)</argsstring>
+        <name>median_of</name>
+        <param>
+          <type>float</type>
+          <declname>newVal</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sar.cc" line="795" column="9" bodyfile="sar.cc" bodystart="795" bodyend="820"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1a27ad7b2c06d1312ce60390dc2e3ff0e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void quasar::median_filter</definition>
+        <argsstring>(float *arr, int size)</argsstring>
+        <name>median_filter</name>
+        <param>
+          <type>float *</type>
+          <declname>arr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sar.cc" line="822" column="8" bodyfile="sar.cc" bodystart="822" bodyend="835"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Основное пространство имен библиотеки QuaSAR. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/backprojection.h" line="14" column="16"/>
+  </compounddef>
+</doxygen>

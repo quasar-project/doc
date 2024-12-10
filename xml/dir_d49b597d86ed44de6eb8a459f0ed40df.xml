@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_d49b597d86ed44de6eb8a459f0ed40df" kind="dir">
+    <compoundname>private</compoundname>
+    <innerdir refid="dir_062f3e58dfe7f96c78fda580b76a3d64">cuda</innerdir>
+    <innerdir refid="dir_ffe58be36b20232238461817de658b9f">logging</innerdir>
+    <innerdir refid="dir_f10874f496ff26550afe383935d026da">window</innerdir>
+    <innerfile refid="constants_8h">constants.h</innerfile>
+    <innerfile refid="hw__info_8h">hw_info.h</innerfile>
+    <innerfile refid="init_8h">init.h</innerfile>
+    <innerfile refid="math_8h">math.h</innerfile>
+    <innerfile refid="memcpy_8h">memcpy.h</innerfile>
+    <innerfile refid="platform_8h">platform.h</innerfile>
+    <innerfile refid="radar__config_8h">radar_config.h</innerfile>
+    <innerfile refid="ranges_8h">ranges.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/"/>
+  </compounddef>
+</doxygen>
