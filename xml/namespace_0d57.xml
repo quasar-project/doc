@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespace_0d57" kind="namespace" language="C++">
+    <compoundname>@57</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_0d57_1aba9ff695c9c8d59671945d759209840b" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>CardinalDirection</name>
+        <enumvalue id="namespace_0d57_1aba9ff695c9c8d59671945d759209840ba601560b94fbb188919dd1d36c8ab70a4" prot="public">
+          <name>North</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_0d57_1aba9ff695c9c8d59671945d759209840ba7254edb19370d28e3466c971d2f8a03e" prot="public">
+          <name>NorthEast</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_0d57_1aba9ff695c9c8d59671945d759209840baa99dc62d017d04cf67266593f9c3761e" prot="public">
+          <name>East</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_0d57_1aba9ff695c9c8d59671945d759209840ba865a51dff69223f0cf5ad630e5ada190" prot="public">
+          <name>SouthEast</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_0d57_1aba9ff695c9c8d59671945d759209840ba263d7b2cf53802c9ed127b718c0bf9fd" prot="public">
+          <name>South</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_0d57_1aba9ff695c9c8d59671945d759209840bae8eaf797b01fdb4246ed54904368b592" prot="public">
+          <name>SouthWest</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_0d57_1aba9ff695c9c8d59671945d759209840babf495fc048d8d44b7f32536df5cf3930" prot="public">
+          <name>West</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_0d57_1aba9ff695c9c8d59671945d759209840ba142cbe82227bdec147eff3a629dd366b" prot="public">
+          <name>NorthWest</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/types/coordinate.cc" line="10" column="31" bodyfile="private/types/coordinate.cc" bodystart="10" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_0d57_1a473b254f318a6c81aec783cb69f466cf" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>CoordinateFieldType</name>
+        <enumvalue id="namespace_0d57_1a473b254f318a6c81aec783cb69f466cfa3b0eb7469ba9c95f3a05c4cef1f6aac4" prot="public">
+          <name>Latitude</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_0d57_1a473b254f318a6c81aec783cb69f466cfa9b4dabc50f0b8ccba1c8981831abdad8" prot="public">
+          <name>Longitude</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/types/coordinate.cc" line="34" column="33" bodyfile="private/types/coordinate.cc" bodystart="34" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/types/coordinate.cc" line="7" column="11"/>
+  </compounddef>
+</doxygen>

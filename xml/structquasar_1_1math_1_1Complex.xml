@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structquasar_1_1math_1_1Complex" kind="struct" language="C++" prot="public">
+    <compoundname>quasar::math::Complex</compoundname>
+    <includes refid="complex_8h" local="no">quasar/misc/complex.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structquasar_1_1math_1_1Complex_1a9d5859ac8d05495a8b31d92bd7722ec3" prot="public" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 re</definition>
+        <argsstring></argsstring>
+        <name>re</name>
+        <briefdescription>
+<para>Действительная часть комплексного числа. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="14" column="9" bodyfile="quasar/misc/complex.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1math_1_1Complex_1a8d9031ea425e54734af0bbe7460dcec6" prot="public" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 im</definition>
+        <argsstring></argsstring>
+        <name>im</name>
+        <briefdescription>
+<para>Мнимая часть комплексного числа. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="15" column="9" bodyfile="quasar/misc/complex.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1a1254bd665923c4f0c8b40688ac4ccc7a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>__host_or_device__ auto abs</definition>
+        <argsstring>() const -&gt; f32</argsstring>
+        <name>abs</name>
+        <briefdescription>
+<para>Возвращает модуль комплексного числа. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="invariant"><para>Может выполняться как на CPU, так и на вычислителе CUDA (универсальная функция). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="19" column="37" bodyfile="quasar/misc/complex.h" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1a0c6cf94749a05828f8f3331791e3bf11" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator==</definition>
+        <argsstring>(Complex const &amp;other) const -&gt; bool</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="23" column="47" bodyfile="quasar/misc/complex.h" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1ac16a2501a0c3e36185e524595d7fc0e5" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator!=</definition>
+        <argsstring>(Complex const &amp;other) const -&gt; bool</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="28" column="47" bodyfile="quasar/misc/complex.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1a89aa962472d178c922d2c9b8633c7194" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>__host_or_device__ auto operator&lt;</definition>
+        <argsstring>(Complex const &amp;other) const -&gt; bool</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="33" column="32" bodyfile="quasar/misc/complex.h" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1ac1eae64f30d5d6ef02b915b4dc016eb7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>__host_or_device__ auto operator&lt;=</definition>
+        <argsstring>(Complex const &amp;other) const -&gt; bool</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="37" column="32" bodyfile="quasar/misc/complex.h" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1a826e289f22de92c926be036cfa1b28fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>__host_or_device__ auto operator&gt;=</definition>
+        <argsstring>(Complex const &amp;other) const -&gt; bool</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="41" column="37" bodyfile="quasar/misc/complex.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1a640ce749a6815f6f0652542c1af39077" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>__host_or_device__ auto operator&gt;</definition>
+        <argsstring>(Complex const &amp;other) const -&gt; bool</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="45" column="37" bodyfile="quasar/misc/complex.h" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1a1d237bebfccf9db2791fa37327ca81d3" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator+</definition>
+        <argsstring>() const -&gt; Complex</argsstring>
+        <name>operator+</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="49" column="47" bodyfile="quasar/misc/complex.h" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1a892578dd0bee8aef29d540c405b52fa7" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator-</definition>
+        <argsstring>() const -&gt; Complex</argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="53" column="47" bodyfile="quasar/misc/complex.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1a50e9e061912ece24158a23fd6f2fd2db" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator*</definition>
+        <argsstring>(Complex const &amp;other) const -&gt; Complex</argsstring>
+        <name>operator*</name>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="57" column="47" bodyfile="quasar/misc/complex.h" bodystart="57" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1a6864571a3fd45d6bfa26d27ea9acc601" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator*</definition>
+        <argsstring>(f32 other) const -&gt; Complex</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>f32</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="65" column="47" bodyfile="quasar/misc/complex.h" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1a1d3006a06fd7faadf9ed45e8fe86d27c" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator/</definition>
+        <argsstring>(Complex const &amp;other) const -&gt; Complex</argsstring>
+        <name>operator/</name>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="69" column="47" bodyfile="quasar/misc/complex.h" bodystart="69" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1ae595da38fe77a5e812e354e24bbbf6bb" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator/</definition>
+        <argsstring>(f32 other) const -&gt; Complex</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>f32</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="77" column="47" bodyfile="quasar/misc/complex.h" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1afc9b2f8031b7346ecaf0791f321984b4" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator+=</definition>
+        <argsstring>(Complex const &amp;other) -&gt; Complex &amp;</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="81" column="46" bodyfile="quasar/misc/complex.h" bodystart="81" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1a60636b279512fa6ad35408928486e0b0" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator-=</definition>
+        <argsstring>(Complex const &amp;other) -&gt; Complex &amp;</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="87" column="46" bodyfile="quasar/misc/complex.h" bodystart="87" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1adb2d691cfe0b2d2a77d3ae6f04ece98e" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator*=</definition>
+        <argsstring>(Complex const &amp;other) -&gt; Complex &amp;</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="93" column="46" bodyfile="quasar/misc/complex.h" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1ac1cb1fc88a4db754ad2db51d78654e05" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator/=</definition>
+        <argsstring>(Complex const &amp;other) -&gt; Complex &amp;</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="98" column="46" bodyfile="quasar/misc/complex.h" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1a035481728c2188b2253e43d2ce3774fa" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator*=</definition>
+        <argsstring>(f32 other) -&gt; Complex &amp;</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>f32</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="103" column="46" bodyfile="quasar/misc/complex.h" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1math_1_1Complex_1afe7c1fdce418541fb435834da11eceaf" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" kindref="member">__host_or_device__</ref> auto</type>
+        <definition>constexpr __host_or_device__ auto operator/=</definition>
+        <argsstring>(f32 other) -&gt; Complex &amp;</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>f32</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/complex.h" line="108" column="46" bodyfile="quasar/misc/complex.h" bodystart="108" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Комплексное число. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Представляет собой комплексное число из двух компонент типа <computeroutput>float</computeroutput>, совместимое с NVCC. <xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>Закончить остальные операторы</para>
+</xrefdescription></xrefsect><simplesect kind="version"><para>1.4.1 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>f32</label>
+      </node>
+      <node id="1">
+        <label>Complex</label>
+        <link refid="structquasar_1_1math_1_1Complex"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>im</edgelabel>
+          <edgelabel>re</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="quasar/misc/complex.h" line="13" column="16" bodyfile="quasar/misc/complex.h" bodystart="13" bodyend="112"/>
+    <listofallmembers>
+      <member refid="structquasar_1_1math_1_1Complex_1a1254bd665923c4f0c8b40688ac4ccc7a" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>abs</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1a8d9031ea425e54734af0bbe7460dcec6" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>im</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1ac16a2501a0c3e36185e524595d7fc0e5" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator!=</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1a50e9e061912ece24158a23fd6f2fd2db" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator*</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1a6864571a3fd45d6bfa26d27ea9acc601" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator*</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1adb2d691cfe0b2d2a77d3ae6f04ece98e" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator*=</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1a035481728c2188b2253e43d2ce3774fa" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator*=</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1a1d237bebfccf9db2791fa37327ca81d3" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator+</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1afc9b2f8031b7346ecaf0791f321984b4" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator+=</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1a892578dd0bee8aef29d540c405b52fa7" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator-</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1a60636b279512fa6ad35408928486e0b0" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator-=</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1a1d3006a06fd7faadf9ed45e8fe86d27c" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator/</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1ae595da38fe77a5e812e354e24bbbf6bb" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator/</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1ac1cb1fc88a4db754ad2db51d78654e05" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator/=</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1afe7c1fdce418541fb435834da11eceaf" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator/=</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1a89aa962472d178c922d2c9b8633c7194" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator&lt;</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1ac1eae64f30d5d6ef02b915b4dc016eb7" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator&lt;=</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1a0c6cf94749a05828f8f3331791e3bf11" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator==</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1a640ce749a6815f6f0652542c1af39077" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator&gt;</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1a826e289f22de92c926be036cfa1b28fa" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>operator&gt;=</name></member>
+      <member refid="structquasar_1_1math_1_1Complex_1a9d5859ac8d05495a8b31d92bd7722ec3" prot="public" virt="non-virtual"><scope>quasar::math::Complex</scope><name>re</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="complex_8h" kind="file" language="C++">
+    <compoundname>complex.h</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">rolly/types/stdint.h</includes>
+    <includes refid="cuda__qualifiers_8h" local="no">quasar/misc/cuda_qualifiers.h</includes>
+    <includedby refid="image_8h" local="no">image.h</includedby>
+    <includedby refid="abstract__dsp_8h" local="no">abstract_dsp.h</includedby>
+    <includedby refid="ranges_8h" local="no">ranges.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>quasar/misc/cuda_qualifiers.h</label>
+        <link refid="cuda__qualifiers_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cmath</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>complex.h</label>
+        <link refid="complex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="5">
+        <label>quasar/detail/export.h</label>
+        <link refid="export_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>rolly/global/export.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>CStripStream.hpp</label>
+        <link refid="CStripStream_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>image.cc</label>
+        <link refid="image_8cc"/>
+      </node>
+      <node id="13">
+        <label>abstract_dsp.cc</label>
+        <link refid="abstract__dsp_8cc"/>
+      </node>
+      <node id="16">
+        <label>image.pybind.cc</label>
+        <link refid="image_8pybind_8cc"/>
+      </node>
+      <node id="10">
+        <label>sar.cc</label>
+        <link refid="sar_8cc"/>
+      </node>
+      <node id="17">
+        <label>radar.pybind.cc</label>
+        <link refid="radar_8pybind_8cc"/>
+      </node>
+      <node id="4">
+        <label>backprojection.cc</label>
+        <link refid="backprojection_8cc"/>
+      </node>
+      <node id="11">
+        <label>dsp_fftw.h</label>
+        <link refid="dsp__fftw_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>CStripStream.cpp</label>
+        <link refid="CStripStream_8cpp"/>
+      </node>
+      <node id="18">
+        <label>radar_stt.cc</label>
+        <link refid="radar__stt_8cc"/>
+      </node>
+      <node id="7">
+        <label>sar.h</label>
+        <link refid="sar_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>dsp_fftw.cc</label>
+        <link refid="dsp__fftw_8cc"/>
+      </node>
+      <node id="3">
+        <label>backprojection.h</label>
+        <link refid="backprojection_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>complex.h</label>
+        <link refid="complex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>legacy.pybind.cc</label>
+        <link refid="legacy_8pybind_8cc"/>
+      </node>
+      <node id="14">
+        <label>dsp.pybind.cc</label>
+        <link refid="dsp_8pybind_8cc"/>
+      </node>
+      <node id="6">
+        <label>abstract_dsp.h</label>
+        <link refid="abstract__dsp_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>ranges.h</label>
+        <link refid="ranges_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>ranges.cc</label>
+        <link refid="ranges_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structquasar_1_1math_1_1Complex" prot="public">quasar::math::Complex</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1math">quasar::math</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/misc/complex.h"/>
+  </compounddef>
+</doxygen>

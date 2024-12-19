@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structquasar_1_1CRadarConfiguration_1_1Hardware" kind="struct" language="C++" prot="public">
+    <compoundname>quasar::CRadarConfiguration::Hardware</compoundname>
+    <includes refid="radar__config_8h" local="no">/home/runner/work/quasar/quasar/src/private/radar_config.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structquasar_1_1CRadarConfiguration_1_1Hardware_1a5b32aaa1c3631a71a3322655952ac0a6" prot="public" static="no" mutable="no">
+        <type>u64</type>
+        <definition>u64 fs</definition>
+        <argsstring></argsstring>
+        <name>fs</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/radar_config.h" line="17" column="11" bodyfile="private/radar_config.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CRadarConfiguration_1_1Hardware_1a4234a80d5b469399a6dda844a6ba272f" prot="public" static="no" mutable="no">
+        <type>u64</type>
+        <definition>u64 ns</definition>
+        <argsstring></argsstring>
+        <name>ns</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/radar_config.h" line="18" column="11" bodyfile="private/radar_config.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CRadarConfiguration_1_1Hardware_1ae213efe3382d43f39768ef0b456d0d66" prot="public" static="no" mutable="no">
+        <type>u64</type>
+        <definition>u64 nsync</definition>
+        <argsstring></argsstring>
+        <name>nsync</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/radar_config.h" line="19" column="11" bodyfile="private/radar_config.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CRadarConfiguration_1_1Hardware_1acf1b2a9d0d33130656bd66ce66b4fac6" prot="public" static="no" mutable="no">
+        <type>u64</type>
+        <definition>u64 nppb</definition>
+        <argsstring></argsstring>
+        <name>nppb</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/radar_config.h" line="20" column="11" bodyfile="private/radar_config.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CRadarConfiguration_1_1Hardware_1a8006c8ba597921ad42182cf5b7f033d5" prot="public" static="no" mutable="no">
+        <type>u64</type>
+        <definition>u64 nppe</definition>
+        <argsstring></argsstring>
+        <name>nppe</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/radar_config.h" line="21" column="11" bodyfile="private/radar_config.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CRadarConfiguration_1_1Hardware_1ad36a18f5eda449c0bf93840ec867eef2" prot="public" static="no" mutable="no">
+        <type>f64</type>
+        <definition>f64 tm</definition>
+        <argsstring></argsstring>
+        <name>tm</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/radar_config.h" line="22" column="11" bodyfile="private/radar_config.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CRadarConfiguration_1_1Hardware_1a3c56277e5290763b4d13bfd80a2e5f96" prot="public" static="no" mutable="no">
+        <type>f64</type>
+        <definition>f64 f0</definition>
+        <argsstring></argsstring>
+        <name>f0</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/radar_config.h" line="23" column="11" bodyfile="private/radar_config.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CRadarConfiguration_1_1Hardware_1ac42e192d80f7ea465a76d18244a86696" prot="public" static="no" mutable="no">
+        <type>f64</type>
+        <definition>f64 df</definition>
+        <argsstring></argsstring>
+        <name>df</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/radar_config.h" line="24" column="11" bodyfile="private/radar_config.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CRadarConfiguration_1_1Hardware_1ac2fc3423138fbc67f5cc864255ed276b" prot="public" static="no" mutable="no">
+        <type>f64</type>
+        <definition>f64 mp</definition>
+        <argsstring></argsstring>
+        <name>mp</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/radar_config.h" line="25" column="11" bodyfile="private/radar_config.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CRadarConfiguration_1_1Hardware_1ad87e20c373926ddeda2c6042ca2b2466" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 sample_size</definition>
+        <argsstring></argsstring>
+        <name>sample_size</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/radar_config.h" line="26" column="11" bodyfile="private/radar_config.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CRadarConfiguration_1_1Hardware_1a725e62dd302bb6c093998ffefa251deb" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ramp_type</definition>
+        <argsstring></argsstring>
+        <name>ramp_type</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/radar_config.h" line="27" column="11" bodyfile="private/radar_config.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>u16</label>
+      </node>
+      <node id="3">
+        <label>u64</label>
+      </node>
+      <node id="1">
+        <label>CRadarConfiguration::Hardware</label>
+        <link refid="structquasar_1_1CRadarConfiguration_1_1Hardware"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sample_size</edgelabel>
+          <edgelabel>ramp_type</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>nsync</edgelabel>
+          <edgelabel>nppb</edgelabel>
+          <edgelabel>ns</edgelabel>
+          <edgelabel>nppe</edgelabel>
+          <edgelabel>fs</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>df</edgelabel>
+          <edgelabel>mp</edgelabel>
+          <edgelabel>tm</edgelabel>
+          <edgelabel>f0</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>f64</label>
+      </node>
+    </collaborationgraph>
+    <location file="private/radar_config.h" line="16" column="19" bodyfile="private/radar_config.h" bodystart="16" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structquasar_1_1CRadarConfiguration_1_1Hardware_1ac42e192d80f7ea465a76d18244a86696" prot="public" virt="non-virtual"><scope>quasar::CRadarConfiguration::Hardware</scope><name>df</name></member>
+      <member refid="structquasar_1_1CRadarConfiguration_1_1Hardware_1a3c56277e5290763b4d13bfd80a2e5f96" prot="public" virt="non-virtual"><scope>quasar::CRadarConfiguration::Hardware</scope><name>f0</name></member>
+      <member refid="structquasar_1_1CRadarConfiguration_1_1Hardware_1a5b32aaa1c3631a71a3322655952ac0a6" prot="public" virt="non-virtual"><scope>quasar::CRadarConfiguration::Hardware</scope><name>fs</name></member>
+      <member refid="structquasar_1_1CRadarConfiguration_1_1Hardware_1ac2fc3423138fbc67f5cc864255ed276b" prot="public" virt="non-virtual"><scope>quasar::CRadarConfiguration::Hardware</scope><name>mp</name></member>
+      <member refid="structquasar_1_1CRadarConfiguration_1_1Hardware_1acf1b2a9d0d33130656bd66ce66b4fac6" prot="public" virt="non-virtual"><scope>quasar::CRadarConfiguration::Hardware</scope><name>nppb</name></member>
+      <member refid="structquasar_1_1CRadarConfiguration_1_1Hardware_1a8006c8ba597921ad42182cf5b7f033d5" prot="public" virt="non-virtual"><scope>quasar::CRadarConfiguration::Hardware</scope><name>nppe</name></member>
+      <member refid="structquasar_1_1CRadarConfiguration_1_1Hardware_1a4234a80d5b469399a6dda844a6ba272f" prot="public" virt="non-virtual"><scope>quasar::CRadarConfiguration::Hardware</scope><name>ns</name></member>
+      <member refid="structquasar_1_1CRadarConfiguration_1_1Hardware_1ae213efe3382d43f39768ef0b456d0d66" prot="public" virt="non-virtual"><scope>quasar::CRadarConfiguration::Hardware</scope><name>nsync</name></member>
+      <member refid="structquasar_1_1CRadarConfiguration_1_1Hardware_1a725e62dd302bb6c093998ffefa251deb" prot="public" virt="non-virtual"><scope>quasar::CRadarConfiguration::Hardware</scope><name>ramp_type</name></member>
+      <member refid="structquasar_1_1CRadarConfiguration_1_1Hardware_1ad87e20c373926ddeda2c6042ca2b2466" prot="public" virt="non-virtual"><scope>quasar::CRadarConfiguration::Hardware</scope><name>sample_size</name></member>
+      <member refid="structquasar_1_1CRadarConfiguration_1_1Hardware_1ad36a18f5eda449c0bf93840ec867eef2" prot="public" virt="non-virtual"><scope>quasar::CRadarConfiguration::Hardware</scope><name>tm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

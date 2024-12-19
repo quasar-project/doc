@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_8824d792ef6d29924dce92cf1a84e855" kind="dir">
+    <compoundname>nav</compoundname>
+    <innerfile refid="nav_8h">nav.h</innerfile>
+    <innerfile refid="navgpx_8h">navgpx.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/nav/"/>
+  </compounddef>
+</doxygen>

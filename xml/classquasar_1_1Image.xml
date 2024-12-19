@@ -1,0 +1,2615 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1Image" kind="class" language="C++" prot="public">
+    <compoundname>quasar::Image</compoundname>
+    <includes refid="image_8h" local="no">quasar/image/image.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classquasar_1_1Image_1a85ad26a4a370f67021406bf2f5a8a824" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>ColorMap</name>
+        <enumvalue id="classquasar_1_1Image_1a85ad26a4a370f67021406bf2f5a8a824ad3f6975213fb5546d8486b54b025dbd7" prot="public">
+          <name>Grayscale</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Оттенки серого </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1Image_1a85ad26a4a370f67021406bf2f5a8a824a252ce7e80c1ffd8c2558ad9b13d4ca2b" prot="public">
+          <name>Jet</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Оттенки спектра между красным и синим </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Формат цветового представления изображения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Доступно в Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="37" column="24" bodyfile="quasar/image/image.h" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="enum" id="classquasar_1_1Image_1a8bd447cca59341b32a8842145de3f27e" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>CutMode</name>
+        <enumvalue id="classquasar_1_1Image_1a8bd447cca59341b32a8842145de3f27ea32954654ac8fe66a1d09be19001de2d4" prot="public">
+          <name>Width</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Обрезать по ширине </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1Image_1a8bd447cca59341b32a8842145de3f27eaeec6c4bdbd339edf8cbea68becb85244" prot="public">
+          <name>Height</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Обрезать по высоте </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1Image_1a8bd447cca59341b32a8842145de3f27ea168b82d33f8073018c50a4f658a02559" prot="public">
+          <name>Columns</name>
+          <initializer>= Width</initializer>
+          <briefdescription>
+<para>Синоним для <computeroutput>Width</computeroutput> </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1Image_1a8bd447cca59341b32a8842145de3f27ea530f488f7a9800411efc6926ab189708" prot="public">
+          <name>Rows</name>
+          <initializer>= Height</initializer>
+          <briefdescription>
+<para>Синоним для <computeroutput>Height</computeroutput> </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Режим обрезки изображения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Доступно в Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="46" column="23" bodyfile="quasar/image/image.h" bodystart="46" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classquasar_1_1Image_1ac0b2185e648c870bb873907a9fd9ea9f" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/memory/unique_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::unique_ptr</ref>&lt; <ref refid="classquasar_1_1IImageDataHolder" kindref="compound">IImageDataHolder</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;IImageDataHolder&gt; image_data_</definition>
+        <argsstring></argsstring>
+        <name>image_data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="645" column="21" bodyfile="quasar/image/image.h" bodystart="645" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Image_1aeb6e0bf0f5715bbfe23fa8f8e35856aa" prot="private" static="no" mutable="no">
+        <type>enum DSP</type>
+        <definition>enum DSP dsp_type_</definition>
+        <argsstring></argsstring>
+        <name>dsp_type_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="645" column="21" bodyfile="quasar/image/image.h" bodystart="646" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Image_1aeae0e2df71cb2d2b2976988b13075e14" prot="private" static="no" mutable="no">
+        <type>ImageUnderlyingType</type>
+        <definition>ImageUnderlyingType underlying_type_</definition>
+        <argsstring></argsstring>
+        <name>underlying_type_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="647" column="25" bodyfile="quasar/image/image.h" bodystart="647" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Image_1a3a614316bb9e0580e632532dfd9cb275" prot="private" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 width_rounded_</definition>
+        <argsstring></argsstring>
+        <name>width_rounded_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="648" column="9" bodyfile="quasar/image/image.h" bodystart="648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Image_1a3bef885d0d7cfab4ef373ef5b53396a1" prot="private" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 height_rounded_</definition>
+        <argsstring></argsstring>
+        <name>height_rounded_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="649" column="9" bodyfile="quasar/image/image.h" bodystart="649" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Image_1afb851ae532dc747ea60b2e799213183c" prot="private" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 width_</definition>
+        <argsstring></argsstring>
+        <name>width_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="650" column="9" bodyfile="quasar/image/image.h" bodystart="650" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Image_1ac0185e7124096a4809bf8b01d80af17c" prot="private" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 height_</definition>
+        <argsstring></argsstring>
+        <name>height_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="651" column="9" bodyfile="quasar/image/image.h" bodystart="651" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Image_1a5543fe2951ef83c2600089e6a19f50b5" prot="private" static="no" mutable="no">
+        <type>usize</type>
+        <definition>usize near_range_index_</definition>
+        <argsstring></argsstring>
+        <name>near_range_index_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="652" column="11" bodyfile="quasar/image/image.h" bodystart="652" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Image_1af8b7b7ce0928ad3c51603109b76b766f" prot="private" static="no" mutable="no">
+        <type>isize</type>
+        <definition>isize actual_index_</definition>
+        <argsstring></argsstring>
+        <name>actual_index_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="653" column="11" bodyfile="quasar/image/image.h" bodystart="653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Image_1a0c1a036b4a49764c430b2cbfa4390507" prot="private" static="no" mutable="no">
+        <type>api::Metadata</type>
+        <definition>api::Metadata metadata_</definition>
+        <argsstring></argsstring>
+        <name>metadata_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="654" column="19" bodyfile="quasar/image/image.h" bodystart="654" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Image_1af27cf596790829f1a88e356b8245f189" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool broken_</definition>
+        <argsstring></argsstring>
+        <name>broken_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="655" column="10" bodyfile="quasar/image/image.h" bodystart="655" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classquasar_1_1Image_1a66d0d6da3b89580352c28d37b57df5bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Image</definition>
+        <argsstring>()</argsstring>
+        <name>Image</name>
+        <briefdescription>
+<para>Создает пустой экземляр изображения типа DSP::FFTW. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="56" column="5" bodyfile="image.cc" bodystart="45" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a43f860f5b6f26baf05bcf3e556a2b784" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Image</definition>
+        <argsstring>(DSP type)</argsstring>
+        <name>Image</name>
+        <param>
+          <type>DSP</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Создает пустой экземляр изображения выбранного типа. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип DSP. Влияет на место аллокации памяти: в случае DSP::FFTW буфер изображения создается в выделенной оперативной памяти, в случае DSP::CUDA - в видеопамяти. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>DSP </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="64" column="14" bodyfile="image.cc" bodystart="48" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1adb0ab0d04db63846989cf7bd9ad459ee" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Image</definition>
+        <argsstring>(DSP type, u32 width, u32 height, ImageUnderlyingType underlying_type)</argsstring>
+        <name>Image</name>
+        <param>
+          <type>DSP</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>ImageUnderlyingType</type>
+          <declname>underlying_type</declname>
+        </param>
+        <briefdescription>
+<para>Создает экземляр изображения выбранного типа с преаллоцированными размерами <computeroutput>width x height</computeroutput> и выбранным типом отсчета. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип DSP. Влияет на место аллокации памяти: в случае DSP::FFTW буфер изображения создается в выделенной оперативной памяти, в случае DSP::CUDA - в видеопамяти. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ширина изображения в количестве отсчетов. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Высота изображения в количестве отсчетов. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>underlying_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип данных, которыми представлены отсчеты в буфере. В случае ImageUnderlyingType::Undefined будет аллоцированно пустое изображение. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>DSP </para>
+</simplesect>
+<simplesect kind="see"><para>ImageUnderlyingType </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="78" column="14" bodyfile="image.cc" bodystart="51" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ae80cb9f4dd6d01cddd068a7a24522855" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Image</definition>
+        <argsstring>(Image const &amp;other)</argsstring>
+        <name>Image</name>
+        <param>
+          <type><ref refid="classquasar_1_1Image" kindref="compound">Image</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор копирования. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Выполняет глубокое копирование изображения (копирование буфера) в новый экземпляр. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Копируемое изображение. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>Копирование изображения - затратная операция. Используйте ее только при необходимости. </para>
+</simplesect>
+<simplesect kind="version"><para>1.4.1 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="88" column="5" bodyfile="image.cc" bodystart="70" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ad5d76c5feaf1b262be0d30e52f7f3443" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Image</definition>
+        <argsstring>(Image &amp;&amp;other) noexcept</argsstring>
+        <name>Image</name>
+        <param>
+          <type><ref refid="classquasar_1_1Image" kindref="compound">Image</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Конструктор перемещения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Выполняет перемещение изображения в новый экземпляр, инвалидируя предыдущий. Буфер при этом не копируется, а перемещается, т.е. затраты по скорости минимальны. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Перемещаемое изображение. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="version"><para>1.4.1 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="97" column="5" bodyfile="image.cc" bodystart="86" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a70dc073ff2e26a6752dee2a6d2b609a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~Image</definition>
+        <argsstring>()</argsstring>
+        <name>~Image</name>
+        <briefdescription>
+<para>Деаллоцирует все выделенные ресурсы и удаляет объект. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="102" column="13" bodyfile="image.cc" bodystart="101" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a2f8e4654188f77c55d7a326d42b365ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T* data</definition>
+        <argsstring>() const</argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Возвращает указатель на начало массива данных РЛИ </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Например: <programlisting filename=".cpp"><codeline><highlight class="normal"><ref refid="classquasar_1_1Image_1a66d0d6da3b89580352c28d37b57df5bb" kindref="member">Image</ref><sp/>image;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/><ref refid="classquasar_1_1Image_1a2f8e4654188f77c55d7a326d42b365ef" kindref="member">data</ref><sp/>=<sp/>image.data&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;();<sp/></highlight><highlight class="comment">//<sp/>тип<sp/>data<sp/>-<sp/>float*</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>data_int<sp/>=<sp/>image.data&lt;int16_t&gt;();<sp/></highlight><highlight class="comment">//<sp/>тип<sp/>data_int<sp/>-<sp/>int16_t*</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>data_void<sp/>=<sp/>image.data&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">&gt;();<sp/></highlight><highlight class="comment">//<sp/>тип<sp/>data_void<sp/>-<sp/>void*</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип данных для приведения без указателя в конце. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на начало массива данных РЛИ, приведенный к типу <computeroutput>T*</computeroutput> </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="118" column="8" bodyfile="quasar/image/image.h" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a68959c716fe27c7aa6f07436374874c4" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr enum DSP</type>
+        <definition>constexpr enum DSP type</definition>
+        <argsstring>() const</argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Возвращает тип интерфейса данных РЛИ </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Тип интерфейса данных РЛИ определяется в конструкторе. От него зависит, где будет аллоцирован массив данных РЛИ - в ОЗУ или в видеопамяти CUDA. <simplesect kind="return"><para>Тип интерфейса данных РЛИ </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="118" column="8" bodyfile="quasar/image/image.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ac5e1a897df42d70a36c7ed819570d3aa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classquasar_1_1IImageDataHolder" kindref="compound">IImageDataHolder</ref> const  &amp;</type>
+        <definition>IImageDataHolder const&amp; data_interface</definition>
+        <argsstring>() const</argsstring>
+        <name>data_interface</name>
+        <briefdescription>
+<para>Возвращает константную ссылку на интерфейс данных РЛИ. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константная ссылка на интерфейс данных РЛИ </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="136" column="29" bodyfile="quasar/image/image.h" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a655e6a6fba0b57073e7982dc587b6dc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classquasar_1_1IImageDataHolder" kindref="compound">IImageDataHolder</ref> &amp;</type>
+        <definition>IImageDataHolder&amp; data_interface_mut</definition>
+        <argsstring>()</argsstring>
+        <name>data_interface_mut</name>
+        <briefdescription>
+<para>Возвращает мутабельную ссылку на интерфейс данных РЛИ. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Мутабельная ссылка на интерфейс данных РЛИ </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="143" column="23" bodyfile="quasar/image/image.h" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a5ff740dc9c3a369c3ed5e8c57a52c8de" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>api::Metadata const  &amp;</type>
+        <definition>api::Metadata const&amp; metadata</definition>
+        <argsstring>() const</argsstring>
+        <name>metadata</name>
+        <briefdescription>
+<para>Возвращает константную ссылку на структуру метаданных изображения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Константная ссылка на метаданные изображения </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.3.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="151" column="26" bodyfile="quasar/image/image.h" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ab975413486c7307628aae00d7ba32bb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>api::Metadata &amp;</type>
+        <definition>api::Metadata&amp; metadata_mut</definition>
+        <argsstring>()</argsstring>
+        <name>metadata_mut</name>
+        <briefdescription>
+<para>Возвращает изменяемую ссылку на структуру метаданных изображения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Изменяемая ссылка на метаданные изображения </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.3.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="159" column="20" bodyfile="quasar/image/image.h" bodystart="159" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ae481d542b8dcdf84bb24c6d3b4e42125" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr u32</type>
+        <definition>constexpr u32 width</definition>
+        <argsstring>() const</argsstring>
+        <name>width</name>
+        <briefdescription>
+<para>Возвращает реальную ширину изображения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Реальная ширина изображения без дополнения до степени двойки. </para>
+</simplesect>
+<simplesect kind="note"><para>В прошлых версиях обозначалась членом класса <ref refid="classquasar_1_1Image" kindref="compound">Image</ref> как <bold>ImageW0</bold>. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@property</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="168" column="20" bodyfile="quasar/image/image.h" bodystart="168" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1abb48c1345e4e91781accb2faf640dd7d" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr u32</type>
+        <definition>constexpr u32 height</definition>
+        <argsstring>() const</argsstring>
+        <name>height</name>
+        <briefdescription>
+<para>Возвращает реальную высоту изображения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Реальная высота изображения без дополнения до степени двойки. </para>
+</simplesect>
+<simplesect kind="note"><para>В прошлых версиях обозначалась членом класса <ref refid="classquasar_1_1Image" kindref="compound">Image</ref> как <bold>ImageH0</bold>. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@property</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="177" column="20" bodyfile="quasar/image/image.h" bodystart="177" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ad481394f531a1607b05beef8daa1401c" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr u32</type>
+        <definition>constexpr u32 size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Возвращает реальный размер (площадь) изображения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Реальная площадь изображения без дополнения до степени двойки. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="185" column="20" bodyfile="quasar/image/image.h" bodystart="185" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a1dc43738d441512f07034662d9b17965" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>usize</type>
+        <definition>usize size_bytes</definition>
+        <argsstring>() const</argsstring>
+        <name>size_bytes</name>
+        <briefdescription>
+<para>Возвращает размер изображения в байтах. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Размер изображения в байтах. </para>
+</simplesect>
+<simplesect kind="version"><para>1.5.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="192" column="12" bodyfile="quasar/image/image.h" bodystart="192" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ac7821e6ad1e91247e8114c5411b2be49" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr u32</type>
+        <definition>constexpr u32 width_rounded</definition>
+        <argsstring>() const</argsstring>
+        <name>width_rounded</name>
+        <briefdescription>
+<para>Возвращает ширину изображения с округлением до степени двойки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Ширина изображения с округлением до степени двойки. </para>
+</simplesect>
+<simplesect kind="note"><para>В прошлых версиях обозначалась членом класса <ref refid="classquasar_1_1Image" kindref="compound">Image</ref> как <bold>ImageWidth</bold>. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@property</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="203" column="20" bodyfile="quasar/image/image.h" bodystart="203" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a7b5f4d820154764b1c46d3c9c237bcf2" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr u32</type>
+        <definition>constexpr u32 height_rounded</definition>
+        <argsstring>() const</argsstring>
+        <name>height_rounded</name>
+        <briefdescription>
+<para>Возвращает высоту изображения с округлением до степени двойки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Высота изображения с округлением до степени двойки. </para>
+</simplesect>
+<simplesect kind="note"><para>В прошлых версиях обозначалась членом класса <ref refid="classquasar_1_1Image" kindref="compound">Image</ref> как <bold>ImageHeight</bold>. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@property</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="212" column="20" bodyfile="quasar/image/image.h" bodystart="212" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ab56f2ac8629596bc94c4b809de30cb66" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr u32</type>
+        <definition>constexpr u32 size_rounded</definition>
+        <argsstring>() const</argsstring>
+        <name>size_rounded</name>
+        <briefdescription>
+<para>Возвращает размер (площадь) изображения с округлением до степени двойки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Площадь изображения с округлением до степени двойки. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="220" column="20" bodyfile="quasar/image/image.h" bodystart="220" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a907842013573e470489c3bdfb2e91726" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>usize</type>
+        <definition>usize size_rounded_bytes</definition>
+        <argsstring>() const</argsstring>
+        <name>size_rounded_bytes</name>
+        <briefdescription>
+<para>Возвращает размер изображения в байтах с округлением до степени двойки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Размер изображения в байтах с округлением до степени двойки. </para>
+</simplesect>
+<simplesect kind="version"><para>1.5.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="229" column="12" bodyfile="quasar/image/image.h" bodystart="229" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1aa47a9ab6ac13067f26cb740c6e6b1584" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr ImageUnderlyingType</type>
+        <definition>constexpr ImageUnderlyingType underlying_type</definition>
+        <argsstring>() const</argsstring>
+        <name>underlying_type</name>
+        <briefdescription>
+<para>Возвращает тип, которым представлены данные в памяти в данном изображении. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Тип, которым представлены данные в памяти в данном изображении. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@property</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="239" column="36" bodyfile="quasar/image/image.h" bodystart="239" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a960984f6404adff20ce96a607fcbf9fe" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr usize</type>
+        <definition>constexpr usize near_range_index</definition>
+        <argsstring>() const</argsstring>
+        <name>near_range_index</name>
+        <briefdescription>
+<para>Возвращает индекс ближней границы изображения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Индекс ближней границы изображения. </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="248" column="22" bodyfile="quasar/image/image.h" bodystart="248" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1aa195e0ab82e857e22c842d2875638407" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr isize</type>
+        <definition>constexpr isize actual_index</definition>
+        <argsstring>() const</argsstring>
+        <name>actual_index</name>
+        <briefdescription>
+<para>Возвращает индекс циркулярного буфера, если буфер задан. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Индекс циркулярного буфера или <bold>-1</bold>, если циркулярный буфер не задан. </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="255" column="22" bodyfile="quasar/image/image.h" bodystart="255" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1af61a7ed57de0da59d3a280f0a56ca001" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>span&lt; T const  &gt;</type>
+        <definition>span&lt;T const&gt; view</definition>
+        <argsstring>() const</argsstring>
+        <name>view</name>
+        <briefdescription>
+<para>Возвращает представление буфера данных в виде std::span. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип данных буфера. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Представление буфера данных в виде константного std::span. </para>
+</simplesect>
+<simplesect kind="version"><para>1.3.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="264" column="11" bodyfile="quasar/image/image.h" bodystart="264" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1aee726bbd42c46cfa0289170a4b5fcfe1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>span&lt; T &gt;</type>
+        <definition>span&lt;T&gt; view_mut</definition>
+        <argsstring>()</argsstring>
+        <name>view_mut</name>
+        <briefdescription>
+<para>Возвращает представление буфера данных в виде std::span. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип данных буфера. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Представление буфера данных в виде std::span. </para>
+</simplesect>
+<simplesect kind="version"><para>1.3.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="275" column="11" bodyfile="quasar/image/image.h" bodystart="275" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a9ad5055a935d423183a77a57b51f5784" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool is_subnormal</definition>
+        <argsstring>() const</argsstring>
+        <name>is_subnormal</name>
+        <briefdescription>
+<para>Возвращает <computeroutput>true</computeroutput>, если в буфере данных есть <computeroutput>NaN</computeroutput> или <computeroutput>Inf</computeroutput>-значения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Проверяет наличие <computeroutput>NaN</computeroutput>/<computeroutput>Inf</computeroutput>-значений в буфере данных.</para>
+<para>Алгоритмическая сложность вычисления: <computeroutput>O(n)</computeroutput>, где <computeroutput>n</computeroutput> - размер буфера. <simplesect kind="note"><para>Вызов данного метода затратен по времени, поэтому его следует использовать осторожно. </para>
+</simplesect>
+<simplesect kind="return"><para><computeroutput>true</computeroutput>, если в буфере данных есть <computeroutput>NaN</computeroutput> или <computeroutput>Inf</computeroutput>-значения. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="287" column="11" bodyfile="image.cc" bodystart="793" bodyend="831"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ad4787539b373496230145107d3494a7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; T &gt;</type>
+        <definition>template std::vector&lt; f64 &gt; to_vec&lt; f64 &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>to_vec</name>
+        <briefdescription>
+<para>Возвращает представление буфера данных в виде владеющего <ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип данных буфера. Должен быть одним из следующих типов: <computeroutput>u8</computeroutput>, <computeroutput>i16</computeroutput>, <computeroutput>f32</computeroutput>, <computeroutput>f64</computeroutput>, <computeroutput><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref></computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Представление буфера данных в виде владеющего <ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.4.2 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="297" column="18" bodyfile="image.cc" bodystart="785" bodyend="791"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a9a69faafe5130b0428c7aa5fadd08aa2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; to_vec</definition>
+        <argsstring>(usize start, usize end) const</argsstring>
+        <name>to_vec</name>
+        <param>
+          <type>usize</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает представление части буфера данных в виде владеющего <ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип данных буфера. Должен быть одним из следующих типов: <computeroutput>u8</computeroutput>, <computeroutput>i16</computeroutput>, <computeroutput>f32</computeroutput>, <computeroutput>f64</computeroutput>, <computeroutput><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref></computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Начальный индекс. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Конечный индекс. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Представление буфера данных в виде владеющего <ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>. </para>
+</simplesect>
+<simplesect kind="pre"><para><computeroutput>start &lt; end</computeroutput>. </para>
+</simplesect>
+<simplesect kind="pre"><para><computeroutput>end &lt; this-&gt;<ref refid="classquasar_1_1Image_1ad481394f531a1607b05beef8daa1401c" kindref="member">size()</ref></computeroutput>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.4.2 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="311" column="18" bodyfile="image.cc" bodystart="834" bodyend="842"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a8f0109ed3e5a1e6f29421daccb99311a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classquasar_1_1Image" kindref="compound">Image</ref> &amp;</type>
+        <definition>Image &amp; move_to</definition>
+        <argsstring>(enum DSP destination)</argsstring>
+        <name>move_to</name>
+        <param>
+          <type>enum DSP</type>
+          <declname>destination</declname>
+        </param>
+        <briefdescription>
+<para>Перемещает буфер данных изображения между оперативной памятью и видеопамятью в направлении <computeroutput>destination</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Если <computeroutput><ref refid="classquasar_1_1Image_1a68959c716fe27c7aa6f07436374874c4" kindref="member">Image::type</ref></computeroutput> и <computeroutput>destination</computeroutput> совпадают, то перемещения не происходит. Если указано направление <computeroutput>DSP::CUDA</computeroutput>, но библиотека собрана без флага <computeroutput>QUASAR_CUDA</computeroutput>, то будет выброшено исключение. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>destination</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Направление перемещения. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ссылка на <computeroutput>this</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="322" column="11" bodyfile="image.cc" bodystart="747" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1afc4938c32b96bb0587c5057cbb0fdb0e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>auto pixel</definition>
+        <argsstring>(int w, int h) const noexcept(false)</argsstring>
+        <name>pixel</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает представление буфера данных в виде массива данных <emphasis>numpy</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Представление буфера данных в виде массива данных <emphasis>numpy</emphasis>. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/logic_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::logic_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если тип данных в буфере не является <computeroutput>float32</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Недоступно в C++. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.4.1</para>
+</simplesect>
+Возвращает пиксель изображения в указанных координатах. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Х-координата пикселя. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>У-координата пикселя. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Значение пикселя. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/out_of_range" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::out_of_range</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если пиксель выходит за границы изображения по х-координате или по у-координате. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/logic_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::logic_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если тип данных в буфере не является <computeroutput>float</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classquasar_1_1Image_1a648244837e482705548b8432614b26c4" kindref="member">pixel_mut</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>Image::operator() </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classquasar_1_1Image_1af6bc87e61fbc10c418e26496780d6d4a" kindref="member">pixel_unsafe</ref>, <ref refid="classquasar_1_1Image_1ad6bf74af8e90067191e59c6dd8ad8eab" kindref="member">set_pixel_unsafe</ref> </para>
+</simplesect>
+<simplesect kind="version"><para>1.4.1 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="347" column="10" bodyfile="image.cc" bodystart="439" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a648244837e482705548b8432614b26c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>f32 &amp;</type>
+        <definition>auto pixel_mut</definition>
+        <argsstring>(int w, int h)</argsstring>
+        <name>pixel_mut</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает изменяюмую ссылку на пиксель изображения в указанных координатах. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Х-координата пикселя. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>У-координата пикселя. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Значение пикселя. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/out_of_range" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::out_of_range</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если пиксель выходит за границы изображения по х-координате или по у-координате. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/logic_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::logic_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если тип данных в буфере не является <computeroutput>float</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classquasar_1_1Image_1afc4938c32b96bb0587c5057cbb0fdb0e" kindref="member">pixel</ref> </para>
+</simplesect>
+<simplesect kind="see"><para>Image::operator() </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classquasar_1_1Image_1af6bc87e61fbc10c418e26496780d6d4a" kindref="member">pixel_unsafe</ref>, <ref refid="classquasar_1_1Image_1ad6bf74af8e90067191e59c6dd8ad8eab" kindref="member">set_pixel_unsafe</ref> </para>
+</simplesect>
+<simplesect kind="version"><para>1.4.1 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="363" column="10" bodyfile="image.cc" bodystart="455" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1af6bc87e61fbc10c418e26496780d6d4a" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T pixel_unsafe</definition>
+        <argsstring>(int w, int h) const noexcept(false)</argsstring>
+        <name>pixel_unsafe</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает пиксель изображения в указанных координатах. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип данных буфера. Должен совпадать с реальным типом данных в буфере, в противном случае будет неопределенное поведение. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Х-координата пикселя. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>У-координата пикселя. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Значение пикселя. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/out_of_range" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::out_of_range</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если пиксель выходит за границы изображения по х-координате или по у-координате. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>Указание типа, не соответствующего типу данных в буфере, приведет к неопределенному поведению. </para>
+</simplesect>
+<simplesect kind="version"><para>1.4.1 </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classquasar_1_1Image_1ad6bf74af8e90067191e59c6dd8ad8eab" kindref="member">set_pixel_unsafe</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classquasar_1_1Image_1afc4938c32b96bb0587c5057cbb0fdb0e" kindref="member">pixel</ref>, <ref refid="classquasar_1_1Image_1a648244837e482705548b8432614b26c4" kindref="member">pixel_mut</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="381" column="8" bodyfile="quasar/image/image.h" bodystart="662" bodyend="673"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ad6bf74af8e90067191e59c6dd8ad8eab" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void set_pixel_unsafe</definition>
+        <argsstring>(int w, int h, T value) noexcept(false)</argsstring>
+        <name>set_pixel_unsafe</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Задает пиксель изображения в указанных координатах. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип данных буфера. Должен совпадать с реальным типом данных в буфере, в противном случае будет неопределенное поведение. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Х-координата пикселя. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>У-координата пикселя. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение пикселя. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/out_of_range" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::out_of_range</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если пиксель выходит за границы изображения по х-координате или по у-координате. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>Указание типа, не соответствующего типу данных в буфере, приведет к неопределенному поведению. </para>
+</simplesect>
+<simplesect kind="version"><para>1.4.1 </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classquasar_1_1Image_1af6bc87e61fbc10c418e26496780d6d4a" kindref="member">pixel_unsafe</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classquasar_1_1Image_1afc4938c32b96bb0587c5057cbb0fdb0e" kindref="member">pixel</ref>, <ref refid="classquasar_1_1Image_1a648244837e482705548b8432614b26c4" kindref="member">pixel_mut</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="399" column="10" bodyfile="quasar/image/image.h" bodystart="676" bodyend="687"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1afe73dbceabd79952b2d967562c5650d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>auto reset_interface</definition>
+        <argsstring>(std::unique_ptr&lt; IImageDataHolder &gt; &amp;&amp;data)</argsstring>
+        <name>reset_interface</name>
+        <param>
+          <type><ref refid="cpp/memory/unique_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::unique_ptr</ref>&lt; <ref refid="classquasar_1_1IImageDataHolder" kindref="compound">IImageDataHolder</ref> &gt; &amp;&amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Очищает текущий буфер данных и заменяет его новым. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RValue-указатель (<ref refid="cpp/memory/unique_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::unique_ptr</ref>) на новый буфер данных. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="406" column="10" bodyfile="image.cc" bodystart="471" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ac90b51c430d7d5230a3053386291fd15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>auto set_width</definition>
+        <argsstring>(u32 width)</argsstring>
+        <name>set_width</name>
+        <param>
+          <type>u32</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Задает реальную ширину изображения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ширина изображения. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="413" column="10" bodyfile="image.cc" bodystart="479" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ab9bb1fc9a93c95d9d360178b9f08501b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>auto set_height</definition>
+        <argsstring>(u32 height)</argsstring>
+        <name>set_height</name>
+        <param>
+          <type>u32</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Задает реальную высоту изображения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Высота изображения. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="420" column="10" bodyfile="image.cc" bodystart="481" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a307dc1bec8a43f5d73a8b024a14fc7dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>auto set_width_rounded</definition>
+        <argsstring>(u32 width)</argsstring>
+        <name>set_width_rounded</name>
+        <param>
+          <type>u32</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Задает ширину изображения с округлением до степени двойки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ширина изображения с округлением до степени двойки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@property</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="428" column="10" bodyfile="image.cc" bodystart="483" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1aa6cc951fb4546fc46569177e158f0f36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>auto set_height_rounded</definition>
+        <argsstring>(u32 height)</argsstring>
+        <name>set_height_rounded</name>
+        <param>
+          <type>u32</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Задает высоту изображения с округлением до степени двойки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Высота изображения с округлением до степени двойки. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@property</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="436" column="10" bodyfile="image.cc" bodystart="485" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a842c0dbc8e8d08afcbdc6553ccb1d97a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>auto set_underlying_type</definition>
+        <argsstring>(ImageUnderlyingType type)</argsstring>
+        <name>set_underlying_type</name>
+        <param>
+          <type>ImageUnderlyingType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Задает тип, которым представлены данные в памяти в данном изображении. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип, которым представлены данные в памяти в данном изображении. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="443" column="10" bodyfile="image.cc" bodystart="475" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a9ad590375684cd09c2a79708d3d888bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>auto set_near_range_index</definition>
+        <argsstring>(usize index)</argsstring>
+        <name>set_near_range_index</name>
+        <param>
+          <type>usize</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Задает индекс ближней границы вырезанного изображения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс ближней границы вырезанного изображения. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="450" column="10" bodyfile="image.cc" bodystart="487" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1afda7a37a94c3e6fa0052cd30e4cbfeaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>auto set_actual_index</definition>
+        <argsstring>(isize index)</argsstring>
+        <name>set_actual_index</name>
+        <param>
+          <type>isize</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Задает индекс для циркулярного буфера. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индекс. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="version"><para>1.2.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="457" column="10" bodyfile="image.cc" bodystart="489" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ac857c4bc1919848fcff21c9901738f3e" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool is_broken</definition>
+        <argsstring>() const</argsstring>
+        <name>is_broken</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="459" column="21" bodyfile="quasar/image/image.h" bodystart="459" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a8faecffb664034a352ea0e5f61336c15" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr void</type>
+        <definition>constexpr void set_broken</definition>
+        <argsstring>(bool const status)</argsstring>
+        <name>set_broken</name>
+        <param>
+          <type>bool const</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="461" column="20" bodyfile="quasar/image/image.h" bodystart="461" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a659f3c8d6591c81ddfacd29ba4581af6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>cv::Mat</type>
+        <definition>auto as_cv_mat</definition>
+        <argsstring>() const</argsstring>
+        <name>as_cv_mat</name>
+        <briefdescription>
+<para>Возвращает изображение в виде матрицы <computeroutput>cv::Mat</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Изображение в виде матрицы <computeroutput>cv::Mat</computeroutput>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.3.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="468" column="15" bodyfile="image.cc" bodystart="491" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1af5e7a25c595941fc0afb1a2c5aba58d8" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>auto save</definition>
+        <argsstring>(std::filesystem::path const &amp;path, ImageFormat format, f32 brightness_multiplier, i32 quality, ColorMap colormap=ColorMap::Grayscale) const noexcept(false)</argsstring>
+        <name>save</name>
+        <param>
+          <type>std::filesystem::path const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>ImageFormat</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>brightness_multiplier</declname>
+        </param>
+        <param>
+          <type>i32</type>
+          <declname>quality</declname>
+        </param>
+        <param>
+          <type><ref refid="classquasar_1_1Image_1a85ad26a4a370f67021406bf2f5a8a824" kindref="member">ColorMap</ref></type>
+          <declname>colormap</declname>
+          <defval><ref refid="classquasar_1_1Image_1a85ad26a4a370f67021406bf2f5a8a824ad3f6975213fb5546d8486b54b025dbd7" kindref="member">ColorMap::Grayscale</ref></defval>
+        </param>
+        <briefdescription>
+<para>Сохраняет изображение в файл по указанному пути. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь к файлу. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Формат изображения. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brightness_multiplier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Множитель яркости изображения после коррекции по яркости. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quality</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Качество изображения (от 0 до 100). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colormap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип цветовой схемы. По умолчанию: <ref refid="classquasar_1_1Image_1a85ad26a4a370f67021406bf2f5a8a824ad3f6975213fb5546d8486b54b025dbd7" kindref="member">ColorMap::Grayscale</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/runtime_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::runtime_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если не удалось сохранить изображение в файл. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/invalid_argument" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::invalid_argument</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если предоставлены некорректные параметры. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/logic_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::logic_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если текущее состояние изображения не допускает сохранение изображения в файл. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.3.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="484" column="10" bodyfile="image.cc" bodystart="502" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a9ffcf456c07398bda226dcce7079e672" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>auto save_as_binary</definition>
+        <argsstring>(std::filesystem::path const &amp;path) const</argsstring>
+        <name>save_as_binary</name>
+        <param>
+          <type>std::filesystem::path const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Сохраняет текущее изображение в виде бинарной репрезентации его буфера данных. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь к файлу. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.3.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="497" column="10" bodyfile="image.cc" bodystart="534" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a5a266265652d8bfffbbe94381941fa46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>auto save_signal_as_csv</definition>
+        <argsstring>(std::filesystem::path const &amp;path) const</argsstring>
+        <name>save_signal_as_csv</name>
+        <param>
+          <type>std::filesystem::path const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Сохраняет значения сигнала в CSV-файл. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь к файлу. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.3.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="505" column="10" bodyfile="image.cc" bodystart="561" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ab9f127302ca026a5bd208810f62c331e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int AbsAndNorm</definition>
+        <argsstring>()</argsstring>
+        <name>AbsAndNorm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="526" column="9" bodyfile="image.cc" bodystart="175" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a48819141518b65ffecfe4b37510ba009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Binarize</definition>
+        <argsstring>()</argsstring>
+        <name>Binarize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="527" column="9" bodyfile="image.cc" bodystart="202" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a384a86231bca004747d18962f41b0785" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MedianBlur</definition>
+        <argsstring>()</argsstring>
+        <name>MedianBlur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="528" column="9" bodyfile="image.cc" bodystart="230" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1abfd1428bfa6a22fd8db03bceb30dfa5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Roll</definition>
+        <argsstring>(int n)</argsstring>
+        <name>Roll</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Прокрутка РЛИ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество строк, на которое осуществляется сдвиг РЛИ</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 - успешное выполнение; -1 - ошибка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="529" column="9" bodyfile="image.cc" bodystart="164" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1affc76c77b31a552e67011ec0d604ecb9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RangeBrightness</definition>
+        <argsstring>(float x0, float dx) const</argsstring>
+        <name>RangeBrightness</name>
+        <param>
+          <type>float</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="530" column="9" bodyfile="image.cc" bodystart="143" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1aad7d162b83c85d08bfe5af178290d134" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ReadMetadata</definition>
+        <argsstring>(char *fileName)</argsstring>
+        <name>ReadMetadata</name>
+        <param>
+          <type>char *</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="531" column="9" bodyfile="image.cc" bodystart="394" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1af4082be3727bd14e957999ac4cd562c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VerticalMirror</definition>
+        <argsstring>()</argsstring>
+        <name>VerticalMirror</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="532" column="10" bodyfile="image.cc" bodystart="248" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ae2fef5465eea77d118dce7f7ae4604b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Rotate</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>Rotate</name>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="533" column="10" bodyfile="image.cc" bodystart="270" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a31629733be5ef388a56984cb4badeeec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classquasar_1_1Image" kindref="compound">Image</ref> &amp;</type>
+        <definition>auto accumulate_from</definition>
+        <argsstring>(Image const &amp;other)</argsstring>
+        <name>accumulate_from</name>
+        <param>
+          <type><ref refid="classquasar_1_1Image" kindref="compound">Image</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="535" column="11" bodyfile="image.cc" bodystart="313" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a26b316112c78f275c71165d792ef771f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>usize</type>
+        <definition>usize range_to_index</definition>
+        <argsstring>(IAbstractRadar const &amp;radar, f32 range) const</argsstring>
+        <name>range_to_index</name>
+        <param>
+          <type><ref refid="classquasar_1_1IAbstractRadar" kindref="compound">IAbstractRadar</ref> const &amp;</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="537" column="12" bodyfile="image.cc" bodystart="335" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1abd38b6d76cc67d0d7eebce7b915ebf46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/utility/pair" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::pair</ref>&lt; usize, usize &gt;</type>
+        <definition>std::pair&lt; usize, usize &gt; range_to_index</definition>
+        <argsstring>(IAbstractRadar const &amp;radar, std::pair&lt; f32, f32 &gt; const &amp;range_pair) const</argsstring>
+        <name>range_to_index</name>
+        <param>
+          <type><ref refid="classquasar_1_1IAbstractRadar" kindref="compound">IAbstractRadar</ref> const &amp;</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type><ref refid="cpp/utility/pair" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::pair</ref>&lt; f32, f32 &gt; const &amp;</type>
+          <declname>range_pair</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="538" column="16" bodyfile="image.cc" bodystart="340" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ab91357b374af7dfedb3c0eec39921924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>result</type>
+        <definition>result cut</definition>
+        <argsstring>(CutMode mode, usize start, usize end)</argsstring>
+        <name>cut</name>
+        <param>
+          <type><ref refid="classquasar_1_1Image_1a8bd447cca59341b32a8842145de3f27e" kindref="member">CutMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает новый экземпляр изображения с вырезанной областью. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Режим вырезки. <ref refid="classquasar_1_1Image_1a8bd447cca59341b32a8842145de3f27ea32954654ac8fe66a1d09be19001de2d4" kindref="member">CutMode::Width</ref> - вырезка столбцов, <ref refid="classquasar_1_1Image_1a8bd447cca59341b32a8842145de3f27eaeec6c4bdbd339edf8cbea68becb85244" kindref="member">CutMode::Height</ref> - вырезка рядов. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Начальный ряд/колонка. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Конечный ряд/колонка. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ничего или код ошибки. </para>
+</simplesect>
+<simplesect kind="pre"><para><computeroutput>start &lt; end</computeroutput>. </para>
+</simplesect>
+<simplesect kind="pre"><para><computeroutput>end &lt; this-&gt;<ref refid="classquasar_1_1Image_1ac7821e6ad1e91247e8114c5411b2be49" kindref="member">width_rounded()</ref></computeroutput> || <computeroutput>end &lt; this-&gt;<ref refid="classquasar_1_1Image_1a7b5f4d820154764b1c46d3c9c237bcf2" kindref="member">height_rounded()</ref></computeroutput>. </para>
+</simplesect>
+<simplesect kind="invariant"><para><computeroutput>this-&gt;image_data_ != nullptr</computeroutput>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.6.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="555" column="7" bodyfile="image.cc" bodystart="351" bodyend="392"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classquasar_1_1Image_1ad946ddd2fecd0401dcbeac2b35e38b4d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/memory/shared_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::shared_ptr</ref>&lt; <ref refid="classquasar_1_1Image" kindref="compound">Image</ref> &gt;</type>
+        <definition>auto load</definition>
+        <argsstring>(std::filesystem::path const &amp;path, u32 width, u32 height, ImageUnderlyingType type)</argsstring>
+        <name>load</name>
+        <param>
+          <type>std::filesystem::path const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>ImageUnderlyingType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Загружает изображение из файла по указанному пути. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь к файлу. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ширина изображения. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Высота изображения. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип, которым представлены данные в памяти в данном изображении. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Указатель на загруженное изображение. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/runtime_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::runtime_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если не удалось загрузить изображение из файла. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/invalid_argument" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::invalid_argument</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если предоставлены некорректные параметры. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>статической функции</bold>. </para>
+</simplesect>
+<simplesect kind="version"><para>1.3.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="519" column="29" bodyfile="image.cc" bodystart="584" bodyend="608"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classquasar_1_1Image_1a1b892d404c2dc40370f29751f97f2cbb" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; f32 &gt;</type>
+        <definition>auto brightness_corrected_buffer</definition>
+        <argsstring>(f32 multiplier, f32 *autobrightness=nullptr) const</argsstring>
+        <name>brightness_corrected_buffer</name>
+        <param>
+          <type>f32</type>
+          <declname>multiplier</declname>
+        </param>
+        <param>
+          <type>f32 *</type>
+          <declname>autobrightness</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Копирует буфер изображения, корректирует яркость и возвращает его в виде вектора. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">multiplier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Множитель яркости. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">autobrightness</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выходной параметр - множитель автобаланса яркости. По умолчанию равен <computeroutput>nullptr</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Буфер в виде вектора <computeroutput>float32</computeroutput>, скорректированный по яркости. </para>
+</simplesect>
+<simplesect kind="version"><para>1.4.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="566" column="18" bodyfile="image.cc" bodystart="610" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a19fe106b32265c3d44a38ad12a327229" prot="protected" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>cv::Mat</type>
+        <definition>auto clahe</definition>
+        <argsstring>(span&lt; f32 const &gt; data, f32 clip_limit=1.F) const noexcept(false)</argsstring>
+        <name>clahe</name>
+        <param>
+          <type>span&lt; f32 const &gt;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>clip_limit</declname>
+          <defval>1.F</defval>
+        </param>
+        <briefdescription>
+<para>Выполняет адаптивную эквализацию яркости и контрастности изображения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Конвертирует входные данные в матрицу <emphasis>OpenCV</emphasis> и применяет к ней алгоритм CLAHE. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Входные данные. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clip_limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Порог контрастности. По умолчанию равен единице. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Матрица <emphasis>OpenCV</emphasis>, скорректированная по яркости и контрастности. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Может</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>выбросить одно из исключений <emphasis>OpenCV</emphasis> при некорректных входных данных. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ulink url="https://en.wikipedia.org/wiki/Adaptive_histogram_equalization">https://en.wikipedia.org/wiki/Adaptive_histogram_equalization</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="581" column="14" bodyfile="image.cc" bodystart="669" bodyend="683"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1aba71c415f235609e5483da7166919143" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 operator()</definition>
+        <argsstring>(int w, int h) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>Синоним для функции <ref refid="classquasar_1_1Image_1afc4938c32b96bb0587c5057cbb0fdb0e" kindref="member">Image::pixel</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="609" column="17" bodyfile="quasar/image/image.h" bodystart="609" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1add256812b9cbd312e3373f6b32092231" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>f32 &amp;</type>
+        <definition>f32&amp; operator()</definition>
+        <argsstring>(int w, int h)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>Синоним для функции <ref refid="classquasar_1_1Image_1a648244837e482705548b8432614b26c4" kindref="member">Image::pixel_mut</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="614" column="17" bodyfile="quasar/image/image.h" bodystart="614" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ac9374cf47a7d715541f8aa92b9a3da69" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classquasar_1_1Image" kindref="compound">Image</ref> &amp;</type>
+        <definition>auto operator=</definition>
+        <argsstring>(Image const &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classquasar_1_1Image" kindref="compound">Image</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Оператор копирования. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Выполняет глубокое копирование изображения (копирование буфера) в новый экземляр. <simplesect kind="warning"><para>Копирование изображения - затратная операция. Используйте ее только при необходимости. </para>
+</simplesect>
+<simplesect kind="version"><para>1.4.1 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="623" column="12" bodyfile="image.cc" bodystart="110" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a6dac152050e9117dccf1574e8f9f3f19" prot="protected" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classquasar_1_1Image" kindref="compound">Image</ref> &amp;</type>
+        <definition>auto operator=</definition>
+        <argsstring>(Image &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classquasar_1_1Image" kindref="compound">Image</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Оператор перемещения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Выполняет перемещение изображения в новый экземляр, инвалидируя предыдущий. Буфер при этом не копируется, а перемещается, т.е. затраты по скорости минимальны. <simplesect kind="remark"><para>Это - операция перемещения, а не копирования. Она инвалидирует предыдущий экземпляр, поэтому обеспечивает минимальные затраты по скорости. </para>
+</simplesect>
+<simplesect kind="version"><para>1.4.1 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="633" column="12" bodyfile="image.cc" bodystart="127" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classquasar_1_1Image_1ab9ad8ce74c1f5ff5d265249a5569fba2" prot="protected" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::filesystem::path</type>
+        <definition>auto save_mat</definition>
+        <argsstring>(cv::Mat const &amp;matrix, std::filesystem::path const &amp;path, ImageFormat format) noexcept(false)</argsstring>
+        <name>save_mat</name>
+        <param>
+          <type>cv::Mat const &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>std::filesystem::path const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>ImageFormat</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Сохраняет матрицу <emphasis>OpenCV</emphasis> в файл. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица <emphasis>OpenCV</emphasis>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь к файлу. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Формат изображения. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Путь к сохраненному файлу. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/runtime_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::runtime_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если не удалось сохранить изображение в файл. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>ImageFormat </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="592" column="35" bodyfile="image.cc" bodystart="685" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1a0e65eb5284300362e96bb8012eba04f2" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>auto write_exif_tag</definition>
+        <argsstring>(std::filesystem::path const &amp;path, api::Metadata &amp;metadata)</argsstring>
+        <name>write_exif_tag</name>
+        <param>
+          <type>std::filesystem::path const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>api::Metadata &amp;</type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+<para>Записывает EXIF-тег метаданных РЛИ в выбранный файл. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь к файлу JPEG </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Структура метаданных РЛИ. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>api::Metadata </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="604" column="17" bodyfile="image.cc" bodystart="700" bodyend="745"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classquasar_1_1Image_1a46824688ad6ce15048f78eae35d651bb" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; T &gt;</type>
+        <definition>template std::vector&lt; f64 &gt; to_vec_impl_cuda&lt; f64 &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>to_vec_impl_cuda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="637" column="18" bodyfile="image.cc" bodystart="861" bodyend="871"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1abfad786dcbf95e0fc24e76cb43fb9d90" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; T &gt;</type>
+        <definition>template std::vector&lt; f64 &gt; to_vec_impl&lt; f64 &gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>to_vec_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="639" column="18" bodyfile="image.cc" bodystart="845" bodyend="850"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ad89e31d57ca21ffae219988cfb8e937b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; T &gt;</type>
+        <definition>template std::vector&lt; f64 &gt; to_vec_impl_cuda&lt; f64 &gt;</definition>
+        <argsstring>(usize, usize) const</argsstring>
+        <name>to_vec_impl_cuda</name>
+        <param>
+          <type>usize</type>
+          <defname>start</defname>
+        </param>
+        <param>
+          <type>usize</type>
+          <defname>end</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="641" column="18" bodyfile="image.cc" bodystart="879" bodyend="893"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Image_1ace1e1b218262c6efb84fd60945dc83ce" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; T &gt;</type>
+        <definition>template std::vector&lt; f64 &gt; to_vec_impl&lt; f64 &gt;</definition>
+        <argsstring>(usize, usize) const</argsstring>
+        <name>to_vec_impl</name>
+        <param>
+          <type>usize</type>
+          <defname>start</defname>
+        </param>
+        <param>
+          <type>usize</type>
+          <defname>end</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/image.h" line="643" column="18" bodyfile="image.cc" bodystart="853" bodyend="858"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Радиолокационное изображение. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="remark"><para>Доступно в Python под именем <bold><ref refid="classquasar_1_1Image" kindref="compound">Image</ref></bold>. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="quasar/image/image.h" line="31" column="14" bodyfile="quasar/image/image.h" bodystart="31" bodyend="656"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1Image_1ab9f127302ca026a5bd208810f62c331e" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>AbsAndNorm</name></member>
+      <member refid="classquasar_1_1Image_1a31629733be5ef388a56984cb4badeeec" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>accumulate_from</name></member>
+      <member refid="classquasar_1_1Image_1aa195e0ab82e857e22c842d2875638407" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>actual_index</name></member>
+      <member refid="classquasar_1_1Image_1af8b7b7ce0928ad3c51603109b76b766f" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>actual_index_</name></member>
+      <member refid="classquasar_1_1Image_1a659f3c8d6591c81ddfacd29ba4581af6" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>as_cv_mat</name></member>
+      <member refid="classquasar_1_1Image_1a48819141518b65ffecfe4b37510ba009" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>Binarize</name></member>
+      <member refid="classquasar_1_1Image_1a1b892d404c2dc40370f29751f97f2cbb" prot="protected" virt="non-virtual"><scope>quasar::Image</scope><name>brightness_corrected_buffer</name></member>
+      <member refid="classquasar_1_1Image_1af27cf596790829f1a88e356b8245f189" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>broken_</name></member>
+      <member refid="classquasar_1_1Image_1a19fe106b32265c3d44a38ad12a327229" prot="protected" virt="non-virtual"><scope>quasar::Image</scope><name>clahe</name></member>
+      <member refid="classquasar_1_1Image_1a85ad26a4a370f67021406bf2f5a8a824" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>ColorMap</name></member>
+      <member refid="classquasar_1_1Image_1ab91357b374af7dfedb3c0eec39921924" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>cut</name></member>
+      <member refid="classquasar_1_1Image_1a8bd447cca59341b32a8842145de3f27e" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>CutMode</name></member>
+      <member refid="classquasar_1_1Image_1a2f8e4654188f77c55d7a326d42b365ef" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>data</name></member>
+      <member refid="classquasar_1_1Image_1ac5e1a897df42d70a36c7ed819570d3aa" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>data_interface</name></member>
+      <member refid="classquasar_1_1Image_1a655e6a6fba0b57073e7982dc587b6dc6" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>data_interface_mut</name></member>
+      <member refid="classquasar_1_1Image_1aeb6e0bf0f5715bbfe23fa8f8e35856aa" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>dsp_type_</name></member>
+      <member refid="classquasar_1_1Image_1abb48c1345e4e91781accb2faf640dd7d" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>height</name></member>
+      <member refid="classquasar_1_1Image_1ac0185e7124096a4809bf8b01d80af17c" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>height_</name></member>
+      <member refid="classquasar_1_1Image_1a7b5f4d820154764b1c46d3c9c237bcf2" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>height_rounded</name></member>
+      <member refid="classquasar_1_1Image_1a3bef885d0d7cfab4ef373ef5b53396a1" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>height_rounded_</name></member>
+      <member refid="classquasar_1_1Image_1a66d0d6da3b89580352c28d37b57df5bb" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>Image</name></member>
+      <member refid="classquasar_1_1Image_1a43f860f5b6f26baf05bcf3e556a2b784" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>Image</name></member>
+      <member refid="classquasar_1_1Image_1adb0ab0d04db63846989cf7bd9ad459ee" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>Image</name></member>
+      <member refid="classquasar_1_1Image_1ae80cb9f4dd6d01cddd068a7a24522855" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>Image</name></member>
+      <member refid="classquasar_1_1Image_1ad5d76c5feaf1b262be0d30e52f7f3443" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>Image</name></member>
+      <member refid="classquasar_1_1Image_1ac0b2185e648c870bb873907a9fd9ea9f" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>image_data_</name></member>
+      <member refid="classquasar_1_1Image_1ac857c4bc1919848fcff21c9901738f3e" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>is_broken</name></member>
+      <member refid="classquasar_1_1Image_1a9ad5055a935d423183a77a57b51f5784" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>is_subnormal</name></member>
+      <member refid="classquasar_1_1Image_1ad946ddd2fecd0401dcbeac2b35e38b4d" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>load</name></member>
+      <member refid="classquasar_1_1Image_1a384a86231bca004747d18962f41b0785" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>MedianBlur</name></member>
+      <member refid="classquasar_1_1Image_1a5ff740dc9c3a369c3ed5e8c57a52c8de" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>metadata</name></member>
+      <member refid="classquasar_1_1Image_1a0c1a036b4a49764c430b2cbfa4390507" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>metadata_</name></member>
+      <member refid="classquasar_1_1Image_1ab975413486c7307628aae00d7ba32bb9" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>metadata_mut</name></member>
+      <member refid="classquasar_1_1Image_1a8f0109ed3e5a1e6f29421daccb99311a" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>move_to</name></member>
+      <member refid="classquasar_1_1Image_1a960984f6404adff20ce96a607fcbf9fe" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>near_range_index</name></member>
+      <member refid="classquasar_1_1Image_1a5543fe2951ef83c2600089e6a19f50b5" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>near_range_index_</name></member>
+      <member refid="classquasar_1_1Image_1aba71c415f235609e5483da7166919143" prot="protected" virt="non-virtual"><scope>quasar::Image</scope><name>operator()</name></member>
+      <member refid="classquasar_1_1Image_1add256812b9cbd312e3373f6b32092231" prot="protected" virt="non-virtual"><scope>quasar::Image</scope><name>operator()</name></member>
+      <member refid="classquasar_1_1Image_1ac9374cf47a7d715541f8aa92b9a3da69" prot="protected" virt="non-virtual"><scope>quasar::Image</scope><name>operator=</name></member>
+      <member refid="classquasar_1_1Image_1a6dac152050e9117dccf1574e8f9f3f19" prot="protected" virt="non-virtual"><scope>quasar::Image</scope><name>operator=</name></member>
+      <member refid="classquasar_1_1Image_1afc4938c32b96bb0587c5057cbb0fdb0e" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>pixel</name></member>
+      <member refid="classquasar_1_1Image_1a648244837e482705548b8432614b26c4" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>pixel_mut</name></member>
+      <member refid="classquasar_1_1Image_1af6bc87e61fbc10c418e26496780d6d4a" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>pixel_unsafe</name></member>
+      <member refid="classquasar_1_1Image_1a26b316112c78f275c71165d792ef771f" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>range_to_index</name></member>
+      <member refid="classquasar_1_1Image_1abd38b6d76cc67d0d7eebce7b915ebf46" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>range_to_index</name></member>
+      <member refid="classquasar_1_1Image_1affc76c77b31a552e67011ec0d604ecb9" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>RangeBrightness</name></member>
+      <member refid="classquasar_1_1Image_1aad7d162b83c85d08bfe5af178290d134" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>ReadMetadata</name></member>
+      <member refid="classquasar_1_1Image_1afe73dbceabd79952b2d967562c5650d6" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>reset_interface</name></member>
+      <member refid="classquasar_1_1Image_1abfd1428bfa6a22fd8db03bceb30dfa5c" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>Roll</name></member>
+      <member refid="classquasar_1_1Image_1ae2fef5465eea77d118dce7f7ae4604b7" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>Rotate</name></member>
+      <member refid="classquasar_1_1Image_1af5e7a25c595941fc0afb1a2c5aba58d8" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>save</name></member>
+      <member refid="classquasar_1_1Image_1a9ffcf456c07398bda226dcce7079e672" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>save_as_binary</name></member>
+      <member refid="classquasar_1_1Image_1ab9ad8ce74c1f5ff5d265249a5569fba2" prot="protected" virt="non-virtual"><scope>quasar::Image</scope><name>save_mat</name></member>
+      <member refid="classquasar_1_1Image_1a5a266265652d8bfffbbe94381941fa46" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>save_signal_as_csv</name></member>
+      <member refid="classquasar_1_1Image_1afda7a37a94c3e6fa0052cd30e4cbfeaf" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>set_actual_index</name></member>
+      <member refid="classquasar_1_1Image_1a8faecffb664034a352ea0e5f61336c15" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>set_broken</name></member>
+      <member refid="classquasar_1_1Image_1ab9bb1fc9a93c95d9d360178b9f08501b" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>set_height</name></member>
+      <member refid="classquasar_1_1Image_1aa6cc951fb4546fc46569177e158f0f36" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>set_height_rounded</name></member>
+      <member refid="classquasar_1_1Image_1a9ad590375684cd09c2a79708d3d888bd" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>set_near_range_index</name></member>
+      <member refid="classquasar_1_1Image_1ad6bf74af8e90067191e59c6dd8ad8eab" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>set_pixel_unsafe</name></member>
+      <member refid="classquasar_1_1Image_1a842c0dbc8e8d08afcbdc6553ccb1d97a" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>set_underlying_type</name></member>
+      <member refid="classquasar_1_1Image_1ac90b51c430d7d5230a3053386291fd15" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>set_width</name></member>
+      <member refid="classquasar_1_1Image_1a307dc1bec8a43f5d73a8b024a14fc7dc" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>set_width_rounded</name></member>
+      <member refid="classquasar_1_1Image_1ad481394f531a1607b05beef8daa1401c" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>size</name></member>
+      <member refid="classquasar_1_1Image_1a1dc43738d441512f07034662d9b17965" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>size_bytes</name></member>
+      <member refid="classquasar_1_1Image_1ab56f2ac8629596bc94c4b809de30cb66" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>size_rounded</name></member>
+      <member refid="classquasar_1_1Image_1a907842013573e470489c3bdfb2e91726" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>size_rounded_bytes</name></member>
+      <member refid="classquasar_1_1Image_1ad4787539b373496230145107d3494a7a" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>to_vec</name></member>
+      <member refid="classquasar_1_1Image_1a9a69faafe5130b0428c7aa5fadd08aa2" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>to_vec</name></member>
+      <member refid="classquasar_1_1Image_1abfad786dcbf95e0fc24e76cb43fb9d90" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>to_vec_impl</name></member>
+      <member refid="classquasar_1_1Image_1ace1e1b218262c6efb84fd60945dc83ce" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>to_vec_impl</name></member>
+      <member refid="classquasar_1_1Image_1a46824688ad6ce15048f78eae35d651bb" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>to_vec_impl_cuda</name></member>
+      <member refid="classquasar_1_1Image_1ad89e31d57ca21ffae219988cfb8e937b" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>to_vec_impl_cuda</name></member>
+      <member refid="classquasar_1_1Image_1a68959c716fe27c7aa6f07436374874c4" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>type</name></member>
+      <member refid="classquasar_1_1Image_1aa47a9ab6ac13067f26cb740c6e6b1584" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>underlying_type</name></member>
+      <member refid="classquasar_1_1Image_1aeae0e2df71cb2d2b2976988b13075e14" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>underlying_type_</name></member>
+      <member refid="classquasar_1_1Image_1af4082be3727bd14e957999ac4cd562c5" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>VerticalMirror</name></member>
+      <member refid="classquasar_1_1Image_1af61a7ed57de0da59d3a280f0a56ca001" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>view</name></member>
+      <member refid="classquasar_1_1Image_1aee726bbd42c46cfa0289170a4b5fcfe1" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>view_mut</name></member>
+      <member refid="classquasar_1_1Image_1ae481d542b8dcdf84bb24c6d3b4e42125" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>width</name></member>
+      <member refid="classquasar_1_1Image_1afb851ae532dc747ea60b2e799213183c" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>width_</name></member>
+      <member refid="classquasar_1_1Image_1ac7821e6ad1e91247e8114c5411b2be49" prot="public" virt="non-virtual"><scope>quasar::Image</scope><name>width_rounded</name></member>
+      <member refid="classquasar_1_1Image_1a3a614316bb9e0580e632532dfd9cb275" prot="private" virt="non-virtual"><scope>quasar::Image</scope><name>width_rounded_</name></member>
+      <member refid="classquasar_1_1Image_1a0e65eb5284300362e96bb8012eba04f2" prot="protected" virt="non-virtual"><scope>quasar::Image</scope><name>write_exif_tag</name></member>
+      <member refid="classquasar_1_1Image_1a70dc073ff2e26a6752dee2a6d2b609a8" prot="public" virt="virtual"><scope>quasar::Image</scope><name>~Image</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

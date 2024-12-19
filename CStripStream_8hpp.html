@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CStripStream.hpp file | QuaSAR SAR image processing library</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <span id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">
+        <a href="http://quasar-project.github.io/doc"><img src="logo.png" alt="" />QuaSAR</a> <span class="m-breadcrumb">|</span> <a href="index.html" class="m-thin">SAR image processing library</a>
+      </span>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Handbook</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="4">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          CStripStream.hpp <span class="m-thin">file</span>
+        </h1>
+        <p><span></span></p>
+        <nav class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#nested-classes">Classes</a></li>
+                <li><a href="#var-members">Variables</a></li>
+                <li><a href="#define-members">Defines</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <section id="nested-classes">
+          <h2><a href="#nested-classes">Classes</a></h2>
+          <dl class="m-doc">
+            <dt>
+              class <a href="classCStripStream.html" class="m-doc">CStripStream</a>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="var-members">
+          <h2><a href="#var-members">Variables</a></h2>
+          <dl class="m-doc">
+            <dt id="a282e7d4378d4a18a805b8980295ac86c">
+              float <a href="#a282e7d4378d4a18a805b8980295ac86c" class="m-doc-self">pitch</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a26fd84d522945b6038221d9e38c7cc39">
+              float <a href="#a26fd84d522945b6038221d9e38c7cc39" class="m-doc-self">roll</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a11ab0ec19804266cbb6b6e6121980f17">
+              float <a href="#a11ab0ec19804266cbb6b6e6121980f17" class="m-doc-self">ele</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a7972334534f68166121a6e51b0aac2d6">
+              double <a href="#a7972334534f68166121a6e51b0aac2d6" class="m-doc-self">lat</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aa96391e04b5977c50b96d77bea86a01d">
+              double <a href="#aa96391e04b5977c50b96d77bea86a01d" class="m-doc-self">lon</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ac46e821ae08930cc9e257642e34275a3">
+              float <a href="#ac46e821ae08930cc9e257642e34275a3" class="m-doc-self">velocity</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ac6894c88aabf335922736a63b2b87b97">
+              float <a href="#ac6894c88aabf335922736a63b2b87b97" class="m-doc-self">course</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a1f721d77724f0712d13dbb6719895531">
+              float <a href="#a1f721d77724f0712d13dbb6719895531" class="m-doc-self">track_ang</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a9eae6c1f38db98ab568f3ed3771a969d">
+              float <a href="#a9eae6c1f38db98ab568f3ed3771a969d" class="m-doc-self">dx</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a8f461b6142ce8725218813abb23b06a3">
+              float <a href="#a8f461b6142ce8725218813abb23b06a3" class="m-doc-self">dy</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a3c9556645d92e863376a4063a3ad7001">
+              float <a href="#a3c9556645d92e863376a4063a3ad7001" class="m-doc-self">x0</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a018e57d63b6c2c3a802377f95d7a4e96">
+              uint8_t <a href="#a018e57d63b6c2c3a802377f95d7a4e96" class="m-doc-self">word_size</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a26ce98a1cefae97e7a803b1dbec972c1">
+              uint8_t <a href="#a26ce98a1cefae97e7a803b1dbec972c1" class="m-doc-self">polarization</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="af77b1a54442f2443cf64a4766f916bcd">
+              int16_t <a href="#af77b1a54442f2443cf64a4766f916bcd" class="m-doc-self">y</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a31a74a81efd0ba14cbc4853f7fce3af0">
+              uint16_t <a href="#a31a74a81efd0ba14cbc4853f7fce3af0" class="m-doc-self">nx</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a9696b3729bc7ba3effc41ee585be5b27">
+              uint16_t <a href="#a9696b3729bc7ba3effc41ee585be5b27" class="m-doc-self">ny</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a9fc4cca635a26c692681a7071e379aa7">
+              float <a href="#a9fc4cca635a26c692681a7071e379aa7" class="m-doc-self">k</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a51bdee9eea878b90b917afc0f8c99435">
+              uint16_t <a href="#a51bdee9eea878b90b917afc0f8c99435" class="m-doc-self">marker</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ab6d7b6f8c2ceaba7acda80aaf05f4899">
+              uint16_t <a href="#ab6d7b6f8c2ceaba7acda80aaf05f4899" class="m-doc-self">version</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aaba88b24a21a6c70c895c0d55f4a69a0">
+              uint16_t <a href="#aaba88b24a21a6c70c895c0d55f4a69a0" class="m-doc-self">size</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ae1d905c6ac1a0c9b96dca16153917334">
+              uint16_t <a href="#ae1d905c6ac1a0c9b96dca16153917334" class="m-doc-self">cnt</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a4fc3a0c58dfbd1e68224521185cb9384">
+              uint16_t <a href="#a4fc3a0c58dfbd1e68224521185cb9384" class="m-doc-self">id</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="acb5cfd209ba75c853d03f701e7f91679">
+              uint16_t <a href="#acb5cfd209ba75c853d03f701e7f91679" class="m-doc-self">type</a>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="define-members">
+          <h2><a href="#define-members">Defines</a></h2>
+          <dl class="m-doc">
+            <dt id="a708996a6ab44089275abf1fc88d45cf8">
+              <span class="m-doc-wrap-bumper">#define <a href="#a708996a6ab44089275abf1fc88d45cf8" class="m-doc-self">CHUNK_HEIGHT</a></span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>QuaSAR handbook is part of the <a href="https://github.com/Nikitamuraviev10/quasar">QuaSAR project</a><br />Generated by <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacequasar_1_1numbers" kind="namespace" language="C++">
+    <compoundname>quasar::numbers</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacequasar_1_1numbers_1a9c4bdfeac6596bf86f791768ec1a50bb" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto speed_of_light</definition>
+        <argsstring></argsstring>
+        <name>speed_of_light</name>
+        <initializer>= 299&apos;792&apos;458.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/constants.h" line="11" column="25" bodyfile="private/constants.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1numbers_1af319a0de8b6db153d3b226670271c158" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto earth_radius</definition>
+        <argsstring></argsstring>
+        <name>earth_radius</name>
+        <initializer>= 6&apos;371&apos;007.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/constants.h" line="12" column="25" bodyfile="private/constants.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1numbers_1a999db8b578d5cd8c951d06f132e2be8f" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto earth_radius_km</definition>
+        <argsstring></argsstring>
+        <name>earth_radius_km</name>
+        <initializer>= <ref refid="namespacequasar_1_1numbers_1af319a0de8b6db153d3b226670271c158" kindref="member">earth_radius</ref> / 1&apos;000.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/constants.h" line="13" column="25" bodyfile="private/constants.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1numbers_1abbe0b9353b5dc5986f9a0bd7b9d2f297" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto earth_circumference</definition>
+        <argsstring></argsstring>
+        <name>earth_circumference</name>
+        <initializer>= <ref refid="namespacequasar_1_1numbers_1af319a0de8b6db153d3b226670271c158" kindref="member">earth_radius</ref> * 2.f * pi</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/constants.h" line="14" column="25" bodyfile="private/constants.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1numbers_1a33d455624a782396efa5f426ad3b403c" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto earth_circumference_km</definition>
+        <argsstring></argsstring>
+        <name>earth_circumference_km</name>
+        <initializer>= <ref refid="namespacequasar_1_1numbers_1abbe0b9353b5dc5986f9a0bd7b9d2f297" kindref="member">earth_circumference</ref> / 1&apos;000.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/constants.h" line="15" column="25" bodyfile="private/constants.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/constants.h" line="8" column="25"/>
+  </compounddef>
+</doxygen>

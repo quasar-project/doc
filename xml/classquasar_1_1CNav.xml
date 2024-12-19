@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1CNav" kind="class" language="C++" prot="public">
+    <compoundname>quasar::CNav</compoundname>
+    <includes refid="nav_8h" local="no">quasar/nav/nav.h</includes>
+    <innerclass refid="structquasar_1_1CNav_1_1nav__pack__t" prot="private">quasar::CNav::nav_pack_t</innerclass>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classquasar_1_1CNav_1a3c3d011364ba6b36097b4108e788d614" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Velocity</definition>
+        <argsstring></argsstring>
+        <name>Velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="48" column="5" bodyfile="quasar/nav/nav.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classquasar_1_1CNav_1a007a1f1c18d6897f5ee0a87e6b8a70bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Elevation</definition>
+        <argsstring></argsstring>
+        <name>Elevation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="49" column="5" bodyfile="quasar/nav/nav.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classquasar_1_1CNav_1a7118b9a8f756107192eab9019b221f99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ParameterBase</definition>
+        <argsstring></argsstring>
+        <name>ParameterBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="50" column="5" bodyfile="quasar/nav/nav.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classquasar_1_1CNav_1aa41cef6951d0d8a2325b914985a5bde9" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t current_index</definition>
+        <argsstring></argsstring>
+        <name>current_index</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="104" column="12" bodyfile="quasar/nav/nav.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNav_1ac05bc792332ae72e35f30ed431137ea4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float update_rate</definition>
+        <argsstring></argsstring>
+        <name>update_rate</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="105" column="11" bodyfile="quasar/nav/nav.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNav_1a20424b11e50621f6b4f006f5a7dbf0ba" prot="private" static="no" mutable="no">
+        <type>struct nav_pack_t</type>
+        <definition>struct nav_pack_t nav_pack</definition>
+        <argsstring></argsstring>
+        <name>nav_pack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="105" column="11" bodyfile="quasar/nav/nav.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNav_1a7b51593c67e3cbadb2999000ad2fb1bc" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* nav_file</definition>
+        <argsstring></argsstring>
+        <name>nav_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="108" column="10" bodyfile="quasar/nav/nav.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNav_1a3605515e2e253bc00d68e9672fe7e235" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; struct nav_pack_t &gt;</type>
+        <definition>std::vector&lt;struct nav_pack_t&gt; nav_vec</definition>
+        <argsstring></argsstring>
+        <name>nav_vec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="109" column="17" bodyfile="quasar/nav/nav.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classquasar_1_1CNav_1a4617baf997c26abf52fdf382269a4e55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CNav</definition>
+        <argsstring>(char const *fn)</argsstring>
+        <name>CNav</name>
+        <param>
+          <type>char const *</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="26" column="5" bodyfile="nav.cc" bodystart="15" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1a22dfdd90e541a818daa780454089d242" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~CNav</definition>
+        <argsstring>()</argsstring>
+        <name>~CNav</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="27" column="13" bodyfile="nav.cc" bodystart="22" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1a01ccbde17261a0ddb67e8d11db01f7b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int read_msec_from</definition>
+        <argsstring>(uint32_t from_msec, uint32_t msec)</argsstring>
+        <name>read_msec_from</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>from_msec</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>msec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="28" column="9" bodyfile="nav.cc" bodystart="30" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1aed8940892adac60516a1798eee763dd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int read_msec</definition>
+        <argsstring>(uint32_t msec)</argsstring>
+        <name>read_msec</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>msec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="29" column="9" bodyfile="nav.cc" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1a492ca2227cf05d04ad9476db170e4585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int read_sec_from</definition>
+        <argsstring>(float sec_from, float sec)</argsstring>
+        <name>read_sec_from</name>
+        <param>
+          <type>float</type>
+          <declname>sec_from</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="30" column="9" bodyfile="nav.cc" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1aa43025856ccbfda11dc12b64f88f8d7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int read_sec</definition>
+        <argsstring>(float sec)</argsstring>
+        <name>read_sec</name>
+        <param>
+          <type>float</type>
+          <declname>sec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="31" column="9" bodyfile="nav.cc" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1a0b6b70701c46e22849f0f363861351cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="32" column="12" bodyfile="nav.cc" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1a867d7a6eaa9b62fe8848c4ec75a44041" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_update_rate</definition>
+        <argsstring>(float rate)</argsstring>
+        <name>set_update_rate</name>
+        <param>
+          <type>float</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="33" column="10" bodyfile="nav.cc" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1ae69acabcb983fb62111d792b9763fd9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool set_time_offset</definition>
+        <argsstring>(float time)</argsstring>
+        <name>set_time_offset</name>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="34" column="10" bodyfile="nav.cc" bodystart="87" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1af13079854d9c416fe561ac1747f16296" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classquasar_1_1Velocity" kindref="compound">Velocity</ref></type>
+        <definition>Velocity velocity</definition>
+        <argsstring>()</argsstring>
+        <name>velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="35" column="14" bodyfile="nav.cc" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1ab70b091d61eac73bbc9120187d473326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classquasar_1_1Elevation" kindref="compound">Elevation</ref></type>
+        <definition>Elevation elevation</definition>
+        <argsstring>()</argsstring>
+        <name>elevation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="36" column="15" bodyfile="nav.cc" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1a9fec008e51fcd444293e0d9348854174" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double lat</definition>
+        <argsstring>(size_t n=0)</argsstring>
+        <name>lat</name>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="38" column="12" bodyfile="nav.cc" bodystart="107" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1a6a4deb1201b388a94ba245f604614c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double lon</definition>
+        <argsstring>(size_t n=0)</argsstring>
+        <name>lon</name>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="39" column="12" bodyfile="nav.cc" bodystart="114" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1aa58da30e67ed1721d4ab512847f37539" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double course</definition>
+        <argsstring>(size_t n=0)</argsstring>
+        <name>course</name>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="40" column="12" bodyfile="nav.cc" bodystart="120" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1a2ba40ae214a36c40fccb50ca3905e1c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double course_by_time</definition>
+        <argsstring>()</argsstring>
+        <name>course_by_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="42" column="12" bodyfile="nav.cc" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1af9d9507e5f5356851c014fe9b6f31e3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="classquasar_1_1Dim3" kindref="compound">Dim3</ref> &gt;</type>
+        <definition>std::vector&lt; Dim3 &gt; gyro</definition>
+        <argsstring>()</argsstring>
+        <name>gyro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="44" column="17" bodyfile="nav.cc" bodystart="126" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1a451bf55772de64d77f4bc09f87982d06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="classquasar_1_1Dim3" kindref="compound">Dim3</ref> &gt;</type>
+        <definition>std::vector&lt; Dim3 &gt; accel</definition>
+        <argsstring>()</argsstring>
+        <name>accel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="45" column="17" bodyfile="nav.cc" bodystart="133" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNav_1a18f6e1135f52a9467ba63cee706bcafc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="classquasar_1_1Dim3" kindref="compound">Dim3</ref> &gt;</type>
+        <definition>std::vector&lt; Dim3 &gt; compass</definition>
+        <argsstring>()</argsstring>
+        <name>compass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="46" column="17" bodyfile="nav.cc" bodystart="140" bodyend="145"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/nav/nav.h" line="24" column="13" bodyfile="quasar/nav/nav.h" bodystart="24" bodyend="110"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1CNav_1a451bf55772de64d77f4bc09f87982d06" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>accel</name></member>
+      <member refid="classquasar_1_1CNav_1a4617baf997c26abf52fdf382269a4e55" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>CNav</name></member>
+      <member refid="classquasar_1_1CNav_1a18f6e1135f52a9467ba63cee706bcafc" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>compass</name></member>
+      <member refid="classquasar_1_1CNav_1aa58da30e67ed1721d4ab512847f37539" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>course</name></member>
+      <member refid="classquasar_1_1CNav_1a2ba40ae214a36c40fccb50ca3905e1c7" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>course_by_time</name></member>
+      <member refid="classquasar_1_1CNav_1aa41cef6951d0d8a2325b914985a5bde9" prot="private" virt="non-virtual"><scope>quasar::CNav</scope><name>current_index</name></member>
+      <member refid="classquasar_1_1CNav_1a007a1f1c18d6897f5ee0a87e6b8a70bc" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>Elevation</name></member>
+      <member refid="classquasar_1_1CNav_1ab70b091d61eac73bbc9120187d473326" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>elevation</name></member>
+      <member refid="classquasar_1_1CNav_1af9d9507e5f5356851c014fe9b6f31e3d" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>gyro</name></member>
+      <member refid="classquasar_1_1CNav_1a9fec008e51fcd444293e0d9348854174" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>lat</name></member>
+      <member refid="classquasar_1_1CNav_1a6a4deb1201b388a94ba245f604614c01" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>lon</name></member>
+      <member refid="classquasar_1_1CNav_1a7b51593c67e3cbadb2999000ad2fb1bc" prot="private" virt="non-virtual"><scope>quasar::CNav</scope><name>nav_file</name></member>
+      <member refid="classquasar_1_1CNav_1a20424b11e50621f6b4f006f5a7dbf0ba" prot="private" virt="non-virtual"><scope>quasar::CNav</scope><name>nav_pack</name></member>
+      <member refid="classquasar_1_1CNav_1a3605515e2e253bc00d68e9672fe7e235" prot="private" virt="non-virtual"><scope>quasar::CNav</scope><name>nav_vec</name></member>
+      <member refid="classquasar_1_1CNav_1a7118b9a8f756107192eab9019b221f99" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>ParameterBase</name></member>
+      <member refid="classquasar_1_1CNav_1aed8940892adac60516a1798eee763dd9" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>read_msec</name></member>
+      <member refid="classquasar_1_1CNav_1a01ccbde17261a0ddb67e8d11db01f7b9" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>read_msec_from</name></member>
+      <member refid="classquasar_1_1CNav_1aa43025856ccbfda11dc12b64f88f8d7a" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>read_sec</name></member>
+      <member refid="classquasar_1_1CNav_1a492ca2227cf05d04ad9476db170e4585" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>read_sec_from</name></member>
+      <member refid="classquasar_1_1CNav_1ae69acabcb983fb62111d792b9763fd9e" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>set_time_offset</name></member>
+      <member refid="classquasar_1_1CNav_1a867d7a6eaa9b62fe8848c4ec75a44041" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>set_update_rate</name></member>
+      <member refid="classquasar_1_1CNav_1a0b6b70701c46e22849f0f363861351cd" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>size</name></member>
+      <member refid="classquasar_1_1CNav_1ac05bc792332ae72e35f30ed431137ea4" prot="private" virt="non-virtual"><scope>quasar::CNav</scope><name>update_rate</name></member>
+      <member refid="classquasar_1_1CNav_1af13079854d9c416fe561ac1747f16296" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>velocity</name></member>
+      <member refid="classquasar_1_1CNav_1a3c3d011364ba6b36097b4108e788d614" prot="public" virt="non-virtual"><scope>quasar::CNav</scope><name>Velocity</name></member>
+      <member refid="classquasar_1_1CNav_1a22dfdd90e541a818daa780454089d242" prot="public" virt="virtual"><scope>quasar::CNav</scope><name>~CNav</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

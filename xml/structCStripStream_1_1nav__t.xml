@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structCStripStream_1_1nav__t" kind="struct" language="C++" prot="private">
+    <compoundname>CStripStream::nav_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCStripStream_1_1nav__t_1a282e7d4378d4a18a805b8980295ac86c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float pitch</definition>
+        <argsstring></argsstring>
+        <name>pitch</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="68" column="11" bodyfile="CStripStream.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCStripStream_1_1nav__t_1a26fd84d522945b6038221d9e38c7cc39" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float roll</definition>
+        <argsstring></argsstring>
+        <name>roll</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="69" column="11" bodyfile="CStripStream.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCStripStream_1_1nav__t_1a11ab0ec19804266cbb6b6e6121980f17" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ele</definition>
+        <argsstring></argsstring>
+        <name>ele</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="70" column="11" bodyfile="CStripStream.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCStripStream_1_1nav__t_1a7972334534f68166121a6e51b0aac2d6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lat</definition>
+        <argsstring></argsstring>
+        <name>lat</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="71" column="12" bodyfile="CStripStream.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCStripStream_1_1nav__t_1aa96391e04b5977c50b96d77bea86a01d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double lon</definition>
+        <argsstring></argsstring>
+        <name>lon</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="72" column="12" bodyfile="CStripStream.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCStripStream_1_1nav__t_1ac46e821ae08930cc9e257642e34275a3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="73" column="11" bodyfile="CStripStream.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCStripStream_1_1nav__t_1ac6894c88aabf335922736a63b2b87b97" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float course</definition>
+        <argsstring></argsstring>
+        <name>course</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="74" column="11" bodyfile="CStripStream.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCStripStream_1_1nav__t_1a1f721d77724f0712d13dbb6719895531" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float track_ang</definition>
+        <argsstring></argsstring>
+        <name>track_ang</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripStream.hpp" line="75" column="11" bodyfile="CStripStream.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>float</label>
+      </node>
+      <node id="2">
+        <label>double</label>
+      </node>
+      <node id="1">
+        <label>CStripStream::nav_t</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>lon</edgelabel>
+          <edgelabel>lat</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>track_ang</edgelabel>
+          <edgelabel>ele</edgelabel>
+          <edgelabel>pitch</edgelabel>
+          <edgelabel>course</edgelabel>
+          <edgelabel>velocity</edgelabel>
+          <edgelabel>roll</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="CStripStream.hpp" line="67" column="14" bodyfile="CStripStream.hpp" bodystart="67" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structCStripStream_1_1nav__t_1ac6894c88aabf335922736a63b2b87b97" prot="public" virt="non-virtual"><scope>CStripStream::nav_t</scope><name>course</name></member>
+      <member refid="structCStripStream_1_1nav__t_1a11ab0ec19804266cbb6b6e6121980f17" prot="public" virt="non-virtual"><scope>CStripStream::nav_t</scope><name>ele</name></member>
+      <member refid="structCStripStream_1_1nav__t_1a7972334534f68166121a6e51b0aac2d6" prot="public" virt="non-virtual"><scope>CStripStream::nav_t</scope><name>lat</name></member>
+      <member refid="structCStripStream_1_1nav__t_1aa96391e04b5977c50b96d77bea86a01d" prot="public" virt="non-virtual"><scope>CStripStream::nav_t</scope><name>lon</name></member>
+      <member refid="structCStripStream_1_1nav__t_1a282e7d4378d4a18a805b8980295ac86c" prot="public" virt="non-virtual"><scope>CStripStream::nav_t</scope><name>pitch</name></member>
+      <member refid="structCStripStream_1_1nav__t_1a26fd84d522945b6038221d9e38c7cc39" prot="public" virt="non-virtual"><scope>CStripStream::nav_t</scope><name>roll</name></member>
+      <member refid="structCStripStream_1_1nav__t_1a1f721d77724f0712d13dbb6719895531" prot="public" virt="non-virtual"><scope>CStripStream::nav_t</scope><name>track_ang</name></member>
+      <member refid="structCStripStream_1_1nav__t_1ac46e821ae08930cc9e257642e34275a3" prot="public" virt="non-virtual"><scope>CStripStream::nav_t</scope><name>velocity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

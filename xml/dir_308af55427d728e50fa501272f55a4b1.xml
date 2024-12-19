@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_308af55427d728e50fa501272f55a4b1" kind="dir">
+    <compoundname>misc</compoundname>
+    <innerfile refid="complex_8h">complex.h</innerfile>
+    <innerfile refid="cuda__qualifiers_8h">cuda_qualifiers.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/misc/"/>
+  </compounddef>
+</doxygen>

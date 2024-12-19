@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_f23c1fceb5264fa4b5bafa1f5df0f287" kind="dir">
+    <compoundname>dsp</compoundname>
+    <innerfile refid="abstract__dsp_8h">abstract_dsp.h</innerfile>
+    <innerfile refid="dsp__fftw_8h">dsp_fftw.h</innerfile>
+    <innerfile refid="memory__entity_8h">memory_entity.h</innerfile>
+    <innerfile refid="window_8h">window.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/dsp/"/>
+  </compounddef>
+</doxygen>

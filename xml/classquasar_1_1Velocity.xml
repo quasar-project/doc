@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1Velocity" kind="class" language="C++" prot="public">
+    <compoundname>quasar::Velocity</compoundname>
+    <basecompoundref refid="classquasar_1_1ParameterBase" prot="public" virt="non-virtual">ParameterBase</basecompoundref>
+    <includes refid="nav_8h" local="no">quasar/nav/nav.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classquasar_1_1Velocity_1ad636f55575d5d28d0980d394620faddf" prot="private" static="no" mutable="no">
+        <type>float(Velocity::*</type>
+        <definition>float(Velocity::* _mean()</definition>
+        <argsstring>)()</argsstring>
+        <name>_mean</name>
+        <initializer>= &amp;Velocity::mean_si</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="143" column="5" bodyfile="quasar/nav/nav.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Velocity_1a9c81b89ac57afca5aaa0fd436163194b" prot="private" static="no" mutable="no">
+        <type>float(Velocity::*</type>
+        <definition>float(Velocity::* _get(int n)</definition>
+        <argsstring>)(int n)</argsstring>
+        <name>_get</name>
+        <initializer>= &amp;Velocity::get_si</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="144" column="5" bodyfile="quasar/nav/nav.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classquasar_1_1Velocity_1a1a51cda561252b09a8ea4d53db456c93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Velocity</definition>
+        <argsstring>(CNav *_nav)</argsstring>
+        <name>Velocity</name>
+        <param>
+          <type><ref refid="classquasar_1_1CNav" kindref="compound">CNav</ref> *</type>
+          <declname>_nav</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="123" column="5" bodyfile="quasar/nav/nav.h" bodystart="123" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Velocity_1aaf2f4802c4935f55b036a77cd552658c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float mean</definition>
+        <argsstring>()</argsstring>
+        <name>mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="126" column="11" bodyfile="quasar/nav/nav.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Velocity_1a4619b6a60e8c7470cc00463b2df309a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float get</definition>
+        <argsstring>(int n)</argsstring>
+        <name>get</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="128" column="11" bodyfile="quasar/nav/nav.h" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Velocity_1aef25bf0d695d7e392b52f92276397ad9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classquasar_1_1Velocity" kindref="compound">Velocity</ref></type>
+        <definition>Velocity as_kmh</definition>
+        <argsstring>()</argsstring>
+        <name>as_kmh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="130" column="14" bodyfile="quasar/nav/nav.h" bodystart="130" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Velocity_1ab9b8b03f20690d3f76c0813616f2a402" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classquasar_1_1Velocity" kindref="compound">Velocity</ref></type>
+        <definition>Velocity as_si</definition>
+        <argsstring>()</argsstring>
+        <name>as_si</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="136" column="14" bodyfile="quasar/nav/nav.h" bodystart="136" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classquasar_1_1Velocity_1a799b687e0af86ed171034f504fc71293" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float mean_si</definition>
+        <argsstring>()</argsstring>
+        <name>mean_si</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="146" column="11" bodyfile="quasar/nav/nav.h" bodystart="146" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Velocity_1a55aa838a8bdc892737da493318e39bd5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float mean_kmh</definition>
+        <argsstring>()</argsstring>
+        <name>mean_kmh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="155" column="11" bodyfile="quasar/nav/nav.h" bodystart="155" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Velocity_1a9905f54aea2e2ac1f0f59aebebe0a20b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float get_si</definition>
+        <argsstring>(int n)</argsstring>
+        <name>get_si</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="157" column="11" bodyfile="quasar/nav/nav.h" bodystart="157" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Velocity_1a2de29041dd47e4f07ed72ff50833bbc4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float get_kmh</definition>
+        <argsstring>(int n)</argsstring>
+        <name>get_kmh</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="164" column="11" bodyfile="quasar/nav/nav.h" bodystart="164" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classquasar_1_1ParameterBase_1ae887466d86e1436db7775cfbae70c51b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classquasar_1_1CNav" kindref="compound">CNav</ref> *</type>
+        <definition>CNav* Nav</definition>
+        <argsstring></argsstring>
+        <name>Nav</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="118" column="10" bodyfile="quasar/nav/nav.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Velocity</label>
+        <link refid="classquasar_1_1Velocity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ParameterBase</label>
+        <link refid="classquasar_1_1ParameterBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Velocity</label>
+        <link refid="classquasar_1_1Velocity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CNav</label>
+        <link refid="classquasar_1_1CNav"/>
+      </node>
+      <node id="2">
+        <label>ParameterBase</label>
+        <link refid="classquasar_1_1ParameterBase"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Nav</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="quasar/nav/nav.h" line="121" column="38" bodyfile="quasar/nav/nav.h" bodystart="121" bodyend="165"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1Velocity_1a9c81b89ac57afca5aaa0fd436163194b" prot="private" virt="non-virtual"><scope>quasar::Velocity</scope><name>_get</name></member>
+      <member refid="classquasar_1_1Velocity_1ad636f55575d5d28d0980d394620faddf" prot="private" virt="non-virtual"><scope>quasar::Velocity</scope><name>_mean</name></member>
+      <member refid="classquasar_1_1Velocity_1aef25bf0d695d7e392b52f92276397ad9" prot="public" virt="non-virtual"><scope>quasar::Velocity</scope><name>as_kmh</name></member>
+      <member refid="classquasar_1_1Velocity_1ab9b8b03f20690d3f76c0813616f2a402" prot="public" virt="non-virtual"><scope>quasar::Velocity</scope><name>as_si</name></member>
+      <member refid="classquasar_1_1Velocity_1a4619b6a60e8c7470cc00463b2df309a7" prot="public" virt="non-virtual"><scope>quasar::Velocity</scope><name>get</name></member>
+      <member refid="classquasar_1_1Velocity_1a2de29041dd47e4f07ed72ff50833bbc4" prot="private" virt="non-virtual"><scope>quasar::Velocity</scope><name>get_kmh</name></member>
+      <member refid="classquasar_1_1Velocity_1a9905f54aea2e2ac1f0f59aebebe0a20b" prot="private" virt="non-virtual"><scope>quasar::Velocity</scope><name>get_si</name></member>
+      <member refid="classquasar_1_1Velocity_1aaf2f4802c4935f55b036a77cd552658c" prot="public" virt="non-virtual"><scope>quasar::Velocity</scope><name>mean</name></member>
+      <member refid="classquasar_1_1Velocity_1a55aa838a8bdc892737da493318e39bd5" prot="private" virt="non-virtual"><scope>quasar::Velocity</scope><name>mean_kmh</name></member>
+      <member refid="classquasar_1_1Velocity_1a799b687e0af86ed171034f504fc71293" prot="private" virt="non-virtual"><scope>quasar::Velocity</scope><name>mean_si</name></member>
+      <member refid="classquasar_1_1ParameterBase_1ae887466d86e1436db7775cfbae70c51b" prot="protected" virt="non-virtual"><scope>quasar::Velocity</scope><name>Nav</name></member>
+      <member refid="classquasar_1_1ParameterBase_1ac12578b58d66fb101a030d9721538098" prot="public" virt="non-virtual"><scope>quasar::Velocity</scope><name>ParameterBase</name></member>
+      <member refid="classquasar_1_1Velocity_1a1a51cda561252b09a8ea4d53db456c93" prot="public" virt="non-virtual"><scope>quasar::Velocity</scope><name>Velocity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

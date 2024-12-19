@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams" kind="struct" language="C++" prot="public">
+    <compoundname>quasar::dsp::IDSP::PixelProcParams</compoundname>
+    <includes refid="abstract__dsp_8h" local="no">quasar/dsp/abstract_dsp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1ac558735265c5b3d6d22c6eb0701f3ff1" prot="public" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 dt</definition>
+        <argsstring></argsstring>
+        <name>dt</name>
+        <briefdescription>
+<para>Шаг по времени (в секундах). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="31" column="11" bodyfile="quasar/dsp/abstract_dsp.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1acd5d004559ba7883c032187d0e96fa67" prot="public" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 c1</definition>
+        <argsstring></argsstring>
+        <name>c1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="32" column="11" bodyfile="quasar/dsp/abstract_dsp.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1a505a588a159d9b1a8342b0e2f4e59f20" prot="public" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 c2</definition>
+        <argsstring></argsstring>
+        <name>c2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="33" column="11" bodyfile="quasar/dsp/abstract_dsp.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1ae56051bcb29e1d5dfea16290f8b62404" prot="public" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 c5</definition>
+        <argsstring></argsstring>
+        <name>c5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="34" column="11" bodyfile="quasar/dsp/abstract_dsp.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1ad3c6ecbb56e238b8c21582e45ed7d8e5" prot="public" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 dfr</definition>
+        <argsstring></argsstring>
+        <name>dfr</name>
+        <briefdescription>
+<para>Шаг по доплеровской частоте (в Гц). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="35" column="11" bodyfile="quasar/dsp/abstract_dsp.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1a5ae3262d3e416f0f47272fb1e6d3935c" prot="public" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 dr</definition>
+        <argsstring></argsstring>
+        <name>dr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="36" column="11" bodyfile="quasar/dsp/abstract_dsp.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1a4100c04d17ee13ae8c874855d597e07e" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PixelProcParams</definition>
+        <argsstring>(IAbstractRadar &amp;radar, Image const &amp;image)</argsstring>
+        <name>PixelProcParams</name>
+        <param>
+          <type><ref refid="classquasar_1_1IAbstractRadar" kindref="compound">IAbstractRadar</ref> &amp;</type>
+          <declname>radar</declname>
+        </param>
+        <param>
+          <type><ref refid="classquasar_1_1Image" kindref="compound">Image</ref> const &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/dsp/abstract_dsp.h" line="29" column="16" bodyfile="abstract_dsp.cc" bodystart="16" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>IDSP::PixelProcParams</label>
+        <link refid="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>c1</edgelabel>
+          <edgelabel>c2</edgelabel>
+          <edgelabel>c5</edgelabel>
+          <edgelabel>dfr</edgelabel>
+          <edgelabel>dr</edgelabel>
+          <edgelabel>dt</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>f32</label>
+      </node>
+    </collaborationgraph>
+    <location file="quasar/dsp/abstract_dsp.h" line="28" column="26" bodyfile="quasar/dsp/abstract_dsp.h" bodystart="28" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1acd5d004559ba7883c032187d0e96fa67" prot="public" virt="non-virtual"><scope>quasar::dsp::IDSP::PixelProcParams</scope><name>c1</name></member>
+      <member refid="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1a505a588a159d9b1a8342b0e2f4e59f20" prot="public" virt="non-virtual"><scope>quasar::dsp::IDSP::PixelProcParams</scope><name>c2</name></member>
+      <member refid="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1ae56051bcb29e1d5dfea16290f8b62404" prot="public" virt="non-virtual"><scope>quasar::dsp::IDSP::PixelProcParams</scope><name>c5</name></member>
+      <member refid="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1ad3c6ecbb56e238b8c21582e45ed7d8e5" prot="public" virt="non-virtual"><scope>quasar::dsp::IDSP::PixelProcParams</scope><name>dfr</name></member>
+      <member refid="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1a5ae3262d3e416f0f47272fb1e6d3935c" prot="public" virt="non-virtual"><scope>quasar::dsp::IDSP::PixelProcParams</scope><name>dr</name></member>
+      <member refid="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1ac558735265c5b3d6d22c6eb0701f3ff1" prot="public" virt="non-virtual"><scope>quasar::dsp::IDSP::PixelProcParams</scope><name>dt</name></member>
+      <member refid="structquasar_1_1dsp_1_1IDSP_1_1PixelProcParams_1a4100c04d17ee13ae8c874855d597e07e" prot="public" virt="non-virtual"><scope>quasar::dsp::IDSP::PixelProcParams</scope><name>PixelProcParams</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

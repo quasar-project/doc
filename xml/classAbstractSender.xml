@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classAbstractSender" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>AbstractSender</compoundname>
+    <derivedcompoundref refid="classIntoFileSender" prot="public" virt="virtual">IntoFileSender</derivedcompoundref>
+    <derivedcompoundref refid="classIntoUdpSender" prot="public" virt="virtual">IntoUdpSender</derivedcompoundref>
+    <includes refid="AbstractSender_8hpp" local="no">/home/runner/work/quasar/quasar/src/strip_senders/AbstractSender.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAbstractSender_1ac2fc598358281e6cb20f961c1d276d53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AbstractSender</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractSender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strip_senders/AbstractSender.hpp" line="8" column="5" bodyfile="strip_senders/AbstractSender.hpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classAbstractSender_1a888aad34f661055d7b9a5ed5e2981040" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void send</definition>
+        <argsstring>(uint8_t *data, size_t len)=0</argsstring>
+        <name>send</name>
+        <reimplementedby refid="classIntoFileSender_1afbc5598181edeff7b797c01a718f4825">send</reimplementedby>
+        <reimplementedby refid="classIntoUdpSender_1afbc5598181edeff7b797c01a718f4825">send</reimplementedby>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="strip_senders/AbstractSender.hpp" line="9" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IntoFileSender</label>
+        <link refid="classIntoFileSender"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AbstractSender</label>
+        <link refid="classAbstractSender"/>
+      </node>
+      <node id="3">
+        <label>IntoUdpSender</label>
+        <link refid="classIntoUdpSender"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="strip_senders/AbstractSender.hpp" line="6" column="21" bodyfile="strip_senders/AbstractSender.hpp" bodystart="6" bodyend="10"/>
+    <listofallmembers>
+      <member refid="classAbstractSender_1ac2fc598358281e6cb20f961c1d276d53" prot="public" virt="non-virtual"><scope>AbstractSender</scope><name>AbstractSender</name></member>
+      <member refid="classAbstractSender_1a888aad34f661055d7b9a5ed5e2981040" prot="public" virt="pure-virtual"><scope>AbstractSender</scope><name>send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

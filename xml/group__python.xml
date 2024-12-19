@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="group__python" kind="group">
+    <compoundname>python</compoundname>
+    <title>Python API</title>
+    <briefdescription>
+<para>Python-совместимый интерфейс библиотеки QuaSAR. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="todo_1_todo000003"><xreftitle>Todo</xreftitle><xrefdescription><para>Описание интерфейса в Python </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

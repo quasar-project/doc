@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="hw__info_8h" kind="file" language="C++">
+    <compoundname>hw_info.h</compoundname>
+    <includes local="no">array</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">stdexcept</includes>
+    <includes local="no">rolly/types/stdint.h</includes>
+    <includedby refid="dsp__fftw_8cc" local="no">dsp_fftw.cc</includedby>
+    <includedby refid="hw__info_8cc" local="no">hw_info.cc</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>stdexcept</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>array</label>
+      </node>
+      <node id="7">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="1">
+        <label>hw_info.h</label>
+        <link refid="hw__info_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>hw_info.cc</label>
+        <link refid="hw__info_8cc"/>
+      </node>
+      <node id="2">
+        <label>dsp_fftw.cc</label>
+        <link refid="dsp__fftw_8cc"/>
+      </node>
+      <node id="1">
+        <label>hw_info.h</label>
+        <link refid="hw__info_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classquasar_1_1utils_1_1hw__info_1_1CPU" prot="public">quasar::utils::hw_info::CPU</innerclass>
+    <innerclass refid="classquasar_1_1utils_1_1hw__info_1_1RAM" prot="public">quasar::utils::hw_info::RAM</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1utils">quasar::utils</innernamespace>
+    <innernamespace refid="namespacequasar_1_1utils_1_1hw__info">quasar::utils::hw_info</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/hw_info.h"/>
+  </compounddef>
+</doxygen>

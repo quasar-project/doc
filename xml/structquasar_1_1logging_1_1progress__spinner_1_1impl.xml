@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structquasar_1_1logging_1_1progress__spinner_1_1impl" kind="struct" language="C++" prot="public">
+    <compoundname>quasar::logging::progress_spinner::impl</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a6da50857fd0fea48b388d8e219419f00" prot="public" static="no" mutable="no">
+        <type>std::chrono::steady_clock::time_point</type>
+        <definition>std::chrono::steady_clock::time_point start_time_</definition>
+        <argsstring></argsstring>
+        <name>start_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="14" column="43" bodyfile="private/logging/progress_spinner.cc" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1progress__spinner_1_1impl_1abded5092da2c3f27bf85f9a420b08625" prot="public" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool start_time_printed_</definition>
+        <argsstring></argsstring>
+        <name>start_time_printed_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="15" column="18" bodyfile="private/logging/progress_spinner.cc" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1progress__spinner_1_1impl_1ae79346bdafd79119e9ee948a530790e6" prot="public" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string text_</definition>
+        <argsstring></argsstring>
+        <name>text_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="16" column="17" bodyfile="private/logging/progress_spinner.cc" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a193fdcb6de1bf7d5585d110b09f2db38" prot="public" static="no" mutable="no">
+        <type>usize</type>
+        <definition>usize progress_</definition>
+        <argsstring></argsstring>
+        <name>progress_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="17" column="11" bodyfile="private/logging/progress_spinner.cc" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a7c99f62bd4ab3490758033defcb5243c" prot="public" static="no" mutable="yes">
+        <type>usize</type>
+        <definition>usize current_symbol_</definition>
+        <argsstring></argsstring>
+        <name>current_symbol_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="18" column="19" bodyfile="private/logging/progress_spinner.cc" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a22485fd1dfc2fad3f780c6505de8956f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>impl</definition>
+        <argsstring>(std::string_view const text)</argsstring>
+        <name>impl</name>
+        <param>
+          <type>std::string_view const</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="20" column="5" bodyfile="private/logging/progress_spinner.cc" bodystart="20" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a2688373928f6449f98c9fd9eee75a18f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~impl</definition>
+        <argsstring>()</argsstring>
+        <name>~impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="29" column="5" bodyfile="private/logging/progress_spinner.cc" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__spinner_1_1impl_1ac02e822775d5e57ec1ff372b988ab840" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string_view</type>
+        <definition>std::string_view spin</definition>
+        <argsstring>() const</argsstring>
+        <name>spin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="34" column="22" bodyfile="private/logging/progress_spinner.cc" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a3bc010d5cce013ed10512f1eccd020b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto update</definition>
+        <argsstring>(usize const progress) -&gt; void</argsstring>
+        <name>update</name>
+        <param>
+          <type>usize const</type>
+          <declname>progress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="40" column="10" bodyfile="private/logging/progress_spinner.cc" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__spinner_1_1impl_1ad166a8327e59abb6792834844e094d1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto inc</definition>
+        <argsstring>() -&gt; void</argsstring>
+        <name>inc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="45" column="10" bodyfile="private/logging/progress_spinner.cc" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a5e5f993e33fa79e6784f7b9442a6f770" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto finish</definition>
+        <argsstring>() -&gt; void</argsstring>
+        <name>finish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="47" column="10" bodyfile="private/logging/progress_spinner.cc" bodystart="47" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__spinner_1_1impl_1aeb52c699d3a5cb189a169590de5a376a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto elapsed</definition>
+        <argsstring>() const -&gt; std::chrono::duration&lt; double &gt;</argsstring>
+        <name>elapsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="59" column="11" bodyfile="private/logging/progress_spinner.cc" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a8451da59c671102f43e8ec8dec1970fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto print</definition>
+        <argsstring>() const -&gt; void</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="63" column="10" bodyfile="private/logging/progress_spinner.cc" bodystart="63" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>progress_spinner::impl</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>current_symbol_</edgelabel>
+          <edgelabel>progress_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>start_time_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>text_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>start_time_printed_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+        <link refid="cpp/string/basic_string" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="3">
+        <label>time_point</label>
+      </node>
+      <node id="2">
+        <label>usize</label>
+      </node>
+      <node id="5">
+        <label>bool</label>
+      </node>
+    </collaborationgraph>
+    <location file="private/logging/progress_spinner.cc" line="13" column="31" bodyfile="private/logging/progress_spinner.cc" bodystart="13" bodyend="72"/>
+    <listofallmembers>
+      <member refid="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a7c99f62bd4ab3490758033defcb5243c" prot="public" virt="non-virtual"><scope>quasar::logging::progress_spinner::impl</scope><name>current_symbol_</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__spinner_1_1impl_1aeb52c699d3a5cb189a169590de5a376a" prot="public" virt="non-virtual"><scope>quasar::logging::progress_spinner::impl</scope><name>elapsed</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a5e5f993e33fa79e6784f7b9442a6f770" prot="public" virt="non-virtual"><scope>quasar::logging::progress_spinner::impl</scope><name>finish</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a22485fd1dfc2fad3f780c6505de8956f" prot="public" virt="non-virtual"><scope>quasar::logging::progress_spinner::impl</scope><name>impl</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__spinner_1_1impl_1ad166a8327e59abb6792834844e094d1c" prot="public" virt="non-virtual"><scope>quasar::logging::progress_spinner::impl</scope><name>inc</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a8451da59c671102f43e8ec8dec1970fe" prot="public" virt="non-virtual"><scope>quasar::logging::progress_spinner::impl</scope><name>print</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a193fdcb6de1bf7d5585d110b09f2db38" prot="public" virt="non-virtual"><scope>quasar::logging::progress_spinner::impl</scope><name>progress_</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__spinner_1_1impl_1ac02e822775d5e57ec1ff372b988ab840" prot="public" virt="non-virtual"><scope>quasar::logging::progress_spinner::impl</scope><name>spin</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a6da50857fd0fea48b388d8e219419f00" prot="public" virt="non-virtual"><scope>quasar::logging::progress_spinner::impl</scope><name>start_time_</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__spinner_1_1impl_1abded5092da2c3f27bf85f9a420b08625" prot="public" virt="non-virtual"><scope>quasar::logging::progress_spinner::impl</scope><name>start_time_printed_</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__spinner_1_1impl_1ae79346bdafd79119e9ee948a530790e6" prot="public" virt="non-virtual"><scope>quasar::logging::progress_spinner::impl</scope><name>text_</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a3bc010d5cce013ed10512f1eccd020b9" prot="public" virt="non-virtual"><scope>quasar::logging::progress_spinner::impl</scope><name>update</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__spinner_1_1impl_1a2688373928f6449f98c9fd9eee75a18f" prot="public" virt="non-virtual"><scope>quasar::logging::progress_spinner::impl</scope><name>~impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

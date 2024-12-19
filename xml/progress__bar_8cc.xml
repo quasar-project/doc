@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="progress__bar_8cc" kind="file" language="C++">
+    <compoundname>progress_bar.cc</compoundname>
+    <includes refid="progress__bar_8h" local="no">private/logging/progress_bar.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fmt/format.h</includes>
+    <includes local="no">fmt/color.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>fmt/format.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>string_view</label>
+      </node>
+      <node id="2">
+        <label>private/logging/progress_bar.h</label>
+        <link refid="progress__bar_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>progress_bar.cc</label>
+        <link refid="progress__bar_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>rolly/traits.h</label>
+      </node>
+      <node id="6">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="8">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>chrono</label>
+      </node>
+      <node id="10">
+        <label>fmt/color.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structquasar_1_1logging_1_1progress__bar_1_1impl" prot="public">quasar::logging::progress_bar::impl</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1logging">quasar::logging</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="progress_bar.cc"/>
+  </compounddef>
+</doxygen>

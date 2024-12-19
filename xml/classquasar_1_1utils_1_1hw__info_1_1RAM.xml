@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1utils_1_1hw__info_1_1RAM" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>quasar::utils::hw_info::RAM</compoundname>
+    <includes refid="hw__info_8h" local="no">/home/runner/work/quasar/quasar/src/private/hw_info.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1RAM_1a63b52ba39473f0a8c77d35a30dc34123" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto total_bytes</definition>
+        <argsstring>() -&gt; i64</argsstring>
+        <name>total_bytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="44" column="18" bodyfile="hw_info.cc" bodystart="244" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1RAM_1aba105896eab4f102551eb1f5ffe34d1c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto total_gb</definition>
+        <argsstring>() -&gt; f64</argsstring>
+        <name>total_gb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="45" column="18" bodyfile="hw_info.cc" bodystart="246" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1RAM_1a10f56c4689dfa86ecebb3c7e95e1c520" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto free_bytes</definition>
+        <argsstring>() -&gt; i64</argsstring>
+        <name>free_bytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="46" column="18" bodyfile="hw_info.cc" bodystart="250" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1RAM_1a01f8853a84d3d58e4fad5c0ec4bcd0b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto free_gb</definition>
+        <argsstring>() -&gt; f64</argsstring>
+        <name>free_gb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="47" column="18" bodyfile="hw_info.cc" bodystart="252" bodyend="254"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1RAM_1a0cdaeb987b30ac5acf528a35fa6d2949" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RAM</definition>
+        <argsstring>()=default</argsstring>
+        <name>RAM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="50" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/hw_info.h" line="42" column="12" bodyfile="private/hw_info.h" bodystart="42" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1RAM_1a10f56c4689dfa86ecebb3c7e95e1c520" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::RAM</scope><name>free_bytes</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1RAM_1a01f8853a84d3d58e4fad5c0ec4bcd0b4" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::RAM</scope><name>free_gb</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1RAM_1a0cdaeb987b30ac5acf528a35fa6d2949" prot="private" virt="non-virtual"><scope>quasar::utils::hw_info::RAM</scope><name>RAM</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1RAM_1a63b52ba39473f0a8c77d35a30dc34123" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::RAM</scope><name>total_bytes</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1RAM_1aba105896eab4f102551eb1f5ffe34d1c" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::RAM</scope><name>total_gb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

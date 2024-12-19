@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="progress__spinner_8cc" kind="file" language="C++">
+    <compoundname>progress_spinner.cc</compoundname>
+    <includes refid="progress__spinner_8h" local="no">private/logging/progress_spinner.h</includes>
+    <includes local="no">array</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fmt/format.h</includes>
+    <includes local="no">fmt/color.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>progress_spinner.cc</label>
+        <link refid="progress__spinner_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>fmt/format.h</label>
+      </node>
+      <node id="2">
+        <label>private/logging/progress_spinner.h</label>
+        <link refid="progress__spinner_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>string_view</label>
+      </node>
+      <node id="8">
+        <label>array</label>
+      </node>
+      <node id="7">
+        <label>rolly/traits.h</label>
+      </node>
+      <node id="6">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>chrono</label>
+      </node>
+      <node id="11">
+        <label>fmt/color.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structquasar_1_1logging_1_1progress__spinner_1_1impl" prot="public">quasar::logging::progress_spinner::impl</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1logging">quasar::logging</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacequasar_1_1logging_1a6c08f2dfd10e90707f2446d4ca1eb7c0" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto symbols</definition>
+        <argsstring></argsstring>
+        <name>symbols</name>
+        <initializer>= <ref refid="cpp/container/array" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::array</ref> {&quot;⢎&quot;sv, &quot;⢧&quot;sv, &quot;⢗&quot;sv, &quot;⢿&quot;sv, &quot;⣻&quot;sv, &quot;⣾&quot;sv}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="11" column="18" bodyfile="private/logging/progress_spinner.cc" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/logging/progress_spinner.cc"/>
+  </compounddef>
+</doxygen>
