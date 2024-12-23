@@ -1,0 +1,1050 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1SAR" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>quasar::SAR</compoundname>
+    <basecompoundref refid="classpin" prot="public" virt="non-virtual">pin</basecompoundref>
+    <includes refid="sar_8h" local="no">quasar/sar.h</includes>
+    <innerclass refid="structquasar_1_1SAR_1_1impl" prot="public">quasar::SAR::impl</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classquasar_1_1SAR_1a476342970f954b62d70552bcbb5ee509" prot="public" static="no" strong="no">
+        <type></type>
+        <name>WindowType</name>
+        <enumvalue id="classquasar_1_1SAR_1a476342970f954b62d70552bcbb5ee509ace0d8d5669106f95e034b2ad3bc8659b" prot="public">
+          <name>HAMMING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1SAR_1a476342970f954b62d70552bcbb5ee509a32200a8a5676be63f32a24e70f3ce1bc" prot="public">
+          <name>BLACKMAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1SAR_1a476342970f954b62d70552bcbb5ee509abe5cf0687a0618ec5c8a78bd57ec8ae6" prot="public">
+          <name>NUTTALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1SAR_1a476342970f954b62d70552bcbb5ee509ac157bdf0b85a40d2619cbc8bc1ae5fe2" prot="public">
+          <name>NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="28" column="20" bodyfile="quasar/sar.h" bodystart="28" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classquasar_1_1SAR_1a88468a3187ca315c764ef406b3caa423" prot="private" static="no" mutable="no">
+        <type>pimpl&lt; struct impl &gt;</type>
+        <definition>pimpl&lt;struct impl&gt; impl_</definition>
+        <argsstring></argsstring>
+        <name>impl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="84" column="11" bodyfile="quasar/sar.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1SAR_1a28e5601d4ba2c7bc7b8b8f96b4a79875" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/memory/shared_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::shared_ptr</ref>&lt; <ref refid="classquasar_1_1IAbstractRadar" kindref="compound">IAbstractRadar</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;IAbstractRadar&gt; radar_</definition>
+        <argsstring></argsstring>
+        <name>radar_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="85" column="21" bodyfile="quasar/sar.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1SAR_1ae079df78fb1dbc6ee516aaf54c19cc24" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/memory/unique_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::unique_ptr</ref>&lt; <ref refid="classquasar_1_1dsp_1_1IDSP" kindref="compound">dsp::IDSP</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;dsp::IDSP&gt; dsp_</definition>
+        <argsstring></argsstring>
+        <name>dsp_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="86" column="21" bodyfile="quasar/sar.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1SAR_1a141acd939c4a0a02f24be0459311b860" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; f64 &gt;</type>
+        <definition>std::vector&lt;f64&gt; px</definition>
+        <argsstring></argsstring>
+        <name>px</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="87" column="17" bodyfile="quasar/sar.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1SAR_1a1785e8d9c35824d170f42ce9c26e472e" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; f64 &gt;</type>
+        <definition>std::vector&lt;f64&gt; py</definition>
+        <argsstring></argsstring>
+        <name>py</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="88" column="17" bodyfile="quasar/sar.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classquasar_1_1SAR_1a6b8465f40497f7bc31e58763bdeb3368" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SAR</definition>
+        <argsstring>()</argsstring>
+        <name>SAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="24" column="5" bodyfile="sar.cc" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1a736e5fe0bab87764e0505f742c1a755f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SAR</definition>
+        <argsstring>(std::shared_ptr&lt; IAbstractRadar &gt; radar)</argsstring>
+        <name>SAR</name>
+        <param>
+          <type><ref refid="cpp/memory/shared_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::shared_ptr</ref>&lt; <ref refid="classquasar_1_1IAbstractRadar" kindref="compound">IAbstractRadar</ref> &gt;</type>
+          <declname>radar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="25" column="5" bodyfile="sar.cc" bodystart="68" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1aff5e3e1f6f9f152c75bea8d790487c7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~SAR</definition>
+        <argsstring>()</argsstring>
+        <name>~SAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="26" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1aa15725449c5ff503685283b375e263e1" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dsp</definition>
+        <argsstring>() const noexcept -&gt; dsp::IDSP const &amp;</argsstring>
+        <name>dsp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="35" column="11" bodyfile="quasar/sar.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1a083b3e9db6159655370553e064943bf5" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto dsp_mut</definition>
+        <argsstring>() noexcept -&gt; dsp::IDSP &amp;</argsstring>
+        <name>dsp_mut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="37" column="11" bodyfile="quasar/sar.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1ab6317b094b1a89c6aa2f8d02ae9ac6d5" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto radar</definition>
+        <argsstring>() const noexcept -&gt; IAbstractRadar const &amp;</argsstring>
+        <name>radar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="39" column="11" bodyfile="quasar/sar.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1aa4278b7fc92950189646846aedc1ac9d" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto radar_mut</definition>
+        <argsstring>() noexcept -&gt; IAbstractRadar &amp;</argsstring>
+        <name>radar_mut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="41" column="11" bodyfile="quasar/sar.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1abbe6b12bc4674e62e62a24532086607a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto print_elapsed_time</definition>
+        <argsstring>() const -&gt; void</argsstring>
+        <name>print_elapsed_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="43" column="10" bodyfile="sar.cc" bodystart="1020" bodyend="1020"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1a84096f66341eee1f185886a3e4e6557f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int removeDC</definition>
+        <argsstring>(CImage *image)</argsstring>
+        <name>removeDC</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Удаление постоянной составляющей из сигнала </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр <ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 - успешное выполнение; -1 - ошибка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="45" column="9" bodyfile="sar.cc" bodystart="92" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1af9bb7216626272bd3f1bc7e2772e73d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int transpose</definition>
+        <argsstring>(CImage *image)</argsstring>
+        <name>transpose</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Транспонирование изображения </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр <ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 - успешное выполнение; -1 - ошибка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="46" column="9" bodyfile="sar.cc" bodystart="113" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1a573a2e755f97e10a2295a7313e3d5dac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int azimuthCompress</definition>
+        <argsstring>(CImage *image)</argsstring>
+        <name>azimuthCompress</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Сжатие по азимуту </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр <ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 - успешное выполнение; -1 - ошибка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="47" column="9" bodyfile="sar.cc" bodystart="144" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1a724bcafeb6f3d1ba4dca9fcc4d28ab13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rmc</definition>
+        <argsstring>(CImage *image, float V)</argsstring>
+        <name>rmc</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+<para>Коррекция миграции по дальности </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр <ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">V</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Скорость носителя, м/с</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 - успешное выполнение; -1 - ошибка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="48" column="9" bodyfile="sar.cc" bodystart="172" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1a7824794ff49402e0caf6393808526563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fsrmc</definition>
+        <argsstring>(CImage *image, float V)</argsstring>
+        <name>fsrmc</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+<para>Коррекция миграции по дальности методом частотного масштабирования </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр <ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">V</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Скорость носителя, м/с</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 - успешное выполнение; -1 - ошибка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="49" column="9" bodyfile="sar.cc" bodystart="198" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1a9af6b14c741a673047e197f4338d6bb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int phocus</definition>
+        <argsstring>(CImage *image, float V)</argsstring>
+        <name>phocus</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+<para>Фокусировка изображения </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр <ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">V</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Скорость носителя, м/с</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 - успешное выполнение; -1 - ошибка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="50" column="9" bodyfile="sar.cc" bodystart="214" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1ad7a23be9b8652a52d06cf09b1a02ade7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float enthropy</definition>
+        <argsstring>(CImage *image)</argsstring>
+        <name>enthropy</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Вычисление энтропии изображения </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр <ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Значение энтропии изображения </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="51" column="11" bodyfile="sar.cc" bodystart="253" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1aff8bfd49d8febcd788c8c6b856b6ffe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hamming</definition>
+        <argsstring>(CImage *image)</argsstring>
+        <name>hamming</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Оконное взвешивание (Хэмминга) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр <ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Осуществляет построчное оконное взвешивание отсчетов изображения.</para>
+<para><simplesect kind="return"><para>0 - успешное выполнение; -1 - ошибка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="52" column="9" bodyfile="sar.cc" bodystart="282" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1ac266d1f6cd27d5287a8a5946d562b19e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int interpolate</definition>
+        <argsstring>(CImage *image, int kr)</argsstring>
+        <name>interpolate</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>kr</declname>
+        </param>
+        <briefdescription>
+<para>Частотная интерполяция </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр <ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">kr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Коэффициент частотной интерполяции (степень двойки)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Осуществляется дополнение каждой строки нулями</para>
+<para><simplesect kind="return"><para>0 - успешное выполнение; -1 - ошибка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="53" column="9" bodyfile="sar.cc" bodystart="323" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1af1b4360ca398ab6999c19ba906f8a4e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rdcurvepoints</definition>
+        <argsstring>(CImage *image, int startfdidx, float alt_min, float alt_max)</argsstring>
+        <name>rdcurvepoints</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>startfdidx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alt_min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alt_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="54" column="9" bodyfile="sar.cc" bodystart="936" bodyend="961"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1a3a014134536ca5d449e4133107080193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/utility/tuple" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::tuple</ref>&lt; double, double &gt;</type>
+        <definition>std::tuple&lt; double, double &gt; estimateVH</definition>
+        <argsstring>(float start_altitude, float start_velocity)</argsstring>
+        <name>estimateVH</name>
+        <param>
+          <type>float</type>
+          <declname>start_altitude</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>start_velocity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="61" column="16" bodyfile="sar.cc" bodystart="963" bodyend="1018"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1ad4a6233162a49fc8d76f0f0cf25db27c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int acc_dcm</definition>
+        <argsstring>(CImage *image, float Vmax, int Np)</argsstring>
+        <name>acc_dcm</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>Vmax</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Np</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="63" column="7" bodyfile="sar.cc" bodystart="358" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1a1476cd0448c38ab62fa0349b5a249d20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float fr2range</definition>
+        <argsstring>(float fr)</argsstring>
+        <name>fr2range</name>
+        <param>
+          <type>float</type>
+          <declname>fr</declname>
+        </param>
+        <briefdescription>
+<para>Пересчет значения разностной частоты к наклонной дальности </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение дальностной частоты, Гц</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Дальнось, м </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="64" column="11" bodyfile="sar.cc" bodystart="412" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1a1dcbb3e2a12a48b3e5406306ba971714" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float range2fr</definition>
+        <argsstring>(float r)</argsstring>
+        <name>range2fr</name>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Пересчет наклонной дальности к значению разностной частоты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Дальнось, м</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Значение дальностной частоты, Гц </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="65" column="11" bodyfile="sar.cc" bodystart="423" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1af5e33d98a648940cf0a1f4135ac7fb2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float index2range</definition>
+        <argsstring>(int ind)</argsstring>
+        <name>index2range</name>
+        <param>
+          <type>int</type>
+          <declname>ind</declname>
+        </param>
+        <briefdescription>
+<para>// Пересчет значения индекса изображения к наклонной дальности </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение индекса на изображении</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Дальнось, м </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="66" column="11" bodyfile="sar.cc" bodystart="434" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1ab5b7c4c543a303ee214d26d4c81c6ec2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int range2index</definition>
+        <argsstring>(float range)</argsstring>
+        <name>range2index</name>
+        <param>
+          <type>float</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="67" column="16" bodyfile="quasar/sar.h" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1a50981d5da56d64650e56d956cbead521" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float get_range</definition>
+        <argsstring>(float x, float y, float h, float V, float t)</argsstring>
+        <name>get_range</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="68" column="18" bodyfile="quasar/sar.h" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1a658f04c069ce538983fadaef08a103ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int downrange</definition>
+        <argsstring>(CImage *image, float decim, float rb, float re, float H)</argsstring>
+        <name>downrange</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>decim</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rb</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>re</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>H</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="75" column="9" bodyfile="sar.cc" bodystart="603" bodyend="667"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1a63612f3e6a2007828289eda43c3a5357" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int angleCorrection</definition>
+        <argsstring>(CImage *image, float x0, float lx)</argsstring>
+        <name>angleCorrection</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="76" column="9" bodyfile="sar.cc" bodystart="685" bodyend="758"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1ad96eafa5bacb5bbcf98689730f0acb96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int resize</definition>
+        <argsstring>(CImage *image, int newW, int newH)</argsstring>
+        <name>resize</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newW</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newH</declname>
+        </param>
+        <briefdescription>
+<para>// Пересчет наклонной дальности к индексу изображения </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение наклонной дальности, м</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Индекс</para>
+</simplesect>
+// Вычисление наклонной дальности по координатам</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Наклонная дальность на траверзе, м </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путевая дальность, м </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Высота полета носителя, м </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Скорость полета носителя, м </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Момент времени, с</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Наклонная дальность</para>
+</simplesect>
+// Билинейное масштабирование РЛИ</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на экземпляр <ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">newW</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Желаемая ширина изображения, пикс. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">newH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Желаемая высота изображения, пикс.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 - успешное выполнение; -1 - ошибка </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="77" column="9" bodyfile="sar.cc" bodystart="468" bodyend="549"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1af9c110ea5705ad59ac6bcead05c2726a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float driftAngle</definition>
+        <argsstring>(CImage *image, float V, char *FnPlot=nullptr)</argsstring>
+        <name>driftAngle</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>FnPlot</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="78" column="11" bodyfile="sar.cc" bodystart="862" bodyend="934"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1SAR_1ab74f7619cf4917d74702b47503d79d79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float altitude</definition>
+        <argsstring>(CImage *image, char *FnPlot=nullptr)</argsstring>
+        <name>altitude</name>
+        <param>
+          <type><ref refid="classquasar_1_1CImage" kindref="compound">CImage</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>FnPlot</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/sar.h" line="79" column="11" bodyfile="sar.cc" bodystart="837" bodyend="860"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Фасад для других классов библиотеки QuaSAR. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SAR</label>
+        <link refid="classquasar_1_1SAR"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pin</label>
+        <link refid="classpin"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SAR</label>
+        <link refid="classquasar_1_1SAR"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pin</label>
+        <link refid="classpin"/>
+      </node>
+    </collaborationgraph>
+    <location file="quasar/sar.h" line="22" column="23" bodyfile="quasar/sar.h" bodystart="22" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1SAR_1ad4a6233162a49fc8d76f0f0cf25db27c" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>acc_dcm</name></member>
+      <member refid="classquasar_1_1SAR_1ab74f7619cf4917d74702b47503d79d79" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>altitude</name></member>
+      <member refid="classquasar_1_1SAR_1a63612f3e6a2007828289eda43c3a5357" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>angleCorrection</name></member>
+      <member refid="classquasar_1_1SAR_1a573a2e755f97e10a2295a7313e3d5dac" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>azimuthCompress</name></member>
+      <member refid="classquasar_1_1SAR_1a476342970f954b62d70552bcbb5ee509a32200a8a5676be63f32a24e70f3ce1bc" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>BLACKMAN</name></member>
+      <member refid="classquasar_1_1SAR_1a658f04c069ce538983fadaef08a103ac" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>downrange</name></member>
+      <member refid="classquasar_1_1SAR_1af9c110ea5705ad59ac6bcead05c2726a" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>driftAngle</name></member>
+      <member refid="classquasar_1_1SAR_1aa15725449c5ff503685283b375e263e1" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>dsp</name></member>
+      <member refid="classquasar_1_1SAR_1ae079df78fb1dbc6ee516aaf54c19cc24" prot="private" virt="non-virtual"><scope>quasar::SAR</scope><name>dsp_</name></member>
+      <member refid="classquasar_1_1SAR_1a083b3e9db6159655370553e064943bf5" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>dsp_mut</name></member>
+      <member refid="classquasar_1_1SAR_1ad7a23be9b8652a52d06cf09b1a02ade7" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>enthropy</name></member>
+      <member refid="classquasar_1_1SAR_1a3a014134536ca5d449e4133107080193" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>estimateVH</name></member>
+      <member refid="classquasar_1_1SAR_1a1476cd0448c38ab62fa0349b5a249d20" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>fr2range</name></member>
+      <member refid="classquasar_1_1SAR_1a7824794ff49402e0caf6393808526563" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>fsrmc</name></member>
+      <member refid="classquasar_1_1SAR_1a50981d5da56d64650e56d956cbead521" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>get_range</name></member>
+      <member refid="classquasar_1_1SAR_1a476342970f954b62d70552bcbb5ee509ace0d8d5669106f95e034b2ad3bc8659b" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>HAMMING</name></member>
+      <member refid="classquasar_1_1SAR_1aff8bfd49d8febcd788c8c6b856b6ffe3" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>hamming</name></member>
+      <member refid="classquasar_1_1SAR_1a88468a3187ca315c764ef406b3caa423" prot="private" virt="non-virtual"><scope>quasar::SAR</scope><name>impl_</name></member>
+      <member refid="classquasar_1_1SAR_1af5e33d98a648940cf0a1f4135ac7fb2e" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>index2range</name></member>
+      <member refid="classquasar_1_1SAR_1ac266d1f6cd27d5287a8a5946d562b19e" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>interpolate</name></member>
+      <member refid="classquasar_1_1SAR_1a476342970f954b62d70552bcbb5ee509ac157bdf0b85a40d2619cbc8bc1ae5fe2" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>NONE</name></member>
+      <member refid="classquasar_1_1SAR_1a476342970f954b62d70552bcbb5ee509abe5cf0687a0618ec5c8a78bd57ec8ae6" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>NUTTALL</name></member>
+      <member refid="classquasar_1_1SAR_1a9af6b14c741a673047e197f4338d6bb6" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>phocus</name></member>
+      <member refid="classquasar_1_1SAR_1abbe6b12bc4674e62e62a24532086607a" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>print_elapsed_time</name></member>
+      <member refid="classquasar_1_1SAR_1a141acd939c4a0a02f24be0459311b860" prot="private" virt="non-virtual"><scope>quasar::SAR</scope><name>px</name></member>
+      <member refid="classquasar_1_1SAR_1a1785e8d9c35824d170f42ce9c26e472e" prot="private" virt="non-virtual"><scope>quasar::SAR</scope><name>py</name></member>
+      <member refid="classquasar_1_1SAR_1ab6317b094b1a89c6aa2f8d02ae9ac6d5" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>radar</name></member>
+      <member refid="classquasar_1_1SAR_1a28e5601d4ba2c7bc7b8b8f96b4a79875" prot="private" virt="non-virtual"><scope>quasar::SAR</scope><name>radar_</name></member>
+      <member refid="classquasar_1_1SAR_1aa4278b7fc92950189646846aedc1ac9d" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>radar_mut</name></member>
+      <member refid="classquasar_1_1SAR_1a1dcbb3e2a12a48b3e5406306ba971714" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>range2fr</name></member>
+      <member refid="classquasar_1_1SAR_1ab5b7c4c543a303ee214d26d4c81c6ec2" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>range2index</name></member>
+      <member refid="classquasar_1_1SAR_1af1b4360ca398ab6999c19ba906f8a4e7" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>rdcurvepoints</name></member>
+      <member refid="classquasar_1_1SAR_1a84096f66341eee1f185886a3e4e6557f" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>removeDC</name></member>
+      <member refid="classquasar_1_1SAR_1ad96eafa5bacb5bbcf98689730f0acb96" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>resize</name></member>
+      <member refid="classquasar_1_1SAR_1a724bcafeb6f3d1ba4dca9fcc4d28ab13" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>rmc</name></member>
+      <member refid="classquasar_1_1SAR_1a6b8465f40497f7bc31e58763bdeb3368" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>SAR</name></member>
+      <member refid="classquasar_1_1SAR_1a736e5fe0bab87764e0505f742c1a755f" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>SAR</name></member>
+      <member refid="classquasar_1_1SAR_1af9bb7216626272bd3f1bc7e2772e73d6" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>transpose</name></member>
+      <member refid="classquasar_1_1SAR_1a476342970f954b62d70552bcbb5ee509" prot="public" virt="non-virtual"><scope>quasar::SAR</scope><name>WindowType</name></member>
+      <member refid="classquasar_1_1SAR_1aff5e3e1f6f9f152c75bea8d790487c7f" prot="public" virt="virtual"><scope>quasar::SAR</scope><name>~SAR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

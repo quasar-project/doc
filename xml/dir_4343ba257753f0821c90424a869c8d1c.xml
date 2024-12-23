@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_4343ba257753f0821c90424a869c8d1c" kind="dir">
+    <compoundname>base</compoundname>
+    <innerfile refid="corefn_8h">corefn.h</innerfile>
+    <innerfile refid="export_8h">export.h</innerfile>
+    <innerfile refid="base_2logging_8h">base/logging.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/base/"/>
+  </compounddef>
+</doxygen>

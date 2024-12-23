@@ -1,0 +1,620 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1CNavGPX" kind="class" language="C++" prot="public">
+    <compoundname>quasar::CNavGPX</compoundname>
+    <includes refid="navgpx_8h" local="no">quasar/nav/navgpx.h</includes>
+    <innerclass refid="structquasar_1_1CNavGPX_1_1nav__pack__t" prot="private">quasar::CNavGPX::nav_pack_t</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classquasar_1_1CNavGPX_1a13cb1d3706091014bf3ddbd879c03d09" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; v_lat</definition>
+        <argsstring></argsstring>
+        <name>v_lat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="84" column="17" bodyfile="quasar/nav/navgpx.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNavGPX_1a0dd472195e2bf242f297bb0effcf3f86" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; v_lon</definition>
+        <argsstring></argsstring>
+        <name>v_lon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="85" column="17" bodyfile="quasar/nav/navgpx.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNavGPX_1a65b21e07eacaf866761612cce0c9d0df" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; v_x</definition>
+        <argsstring></argsstring>
+        <name>v_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="86" column="17" bodyfile="quasar/nav/navgpx.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNavGPX_1ab54a400fd83237ea2b6cf7ae8534ded9" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; v_y</definition>
+        <argsstring></argsstring>
+        <name>v_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="88" column="17" bodyfile="quasar/nav/navgpx.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNavGPX_1ad17246eec2c4511437aef9151f1749a9" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; v_azimuth</definition>
+        <argsstring></argsstring>
+        <name>v_azimuth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="89" column="17" bodyfile="quasar/nav/navgpx.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNavGPX_1adc67a3f7ecc322779fdfa37679778b65" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; v_ele</definition>
+        <argsstring></argsstring>
+        <name>v_ele</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="90" column="17" bodyfile="quasar/nav/navgpx.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNavGPX_1a1dd74298e93f45f20e1818c074422044" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; v_speed</definition>
+        <argsstring></argsstring>
+        <name>v_speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="91" column="17" bodyfile="quasar/nav/navgpx.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNavGPX_1a92d6026df830700df24782e341f602fe" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; v_direction</definition>
+        <argsstring></argsstring>
+        <name>v_direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="92" column="17" bodyfile="quasar/nav/navgpx.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNavGPX_1abe207f51c8acc0ac3e4c694dc8846eb4" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; v_sats</definition>
+        <argsstring></argsstring>
+        <name>v_sats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="93" column="17" bodyfile="quasar/nav/navgpx.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNavGPX_1af2eb0cbaaaa550a1f17e7bfa9cba0255" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::string</ref> &gt;</type>
+        <definition>std::vector&lt;std::string&gt; v_gpxtime</definition>
+        <argsstring></argsstring>
+        <name>v_gpxtime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="94" column="17" bodyfile="quasar/nav/navgpx.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1CNavGPX_1a1f68a00504ac5dda367515ef9d9ed3f8" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; v_time</definition>
+        <argsstring></argsstring>
+        <name>v_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="95" column="17" bodyfile="quasar/nav/navgpx.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a3f3d28c44f7eed5df10c1462ebb8814f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CNavGPX</definition>
+        <argsstring>(char const *fn)</argsstring>
+        <name>CNavGPX</name>
+        <param>
+          <type>char const *</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="12" column="5" bodyfile="navgpx.cc" bodystart="97" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a7a6921787891a1c67652455c2f5da0db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~CNavGPX</definition>
+        <argsstring>()</argsstring>
+        <name>~CNavGPX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="13" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a8593562ba4db19a629d91d555e82a03c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; lat</definition>
+        <argsstring>()</argsstring>
+        <name>lat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="15" column="17" bodyfile="navgpx.cc" bodystart="294" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1aec8ff582b53c79e9646c4350f3ab34b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; lon</definition>
+        <argsstring>()</argsstring>
+        <name>lon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="16" column="17" bodyfile="navgpx.cc" bodystart="296" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1afdeef43f911a631b40c7bd6de3c8ce6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; x</definition>
+        <argsstring>()</argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="17" column="17" bodyfile="navgpx.cc" bodystart="298" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1ac226a4441605d69e0cc5564e7f0805ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; y</definition>
+        <argsstring>()</argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="18" column="17" bodyfile="navgpx.cc" bodystart="300" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a5928ccd039b89c18f3c585fb3888572b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; ele</definition>
+        <argsstring>()</argsstring>
+        <name>ele</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="19" column="17" bodyfile="navgpx.cc" bodystart="302" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a12d3e1262acb015cbd4455442fb4f0a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; speed</definition>
+        <argsstring>()</argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="20" column="17" bodyfile="navgpx.cc" bodystart="304" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1acdda728185e48492c3906d29eb10b2a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; direction</definition>
+        <argsstring>()</argsstring>
+        <name>direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="21" column="17" bodyfile="navgpx.cc" bodystart="306" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1ac35ca4fb2e928b45ebea81e6ab2a2701" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; sats</definition>
+        <argsstring>()</argsstring>
+        <name>sats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="22" column="17" bodyfile="navgpx.cc" bodystart="308" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a437a71afd10db52ec79a1a42d9069b03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; time</definition>
+        <argsstring>()</argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="23" column="17" bodyfile="navgpx.cc" bodystart="312" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a54d5ee3bad89b9b0409cc4d5c95d2b1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::string</ref> &gt;</type>
+        <definition>std::vector&lt; std::string &gt; gpxtime</definition>
+        <argsstring>()</argsstring>
+        <name>gpxtime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="24" column="17" bodyfile="navgpx.cc" bodystart="310" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a2ccff90a699ef42a48fec8a3194f8ab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; azimuth</definition>
+        <argsstring>()</argsstring>
+        <name>azimuth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="25" column="17" bodyfile="navgpx.cc" bodystart="314" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a697d782f594a14095e7ddb29b618c0a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; GetXAtTime</definition>
+        <argsstring>(std::vector&lt; double &gt; const &amp;time)</argsstring>
+        <name>GetXAtTime</name>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt; const &amp;</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="28" column="17" bodyfile="navgpx.cc" bodystart="316" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1abd417192678376f490d787456f91a50a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; GetYAtTime</definition>
+        <argsstring>(std::vector&lt; double &gt; const &amp;time)</argsstring>
+        <name>GetYAtTime</name>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt; const &amp;</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="29" column="17" bodyfile="navgpx.cc" bodystart="332" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a119530507adb85fe9dcbc96424ce68a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; GetEleAtTime</definition>
+        <argsstring>(std::vector&lt; double &gt; const &amp;time)</argsstring>
+        <name>GetEleAtTime</name>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt; const &amp;</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="30" column="17" bodyfile="navgpx.cc" bodystart="349" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a4f377c3244e35192c8d19731e1cc75fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; GetSpeedAtTime</definition>
+        <argsstring>(std::vector&lt; double &gt; const &amp;time)</argsstring>
+        <name>GetSpeedAtTime</name>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt; const &amp;</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="31" column="17" bodyfile="navgpx.cc" bodystart="365" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a26883f37277ca59c980b991de764fa5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; GetDirectionAtTime</definition>
+        <argsstring>(std::vector&lt; double &gt; const &amp;time)</argsstring>
+        <name>GetDirectionAtTime</name>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt; const &amp;</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="32" column="17" bodyfile="navgpx.cc" bodystart="380" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1ac00ed488f35317dbda9e0a82b911bbd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; GetLatAtTime</definition>
+        <argsstring>(std::vector&lt; double &gt; const &amp;time)</argsstring>
+        <name>GetLatAtTime</name>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt; const &amp;</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="33" column="17" bodyfile="navgpx.cc" bodystart="396" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1adccb4f5e0ac4e9f19537a9de11b9ddcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; GetLonAtTime</definition>
+        <argsstring>(std::vector&lt; double &gt; const &amp;time)</argsstring>
+        <name>GetLonAtTime</name>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt; const &amp;</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="34" column="17" bodyfile="navgpx.cc" bodystart="411" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1afb25f2e2bbd7b63bd5bb041120313321" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; GetAzimuthAtTime</definition>
+        <argsstring>(std::vector&lt; double &gt; const &amp;time)</argsstring>
+        <name>GetAzimuthAtTime</name>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt; const &amp;</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="35" column="17" bodyfile="navgpx.cc" bodystart="426" bodyend="439"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a679f878d10052597762516eda6ff1940" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct quasar::CNavGPX::nav_pack_t</type>
+        <definition>struct quasar::CNavGPX::nav_pack_t __attribute__</definition>
+        <argsstring>((packed))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(packed)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="35" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a69a23c2d1a91fd3a8b405d7d33da1768" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double getDistanceFromLatLon</definition>
+        <argsstring>(double lat1, double lon1, double lat2, double lon2)</argsstring>
+        <name>getDistanceFromLatLon</name>
+        <param>
+          <type>double</type>
+          <declname>lat1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lon1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lat2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lon2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="97" column="12" bodyfile="navgpx.cc" bodystart="73" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1aa12016b30df99903787953686c6d5cc9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double getAzimuthFromLatLon</definition>
+        <argsstring>(double lat1, double lon1, double lat2, double lon2)</argsstring>
+        <name>getAzimuthFromLatLon</name>
+        <param>
+          <type>double</type>
+          <declname>lat1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lon1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lat2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lon2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="98" column="12" bodyfile="navgpx.cc" bodystart="84" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1a0d1710c724a89b82417a4cb8c2149c0d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ReadGpx</definition>
+        <argsstring>(std::ifstream *stream)</argsstring>
+        <name>ReadGpx</name>
+        <param>
+          <type><ref refid="cpp/io/basic_ifstream" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::ifstream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="99" column="10" bodyfile="navgpx.cc" bodystart="240" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1CNavGPX_1aaf5b8bcaaa679a3dcdd36f6454df3e64" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ReadNav</definition>
+        <argsstring>(std::ifstream *stream)</argsstring>
+        <name>ReadNav</name>
+        <param>
+          <type><ref refid="cpp/io/basic_ifstream" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::ifstream</ref> *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Это бред</para>
+<para>Причем полный...</para>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="100" column="10" bodyfile="navgpx.cc" bodystart="205" bodyend="238"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/nav/navgpx.h" line="10" column="16" bodyfile="quasar/nav/navgpx.h" bodystart="10" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1CNavGPX_1a679f878d10052597762516eda6ff1940" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>__attribute__</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a2ccff90a699ef42a48fec8a3194f8ab0" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>azimuth</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a3f3d28c44f7eed5df10c1462ebb8814f" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>CNavGPX</name></member>
+      <member refid="classquasar_1_1CNavGPX_1acdda728185e48492c3906d29eb10b2a9" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>direction</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a5928ccd039b89c18f3c585fb3888572b" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>ele</name></member>
+      <member refid="classquasar_1_1CNavGPX_1afb25f2e2bbd7b63bd5bb041120313321" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>GetAzimuthAtTime</name></member>
+      <member refid="classquasar_1_1CNavGPX_1aa12016b30df99903787953686c6d5cc9" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>getAzimuthFromLatLon</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a26883f37277ca59c980b991de764fa5d" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>GetDirectionAtTime</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a69a23c2d1a91fd3a8b405d7d33da1768" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>getDistanceFromLatLon</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a119530507adb85fe9dcbc96424ce68a7" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>GetEleAtTime</name></member>
+      <member refid="classquasar_1_1CNavGPX_1ac00ed488f35317dbda9e0a82b911bbd5" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>GetLatAtTime</name></member>
+      <member refid="classquasar_1_1CNavGPX_1adccb4f5e0ac4e9f19537a9de11b9ddcf" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>GetLonAtTime</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a4f377c3244e35192c8d19731e1cc75fe" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>GetSpeedAtTime</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a697d782f594a14095e7ddb29b618c0a7" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>GetXAtTime</name></member>
+      <member refid="classquasar_1_1CNavGPX_1abd417192678376f490d787456f91a50a" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>GetYAtTime</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a54d5ee3bad89b9b0409cc4d5c95d2b1a" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>gpxtime</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a8593562ba4db19a629d91d555e82a03c" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>lat</name></member>
+      <member refid="classquasar_1_1CNavGPX_1aec8ff582b53c79e9646c4350f3ab34b8" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>lon</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a0d1710c724a89b82417a4cb8c2149c0d" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>ReadGpx</name></member>
+      <member refid="classquasar_1_1CNavGPX_1aaf5b8bcaaa679a3dcdd36f6454df3e64" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>ReadNav</name></member>
+      <member refid="classquasar_1_1CNavGPX_1ac35ca4fb2e928b45ebea81e6ab2a2701" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>sats</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a12d3e1262acb015cbd4455442fb4f0a6" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>speed</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a437a71afd10db52ec79a1a42d9069b03" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>time</name></member>
+      <member refid="classquasar_1_1CNavGPX_1ad17246eec2c4511437aef9151f1749a9" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>v_azimuth</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a92d6026df830700df24782e341f602fe" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>v_direction</name></member>
+      <member refid="classquasar_1_1CNavGPX_1adc67a3f7ecc322779fdfa37679778b65" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>v_ele</name></member>
+      <member refid="classquasar_1_1CNavGPX_1af2eb0cbaaaa550a1f17e7bfa9cba0255" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>v_gpxtime</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a13cb1d3706091014bf3ddbd879c03d09" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>v_lat</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a0dd472195e2bf242f297bb0effcf3f86" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>v_lon</name></member>
+      <member refid="classquasar_1_1CNavGPX_1abe207f51c8acc0ac3e4c694dc8846eb4" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>v_sats</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a1dd74298e93f45f20e1818c074422044" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>v_speed</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a1f68a00504ac5dda367515ef9d9ed3f8" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>v_time</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a65b21e07eacaf866761612cce0c9d0df" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>v_x</name></member>
+      <member refid="classquasar_1_1CNavGPX_1ab54a400fd83237ea2b6cf7ae8534ded9" prot="private" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>v_y</name></member>
+      <member refid="classquasar_1_1CNavGPX_1afdeef43f911a631b40c7bd6de3c8ce6f" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>x</name></member>
+      <member refid="classquasar_1_1CNavGPX_1ac226a4441605d69e0cc5564e7f0805ad" prot="public" virt="non-virtual"><scope>quasar::CNavGPX</scope><name>y</name></member>
+      <member refid="classquasar_1_1CNavGPX_1a7a6921787891a1c67652455c2f5da0db" prot="public" virt="virtual"><scope>quasar::CNavGPX</scope><name>~CNavGPX</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

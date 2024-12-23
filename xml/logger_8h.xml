@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="logger_8h" kind="file" language="C++">
+    <compoundname>logger.h</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">filesystem</includes>
+    <includes local="no">optional</includes>
+    <includes refid="base_8h" local="no">quasar/base.h</includes>
+    <includes refid="traits_8h" local="no">quasar/traits.h</includes>
+    <includes refid="logging_8h" local="no">quasar/logging.h</includes>
+    <includedby refid="logger_8cc" local="no">logger.cc</includedby>
+    <includedby refid="logger_8pybind_8cc" local="no">logger.pybind.cc</includedby>
+    <incdepgraph>
+      <node id="20">
+        <label>quasar/base/logging.h</label>
+        <link refid="base_2logging_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>fmt/format.h</label>
+      </node>
+      <node id="3">
+        <label>filesystem</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="17">
+        <label>experimental/propagate_const</label>
+      </node>
+      <node id="21">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="5">
+        <label>quasar/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>rolly/source_location.h</label>
+      </node>
+      <node id="1">
+        <label>logger.h</label>
+        <link refid="logger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>optional</label>
+      </node>
+      <node id="12">
+        <label>quasar/base/corefn.h</label>
+        <link refid="corefn_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>quasar/traits.h</label>
+        <link refid="traits_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>rolly/traits.h</label>
+      </node>
+      <node id="9">
+        <label>quasar/base/export.h</label>
+        <link refid="export_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="16">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>rolly/utility.h</label>
+      </node>
+      <node id="11">
+        <label>rolly/global/export.h</label>
+      </node>
+      <node id="19">
+        <label>quasar/logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>fmt/color.h</label>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>logger.cc</label>
+        <link refid="logger_8cc"/>
+      </node>
+      <node id="1">
+        <label>logger.h</label>
+        <link refid="logger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>logger.pybind.cc</label>
+        <link refid="logger_8pybind_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structquasar_1_1logging_1_1CLogger" prot="public">quasar::logging::CLogger</innerclass>
+    <innerclass refid="structquasar_1_1logging_1_1CLogger_1_1Params" prot="public">quasar::logging::CLogger::Params</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1logging">quasar::logging</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacequasar_1_1logging_1ae6e930758c13e7785a103cfc65cbbac6" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto quasar::logging::operator|</definition>
+        <argsstring>(CLogger::Target const &amp;lhs, CLogger::Target const &amp;rhs) -&gt; CLogger::Target</argsstring>
+        <name>operator|</name>
+        <param>
+          <type>CLogger::Target const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>CLogger::Target const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="72" column="18" bodyfile="quasar/misc/logger.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1a296812e2b7e7a047045f0238742adf45" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto quasar::logging::operator&amp;</definition>
+        <argsstring>(CLogger::Target const &amp;lhs, CLogger::Target const &amp;rhs) -&gt; CLogger::Target</argsstring>
+        <name>operator&amp;</name>
+        <param>
+          <type>CLogger::Target const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>CLogger::Target const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/logger.h" line="77" column="18" bodyfile="quasar/misc/logger.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/misc/logger.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structquasar_1_1CBackProjection_1_1img__t" kind="struct" language="C++" prot="private">
+    <compoundname>quasar::CBackProjection::img_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structquasar_1_1CBackProjection_1_1img__t_1a9eae6c1f38db98ab568f3ed3771a969d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dx</definition>
+        <argsstring></argsstring>
+        <name>dx</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/backprojection.h" line="114" column="13" bodyfile="quasar/backprojection.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CBackProjection_1_1img__t_1a8f461b6142ce8725218813abb23b06a3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dy</definition>
+        <argsstring></argsstring>
+        <name>dy</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/backprojection.h" line="115" column="13" bodyfile="quasar/backprojection.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CBackProjection_1_1img__t_1ac6894c88aabf335922736a63b2b87b97" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float course</definition>
+        <argsstring></argsstring>
+        <name>course</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/backprojection.h" line="116" column="13" bodyfile="quasar/backprojection.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CBackProjection_1_1img__t_1a26fd84d522945b6038221d9e38c7cc39" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float roll</definition>
+        <argsstring></argsstring>
+        <name>roll</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/backprojection.h" line="117" column="13" bodyfile="quasar/backprojection.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CBackProjection_1_1img__t_1a3c9556645d92e863376a4063a3ad7001" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float x0</definition>
+        <argsstring></argsstring>
+        <name>x0</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/backprojection.h" line="118" column="13" bodyfile="quasar/backprojection.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CBackProjection_1_1img__t_1a018e57d63b6c2c3a802377f95d7a4e96" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t word_size</definition>
+        <argsstring></argsstring>
+        <name>word_size</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/backprojection.h" line="119" column="15" bodyfile="quasar/backprojection.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CBackProjection_1_1img__t_1a26ce98a1cefae97e7a803b1dbec972c1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t polarization</definition>
+        <argsstring></argsstring>
+        <name>polarization</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/backprojection.h" line="120" column="15" bodyfile="quasar/backprojection.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CBackProjection_1_1img__t_1af77b1a54442f2443cf64a4766f916bcd" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/backprojection.h" line="121" column="15" bodyfile="quasar/backprojection.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CBackProjection_1_1img__t_1a31a74a81efd0ba14cbc4853f7fce3af0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t nx</definition>
+        <argsstring></argsstring>
+        <name>nx</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/backprojection.h" line="122" column="16" bodyfile="quasar/backprojection.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CBackProjection_1_1img__t_1a9696b3729bc7ba3effc41ee585be5b27" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ny</definition>
+        <argsstring></argsstring>
+        <name>ny</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/backprojection.h" line="123" column="16" bodyfile="quasar/backprojection.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1CBackProjection_1_1img__t_1a9fc4cca635a26c692681a7071e379aa7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/backprojection.h" line="124" column="13" bodyfile="quasar/backprojection.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CBackProjection::img_t</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>nx</edgelabel>
+          <edgelabel>ny</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dx</edgelabel>
+          <edgelabel>dy</edgelabel>
+          <edgelabel>k</edgelabel>
+          <edgelabel>course</edgelabel>
+          <edgelabel>x0</edgelabel>
+          <edgelabel>roll</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>polarization</edgelabel>
+          <edgelabel>word_size</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>y</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>int16_t</label>
+      </node>
+      <node id="3">
+        <label>float</label>
+      </node>
+      <node id="2">
+        <label>uint16_t</label>
+      </node>
+      <node id="4">
+        <label>uint8_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="quasar/backprojection.h" line="113" column="16" bodyfile="quasar/backprojection.h" bodystart="113" bodyend="125"/>
+    <listofallmembers>
+      <member refid="structquasar_1_1CBackProjection_1_1img__t_1ac6894c88aabf335922736a63b2b87b97" prot="public" virt="non-virtual"><scope>quasar::CBackProjection::img_t</scope><name>course</name></member>
+      <member refid="structquasar_1_1CBackProjection_1_1img__t_1a9eae6c1f38db98ab568f3ed3771a969d" prot="public" virt="non-virtual"><scope>quasar::CBackProjection::img_t</scope><name>dx</name></member>
+      <member refid="structquasar_1_1CBackProjection_1_1img__t_1a8f461b6142ce8725218813abb23b06a3" prot="public" virt="non-virtual"><scope>quasar::CBackProjection::img_t</scope><name>dy</name></member>
+      <member refid="structquasar_1_1CBackProjection_1_1img__t_1a9fc4cca635a26c692681a7071e379aa7" prot="public" virt="non-virtual"><scope>quasar::CBackProjection::img_t</scope><name>k</name></member>
+      <member refid="structquasar_1_1CBackProjection_1_1img__t_1a31a74a81efd0ba14cbc4853f7fce3af0" prot="public" virt="non-virtual"><scope>quasar::CBackProjection::img_t</scope><name>nx</name></member>
+      <member refid="structquasar_1_1CBackProjection_1_1img__t_1a9696b3729bc7ba3effc41ee585be5b27" prot="public" virt="non-virtual"><scope>quasar::CBackProjection::img_t</scope><name>ny</name></member>
+      <member refid="structquasar_1_1CBackProjection_1_1img__t_1a26ce98a1cefae97e7a803b1dbec972c1" prot="public" virt="non-virtual"><scope>quasar::CBackProjection::img_t</scope><name>polarization</name></member>
+      <member refid="structquasar_1_1CBackProjection_1_1img__t_1a26fd84d522945b6038221d9e38c7cc39" prot="public" virt="non-virtual"><scope>quasar::CBackProjection::img_t</scope><name>roll</name></member>
+      <member refid="structquasar_1_1CBackProjection_1_1img__t_1a018e57d63b6c2c3a802377f95d7a4e96" prot="public" virt="non-virtual"><scope>quasar::CBackProjection::img_t</scope><name>word_size</name></member>
+      <member refid="structquasar_1_1CBackProjection_1_1img__t_1a3c9556645d92e863376a4063a3ad7001" prot="public" virt="non-virtual"><scope>quasar::CBackProjection::img_t</scope><name>x0</name></member>
+      <member refid="structquasar_1_1CBackProjection_1_1img__t_1af77b1a54442f2443cf64a4766f916bcd" prot="public" virt="non-virtual"><scope>quasar::CBackProjection::img_t</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1ParameterBase" kind="class" language="C++" prot="public">
+    <compoundname>quasar::ParameterBase</compoundname>
+    <derivedcompoundref refid="classquasar_1_1Elevation" prot="public" virt="non-virtual">Elevation</derivedcompoundref>
+    <derivedcompoundref refid="classquasar_1_1Velocity" prot="public" virt="non-virtual">Velocity</derivedcompoundref>
+    <includes refid="nav_8h" local="no">quasar/nav/nav.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classquasar_1_1ParameterBase_1ae887466d86e1436db7775cfbae70c51b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classquasar_1_1CNav" kindref="compound">CNav</ref> *</type>
+        <definition>CNav* Nav</definition>
+        <argsstring></argsstring>
+        <name>Nav</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="115" column="10" bodyfile="quasar/nav/nav.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classquasar_1_1ParameterBase_1ac12578b58d66fb101a030d9721538098" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ParameterBase</definition>
+        <argsstring>(CNav *_nav)</argsstring>
+        <name>ParameterBase</name>
+        <param>
+          <type><ref refid="classquasar_1_1CNav" kindref="compound">CNav</ref> *</type>
+          <declname>_nav</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/nav.h" line="111" column="5" bodyfile="quasar/nav/nav.h" bodystart="111" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Elevation</label>
+        <link refid="classquasar_1_1Elevation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Velocity</label>
+        <link refid="classquasar_1_1Velocity"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ParameterBase</label>
+        <link refid="classquasar_1_1ParameterBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CNav</label>
+        <link refid="classquasar_1_1CNav"/>
+      </node>
+      <node id="1">
+        <label>ParameterBase</label>
+        <link refid="classquasar_1_1ParameterBase"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Nav</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="quasar/nav/nav.h" line="109" column="22" bodyfile="quasar/nav/nav.h" bodystart="109" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1ParameterBase_1ae887466d86e1436db7775cfbae70c51b" prot="protected" virt="non-virtual"><scope>quasar::ParameterBase</scope><name>Nav</name></member>
+      <member refid="classquasar_1_1ParameterBase_1ac12578b58d66fb101a030d9721538098" prot="public" virt="non-virtual"><scope>quasar::ParameterBase</scope><name>ParameterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

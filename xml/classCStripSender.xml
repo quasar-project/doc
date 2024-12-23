@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCStripSender" kind="class" language="C++" prot="public">
+    <compoundname>CStripSender</compoundname>
+    <includes refid="CStripSender_8hpp" local="no">/home/runner/work/quasar/quasar/src/CStripSender.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCStripSender_1ad4d5e12dfafa969bfc4691291c6da648" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/container/queue" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::queue</ref>&lt; <ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; uint8_t &gt; &gt;</type>
+        <definition>std::queue&lt;std::vector&lt;uint8_t&gt; &gt; queue</definition>
+        <argsstring></argsstring>
+        <name>queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripSender.hpp" line="28" column="16" bodyfile="CStripSender.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripSender_1a3e6f76368abfbc8709f4c1346dfa6a20" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool run</definition>
+        <argsstring></argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripSender.hpp" line="29" column="10" bodyfile="CStripSender.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripSender_1a6bc07b90df89dce0aead9b1056ae29c6" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/thread/thread" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::thread</ref> *</type>
+        <definition>std::thread* sheduler_thread</definition>
+        <argsstring></argsstring>
+        <name>sheduler_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripSender.hpp" line="30" column="17" bodyfile="CStripSender.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCStripSender_1a968015ad2f28a1fee031e29e674d6bac" prot="private" static="no" mutable="no">
+        <type><ref refid="classAbstractSender" kindref="compound">AbstractSender</ref> *</type>
+        <definition>AbstractSender* sender</definition>
+        <argsstring></argsstring>
+        <name>sender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripSender.hpp" line="31" column="20" bodyfile="CStripSender.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCStripSender_1a98aa795e8248558cd12efe79851ab388" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CStripSender</definition>
+        <argsstring>(AbstractSender *sender_)</argsstring>
+        <name>CStripSender</name>
+        <param>
+          <type><ref refid="classAbstractSender" kindref="compound">AbstractSender</ref> *</type>
+          <declname>sender_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripSender.hpp" line="13" column="5" bodyfile="CStripSender.hpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripSender_1a2374c7cd34d73162495915bc31f2c0e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~CStripSender</definition>
+        <argsstring>()</argsstring>
+        <name>~CStripSender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripSender.hpp" line="19" column="5" bodyfile="CStripSender.hpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classCStripSender_1ad20abd75c40f99aaee13a183079ae251" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void push</definition>
+        <argsstring>(std::vector&lt; uint8_t &gt; data)</argsstring>
+        <name>push</name>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; uint8_t &gt;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripSender.hpp" line="25" column="10" bodyfile="CStripSender.hpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCStripSender_1a95659b5be1222d8e697a52fd8625f5aa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sheduler</definition>
+        <argsstring>(int a)</argsstring>
+        <name>sheduler</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CStripSender.hpp" line="33" column="10" bodyfile="CStripSender.hpp" bodystart="33" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="CStripSender.hpp" line="11" column="19" bodyfile="CStripSender.hpp" bodystart="11" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classCStripSender_1a98aa795e8248558cd12efe79851ab388" prot="public" virt="non-virtual"><scope>CStripSender</scope><name>CStripSender</name></member>
+      <member refid="classCStripSender_1ad20abd75c40f99aaee13a183079ae251" prot="public" virt="non-virtual"><scope>CStripSender</scope><name>push</name></member>
+      <member refid="classCStripSender_1ad4d5e12dfafa969bfc4691291c6da648" prot="private" virt="non-virtual"><scope>CStripSender</scope><name>queue</name></member>
+      <member refid="classCStripSender_1a3e6f76368abfbc8709f4c1346dfa6a20" prot="private" virt="non-virtual"><scope>CStripSender</scope><name>run</name></member>
+      <member refid="classCStripSender_1a968015ad2f28a1fee031e29e674d6bac" prot="private" virt="non-virtual"><scope>CStripSender</scope><name>sender</name></member>
+      <member refid="classCStripSender_1a95659b5be1222d8e697a52fd8625f5aa" prot="private" virt="non-virtual"><scope>CStripSender</scope><name>sheduler</name></member>
+      <member refid="classCStripSender_1a6bc07b90df89dce0aead9b1056ae29c6" prot="private" virt="non-virtual"><scope>CStripSender</scope><name>sheduler_thread</name></member>
+      <member refid="classCStripSender_1a2374c7cd34d73162495915bc31f2c0e1" prot="public" virt="non-virtual"><scope>CStripSender</scope><name>~CStripSender</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

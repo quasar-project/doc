@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>quasar::CBackProjection class | QuaSAR SAR image processing library</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <span id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">
+        <a href="http://quasar-project.github.io/doc"><img src="logo.png" alt="" />QuaSAR</a> <span class="m-breadcrumb">|</span> <a href="index.html" class="m-thin">SAR image processing library</a>
+      </span>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Handbook</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="4">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacequasar.html">quasar</a>::<wbr/></span>CBackProjection <span class="m-thin">class</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="backprojection_8h.html">&lt;quasar/backprojection.h&gt;</a></div>
+        </h1>
+        <p><span></span></p>
+        <nav class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-types">Public types</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <section id="pub-types">
+          <h2><a href="#pub-types">Public types</a></h2>
+          <dl class="m-doc">
+            <dt id="a30e4daca1ceec5f93cf2a1214d8dd3c9">
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              using <a href="#a30e4daca1ceec5f93cf2a1214d8dd3c9" class="m-doc-self">Matrix</a> = <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;<a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;T&gt;&gt;
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt id="a50469061547881d8a146413bcc0f543f">
+              <span class="m-dox-wrap-bumper"><a href="#a50469061547881d8a146413bcc0f543f" class="m-dox-self" name="a50469061547881d8a146413bcc0f543f">CBackProjection</a>(</span><span class="m-dox-wrap">)</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="af73ab28b1ee542c7800a18f78e6fe09b">
+              <span class="m-dox-wrap-bumper"><a href="#af73ab28b1ee542c7800a18f78e6fe09b" class="m-dox-self" name="af73ab28b1ee542c7800a18f78e6fe09b">CBackProjection</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1SAR.html" class="m-doc">SAR</a>* sar,
+              <a href="classquasar_1_1CImage.html" class="m-doc">CImage</a>* image)</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ad6efa0bc77b8c7124cec2a6eeefe29de">
+              <span class="m-dox-wrap-bumper"><a href="#ad6efa0bc77b8c7124cec2a6eeefe29de" class="m-dox-self" name="ad6efa0bc77b8c7124cec2a6eeefe29de">~CBackProjection</a>(</span><span class="m-dox-wrap">) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt id="a54f06c748987df4adee0239383fb2860">
+              <span class="m-dox-wrap-bumper">auto <a href="#a54f06c748987df4adee0239383fb2860" class="m-dox-self" name="a54f06c748987df4adee0239383fb2860">set_image</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a>* image) -&gt; void</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ac65db4286a12b0bcfc4bc64ab19b99e8">
+              <span class="m-dox-wrap-bumper">void <a href="#ac65db4286a12b0bcfc4bc64ab19b99e8" class="m-dox-self" name="ac65db4286a12b0bcfc4bc64ab19b99e8">setPixelSize</a>(</span><span class="m-dox-wrap">float pixSize)</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a8fe97509a65d5132d7d3b8b9019d8505">
+              <span class="m-dox-wrap-bumper">void <a href="#a8fe97509a65d5132d7d3b8b9019d8505" class="m-dox-self" name="a8fe97509a65d5132d7d3b8b9019d8505">setPixelSize</a>(</span><span class="m-dox-wrap">float _dx,
+              float _dy)</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a425ef9440b39eee79aff26b6c22c570c">
+              <span class="m-dox-wrap-bumper">auto <a href="#a425ef9440b39eee79aff26b6c22c570c" class="m-dox-self" name="a425ef9440b39eee79aff26b6c22c570c">telescopic</a>(</span><span class="m-dox-wrap">f32 x0,
+              f32 lx,
+              f32 angle,
+              f32 div,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; v,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; h,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; x) -&gt; int</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a5977099ad766dbfaabc57d56fe8997b9">
+              <span class="m-dox-wrap-bumper">auto <a href="#a5977099ad766dbfaabc57d56fe8997b9" class="m-dox-self" name="a5977099ad766dbfaabc57d56fe8997b9">phaseCorrection</a>(</span><span class="m-dox-wrap">float x,
+              float y) -&gt; int</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ae0e47128cfdb4e43246c7445bfd1509c">
+              <span class="m-dox-wrap-bumper">auto <a href="#ae0e47128cfdb4e43246c7445bfd1509c" class="m-dox-self" name="ae0e47128cfdb4e43246c7445bfd1509c">stripInit</a>(</span><span class="m-dox-wrap">float dx_,
+              float lx,
+              float Tstrip,
+              float Ts) -&gt; int</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a18f627df4030b8bba6f3ce5262d3e33b">
+              <span class="m-dox-wrap-bumper">auto <a href="#a18f627df4030b8bba6f3ce5262d3e33b" class="m-dox-self" name="a18f627df4030b8bba6f3ce5262d3e33b">strip_stream</a>(</span><span class="m-dox-wrap">f32 x0,
+              f32 y0,
+              int n,
+              f32 angle,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; v,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; h,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; x) -&gt; pybind11::array_t&lt;uint8_t&gt;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ae5d11397efc247dda5259f00dcbe03bf">
+              <span class="m-dox-wrap-bumper">auto <a href="#ae5d11397efc247dda5259f00dcbe03bf" class="m-dox-self" name="ae5d11397efc247dda5259f00dcbe03bf">strip</a>(</span><span class="m-dox-wrap">f32 x0,
+              f32 y0,
+              int n,
+              f32 angle,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; v,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; h,
+              <a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a>&lt;f32&gt; const&amp; x) -&gt; int</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aaad715e847d1c67f81f3b923404a0482">
+              <span class="m-dox-wrap-bumper">auto <a href="#aaad715e847d1c67f81f3b923404a0482" class="m-dox-self" name="aaad715e847d1c67f81f3b923404a0482">retrieve_strip_image</a>(</span><span class="m-dox-wrap">) const -&gt; std::shared_ptr&lt; CImage &gt;</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a001630c3b610147ca4701e63742e4684">
+              <span class="m-dox-wrap-bumper">auto <a href="#a001630c3b610147ca4701e63742e4684" class="m-dox-self" name="a001630c3b610147ca4701e63742e4684">autofocus</a>(</span><span class="m-dox-wrap">float v_start,
+              float v_stop,
+              float point_x,
+              float point_y,
+              float Ts,
+              float ang,
+              float ls,
+              int n_steps,
+              float v,
+              float h,
+              float x,
+              <a href="http://en.cppreference.com/w/cpp/string/basic_string.html" class="m-doc-external">std::<wbr />string</a> filename) -&gt; float</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a5dacd32bc0434aa89032d20414b7ed23">
+              <span class="m-dox-wrap-bumper">auto <a href="#a5dacd32bc0434aa89032d20414b7ed23" class="m-dox-self" name="a5dacd32bc0434aa89032d20414b7ed23">pack_len</a>(</span><span class="m-dox-wrap">) -&gt; int</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>QuaSAR handbook is part of the <a href="https://github.com/Nikitamuraviev10/quasar">QuaSAR project</a><br />Generated by <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

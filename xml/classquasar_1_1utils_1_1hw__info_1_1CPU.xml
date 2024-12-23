@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1utils_1_1hw__info_1_1CPU" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>quasar::utils::hw_info::CPU</compoundname>
+    <includes refid="hw__info_8h" local="no">/home/runner/work/quasar/quasar/src/private/hw_info.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1a8e95947fa960121ec8693ce54632706b" prot="private" static="no" mutable="no">
+        <type>i64</type>
+        <definition>i64 id_</definition>
+        <argsstring></argsstring>
+        <name>id_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="33" column="9" bodyfile="private/hw_info.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1afee64703c29ce432aae5fca2083c8f17" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string model_name_</definition>
+        <argsstring></argsstring>
+        <name>model_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="34" column="17" bodyfile="private/hw_info.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1a45eca3f1f52d371efe7b6f89514038c0" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string vendor_</definition>
+        <argsstring></argsstring>
+        <name>vendor_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="35" column="17" bodyfile="private/hw_info.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1a4b718d436096bdf9e089926f16f8afcb" prot="private" static="no" mutable="no">
+        <type>i64</type>
+        <definition>i64 physical_cores_</definition>
+        <argsstring></argsstring>
+        <name>physical_cores_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="36" column="9" bodyfile="private/hw_info.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1a46262d994448f8ec0c6913f7619b03a2" prot="private" static="no" mutable="no">
+        <type>i64</type>
+        <definition>i64 logical_cores_</definition>
+        <argsstring></argsstring>
+        <name>logical_cores_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="37" column="9" bodyfile="private/hw_info.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1af7fc218a49928950005c5893dddf7cd9" prot="private" static="no" mutable="no">
+        <type>i64</type>
+        <definition>i64 max_clock_speed_mhz_</definition>
+        <argsstring></argsstring>
+        <name>max_clock_speed_mhz_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="38" column="9" bodyfile="private/hw_info.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1a9587f7c835d7309aa93e6f91fa865863" prot="private" static="no" mutable="no">
+        <type>i64</type>
+        <definition>i64 regular_clock_speed_mhz_</definition>
+        <argsstring></argsstring>
+        <name>regular_clock_speed_mhz_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="39" column="9" bodyfile="private/hw_info.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1abe8981459d7b8a1302693038c62aa6cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto id</definition>
+        <argsstring>() const -&gt; i64</argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="20" column="11" bodyfile="hw_info.cc" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1a6c2707ec0be7e56ef1a341943a93100a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto model_name</definition>
+        <argsstring>() const -&gt; std::string const &amp;</argsstring>
+        <name>model_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="21" column="11" bodyfile="hw_info.cc" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1a7582675ab7bd395f0c4706a327e19b78" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto vendor</definition>
+        <argsstring>() const -&gt; std::string const &amp;</argsstring>
+        <name>vendor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="22" column="11" bodyfile="hw_info.cc" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1a608bbafcab8d9cd52b132f311e78d23d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto physical_cores</definition>
+        <argsstring>() const -&gt; i64</argsstring>
+        <name>physical_cores</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="23" column="11" bodyfile="hw_info.cc" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1ace965bdaca946fa931e137df7bba1918" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto logical_cores</definition>
+        <argsstring>() const -&gt; i64</argsstring>
+        <name>logical_cores</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="24" column="11" bodyfile="hw_info.cc" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1aa4cf8fdf9a73c3ec3817837990c7c69f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto max_clock_speed_mhz</definition>
+        <argsstring>() const -&gt; i64</argsstring>
+        <name>max_clock_speed_mhz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="25" column="11" bodyfile="hw_info.cc" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1a45d26126d8342eae742deef7d052a109" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto regular_clock_speed_mhz</definition>
+        <argsstring>() const -&gt; i64</argsstring>
+        <name>regular_clock_speed_mhz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="26" column="11" bodyfile="hw_info.cc" bodystart="100" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1a3dfcb3e20d1fa6c3382a9284f9571610" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto get_all</definition>
+        <argsstring>() noexcept(false) -&gt; std::vector&lt; CPU &gt;</argsstring>
+        <name>get_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="28" column="18" bodyfile="hw_info.cc" bodystart="102" bodyend="175"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classquasar_1_1utils_1_1hw__info_1_1CPU_1afe0e9f50b79e47f0a481c19e1ff5aa0d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPU</definition>
+        <argsstring>()=default</argsstring>
+        <name>CPU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/hw_info.h" line="31" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/hw_info.h" line="18" column="12" bodyfile="private/hw_info.h" bodystart="18" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1afe0e9f50b79e47f0a481c19e1ff5aa0d" prot="private" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>CPU</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1a3dfcb3e20d1fa6c3382a9284f9571610" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>get_all</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1abe8981459d7b8a1302693038c62aa6cf" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>id</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1a8e95947fa960121ec8693ce54632706b" prot="private" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>id_</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1ace965bdaca946fa931e137df7bba1918" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>logical_cores</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1a46262d994448f8ec0c6913f7619b03a2" prot="private" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>logical_cores_</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1aa4cf8fdf9a73c3ec3817837990c7c69f" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>max_clock_speed_mhz</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1af7fc218a49928950005c5893dddf7cd9" prot="private" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>max_clock_speed_mhz_</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1a6c2707ec0be7e56ef1a341943a93100a" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>model_name</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1afee64703c29ce432aae5fca2083c8f17" prot="private" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>model_name_</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1a608bbafcab8d9cd52b132f311e78d23d" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>physical_cores</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1a4b718d436096bdf9e089926f16f8afcb" prot="private" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>physical_cores_</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1a45d26126d8342eae742deef7d052a109" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>regular_clock_speed_mhz</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1a9587f7c835d7309aa93e6f91fa865863" prot="private" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>regular_clock_speed_mhz_</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1a7582675ab7bd395f0c4706a327e19b78" prot="public" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>vendor</name></member>
+      <member refid="classquasar_1_1utils_1_1hw__info_1_1CPU_1a45eca3f1f52d371efe7b6f89514038c0" prot="private" virt="non-virtual"><scope>quasar::utils::hw_info::CPU</scope><name>vendor_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceu" kind="namespace" language="C++">
+    <compoundname>u</compoundname>
+    <innernamespace refid="namespaceu_1_1fs">u::fs</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceu_1afff37fd6148a76bd6cafc47ce411f6d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto u::starts_with</definition>
+        <argsstring>(string const &amp;input, string const &amp;prefix) -&gt; bool</argsstring>
+        <name>starts_with</name>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> const &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> const &amp;</type>
+          <declname>prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="21" column="15" bodyfile="hw_info.cc" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu_1aa1735c23bfe6336ea6d1ff25d18cd25c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto u::strip</definition>
+        <argsstring>(string &amp;input) -&gt; void</argsstring>
+        <name>strip</name>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="25" column="15" bodyfile="hw_info.cc" bodystart="25" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceu_1a41fa2c28bd16b25ee106b5c3e89a2adc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto u::split</definition>
+        <argsstring>(string const &amp;input, string const &amp;delimiter) -&gt; vector&lt; string &gt;</argsstring>
+        <name>split</name>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> const &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> const &amp;</type>
+          <declname>delimiter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="57" column="15" bodyfile="hw_info.cc" bodystart="57" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="hw_info.cc" line="20" column="11"/>
+  </compounddef>
+</doxygen>

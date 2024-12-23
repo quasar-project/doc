@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacequasar_1_1dsp_1_1impl" kind="namespace" language="C++">
+    <compoundname>quasar::dsp::impl</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacequasar_1_1dsp_1_1impl_1aa840ffd9cedd236989287a05c30038ab" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto two_pi</definition>
+        <argsstring></argsstring>
+        <name>two_pi</name>
+        <initializer>= 2.f * numbers::pi</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="8" column="25" bodyfile="private/window/window_impl_fftw.cc" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1dsp_1_1impl_1a2b2f4d39fb2af010c30ce31feb98caa7" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto four_pi</definition>
+        <argsstring></argsstring>
+        <name>four_pi</name>
+        <initializer>= 4.f * numbers::pi</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="9" column="25" bodyfile="private/window/window_impl_fftw.cc" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1dsp_1_1impl_1a065bc7e7488dce1eaf9e6951aaf30ed5" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto six_pi</definition>
+        <argsstring></argsstring>
+        <name>six_pi</name>
+        <initializer>= 6.f * numbers::pi</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="10" column="25" bodyfile="private/window/window_impl_fftw.cc" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacequasar_1_1dsp_1_1impl_1abdc4b9d4c110a0d4ebe67aa493f49168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto hamming_ram</definition>
+        <argsstring>(f32 *out, usize size) -&gt; void</argsstring>
+        <name>hamming_ram</name>
+        <param>
+          <type>f32 *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="12" column="8" bodyfile="private/window/window_impl_fftw.cc" bodystart="12" bodyend="21" declfile="private/window/window_impl_fftw.hh" declline="9" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1dsp_1_1impl_1a416dcf2e8689d62747f70cc1986d5939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto blackman_ram</definition>
+        <argsstring>(f32 *out, usize size) -&gt; void</argsstring>
+        <name>blackman_ram</name>
+        <param>
+          <type>f32 *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="23" column="8" bodyfile="private/window/window_impl_fftw.cc" bodystart="23" bodyend="36" declfile="private/window/window_impl_fftw.hh" declline="10" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1dsp_1_1impl_1ad84fa355f8792d4dadab38421c304d63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto nuttall_ram</definition>
+        <argsstring>(f32 *out, usize size) -&gt; void</argsstring>
+        <name>nuttall_ram</name>
+        <param>
+          <type>f32 *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="38" column="8" bodyfile="private/window/window_impl_fftw.cc" bodystart="38" bodyend="53" declfile="private/window/window_impl_fftw.hh" declline="11" declcolumn="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/window/window_impl_fftw.cc" line="7" column="27"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>quasar::CImage class | QuaSAR SAR image processing library</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <span id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">
+        <a href="http://quasar-project.github.io/doc"><img src="logo.png" alt="" />QuaSAR</a> <span class="m-breadcrumb">|</span> <a href="index.html" class="m-thin">SAR image processing library</a>
+      </span>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Handbook</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="4">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacequasar.html">quasar</a>::<wbr/></span>CImage <span class="m-thin">class</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="image_8h.html">&lt;quasar/image/image.h&gt;</a></div>
+        </h1>
+        <p>Радиолокационное изображение.</p>
+        <nav class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-types">Public types</a></li>
+                <li><a href="#pub-static-methods">Public static functions</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+                <li><a href="#pro-static-methods">Protected static functions</a></li>
+                <li><a href="#pro-methods">Protected functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python под именем <strong>Image</strong>.</p></aside>
+        <section id="pub-types">
+          <h2><a href="#pub-types">Public types</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">enum class <a href="#a85ad26a4a370f67021406bf2f5a8a824" class="m-doc">ColorMap</a> { </span><span class="m-doc-wrap"><a href="#a85ad26a4a370f67021406bf2f5a8a824ad3f6975213fb5546d8486b54b025dbd7" class="m-doc">Grayscale</a> = 0,
+              <a href="#a85ad26a4a370f67021406bf2f5a8a824a252ce7e80c1ffd8c2558ad9b13d4ca2b" class="m-doc">Jet</a> = 1 }</span>
+            </dt>
+            <dd>Формат цветового представления изображения.</dd>
+          </dl>
+        </section>
+        <section id="pub-static-methods">
+          <h2><a href="#pub-static-methods">Public static functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-dox-wrap-bumper">static auto <a href="#a9630ae0012d1ff9386954e4c7d108d6e" class="m-dox">load</a>(</span><span class="m-dox-wrap">std::filesystem::path const&amp; path,
+              u32 width,
+              u32 height,
+              ImageUnderlyingType type) -&gt; std::shared_ptr&lt; CImage &gt;</span>
+            </dt>
+            <dd>Загружает изображение из файла по указанному пути.</dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt id="a778b862dc03a9f7f89f63327446b44c9">
+              <span class="m-dox-wrap-bumper"><a href="#a778b862dc03a9f7f89f63327446b44c9" class="m-dox-self" name="a778b862dc03a9f7f89f63327446b44c9">CImage</a>(</span><span class="m-dox-wrap">)</span>
+            </dt>
+            <dd>Создает пустой экземляр изображения типа DSP::FFTW.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#a38fe38fedc5f20626204adec3ccf64c1" class="m-dox">CImage</a>(</span><span class="m-dox-wrap">DSP type) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd>Создает пустой экземляр изображения выбранного типа.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#a4084552e786b14955077c3588e111534" class="m-dox">CImage</a>(</span><span class="m-dox-wrap">DSP type,
+              u32 width,
+              u32 height,
+              ImageUnderlyingType underlying_type) <span class="m-label m-flat m-info">explicit</span> </span>
+            </dt>
+            <dd>Создает экземляр изображения выбранного типа c преаллоцированными размерами <code>width x height</code> и выбранным типом отсчета.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#ae602d741a574f561ee0cf171de857857" class="m-dox">CImage</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a> const&amp; other)</span>
+            </dt>
+            <dd>Конструктор копирования.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#adbcc14e62ce5e6743e1ae2d5c1b12e84" class="m-dox">CImage</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a>&amp;&amp; other) <span class="m-label m-flat m-success">noexcept</span></span>
+            </dt>
+            <dd>Конструктор перемещения.</dd>
+            <dt id="a9d5e3586adc0e7eb68a1fb23ee7f26cc">
+              <span class="m-dox-wrap-bumper"><a href="#a9d5e3586adc0e7eb68a1fb23ee7f26cc" class="m-dox-self" name="a9d5e3586adc0e7eb68a1fb23ee7f26cc">~CImage</a>(</span><span class="m-dox-wrap">) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd>Деаллоцирует все выделенные ресурсы и удаляет объект.</dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="#a4403a23f6d9900208d45f1ce8e6aed26" class="m-dox">data</a>(</span><span class="m-dox-wrap">) const -&gt; T *</span>
+            </dt>
+            <dd>Возвращает указатель на начало массива данных РЛИ</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ac1420eecf2b93bcce322b0e0f172051f" class="m-dox">type</a>(</span><span class="m-dox-wrap">) const -&gt; enum DSP <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Возвращает тип интерфейса данных РЛИ</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a8b2d1bdfe4cf7979b144454d57758e3b" class="m-dox">data_interface</a>(</span><span class="m-dox-wrap">) const -&gt; IImageDataHolder const &amp;</span>
+            </dt>
+            <dd>Возвращает константную ссылку на интерфейс данных РЛИ.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#addb7e9d5f6e544d51e2a49818f56e977" class="m-dox">data_interface_mut</a>(</span><span class="m-dox-wrap">) -&gt; IImageDataHolder &amp;</span>
+            </dt>
+            <dd>Возвращает мутабельную ссылку на интерфейс данных РЛИ.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a9b0e4b3d4fb635a395bfb0d7f649cc54" class="m-dox">metadata</a>(</span><span class="m-dox-wrap">) const -&gt; api::Metadata const &amp;</span>
+            </dt>
+            <dd>Возвращает константную ссылку на структуру метаданных изображения.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a76e81784bd01f8ba60e56aa4d42697d0" class="m-dox">metadata_mut</a>(</span><span class="m-dox-wrap">) -&gt; api::Metadata &amp;</span>
+            </dt>
+            <dd>Возвращает изменяемую ссылку на структуру метаданных изображения.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a45d4b5a4dadba50c894aa21245104fa4" class="m-dox">width</a>(</span><span class="m-dox-wrap">) const -&gt; u32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Возвращает реальную ширину изображения.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ae9ba552513ff7e36f5e13034aa2e6fce" class="m-dox">height</a>(</span><span class="m-dox-wrap">) const -&gt; u32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Возвращает реальную высоту изображения.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#afaeb3982028039662e13008fd47f0af1" class="m-dox">size</a>(</span><span class="m-dox-wrap">) const -&gt; u32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Возвращает реальный размер (площадь) изображения.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#afee340038133d39c055dbde1d60b3fe3" class="m-dox">size_bytes</a>(</span><span class="m-dox-wrap">) const -&gt; usize</span>
+            </dt>
+            <dd>Возвращает размер изображения в байтах.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a25e09b6f24ebeffeb6efe7fb6b255170" class="m-dox">width_rounded</a>(</span><span class="m-dox-wrap">) const -&gt; u32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Возвращает ширину изображения с округлением до степени двойки.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a933019031e5639ea22f093e081ac256b" class="m-dox">height_rounded</a>(</span><span class="m-dox-wrap">) const -&gt; u32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Возвращает высоту изображения с округлением до степени двойки.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ac0a2bb946c7d2c32abd12a81afd768d4" class="m-dox">size_rounded</a>(</span><span class="m-dox-wrap">) const -&gt; u32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Возвращает размер (площадь) изображения с округлением до степени двойки.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#af63da8417e7448d3cb40dabf6f627156" class="m-dox">size_rounded_bytes</a>(</span><span class="m-dox-wrap">) const -&gt; usize</span>
+            </dt>
+            <dd>Возвращает размер изображения в байтах с округлением до степени двойки.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a1a6c63b2f1c667aa039af487d1c39472" class="m-dox">underlying_type</a>(</span><span class="m-dox-wrap">) const -&gt; enum ImageUnderlyingType <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Возвращает тип, которым представлены данные в памяти в данном изображении.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a9e0219fc519640d7784f9561722f8197" class="m-dox">near_range_index</a>(</span><span class="m-dox-wrap">) const -&gt; usize <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Возвращает индекс ближней границы изображения.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ab38b6240ba0c286965dad1a9ece1484b" class="m-dox">actual_index</a>(</span><span class="m-dox-wrap">) const -&gt; isize <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Возвращает индекс циркулярного буфера, если буфер задан.</dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="#a0bfbffc442ae9cf81d792fb69620d7dc" class="m-dox">view</a>(</span><span class="m-dox-wrap">) const -&gt; span&lt; T const &gt;</span>
+            </dt>
+            <dd>Возвращает представление буфера данных в виде <code>std::span</code>.</dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="#a8e0b634ee9dae0d2ccd9dbf80befc8c6" class="m-dox">view_mut</a>(</span><span class="m-dox-wrap">) -&gt; span&lt; T &gt;</span>
+            </dt>
+            <dd>Возвращает представление буфера данных в виде <code>std::span</code>.</dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="#af372e23735dc28d673d6978a828e0f66" class="m-dox">to_vec</a>(</span><span class="m-dox-wrap">) const -&gt; std::vector&lt; T &gt;</span>
+            </dt>
+            <dd>Возвращает представление буфера данных в виде владеющего <code><a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a></code>.</dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="#a98c9b55c99a506318c8c475e9ff83758" class="m-dox">to_vec</a>(</span><span class="m-dox-wrap">usize start,
+              usize end) const -&gt; std::vector&lt; T &gt;</span>
+            </dt>
+            <dd>Возвращает представление части буфера данных в виде владеющего <code><a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a></code>.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ae78cfa195c328ec24fcf82f65d9f70b0" class="m-dox">move_to</a>(</span><span class="m-dox-wrap">enum DSP destination) -&gt; CImage &amp;</span>
+            </dt>
+            <dd>Перемещает буфер данных изображения между оперативной памятью и видеопамятью в направлении <code>destination</code>.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#af373e46c3f46c274103b22e94081c839" class="m-dox">pixel</a>(</span><span class="m-dox-wrap">int w,
+              int h) const <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Возвращает пиксель изображения в указанных координатах.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a856e703e72eb671a9fc8fa4b9d89159e" class="m-dox">pixel_mut</a>(</span><span class="m-dox-wrap">int w,
+              int h) -&gt; f32 &amp;</span>
+            </dt>
+            <dd>Возвращает изменяюмую ссылку на пиксель изображения в указанных координатах.</dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="#af7f83299d2a2cbc4c4295089ecd8a7a0" class="m-dox">pixel_unsafe</a>(</span><span class="m-dox-wrap">int w,
+              int h) const <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Возвращает пиксель изображения в указанных координатах.</dd>
+            <dt>
+              <div class="m-doc-template">template&lt;typename T&gt;</div>
+              <span class="m-dox-wrap-bumper">auto <a href="#a0db43c68e3b34145aed17c1f1fdb6bb6" class="m-dox">set_pixel_unsafe</a>(</span><span class="m-dox-wrap">int w,
+              int h,
+              T value) <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Задает пиксель изображения в указанных координатах.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ac9c44c789775d7d705d8ce3401214a08" class="m-dox">reset_interface</a>(</span><span class="m-dox-wrap"><a href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html" class="m-doc-external">std::<wbr />unique_ptr</a>&lt;<a href="classquasar_1_1IImageDataHolder.html" class="m-doc">IImageDataHolder</a>&gt;&amp;&amp; data) -&gt; void</span>
+            </dt>
+            <dd>Очищает текущий буфер данных и заменяет его новым.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a04ddfa027553f3d2c7484899617f7da5" class="m-dox">set_width</a>(</span><span class="m-dox-wrap">u32 width) -&gt; void</span>
+            </dt>
+            <dd>Задает реальную ширину изображения.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a9fe622cf58f885f80cca7beac72a55e8" class="m-dox">set_height</a>(</span><span class="m-dox-wrap">u32 height) -&gt; void</span>
+            </dt>
+            <dd>Задает реальную высоту изображения.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ab70a801400de3e7b2d28264b81b99056" class="m-dox">set_width_rounded</a>(</span><span class="m-dox-wrap">u32 width) -&gt; void</span>
+            </dt>
+            <dd>Задает ширину изображения с округлением до степени двойки.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ac3abb57fd13b931e0cecb290b02f7432" class="m-dox">set_height_rounded</a>(</span><span class="m-dox-wrap">u32 height) -&gt; void</span>
+            </dt>
+            <dd>Задает высоту изображения с округлением до степени двойки.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a53d1174b40719024ec5420f5439f1e3c" class="m-dox">set_underlying_type</a>(</span><span class="m-dox-wrap">ImageUnderlyingType type) -&gt; void</span>
+            </dt>
+            <dd>Задает тип, которым представлены данные в памяти в данном изображении.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a9ab225ef0f30ce40e95ed37051acc0c8" class="m-dox">set_near_range_index</a>(</span><span class="m-dox-wrap">usize index) -&gt; void</span>
+            </dt>
+            <dd>Задает индекс ближней границы вырезанного изображения.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a81aa3d1037292e0fda8eeea6acfb2f25" class="m-dox">set_actual_index</a>(</span><span class="m-dox-wrap">isize index) -&gt; void</span>
+            </dt>
+            <dd>Задает индекс для циркулярного буфера.</dd>
+            <dt id="a9ae516ebb62d6ed6fb9d1d6c2d7fb5b2">
+              <span class="m-dox-wrap-bumper">auto <a href="#a9ae516ebb62d6ed6fb9d1d6c2d7fb5b2" class="m-dox-self" name="a9ae516ebb62d6ed6fb9d1d6c2d7fb5b2">is_broken</a>(</span><span class="m-dox-wrap">) -&gt; bool <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a11eab7e58a24385d5f46cf4576d08342">
+              <span class="m-dox-wrap-bumper">auto <a href="#a11eab7e58a24385d5f46cf4576d08342" class="m-dox-self" name="a11eab7e58a24385d5f46cf4576d08342">set_broken</a>(</span><span class="m-dox-wrap">bool status) -&gt; void <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a370619a5c2ef1634a87c6e295d0c3bdb" class="m-dox">as_cv_mat</a>(</span><span class="m-dox-wrap">) const -&gt; cv::Mat</span>
+            </dt>
+            <dd>Возвращает изображение в виде матрицы <code>cv::Mat</code>.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a4609c214be647161c2b9da631b51ed0f" class="m-dox">save</a>(</span><span class="m-dox-wrap">std::filesystem::path const&amp; path,
+              ImageFormat format,
+              f32 brightness_multiplier,
+              i32 quality,
+              <a href="classquasar_1_1CImage.html#a85ad26a4a370f67021406bf2f5a8a824" class="m-doc">ColorMap</a> colormap = <a href="classquasar_1_1CImage.html#a85ad26a4a370f67021406bf2f5a8a824ad3f6975213fb5546d8486b54b025dbd7" class="m-doc">ColorMap::<wbr />Grayscale</a>) const <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Сохраняет изображение в файл по указанному пути.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#af2ce86aa2b801dd50ec8767cd49a5b73" class="m-dox">save_as_binary</a>(</span><span class="m-dox-wrap">std::filesystem::path const&amp; path) const -&gt; void</span>
+            </dt>
+            <dd>Сохраняет текущее изображение в виде бинарной репрезентации его буфера данных.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a96d2fd96ec47b48f3b2de65c3d2683a6" class="m-dox">save_signal_as_csv</a>(</span><span class="m-dox-wrap">std::filesystem::path const&amp; path) const -&gt; void</span>
+            </dt>
+            <dd>Сохраняет значения сигнала в CSV-файл.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">void <a href="#a8f74c37da75d55c00bf5ab23b6b441f7" class="m-dox">CutH</a>(</span><span class="m-dox-wrap">int hb,
+              int he)</span>
+            </dt>
+            <dd>Функция вырезает часть изображения в соответствии с номером начальной и конечной строки</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">void <a href="#a0fe5dd0ef36a03a5a2a7e0c5e7078aae" class="m-dox">CutW</a>(</span><span class="m-dox-wrap">int wb,
+              int we)</span>
+            </dt>
+            <dd>Функция вырезает часть изображения в соответствии с номером начального и конечного столбца</dd>
+            <dt id="ab9f127302ca026a5bd208810f62c331e">
+              <span class="m-dox-wrap-bumper">auto <a href="#ab9f127302ca026a5bd208810f62c331e" class="m-dox-self" name="ab9f127302ca026a5bd208810f62c331e">AbsAndNorm</a>(</span><span class="m-dox-wrap">) -&gt; int</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a48819141518b65ffecfe4b37510ba009">
+              <span class="m-dox-wrap-bumper">auto <a href="#a48819141518b65ffecfe4b37510ba009" class="m-dox-self" name="a48819141518b65ffecfe4b37510ba009">Binarize</a>(</span><span class="m-dox-wrap">) -&gt; int</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a384a86231bca004747d18962f41b0785">
+              <span class="m-dox-wrap-bumper">auto <a href="#a384a86231bca004747d18962f41b0785" class="m-dox-self" name="a384a86231bca004747d18962f41b0785">MedianBlur</a>(</span><span class="m-dox-wrap">) -&gt; int</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#abfd1428bfa6a22fd8db03bceb30dfa5c" class="m-dox">Roll</a>(</span><span class="m-dox-wrap">int n) -&gt; int</span>
+            </dt>
+            <dd>Прокрутка РЛИ</dd>
+            <dt id="affc76c77b31a552e67011ec0d604ecb9">
+              <span class="m-dox-wrap-bumper">auto <a href="#affc76c77b31a552e67011ec0d604ecb9" class="m-dox-self" name="affc76c77b31a552e67011ec0d604ecb9">RangeBrightness</a>(</span><span class="m-dox-wrap">float x0,
+              float dx) const -&gt; int</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aad7d162b83c85d08bfe5af178290d134">
+              <span class="m-dox-wrap-bumper">auto <a href="#aad7d162b83c85d08bfe5af178290d134" class="m-dox-self" name="aad7d162b83c85d08bfe5af178290d134">ReadMetadata</a>(</span><span class="m-dox-wrap">char* fileName) -&gt; int</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="af4082be3727bd14e957999ac4cd562c5">
+              <span class="m-dox-wrap-bumper">void <a href="#af4082be3727bd14e957999ac4cd562c5" class="m-dox-self" name="af4082be3727bd14e957999ac4cd562c5">VerticalMirror</a>(</span><span class="m-dox-wrap">)</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="ae2fef5465eea77d118dce7f7ae4604b7">
+              <span class="m-dox-wrap-bumper">void <a href="#ae2fef5465eea77d118dce7f7ae4604b7" class="m-dox-self" name="ae2fef5465eea77d118dce7f7ae4604b7">Rotate</a>(</span><span class="m-dox-wrap">float angle)</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a80a3fb29e7fdb6998b1c2e3215be802c">
+              <span class="m-dox-wrap-bumper">auto <a href="#a80a3fb29e7fdb6998b1c2e3215be802c" class="m-dox-self" name="a80a3fb29e7fdb6998b1c2e3215be802c">accumulate_from</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a> const&amp; other) -&gt; CImage &amp;</span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pro-static-methods">
+          <h2><a href="#pro-static-methods">Protected static functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-dox-wrap-bumper">static auto <a href="#a939c43690ee1ae793b49e472fbcd64a7" class="m-dox">save_mat</a>(</span><span class="m-dox-wrap">cv::Mat const&amp; matrix,
+              std::filesystem::path const&amp; path,
+              ImageFormat format) <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Сохраняет матрицу <em>OpenCV</em> в файл.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">static auto <a href="#af01bad28ac492deef92a5543fac2e25a" class="m-dox">write_exif_tag</a>(</span><span class="m-dox-wrap">std::filesystem::path const&amp; path,
+              api::Metadata&amp; metadata) -&gt; void</span>
+            </dt>
+            <dd>Записывает EXIF-тег метаданных РЛИ в выбранный файл.</dd>
+          </dl>
+        </section>
+        <section id="pro-methods">
+          <h2><a href="#pro-methods">Protected functions</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ab1730d093549f9045bcd63b7ba389987" class="m-dox">brightness_corrected_buffer</a>(</span><span class="m-dox-wrap">f32 multiplier,
+              f32* autobrightness = nullptr) const -&gt; std::vector&lt; f32 &gt;</span>
+            </dt>
+            <dd>Копирует буфер изображения, корректирует яркость и возвращает его в виде вектора.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a97bbd5a34c24b30d7e01942524b6fcbb" class="m-dox">clahe</a>(</span><span class="m-dox-wrap">span&lt;f32 const&gt; data,
+              f32 clip_limit = 1.F) const <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Выполняет адаптивную эквализацию яркости и контрастности изображения.</dd>
+            <dt id="a54fe952b820ec9ebaf7ce90111ee2233">
+              <span class="m-dox-wrap-bumper">auto <a href="#a54fe952b820ec9ebaf7ce90111ee2233" class="m-dox-self" name="a54fe952b820ec9ebaf7ce90111ee2233">operator()</a>(</span><span class="m-dox-wrap">int w,
+              int h) const -&gt; f32</span>
+            </dt>
+            <dd>Синоним для функции <a href="classquasar_1_1CImage.html#af373e46c3f46c274103b22e94081c839" class="m-doc">CImage::<wbr />pixel</a>.</dd>
+            <dt id="a8995154131c56d11fe27132ae25de61c">
+              <span class="m-dox-wrap-bumper">auto <a href="#a8995154131c56d11fe27132ae25de61c" class="m-dox-self" name="a8995154131c56d11fe27132ae25de61c">operator()</a>(</span><span class="m-dox-wrap">int w,
+              int h) -&gt; f32 &amp;</span>
+            </dt>
+            <dd>Синоним для функции <a href="classquasar_1_1CImage.html#a856e703e72eb671a9fc8fa4b9d89159e" class="m-doc">CImage::<wbr />pixel_mut</a>.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a94684328579c9ed44e18e6831fc12b28" class="m-dox">operator=</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a> const&amp; other) -&gt; CImage &amp;</span>
+            </dt>
+            <dd>Оператор копирования.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ae3b03d7ad4fcfc2c191c50a789c9ca19" class="m-dox">operator=</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a>&amp;&amp; other) noexcept -&gt; CImage &amp;</span>
+            </dt>
+            <dd>Оператор перемещения.</dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Enum documentation</h2>
+          <section class="m-doc-details" id="a85ad26a4a370f67021406bf2f5a8a824"><div>
+            <h3>
+              enum class quasar::<wbr />CImage::<wbr /><a href="#a85ad26a4a370f67021406bf2f5a8a824" class="m-doc-self">ColorMap</a>
+            </h3>
+            <p>Формат цветового представления изображения.</p>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@property</strong>.</p></aside>
+            <table class="m-table m-fullwidth m-flat m-doc">
+              <thead><tr><th style="width: 1%">Enumerators</th><th></th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><a href="#a85ad26a4a370f67021406bf2f5a8a824ad3f6975213fb5546d8486b54b025dbd7" class="m-doc-self" id="a85ad26a4a370f67021406bf2f5a8a824ad3f6975213fb5546d8486b54b025dbd7">Grayscale</a></td>
+                  <td>
+                  <p>Оттенки серого</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a85ad26a4a370f67021406bf2f5a8a824a252ce7e80c1ffd8c2558ad9b13d4ca2b" class="m-doc-self" id="a85ad26a4a370f67021406bf2f5a8a824a252ce7e80c1ffd8c2558ad9b13d4ca2b">Jet</a></td>
+                  <td>
+                  <p>Оттенки спектра между красным и синим</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a9630ae0012d1ff9386954e4c7d108d6e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9630ae0012d1ff9386954e4c7d108d6e" class="m-doc-self">load</a>(</span><span class="m-doc-wrap">std::filesystem::path const&amp; path,
+              u32 width,
+              u32 height,
+              ImageUnderlyingType type) -&gt; std::shared_ptr&lt; CImage &gt;</span></span>
+            </h3>
+            <p>Загружает изображение из файла по указанному пути.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">path</td>
+                  <td>Путь к файлу.</td>
+                </tr>
+                <tr>
+                  <td>width</td>
+                  <td>Ширина изображения.</td>
+                </tr>
+                <tr>
+                  <td>height</td>
+                  <td>Высота изображения.</td>
+                </tr>
+                <tr>
+                  <td>type</td>
+                  <td>Тип, которым представлены данные в памяти в данном изображении.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>Указатель на загруженное изображение.</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/runtime_error.html" class="m-doc-external">std::<wbr />runtime_error</a></td>
+                  <td>Если не удалось загрузить изображение из файла.</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html" class="m-doc-external">std::<wbr />invalid_argument</a></td>
+                  <td>Если предоставлены некорректные параметры.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>статической функции</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.3.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a38fe38fedc5f20626204adec3ccf64c1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a38fe38fedc5f20626204adec3ccf64c1" class="m-doc-self">CImage</a>(</span><span class="m-doc-wrap">DSP type) <span class="m-label m-info">explicit</span> </span></span>
+            </h3>
+            <p>Создает пустой экземляр изображения выбранного типа.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">type</td>
+                  <td>Тип DSP. Влияет на место аллокации памяти: в случае DSP::FFTW буфер изображения создается в выделенной оперативной памяти, в случае DSP::CUDA - в видеопамяти.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p>DSP</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a4084552e786b14955077c3588e111534"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4084552e786b14955077c3588e111534" class="m-doc-self">CImage</a>(</span><span class="m-doc-wrap">DSP type,
+              u32 width,
+              u32 height,
+              ImageUnderlyingType underlying_type) <span class="m-label m-info">explicit</span> </span></span>
+            </h3>
+            <p>Создает экземляр изображения выбранного типа c преаллоцированными размерами <code>width x height</code> и выбранным типом отсчета.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">type</td>
+                  <td>Тип DSP. Влияет на место аллокации памяти: в случае DSP::FFTW буфер изображения создается в выделенной оперативной памяти, в случае DSP::CUDA - в видеопамяти.</td>
+                </tr>
+                <tr>
+                  <td>width</td>
+                  <td>Ширина изображения в количестве отсчетов.</td>
+                </tr>
+                <tr>
+                  <td>height</td>
+                  <td>Высота изображения в количестве отсчетов.</td>
+                </tr>
+                <tr>
+                  <td>underlying_type</td>
+                  <td>Тип данных, которыми представлены отсчеты в буфере. В случае ImageUnderlyingType::Undefined будет аллоцированно пустое изображение.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p>DSP</p><p>ImageUnderlyingType</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ae602d741a574f561ee0cf171de857857"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae602d741a574f561ee0cf171de857857" class="m-doc-self">CImage</a>(</span><span class="m-doc-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a> const&amp; other)</span></span>
+            </h3>
+            <p>Конструктор копирования.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>Копируемое изображение.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Выполняет глубокое копирование изображения (копирование буфера) в новый экземляр.</p><aside class="m-note m-danger"><h4>Warning</h4><p>Копирование изображения - затратная операция. Используйте ее только при необходимости.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.4.1</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="adbcc14e62ce5e6743e1ae2d5c1b12e84"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#adbcc14e62ce5e6743e1ae2d5c1b12e84" class="m-doc-self">CImage</a>(</span><span class="m-doc-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a>&amp;&amp; other) <span class="m-label m-success">noexcept</span></span></span>
+            </h3>
+            <p>Конструктор перемещения.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>Перемещаемое изображение.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Выполняет перемещение изображения в новый экземляр, инвалидируя предыдущий. Буфер при этом не копируется, а перемещается, т.е. затраты по скорости минимальны.</p><aside class="m-note m-default"><h4>Version</h4><p>1.4.1</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a4403a23f6d9900208d45f1ce8e6aed26"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4403a23f6d9900208d45f1ce8e6aed26" class="m-doc-self">data</a>(</span><span class="m-doc-wrap">) const -&gt; T *</span></span>
+            </h3>
+            <p>Возвращает указатель на начало массива данных РЛИ</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Тип данных для приведения без указателя в конце.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Указатель на начало массива данных РЛИ, приведенный к типу <code>T*</code></td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Например:</p><pre class="m-code"><span class="n">CImage</span><span class="w"> </span><span class="n">image</span><span class="p">;</span>
+<span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">image</span><span class="p">.</span><span class="n">data</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">();</span><span class="w"> </span><span class="c1">// тип data - float*</span>
+<span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">data_int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">image</span><span class="p">.</span><span class="n">data</span><span class="o">&lt;</span><span class="kt">int16_t</span><span class="o">&gt;</span><span class="p">();</span><span class="w"> </span><span class="c1">// тип data_int - int16_t*</span>
+<span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">data_void</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">image</span><span class="p">.</span><span class="n">data</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span><span class="p">();</span><span class="w"> </span><span class="c1">// тип data_void - void*</span></pre><aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ac1420eecf2b93bcce322b0e0f172051f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac1420eecf2b93bcce322b0e0f172051f" class="m-doc-self">type</a>(</span><span class="m-doc-wrap">) const -&gt; enum DSP <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Возвращает тип интерфейса данных РЛИ</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Тип интерфейса данных РЛИ</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Тип интерфейса данных РЛИ определяется в конструкторе или в методе Create. Он определяет, где будет аллоцирован массив данных РЛИ - в ОЗУ или в видеопамяти CUDA.</p><aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a8b2d1bdfe4cf7979b144454d57758e3b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8b2d1bdfe4cf7979b144454d57758e3b" class="m-doc-self">data_interface</a>(</span><span class="m-doc-wrap">) const -&gt; IImageDataHolder const &amp;</span></span>
+            </h3>
+            <p>Возвращает константную ссылку на интерфейс данных РЛИ.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Константная ссылка на интерфейс данных РЛИ</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="addb7e9d5f6e544d51e2a49818f56e977"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#addb7e9d5f6e544d51e2a49818f56e977" class="m-doc-self">data_interface_mut</a>(</span><span class="m-doc-wrap">) -&gt; IImageDataHolder &amp;</span></span>
+            </h3>
+            <p>Возвращает мутабельную ссылку на интерфейс данных РЛИ.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Мутабельная ссылка на интерфейс данных РЛИ</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a9b0e4b3d4fb635a395bfb0d7f649cc54"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9b0e4b3d4fb635a395bfb0d7f649cc54" class="m-doc-self">metadata</a>(</span><span class="m-doc-wrap">) const -&gt; api::Metadata const &amp;</span></span>
+            </h3>
+            <p>Возвращает константную ссылку на структуру метаданных изображения.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Константная ссылка на метаданные изображения</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>функции</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.3.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a76e81784bd01f8ba60e56aa4d42697d0"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a76e81784bd01f8ba60e56aa4d42697d0" class="m-doc-self">metadata_mut</a>(</span><span class="m-doc-wrap">) -&gt; api::Metadata &amp;</span></span>
+            </h3>
+            <p>Возвращает изменяемую ссылку на структуру метаданных изображения.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Изменяемая ссылка на метаданные изображения</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>функции</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.3.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a45d4b5a4dadba50c894aa21245104fa4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a45d4b5a4dadba50c894aa21245104fa4" class="m-doc-self">width</a>(</span><span class="m-doc-wrap">) const -&gt; u32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Возвращает реальную ширину изображения.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Реальная ширина изображения без дополнения до степени двойки.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>В прошлых версиях обозначалась членом класса <a href="classquasar_1_1CImage.html" class="m-doc">CImage</a> как <strong>ImageW0</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@property</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ae9ba552513ff7e36f5e13034aa2e6fce"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae9ba552513ff7e36f5e13034aa2e6fce" class="m-doc-self">height</a>(</span><span class="m-doc-wrap">) const -&gt; u32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Возвращает реальную высоту изображения.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Реальная высота изображения без дополнения до степени двойки.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>В прошлых версиях обозначалась членом класса <a href="classquasar_1_1CImage.html" class="m-doc">CImage</a> как <strong>ImageH0</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@property</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="afaeb3982028039662e13008fd47f0af1"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afaeb3982028039662e13008fd47f0af1" class="m-doc-self">size</a>(</span><span class="m-doc-wrap">) const -&gt; u32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Возвращает реальный размер (площадь) изображения.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Реальная площадь изображения без дополнения до степени двойки.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="afee340038133d39c055dbde1d60b3fe3"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#afee340038133d39c055dbde1d60b3fe3" class="m-doc-self">size_bytes</a>(</span><span class="m-doc-wrap">) const -&gt; usize</span></span>
+            </h3>
+            <p>Возвращает размер изображения в байтах.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Размер изображения в байтах.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.5.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a25e09b6f24ebeffeb6efe7fb6b255170"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a25e09b6f24ebeffeb6efe7fb6b255170" class="m-doc-self">width_rounded</a>(</span><span class="m-doc-wrap">) const -&gt; u32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Возвращает ширину изображения с округлением до степени двойки.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Ширина изображения с округлением до степени двойки.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>В прошлых версиях обозначалась членом класса <a href="classquasar_1_1CImage.html" class="m-doc">CImage</a> как <strong>ImageWidth</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@property</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a933019031e5639ea22f093e081ac256b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a933019031e5639ea22f093e081ac256b" class="m-doc-self">height_rounded</a>(</span><span class="m-doc-wrap">) const -&gt; u32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Возвращает высоту изображения с округлением до степени двойки.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Высота изображения с округлением до степени двойки.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>В прошлых версиях обозначалась членом класса <a href="classquasar_1_1CImage.html" class="m-doc">CImage</a> как <strong>ImageHeight</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@property</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ac0a2bb946c7d2c32abd12a81afd768d4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac0a2bb946c7d2c32abd12a81afd768d4" class="m-doc-self">size_rounded</a>(</span><span class="m-doc-wrap">) const -&gt; u32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Возвращает размер (площадь) изображения с округлением до степени двойки.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Площадь изображения с округлением до степени двойки.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="af63da8417e7448d3cb40dabf6f627156"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af63da8417e7448d3cb40dabf6f627156" class="m-doc-self">size_rounded_bytes</a>(</span><span class="m-doc-wrap">) const -&gt; usize</span></span>
+            </h3>
+            <p>Возвращает размер изображения в байтах с округлением до степени двойки.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Размер изображения в байтах с округлением до степени двойки.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.5.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a1a6c63b2f1c667aa039af487d1c39472"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1a6c63b2f1c667aa039af487d1c39472" class="m-doc-self">underlying_type</a>(</span><span class="m-doc-wrap">) const -&gt; enum ImageUnderlyingType <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Возвращает тип, которым представлены данные в памяти в данном изображении.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Тип, которым представлены данные в памяти в данном изображении.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@property</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a9e0219fc519640d7784f9561722f8197"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9e0219fc519640d7784f9561722f8197" class="m-doc-self">near_range_index</a>(</span><span class="m-doc-wrap">) const -&gt; usize <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Возвращает индекс ближней границы изображения.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Индекс ближней границы изображения.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ab38b6240ba0c286965dad1a9ece1484b"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab38b6240ba0c286965dad1a9ece1484b" class="m-doc-self">actual_index</a>(</span><span class="m-doc-wrap">) const -&gt; isize <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Возвращает индекс циркулярного буфера, если буфер задан.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Индекс циркулярного буфера или <strong>-1</strong>, если циркулярный буфер не задан.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a0bfbffc442ae9cf81d792fb69620d7dc"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0bfbffc442ae9cf81d792fb69620d7dc" class="m-doc-self">view</a>(</span><span class="m-doc-wrap">) const -&gt; span&lt; T const &gt;</span></span>
+            </h3>
+            <p>Возвращает представление буфера данных в виде <code>std::span</code>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Тип данных буфера.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Представление буфера данных в виде константного <code>std::span</code>.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.3.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a8e0b634ee9dae0d2ccd9dbf80befc8c6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8e0b634ee9dae0d2ccd9dbf80befc8c6" class="m-doc-self">view_mut</a>(</span><span class="m-doc-wrap">) -&gt; span&lt; T &gt;</span></span>
+            </h3>
+            <p>Возвращает представление буфера данных в виде <code>std::span</code>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Тип данных буфера.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Представление буфера данных в виде <code>std::span</code>.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.3.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="af372e23735dc28d673d6978a828e0f66"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af372e23735dc28d673d6978a828e0f66" class="m-doc-self">to_vec</a>(</span><span class="m-doc-wrap">) const -&gt; std::vector&lt; T &gt;</span></span>
+            </h3>
+            <p>Возвращает представление буфера данных в виде владеющего <code><a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a></code>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Тип данных буфера. Должен быть одним из следующих типов: <code>u8</code>, <code>i16</code>, <code>f32</code>, <code>f64</code>, <code><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a></code>.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Представление буфера данных в виде владеющего <code><a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a></code>.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.4.2</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a98c9b55c99a506318c8c475e9ff83758"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a98c9b55c99a506318c8c475e9ff83758" class="m-doc-self">to_vec</a>(</span><span class="m-doc-wrap">usize start,
+              usize end) const -&gt; std::vector&lt; T &gt;</span></span>
+            </h3>
+            <p>Возвращает представление части буфера данных в виде владеющего <code><a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a></code>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Тип данных буфера. Должен быть одним из следующих типов: <code>u8</code>, <code>i16</code>, <code>f32</code>, <code>f64</code>, <code><a href="structquasar_1_1math_1_1Complex.html" class="m-doc">math::<wbr />Complex</a></code>.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>start</td>
+                  <td>Начальный индекс.</td>
+                </tr>
+                <tr>
+                  <td>end</td>
+                  <td>Конечный индекс.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Представление буфера данных в виде владеющего <code><a href="http://en.cppreference.com/w/cpp/container/vector.html" class="m-doc-external">std::<wbr />vector</a></code>.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-success"><h4>Precondition</h4><p><code>start &lt; end</code>.</p><p><code>end &lt; this-&gt;<a href="classquasar_1_1CImage.html#afaeb3982028039662e13008fd47f0af1" class="m-doc">size()</a></code>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.4.2</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ae78cfa195c328ec24fcf82f65d9f70b0"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae78cfa195c328ec24fcf82f65d9f70b0" class="m-doc-self">move_to</a>(</span><span class="m-doc-wrap">enum DSP destination) -&gt; CImage &amp;</span></span>
+            </h3>
+            <p>Перемещает буфер данных изображения между оперативной памятью и видеопамятью в направлении <code>destination</code>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">destination</td>
+                  <td>Направление перемещения.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Ссылка на <code>this</code>.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Если <a href="classquasar_1_1CImage.html#ac1420eecf2b93bcce322b0e0f172051f" class="m-doc">CImage::<wbr />type</a> и <code>destination</code> совпадают, то перемещения не происходит. Если указано направление DSP::CUDA, но библиотека собрана без флага <code>QUASAR_CUDA</code>, то будет выброшено исключение.</p>
+          </div></section>
+          <section class="m-doc-details" id="af373e46c3f46c274103b22e94081c839"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af373e46c3f46c274103b22e94081c839" class="m-doc-self">pixel</a>(</span><span class="m-doc-wrap">int w,
+              int h) const <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Возвращает пиксель изображения в указанных координатах.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">w</td>
+                  <td>Х-координата пикселя.</td>
+                </tr>
+                <tr>
+                  <td>h</td>
+                  <td>У-координата пикселя.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>Значение пикселя.</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/out_of_range.html" class="m-doc-external">std::<wbr />out_of_range</a></td>
+                  <td>Если пиксель выходит за границы изображения по х-координате или по у-координате.</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/logic_error.html" class="m-doc-external">std::<wbr />logic_error</a></td>
+                  <td>Если тип данных в буфере не является <code>float</code>.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>функции</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.4.1</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="classquasar_1_1CImage.html#a856e703e72eb671a9fc8fa4b9d89159e" class="m-doc">pixel_<wbr />mut</a></p><p>CImage::operator()</p><p><a href="classquasar_1_1CImage.html#af7f83299d2a2cbc4c4295089ecd8a7a0" class="m-doc">pixel_<wbr />unsafe</a>, <a href="classquasar_1_1CImage.html#a0db43c68e3b34145aed17c1f1fdb6bb6" class="m-doc">set_<wbr />pixel_<wbr />unsafe</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a856e703e72eb671a9fc8fa4b9d89159e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a856e703e72eb671a9fc8fa4b9d89159e" class="m-doc-self">pixel_mut</a>(</span><span class="m-doc-wrap">int w,
+              int h) -&gt; f32 &amp;</span></span>
+            </h3>
+            <p>Возвращает изменяюмую ссылку на пиксель изображения в указанных координатах.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">w</td>
+                  <td>Х-координата пикселя.</td>
+                </tr>
+                <tr>
+                  <td>h</td>
+                  <td>У-координата пикселя.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>Значение пикселя.</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/out_of_range.html" class="m-doc-external">std::<wbr />out_of_range</a></td>
+                  <td>Если пиксель выходит за границы изображения по х-координате или по у-координате.</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/logic_error.html" class="m-doc-external">std::<wbr />logic_error</a></td>
+                  <td>Если тип данных в буфере не является <code>float</code>.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>функции</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.4.1</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="classquasar_1_1CImage.html#af373e46c3f46c274103b22e94081c839" class="m-doc">pixel</a></p><p>CImage::operator()</p><p><a href="classquasar_1_1CImage.html#af7f83299d2a2cbc4c4295089ecd8a7a0" class="m-doc">pixel_<wbr />unsafe</a>, <a href="classquasar_1_1CImage.html#a0db43c68e3b34145aed17c1f1fdb6bb6" class="m-doc">set_<wbr />pixel_<wbr />unsafe</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="af7f83299d2a2cbc4c4295089ecd8a7a0"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af7f83299d2a2cbc4c4295089ecd8a7a0" class="m-doc-self">pixel_unsafe</a>(</span><span class="m-doc-wrap">int w,
+              int h) const <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Возвращает пиксель изображения в указанных координатах.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Тип данных буфера. Должен совпадать с реальным типом данных в буфере, в противном случае будет неопределенное поведение.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>w</td>
+                  <td>Х-координата пикселя.</td>
+                </tr>
+                <tr>
+                  <td>h</td>
+                  <td>У-координата пикселя.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>Значение пикселя.</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/out_of_range.html" class="m-doc-external">std::<wbr />out_of_range</a></td>
+                  <td>Если пиксель выходит за границы изображения по х-координате или по у-координате.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-danger"><h4>Warning</h4><p>Указание типа, не соответствующего типу данных в буфере, приведет к неопределенному поведению.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.4.1</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="classquasar_1_1CImage.html#a0db43c68e3b34145aed17c1f1fdb6bb6" class="m-doc">set_<wbr />pixel_<wbr />unsafe</a></p><p><a href="classquasar_1_1CImage.html#af373e46c3f46c274103b22e94081c839" class="m-doc">pixel</a>, <a href="classquasar_1_1CImage.html#a856e703e72eb671a9fc8fa4b9d89159e" class="m-doc">pixel_<wbr />mut</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a0db43c68e3b34145aed17c1f1fdb6bb6"><div>
+            <h3>
+              <div class="m-doc-template">
+                template&lt;typename T&gt;
+              </div>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0db43c68e3b34145aed17c1f1fdb6bb6" class="m-doc-self">set_pixel_unsafe</a>(</span><span class="m-doc-wrap">int w,
+              int h,
+              T value) <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Задает пиксель изображения в указанных координатах.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Template parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">T</td>
+                  <td>Тип данных буфера. Должен совпадать с реальным типом данных в буфере, в противном случае будет неопределенное поведение.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>w</td>
+                  <td>Х-координата пикселя.</td>
+                </tr>
+                <tr>
+                  <td>h</td>
+                  <td>У-координата пикселя.</td>
+                </tr>
+                <tr>
+                  <td>value</td>
+                  <td>Значение пикселя.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/out_of_range.html" class="m-doc-external">std::<wbr />out_of_range</a></td>
+                  <td>Если пиксель выходит за границы изображения по х-координате или по у-координате.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-danger"><h4>Warning</h4><p>Указание типа, не соответствующего типу данных в буфере, приведет к неопределенному поведению.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.4.1</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="classquasar_1_1CImage.html#af7f83299d2a2cbc4c4295089ecd8a7a0" class="m-doc">pixel_<wbr />unsafe</a></p><p><a href="classquasar_1_1CImage.html#af373e46c3f46c274103b22e94081c839" class="m-doc">pixel</a>, <a href="classquasar_1_1CImage.html#a856e703e72eb671a9fc8fa4b9d89159e" class="m-doc">pixel_<wbr />mut</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ac9c44c789775d7d705d8ce3401214a08"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac9c44c789775d7d705d8ce3401214a08" class="m-doc-self">reset_interface</a>(</span><span class="m-doc-wrap"><a href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html" class="m-doc-external">std::<wbr />unique_ptr</a>&lt;<a href="classquasar_1_1IImageDataHolder.html" class="m-doc">IImageDataHolder</a>&gt;&amp;&amp; data) -&gt; void</span></span>
+            </h3>
+            <p>Очищает текущий буфер данных и заменяет его новым.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">data</td>
+                  <td>RValue-указатель (<strong><a href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html" class="m-doc-external">std::<wbr />unique_ptr</a></strong>) на новый буфер данных.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a04ddfa027553f3d2c7484899617f7da5"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a04ddfa027553f3d2c7484899617f7da5" class="m-doc-self">set_width</a>(</span><span class="m-doc-wrap">u32 width) -&gt; void</span></span>
+            </h3>
+            <p>Задает реальную ширину изображения.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">width</td>
+                  <td>Ширина изображения.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a9fe622cf58f885f80cca7beac72a55e8"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9fe622cf58f885f80cca7beac72a55e8" class="m-doc-self">set_height</a>(</span><span class="m-doc-wrap">u32 height) -&gt; void</span></span>
+            </h3>
+            <p>Задает реальную высоту изображения.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">height</td>
+                  <td>Высота изображения.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ab70a801400de3e7b2d28264b81b99056"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab70a801400de3e7b2d28264b81b99056" class="m-doc-self">set_width_rounded</a>(</span><span class="m-doc-wrap">u32 width) -&gt; void</span></span>
+            </h3>
+            <p>Задает ширину изображения с округлением до степени двойки.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">width</td>
+                  <td>Ширина изображения с округлением до степени двойки.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@property</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ac3abb57fd13b931e0cecb290b02f7432"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac3abb57fd13b931e0cecb290b02f7432" class="m-doc-self">set_height_rounded</a>(</span><span class="m-doc-wrap">u32 height) -&gt; void</span></span>
+            </h3>
+            <p>Задает высоту изображения с округлением до степени двойки.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">height</td>
+                  <td>Высота изображения с округлением до степени двойки.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@property</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a53d1174b40719024ec5420f5439f1e3c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a53d1174b40719024ec5420f5439f1e3c" class="m-doc-self">set_underlying_type</a>(</span><span class="m-doc-wrap">ImageUnderlyingType type) -&gt; void</span></span>
+            </h3>
+            <p>Задает тип, которым представлены данные в памяти в данном изображении.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">type</td>
+                  <td>Тип, которым представлены данные в памяти в данном изображении.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a9ab225ef0f30ce40e95ed37051acc0c8"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9ab225ef0f30ce40e95ed37051acc0c8" class="m-doc-self">set_near_range_index</a>(</span><span class="m-doc-wrap">usize index) -&gt; void</span></span>
+            </h3>
+            <p>Задает индекс ближней границы вырезанного изображения.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">index</td>
+                  <td>Индекс ближней границы вырезанного изображения.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a81aa3d1037292e0fda8eeea6acfb2f25"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a81aa3d1037292e0fda8eeea6acfb2f25" class="m-doc-self">set_actual_index</a>(</span><span class="m-doc-wrap">isize index) -&gt; void</span></span>
+            </h3>
+            <p>Задает индекс для циркулярного буфера.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">index</td>
+                  <td>Индекс.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>Version</h4><p>1.2.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a370619a5c2ef1634a87c6e295d0c3bdb"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a370619a5c2ef1634a87c6e295d0c3bdb" class="m-doc-self">as_cv_mat</a>(</span><span class="m-doc-wrap">) const -&gt; cv::Mat</span></span>
+            </h3>
+            <p>Возвращает изображение в виде матрицы <code>cv::Mat</code>.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Изображение в виде матрицы <code>cv::Mat</code>.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a4609c214be647161c2b9da631b51ed0f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4609c214be647161c2b9da631b51ed0f" class="m-doc-self">save</a>(</span><span class="m-doc-wrap">std::filesystem::path const&amp; path,
+              ImageFormat format,
+              f32 brightness_multiplier,
+              i32 quality,
+              <a href="classquasar_1_1CImage.html#a85ad26a4a370f67021406bf2f5a8a824" class="m-doc">ColorMap</a> colormap = <a href="classquasar_1_1CImage.html#a85ad26a4a370f67021406bf2f5a8a824ad3f6975213fb5546d8486b54b025dbd7" class="m-doc">ColorMap::<wbr />Grayscale</a>) const <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Сохраняет изображение в файл по указанному пути.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">path</td>
+                  <td>Путь к файлу.</td>
+                </tr>
+                <tr>
+                  <td>format</td>
+                  <td>Формат изображения.</td>
+                </tr>
+                <tr>
+                  <td>brightness_multiplier</td>
+                  <td>Множитель яркости изображения после коррекции по яркости.</td>
+                </tr>
+                <tr>
+                  <td>quality</td>
+                  <td>Качество изображения (от 0 до 100).</td>
+                </tr>
+                <tr>
+                  <td>colormap</td>
+                  <td>Тип цветовой схемы. По умолчанию: <code><a href="classquasar_1_1CImage.html#a85ad26a4a370f67021406bf2f5a8a824ad3f6975213fb5546d8486b54b025dbd7" class="m-doc">ColorMap::<wbr />Grayscale</a></code>.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/runtime_error.html" class="m-doc-external">std::<wbr />runtime_error</a></td>
+                  <td>Если не удалось сохранить изображение в файл.</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html" class="m-doc-external">std::<wbr />invalid_argument</a></td>
+                  <td>Если предоставлены некорректные параметры.</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/logic_error.html" class="m-doc-external">std::<wbr />logic_error</a></td>
+                  <td>Если текущее состояние изображения не допускает сохранение изображения в файл.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>функции</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.3.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="af2ce86aa2b801dd50ec8767cd49a5b73"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af2ce86aa2b801dd50ec8767cd49a5b73" class="m-doc-self">save_as_binary</a>(</span><span class="m-doc-wrap">std::filesystem::path const&amp; path) const -&gt; void</span></span>
+            </h3>
+            <p>Сохраняет текущее изображение в виде бинарной репрезентации его буфера данных.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">path</td>
+                  <td>Путь к файлу.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Функция не выбрасывает исключений, даже если не удалось сохранить изображение в файл.</p><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>функции</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.3.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a96d2fd96ec47b48f3b2de65c3d2683a6"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a96d2fd96ec47b48f3b2de65c3d2683a6" class="m-doc-self">save_signal_as_csv</a>(</span><span class="m-doc-wrap">std::filesystem::path const&amp; path) const -&gt; void</span></span>
+            </h3>
+            <p>Сохраняет значения сигнала в CSV-файл.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">path</td>
+                  <td>Путь к файлу.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Функция не выбрасывает исключения, даже если не удалось сохранить сигнал в файл.</p><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>функции</strong>.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.3.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a8f74c37da75d55c00bf5ab23b6b441f7"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a8f74c37da75d55c00bf5ab23b6b441f7" class="m-doc-self">CutH</a>(</span><span class="m-doc-wrap">int hb,
+              int he)</span></span>
+            </h3>
+            <p>Функция вырезает часть изображения в соответствии с номером начальной и конечной строки</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Функция не возвращает значения</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a0fe5dd0ef36a03a5a2a7e0c5e7078aae"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">void quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a0fe5dd0ef36a03a5a2a7e0c5e7078aae" class="m-doc-self">CutW</a>(</span><span class="m-doc-wrap">int wb,
+              int we)</span></span>
+            </h3>
+            <p>Функция вырезает часть изображения в соответствии с номером начального и конечного столбца</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">wb&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>Номер начального стролбца</td>
+                </tr>
+                <tr>
+                  <td>we&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>Номер конечного столбца</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Функция не возвращает значения</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="abfd1428bfa6a22fd8db03bceb30dfa5c"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">int quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abfd1428bfa6a22fd8db03bceb30dfa5c" class="m-doc-self">Roll</a>(</span><span class="m-doc-wrap">int n)</span></span>
+            </h3>
+            <p>Прокрутка РЛИ</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">n&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>Количество строк, на которое осуществляется сдвиг РЛИ</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>0 - успешное выполнение; -1 - ошибка</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a939c43690ee1ae793b49e472fbcd64a7"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a939c43690ee1ae793b49e472fbcd64a7" class="m-doc-self">save_mat</a>(</span><span class="m-doc-wrap">cv::Mat const&amp; matrix,
+              std::filesystem::path const&amp; path,
+              ImageFormat format) <span class="m-label m-warning">protected</span> <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Сохраняет матрицу <em>OpenCV</em> в файл.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">matrix</td>
+                  <td>Матрица <em>OpenCV</em>.</td>
+                </tr>
+                <tr>
+                  <td>path</td>
+                  <td>Путь к файлу.</td>
+                </tr>
+                <tr>
+                  <td>format</td>
+                  <td>Формат изображения.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>Путь к сохраненному файлу.</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/runtime_error.html" class="m-doc-external">std::<wbr />runtime_error</a></td>
+                  <td>Если не удалось сохранить изображение в файл.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p>ImageFormat</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="af01bad28ac492deef92a5543fac2e25a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">static auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af01bad28ac492deef92a5543fac2e25a" class="m-doc-self">write_exif_tag</a>(</span><span class="m-doc-wrap">std::filesystem::path const&amp; path,
+              api::Metadata&amp; metadata) -&gt; void <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+            <p>Записывает EXIF-тег метаданных РЛИ в выбранный файл.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">path</td>
+                  <td>Путь к файлу JPEG</td>
+                </tr>
+                <tr>
+                  <td>metadata</td>
+                  <td>Структура метаданных РЛИ.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Ничего не возвращает.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-default"><h4>See also</h4><p>api::Metadata</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ab1730d093549f9045bcd63b7ba389987"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ab1730d093549f9045bcd63b7ba389987" class="m-doc-self">brightness_corrected_buffer</a>(</span><span class="m-doc-wrap">f32 multiplier,
+              f32* autobrightness = nullptr) const -&gt; std::vector&lt; f32 &gt; <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+            <p>Копирует буфер изображения, корректирует яркость и возвращает его в виде вектора.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">multiplier&nbsp;<span class="m-label m-flat m-info">in</span></td>
+                  <td>Множитель яркости.</td>
+                </tr>
+                <tr>
+                  <td>autobrightness&nbsp;<span class="m-label m-flat m-warning">out</span></td>
+                  <td>Выходной параметр - множитель автобаланса яркости. По умолчанию равен <code>nullptr</code>.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Буфер в виде вектора <code>float32</code>, скорректированный по яркости.</td>
+                </tr>
+              </tfoot>
+            </table>
+<p>Функция использует метод гистограммы для коррекции яркости.</p><aside class="m-note m-default"><h4>Version</h4><p>1.4.0</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a97bbd5a34c24b30d7e01942524b6fcbb"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a97bbd5a34c24b30d7e01942524b6fcbb" class="m-doc-self">clahe</a>(</span><span class="m-doc-wrap">span&lt;f32 const&gt; data,
+              f32 clip_limit = 1.F) const <span class="m-label m-warning">protected</span> <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Выполняет адаптивную эквализацию яркости и контрастности изображения.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">data</td>
+                  <td>Входные данные.</td>
+                </tr>
+                <tr>
+                  <td>clip_limit</td>
+                  <td>Порог контрастности. По умолчанию равен единице.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>Матрица <em>OpenCV</em>, скорректированная по яркости и контрастности.</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Может</td>
+                  <td>выбросить одно из исключений <em>OpenCV</em> при некорректных входных данных.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Конвертирует входные данные в матрицу <em>OpenCV</em> и применяет к ней алгоритм CLAHE.</p><aside class="m-note m-default"><h4>See also</h4><p><a href="https://en.wikipedia.org/wiki/Adaptive_histogram_equalization">https://en.wikipedia.org/wiki/Adaptive_<wbr />histogram_<wbr />equalization</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a94684328579c9ed44e18e6831fc12b28"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a94684328579c9ed44e18e6831fc12b28" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a> const&amp; other) -&gt; CImage &amp; <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+            <p>Оператор копирования.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>Копируемое изображение.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Выполняет глубокое копирование изображения (копирование буфера) в новый экземляр.</p><aside class="m-note m-danger"><h4>Warning</h4><p>Копирование изображения - затратная операция. Используйте ее только при необходимости.</p></aside><aside class="m-note m-default"><h4>Version</h4><p>1.4.1</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ae3b03d7ad4fcfc2c191c50a789c9ca19"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />CImage::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ae3b03d7ad4fcfc2c191c50a789c9ca19" class="m-doc-self">operator=</a>(</span><span class="m-doc-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a>&amp;&amp; other) noexcept -&gt; CImage &amp; <span class="m-label m-warning">protected</span></span></span>
+            </h3>
+            <p>Оператор перемещения.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">other</td>
+                  <td>Перемещаемое изображение.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Выполняет перемещение изображения в новый экземляр, инвалидируя предыдущий. Буфер при этом не копируется, а перемещается, т.е. затраты по скорости минимальны.</p><aside class="m-note m-default"><h4>Version</h4><p>1.4.1</p></aside>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>QuaSAR handbook is part of the <a href="https://github.com/Nikitamuraviev10/quasar">QuaSAR project</a><br />Generated by <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>

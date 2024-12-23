@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_aeb40a379a2ec6c9010ff16034e4d43d" kind="dir">
+    <compoundname>radar</compoundname>
+    <innerfile refid="abstract__radar_8h">abstract_radar.h</innerfile>
+    <innerfile refid="radar__stt_8h">radar_stt.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/radar/"/>
+  </compounddef>
+</doxygen>

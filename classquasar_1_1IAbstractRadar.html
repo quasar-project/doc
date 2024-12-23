@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>quasar::IAbstractRadar class | QuaSAR SAR image processing library</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i%7CSource+Code+Pro:400,400i,600" />
+  <link rel="stylesheet" href="m-dark+documentation.compiled.css" />
+  <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#22272e" />
+</head>
+<body>
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <span id="m-navbar-brand" class="m-col-t-8 m-col-m-none m-left-m">
+        <a href="http://quasar-project.github.io/doc"><img src="logo.png" alt="" />QuaSAR</a> <span class="m-breadcrumb">|</span> <a href="index.html" class="m-thin">SAR image processing library</a>
+      </span>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path id="m-doc-search-icon-path" d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z"/>
+        </svg></a>
+        <a id="m-navbar-show" href="#navigation" title="Show navigation"></a>
+        <a id="m-navbar-hide" href="#" title="Hide navigation"></a>
+      </div>
+      <div id="m-navbar-collapse" class="m-col-t-12 m-show-m m-col-m-none m-right-m">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="pages.html">Handbook</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="namespaces.html">Namespaces</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="4">
+            <li><a href="annotated.html">Classes</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li class="m-show-m"><a href="#search" class="m-doc-search-icon" title="Search" onclick="return showSearch()"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path" />
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacequasar.html">quasar</a>::<wbr/></span>IAbstractRadar <span class="m-thin">class</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="abstract__radar_8h.html">&lt;quasar/radar/abstract_radar.h&gt;</a></div>
+        </h1>
+        <p>Абстрактный интерфейс радара.</p>
+        <nav class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#derived-classes">Derived classes</a></li>
+                <li><a href="#pub-types">Public types</a></li>
+                <li><a href="#typeless-methods">Constructors, destructors, conversion operators</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+                <li><a href="#pro-attribs">Protected variables</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+<p>Пример использования в Python:</p><pre class="m-code"><span class="kn">import</span> <span class="nn">quasar</span>
+
+<span class="c1"># ... аргументы ...</span>
+
+<span class="c1"># инициализация радара с использованием конфигурационного файла и файла голограммы</span>
+<span class="n">radar</span> <span class="o">=</span> <span class="n">quasar</span><span class="o">.</span><span class="n">RadarSTT</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">paths</span><span class="p">[</span><span class="s1">&#39;config&#39;</span><span class="p">],</span> <span class="n">args</span><span class="o">.</span><span class="n">paths</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">])</span>
+
+<span class="c1"># поиск синхропаузы</span>
+<span class="n">pos</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="n">radar</span><span class="o">.</span><span class="n">sync_pos</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">time_shift</span><span class="p">,</span> <span class="n">trash_offset</span><span class="p">)</span>
+
+<span class="c1"># чтение голограммы для работы в телескопическом режиме</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">radar</span><span class="o">.</span><span class="n">read_image</span><span class="p">(</span><span class="n">radar</span><span class="o">.</span><span class="n">period_count</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">synthesis_time</span><span class="p">),</span> <span class="n">args</span><span class="o">.</span><span class="n">time_shift</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span>
+<span class="n">args</span><span class="o">.</span><span class="n">fic</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># поблочное чтение голограммы для полосового режима</span>
+<span class="n">block_image</span> <span class="o">=</span> <span class="n">radar</span><span class="o">.</span><span class="n">block_init</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">fic</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nstrip</span><span class="p">):</span>
+<span class="n">block_chunk</span> <span class="o">=</span> <span class="n">radar</span><span class="o">.</span><span class="n">block_read</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">fic</span><span class="p">)</span>
+<span class="n">bp</span><span class="o">.</span><span class="n">set_image</span><span class="p">(</span><span class="n">block_chunk</span><span class="p">)</span></pre>
+        <section id="derived-classes">
+          <h2><a href="#derived-classes">Derived classes</a></h2>
+          <dl class="m-doc">
+            <dt>
+              class <a href="classquasar_1_1CRadarSTT.html" class="m-doc">CRadarSTT</a>
+            </dt>
+            <dd>Основная реализация радара, используемая в библиотеке.</dd>
+          </dl>
+        </section>
+        <section id="pub-types">
+          <h2><a href="#pub-types">Public types</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-doc-wrap-bumper">enum class <a href="#a6b9d9126b076d41c1ddffab924d9f1f6" class="m-doc">SampleSize</a> { </span><span class="m-doc-wrap"><a href="#a6b9d9126b076d41c1ddffab924d9f1f6aec0fc0100c4fc1ce4eea230c3dc10360" class="m-doc">Undefined</a> = 0,
+              <a href="#a6b9d9126b076d41c1ddffab924d9f1f6ad0f8c835858c71d21117f6d813657391" class="m-doc">OneBit</a> = 1,
+              <a href="#a6b9d9126b076d41c1ddffab924d9f1f6ae12e97e88bc2bcfa075b73b044406a8b" class="m-doc">TwoBit</a> = 2,
+              <a href="#a6b9d9126b076d41c1ddffab924d9f1f6a394203c80c708e3728c9e4c50be0372a" class="m-doc">FourBit</a> = 4,
+              <a href="#a6b9d9126b076d41c1ddffab924d9f1f6ae7cfb531ab37d769ced9d40d8ef6087f" class="m-doc">EightBit</a> = 8,
+              <a href="#a6b9d9126b076d41c1ddffab924d9f1f6a40f5ab95bc1ef5377e682f7c61f523d0" class="m-doc">SixteenBit</a> = 16 }</span>
+            </dt>
+            <dd>Набор возможных значений, определяющий количество бит на один отсчет.</dd>
+            <dt>
+              <span class="m-doc-wrap-bumper">enum class <a href="#ad24111e9445bd94b798ec7f942df7164" class="m-doc">Ramp</a> { </span><span class="m-doc-wrap"><a href="#ad24111e9445bd94b798ec7f942df7164aec0fc0100c4fc1ce4eea230c3dc10360" class="m-doc">Undefined</a> = 0,
+              <a href="#ad24111e9445bd94b798ec7f942df7164ac551a26a97a7440529e861dff6933722" class="m-doc">Saw</a> = 1,
+              <a href="#ad24111e9445bd94b798ec7f942df7164a241f88afa7becb8633ca074c48e0d77c" class="m-doc">Triangular</a> = 2 }</span>
+            </dt>
+            <dd>Набор возможных значений, определяющий закон ЛЧМ зондирующего сигнала.</dd>
+          </dl>
+        </section>
+        <section id="typeless-methods">
+          <h2><a href="#typeless-methods">Constructors, destructors, conversion operators</a></h2>
+          <dl class="m-doc">
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#a53505b9bf4660c6c2a313eb3bd8720c5" class="m-dox">IAbstractRadar</a>(</span><span class="m-dox-wrap">)</span>
+            </dt>
+            <dd>Конструктор по умолчанию.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#a50264095327d6cb45d6bb215ea94a7d4" class="m-dox">IAbstractRadar</a>(</span><span class="m-dox-wrap">std::filesystem::path const&amp; config_file_path,
+              enum DSP type) <span class="m-label m-flat m-info">explicit</span>  <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Создает и конфигурирует радар из файла конфигурации.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper"><a href="#abe6ad3d231f84a06686239300430bc51" class="m-dox">IAbstractRadar</a>(</span><span class="m-dox-wrap">std::filesystem::path const&amp; config_file_path,
+              std::filesystem::path const&amp; hologram_file_path,
+              enum DSP type) <span class="m-label m-flat m-info">explicit</span>  <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Создает, конфигурирует радар из файла конфигурации и инициализирует его файлом голограммы.</dd>
+            <dt id="ac29574ee37719fc174c75e09eabf7a2b">
+              <span class="m-dox-wrap-bumper"><a href="#ac29574ee37719fc174c75e09eabf7a2b" class="m-dox-self" name="ac29574ee37719fc174c75e09eabf7a2b">~IAbstractRadar</a>(</span><span class="m-dox-wrap">) <span class="m-label m-flat m-warning">virtual</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="af525a1f916053cfb273ba3fa3cd270ec">
+              <span class="m-dox-wrap-bumper"><a href="#af525a1f916053cfb273ba3fa3cd270ec" class="m-dox-self" name="af525a1f916053cfb273ba3fa3cd270ec">IAbstractRadar</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1IAbstractRadar.html" class="m-doc">IAbstractRadar</a>&amp;&amp;) <span class="m-label m-flat m-info">defaulted</span></span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt id="a550d871e6c87d5a7cfbba99e2a4999bd">
+              <span class="m-dox-wrap-bumper">auto <a href="#a550d871e6c87d5a7cfbba99e2a4999bd" class="m-dox-self" name="a550d871e6c87d5a7cfbba99e2a4999bd">operator=</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1IAbstractRadar.html" class="m-doc">IAbstractRadar</a>&amp;&amp;) -&gt; IAbstractRadar &amp; <span class="m-label m-flat m-info">defaulted</span></span>
+            </dt>
+            <dd><span></span></dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ac1420eecf2b93bcce322b0e0f172051f" class="m-dox">type</a>(</span><span class="m-dox-wrap">) const -&gt; enum DSP <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Возвращает тип вычислителя радара.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ad81ffb6cbc1ab0fda3b0ae4eddae2724" class="m-dox">set_type</a>(</span><span class="m-dox-wrap">enum DSP type) -&gt; void</span>
+            </dt>
+            <dd>Задает тип вычислителя радара.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a494b97cd54c34627d35e30ec4f7cd18e" class="m-dox">hologram_path</a>(</span><span class="m-dox-wrap">) const -&gt; std::filesystem::path const &amp; <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Возвращает путь к активному файлу голограммы.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a4e5945552032ed533e6fdffbcaa88f33" class="m-dox">set_hologram_path</a>(</span><span class="m-dox-wrap">std::filesystem::path const&amp; path) <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Устанавливает путь к активному файлу голограммы.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a611afb7b9665fda881f5596f935df642" class="m-dox">initial_frequency</a>(</span><span class="m-dox-wrap">) const -&gt; f32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Начальная частота ЛЧМ зондирующего сигнала (Гц).</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#abb248cef17b33a10d8c80c9df98d1acf" class="m-dox">sampling_frequency</a>(</span><span class="m-dox-wrap">) const -&gt; f32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Частота дискретизации АЦП (Гц).</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a9156d147693eed7d33800a68722877ab" class="m-dox">sample_count</a>(</span><span class="m-dox-wrap">) const -&gt; i32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Количество отсчётов за период зондирования.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a47176295c33666edb02e0aca7ec23286" class="m-dox">sample_count_rounded</a>(</span><span class="m-dox-wrap">) const -&gt; i32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Количество отсчётов за период зондирования округленное до степени двойки.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a6a46f32ab3a0777656cf8503f43c9837" class="m-dox">lfm_deviation</a>(</span><span class="m-dox-wrap">) const -&gt; f32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Девиация ЛЧМ зондирующего сигнала (Гц).</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ace3ef993d47cd086b00c2f0773404485" class="m-dox">sync_sample_count</a>(</span><span class="m-dox-wrap">) const -&gt; i32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Количество отсчётов за период синхропаузы.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a9ec5bef7b1fdb7f8b4704bc9764845a9" class="m-dox">transient_samples_count</a>(</span><span class="m-dox-wrap">) const -&gt; std::pair&lt; i32, i32 &gt; <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Количество отсчётов переходных процессов в начале и конце периода</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#aa17120c49790cf90a3348b6ab723d3e9" class="m-dox">sample_size</a>(</span><span class="m-dox-wrap">) const -&gt; SampleSize <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Размер одного отсчёта в битах.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a79db1cb467b3de8c7019d5a2d96f33c8" class="m-dox">ramp_type</a>(</span><span class="m-dox-wrap">) const -&gt; Ramp <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Тип модуляции сигнала.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ac736c4e853a308f69392df6533f3be92" class="m-dox">bytes_per_sample</a>(</span><span class="m-dox-wrap">) const -&gt; f32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Размер одного отсчета в байтах.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a6d8d8341c5dd23a3a1c45f6ad5661ee2" class="m-dox">wave_length</a>(</span><span class="m-dox-wrap">) const noexcept -&gt; f32</span>
+            </dt>
+            <dd>Возвращает длину волны зондирующего сигнала в метрах.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#add3489731e886583641c766ee2fb9e7d" class="m-dox">repetition_period</a>(</span><span class="m-dox-wrap">) const noexcept -&gt; f32</span>
+            </dt>
+            <dd>Возвращает период повторения зондирующего сигнала.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#af7b07816c1a7d6b4634142fc349228ed" class="m-dox">modulation_period</a>(</span><span class="m-dox-wrap">) const -&gt; f32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Возвращает период модуляции зондирующего сигнала.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a368a07c0837957b09bec36a76f6f0054" class="m-dox">modulation_slope</a>(</span><span class="m-dox-wrap">) const noexcept -&gt; f32</span>
+            </dt>
+            <dd>Возвращает крутизну модуляции ЛЧМ зондирующего сигнала.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#af47fa0a6bfae19f7101c8856c8fee6ce" class="m-dox">period_count</a>(</span><span class="m-dox-wrap">f32 time) const noexcept -&gt; i32</span>
+            </dt>
+            <dd>Возвращает количество периодов во временном промежутке.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a4ab341241380aa2e2baf5196804f9d1a" class="m-dox">correction_factor</a>(</span><span class="m-dox-wrap">) const -&gt; f32 <span class="m-label m-flat m-primary">constexpr</span></span>
+            </dt>
+            <dd>Коэффициент коррекции смещения отметок по дальности вследствие дробного отношения количества отсчетов АЦП за период модуляции.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a3e8cc9414dd0f2b71d3af10b1aafa100" class="m-dox">handle</a>(</span><span class="m-dox-wrap">) const <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Возвращает дескриптор файла голограммы.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a3c7b86b6406743093e194ce74613f50a" class="m-dox">set_configuration</a>(</span><span class="m-dox-wrap">std::filesystem::path const&amp; path) -&gt; void</span>
+            </dt>
+            <dd>Конфигурирует экземпляр радара из заданного файла конфигурации TOML.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a433356cb69794dbd58800e397096ce00" class="m-dox">read_image</a>(</span><span class="m-dox-wrap">usize period_count,
+              f32 time_shift,
+              usize sync_pos,
+              i32 freq_interpolation_coeff,
+              bool round,
+              bool remove_transition) const <span class="m-label m-flat m-warning">pure virtual</span> <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Производит считывание данных голограммы из заданного файла в новый объект изображения согласно параметрам текущего радара.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a1696b811799582f499e21de11a6dedbe" class="m-dox">find_sync_pos</a>(</span><span class="m-dox-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a> const&amp; image) const <span class="m-label m-flat m-warning">pure virtual</span> <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Производит поиск паттерна синхропаузы в существующем изображении</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#a44d8169c5deab17ac26d20303588b5b6" class="m-dox">sync_pos</a>(</span><span class="m-dox-wrap">f32 time_shift,
+              usize offset) const <span class="m-label m-flat m-warning">pure virtual</span> <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Загружает часть изображения в буфер и производит поиск синхропаузы.</dd>
+            <dt>
+              <span class="m-dox-wrap-bumper">auto <a href="#ac9c734b7b5fa1568f2adecb5725d8e24" class="m-dox">block_read</a>(</span><span class="m-dox-wrap">usize period_count,
+              i32 freq_interpolation_coeff) const <span class="m-label m-flat m-warning">pure virtual</span> <span class="m-label m-flat m-success">noexcept(…)</span></span>
+            </dt>
+            <dd>Считывает блок голограммы для полосового режима.</dd>
+            <dt id="a1760e92135ebc9994d1db782046788e1">
+              <span class="m-dox-wrap-bumper">auto <a href="#a1760e92135ebc9994d1db782046788e1" class="m-dox-self" name="a1760e92135ebc9994d1db782046788e1">strip_time</a>(</span><span class="m-dox-wrap">f32 synthesis_time,
+              f32 time_shift) const -&gt; i32</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aba88e907a0002c33559e4ff5b658a918">
+              <span class="m-dox-wrap-bumper">auto <a href="#aba88e907a0002c33559e4ff5b658a918" class="m-dox-self" name="aba88e907a0002c33559e4ff5b658a918">nav_delay</a>(</span><span class="m-dox-wrap">std::filesystem::path const&amp; nav_file_path) const -&gt; f32</span>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="a7d3e244a95bb9edfd525e37810b2189c">
+              <span class="m-dox-wrap-bumper">auto <a href="#a7d3e244a95bb9edfd525e37810b2189c" class="m-dox-self" name="a7d3e244a95bb9edfd525e37810b2189c">current_pos</a>(</span><span class="m-dox-wrap">) const -&gt; usize <span class="m-label m-flat m-warning">pure virtual</span></span>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section id="pro-attribs">
+          <h2><a href="#pro-attribs">Protected variables</a></h2>
+          <dl class="m-doc">
+            <dt id="ac54a7cbdf8112ca9778f3b4ee6dbd2dc">
+              i32 <a href="#ac54a7cbdf8112ca9778f3b4ee6dbd2dc" class="m-doc-self">sample_count_rounded_</a>
+            </dt>
+            <dd><span></span></dd>
+            <dt id="aeea5503b42cf03ea61dc161055410b3e">
+              enum DSP <a href="#aeea5503b42cf03ea61dc161055410b3e" class="m-doc-self">type_</a>
+            </dt>
+            <dd><span></span></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Enum documentation</h2>
+          <section class="m-doc-details" id="a6b9d9126b076d41c1ddffab924d9f1f6"><div>
+            <h3>
+              enum class quasar::<wbr />IAbstractRadar::<wbr /><a href="#a6b9d9126b076d41c1ddffab924d9f1f6" class="m-doc-self">SampleSize</a>
+            </h3>
+            <p>Набор возможных значений, определяющий количество бит на один отсчет.</p>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python.</p></aside>
+            <table class="m-table m-fullwidth m-flat m-doc">
+              <thead><tr><th style="width: 1%">Enumerators</th><th></th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><a href="#a6b9d9126b076d41c1ddffab924d9f1f6aec0fc0100c4fc1ce4eea230c3dc10360" class="m-doc-self" id="a6b9d9126b076d41c1ddffab924d9f1f6aec0fc0100c4fc1ce4eea230c3dc10360">Undefined</a></td>
+                  <td>
+                  <p>Значение не определено</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a6b9d9126b076d41c1ddffab924d9f1f6ad0f8c835858c71d21117f6d813657391" class="m-doc-self" id="a6b9d9126b076d41c1ddffab924d9f1f6ad0f8c835858c71d21117f6d813657391">OneBit</a></td>
+                  <td>
+                  <p>1 бит на отсчет</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a6b9d9126b076d41c1ddffab924d9f1f6ae12e97e88bc2bcfa075b73b044406a8b" class="m-doc-self" id="a6b9d9126b076d41c1ddffab924d9f1f6ae12e97e88bc2bcfa075b73b044406a8b">TwoBit</a></td>
+                  <td>
+                  <p>2 бита на отсчет</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a6b9d9126b076d41c1ddffab924d9f1f6a394203c80c708e3728c9e4c50be0372a" class="m-doc-self" id="a6b9d9126b076d41c1ddffab924d9f1f6a394203c80c708e3728c9e4c50be0372a">FourBit</a></td>
+                  <td>
+                  <p>4 бита на отсчет</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a6b9d9126b076d41c1ddffab924d9f1f6ae7cfb531ab37d769ced9d40d8ef6087f" class="m-doc-self" id="a6b9d9126b076d41c1ddffab924d9f1f6ae7cfb531ab37d769ced9d40d8ef6087f">EightBit</a></td>
+                  <td>
+                  <p>8 бит на отсчет</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#a6b9d9126b076d41c1ddffab924d9f1f6a40f5ab95bc1ef5377e682f7c61f523d0" class="m-doc-self" id="a6b9d9126b076d41c1ddffab924d9f1f6a40f5ab95bc1ef5377e682f7c61f523d0">SixteenBit</a></td>
+                  <td>
+                  <p>16 бит на отсчет</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="ad24111e9445bd94b798ec7f942df7164"><div>
+            <h3>
+              enum class quasar::<wbr />IAbstractRadar::<wbr /><a href="#ad24111e9445bd94b798ec7f942df7164" class="m-doc-self">Ramp</a>
+            </h3>
+            <p>Набор возможных значений, определяющий закон ЛЧМ зондирующего сигнала.</p>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python.</p></aside>
+            <table class="m-table m-fullwidth m-flat m-doc">
+              <thead><tr><th style="width: 1%">Enumerators</th><th></th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><a href="#ad24111e9445bd94b798ec7f942df7164aec0fc0100c4fc1ce4eea230c3dc10360" class="m-doc-self" id="ad24111e9445bd94b798ec7f942df7164aec0fc0100c4fc1ce4eea230c3dc10360">Undefined</a></td>
+                  <td>
+                  <p>Закон не определен</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#ad24111e9445bd94b798ec7f942df7164ac551a26a97a7440529e861dff6933722" class="m-doc-self" id="ad24111e9445bd94b798ec7f942df7164ac551a26a97a7440529e861dff6933722">Saw</a></td>
+                  <td>
+                  <p>Несимметричная модуляция</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="#ad24111e9445bd94b798ec7f942df7164a241f88afa7becb8633ca074c48e0d77c" class="m-doc-self" id="ad24111e9445bd94b798ec7f942df7164a241f88afa7becb8633ca074c48e0d77c">Triangular</a></td>
+                  <td>
+                  <p>Симметричная (треугольная) модуляция</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+        </section>
+        <section>
+          <h2>Function documentation</h2>
+          <section class="m-doc-details" id="a53505b9bf4660c6c2a313eb3bd8720c5"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a53505b9bf4660c6c2a313eb3bd8720c5" class="m-doc-self">IAbstractRadar</a>(</span><span class="m-doc-wrap">)</span></span>
+            </h3>
+            <p>Конструктор по умолчанию.</p>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a50264095327d6cb45d6bb215ea94a7d4"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a50264095327d6cb45d6bb215ea94a7d4" class="m-doc-self">IAbstractRadar</a>(</span><span class="m-doc-wrap">std::filesystem::path const&amp; config_file_path,
+              enum DSP type) <span class="m-label m-info">explicit</span>  <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Создает и конфигурирует радар из файла конфигурации.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">config_file_path</td>
+                  <td>Путь к файлу конфигурации.</td>
+                </tr>
+                <tr>
+                  <td>type</td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/runtime_error.html" class="m-doc-external">std::<wbr />runtime_error</a></td>
+                  <td>Если файл конфигурации не существует или имеет некорректный формат.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="classquasar_1_1IAbstractRadar.html#a3c7b86b6406743093e194ce74613f50a" class="m-doc">IAbstractRadar::<wbr />set_configuration</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="abe6ad3d231f84a06686239300430bc51"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper"> quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abe6ad3d231f84a06686239300430bc51" class="m-doc-self">IAbstractRadar</a>(</span><span class="m-doc-wrap">std::filesystem::path const&amp; config_file_path,
+              std::filesystem::path const&amp; hologram_file_path,
+              enum DSP type) <span class="m-label m-info">explicit</span>  <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Создает, конфигурирует радар из файла конфигурации и инициализирует его файлом голограммы.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">config_file_path</td>
+                  <td>Путь к файлу конфигурации.</td>
+                </tr>
+                <tr>
+                  <td>hologram_file_path</td>
+                  <td>Путь к активному файлу голограммы.</td>
+                </tr>
+                <tr>
+                  <td>type</td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/runtime_error.html" class="m-doc-external">std::<wbr />runtime_error</a></td>
+                  <td>Если файл конфигурации не существует или имеет некорректный формат.</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html" class="m-doc-external">std::<wbr />invalid_argument</a></td>
+                  <td>Если файл голограммы не существует или имеет некорректный формат.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="classquasar_1_1IAbstractRadar.html#a3c7b86b6406743093e194ce74613f50a" class="m-doc">IAbstractRadar::<wbr />set_configuration</a></p><p><a href="classquasar_1_1IAbstractRadar.html#a4e5945552032ed533e6fdffbcaa88f33" class="m-doc">IAbstractRadar::<wbr />set_hologram_path</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ac1420eecf2b93bcce322b0e0f172051f"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac1420eecf2b93bcce322b0e0f172051f" class="m-doc-self">type</a>(</span><span class="m-doc-wrap">) const -&gt; enum DSP <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Возвращает тип вычислителя радара.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Тип вычислителя радара.</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="ad81ffb6cbc1ab0fda3b0ae4eddae2724"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ad81ffb6cbc1ab0fda3b0ae4eddae2724" class="m-doc-self">set_type</a>(</span><span class="m-doc-wrap">enum DSP type) -&gt; void</span></span>
+            </h3>
+            <p>Задает тип вычислителя радара.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">type</td>
+                  <td>Новый тип вычислителя радара.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div></section>
+          <section class="m-doc-details" id="a494b97cd54c34627d35e30ec4f7cd18e"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a494b97cd54c34627d35e30ec4f7cd18e" class="m-doc-self">hologram_path</a>(</span><span class="m-doc-wrap">) const -&gt; std::filesystem::path const &amp; <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Возвращает путь к активному файлу голограммы.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Путь к активному файлу голограммы.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@property</strong>.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="classquasar_1_1IAbstractRadar.html#a4e5945552032ed533e6fdffbcaa88f33" class="m-doc">set_<wbr />hologram_<wbr />path</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a4e5945552032ed533e6fdffbcaa88f33"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4e5945552032ed533e6fdffbcaa88f33" class="m-doc-self">set_hologram_path</a>(</span><span class="m-doc-wrap">std::filesystem::path const&amp; path) <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Устанавливает путь к активному файлу голограммы.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">path</td>
+                  <td>Путь к файлу голограммы. Файл должен быть валидным файлом голограммы.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html" class="m-doc-external">std::<wbr />invalid_argument</a></td>
+                  <td>Если файл не существует или имеет некорректный формат.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@property</strong>.</p></aside><aside class="m-note m-default"><h4>See also</h4><p><a href="classquasar_1_1IAbstractRadar.html#a494b97cd54c34627d35e30ec4f7cd18e" class="m-doc">hologram_<wbr />path</a></p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a611afb7b9665fda881f5596f935df642"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a611afb7b9665fda881f5596f935df642" class="m-doc-self">initial_frequency</a>(</span><span class="m-doc-wrap">) const -&gt; f32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Начальная частота ЛЧМ зондирующего сигнала (Гц).</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Частота ЛЧМ зондирующего сигнала в Гц.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>F0</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="abb248cef17b33a10d8c80c9df98d1acf"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#abb248cef17b33a10d8c80c9df98d1acf" class="m-doc-self">sampling_frequency</a>(</span><span class="m-doc-wrap">) const -&gt; f32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Частота дискретизации АЦП (Гц).</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Частота дискретизации АЦП в Гц.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>Fs</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a9156d147693eed7d33800a68722877ab"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9156d147693eed7d33800a68722877ab" class="m-doc-self">sample_count</a>(</span><span class="m-doc-wrap">) const -&gt; i32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Количество отсчётов за период зондирования.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Количество отсчётов за период зондирования.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>Ns</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a47176295c33666edb02e0aca7ec23286"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a47176295c33666edb02e0aca7ec23286" class="m-doc-self">sample_count_rounded</a>(</span><span class="m-doc-wrap">) const -&gt; i32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Количество отсчётов за период зондирования округленное до степени двойки.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Количество отсчётов за период зондирования округленное до степени двойки.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>Ns2</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a6a46f32ab3a0777656cf8503f43c9837"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6a46f32ab3a0777656cf8503f43c9837" class="m-doc-self">lfm_deviation</a>(</span><span class="m-doc-wrap">) const -&gt; f32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Девиация ЛЧМ зондирующего сигнала (Гц).</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Девиация ЛЧМ зондирующего сигнала в Гц.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>Df</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ace3ef993d47cd086b00c2f0773404485"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ace3ef993d47cd086b00c2f0773404485" class="m-doc-self">sync_sample_count</a>(</span><span class="m-doc-wrap">) const -&gt; i32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Количество отсчётов за период синхропаузы.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Количество отсчетов в синхропаузе.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>sync</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a9ec5bef7b1fdb7f8b4704bc9764845a9"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a9ec5bef7b1fdb7f8b4704bc9764845a9" class="m-doc-self">transient_samples_count</a>(</span><span class="m-doc-wrap">) const -&gt; std::pair&lt; i32, i32 &gt; <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Количество отсчётов переходных процессов в начале и конце периода</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Пара из количества отсчетов ПП в начале и конце периода.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>Nope</strong> и <strong>apps</strong> соответственно.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="aa17120c49790cf90a3348b6ab723d3e9"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#aa17120c49790cf90a3348b6ab723d3e9" class="m-doc-self">sample_size</a>(</span><span class="m-doc-wrap">) const -&gt; SampleSize <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Размер одного отсчёта в битах.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Количество бит, отводимых на один отсчёт в виде перечисления <a href="classquasar_1_1IAbstractRadar.html#a6b9d9126b076d41c1ddffab924d9f1f6" class="m-doc">IAbstractRadar::<wbr />SampleSize</a>.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>Sample_Size</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a79db1cb467b3de8c7019d5a2d96f33c8"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a79db1cb467b3de8c7019d5a2d96f33c8" class="m-doc-self">ramp_type</a>(</span><span class="m-doc-wrap">) const -&gt; Ramp <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Тип модуляции сигнала.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Тип модуляции сигнала в виде перечисления IAbstractRadar::RampType.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>RampType</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ac736c4e853a308f69392df6533f3be92"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac736c4e853a308f69392df6533f3be92" class="m-doc-self">bytes_per_sample</a>(</span><span class="m-doc-wrap">) const -&gt; f32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Размер одного отсчета в байтах.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Количество байт, отводимых на один отсчет в виде числа с плавающей точкой.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a6d8d8341c5dd23a3a1c45f6ad5661ee2"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a6d8d8341c5dd23a3a1c45f6ad5661ee2" class="m-doc-self">wave_length</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; f32</span></span>
+            </h3>
+            <p>Возвращает длину волны зондирующего сигнала в метрах.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Длина волны зондирующего сигнала в метрах.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>GetLambda</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="add3489731e886583641c766ee2fb9e7d"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#add3489731e886583641c766ee2fb9e7d" class="m-doc-self">repetition_period</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; f32</span></span>
+            </h3>
+            <p>Возвращает период повторения зондирующего сигнала.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Период повторения зондирующего сигнала.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>GetTp</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="af7b07816c1a7d6b4634142fc349228ed"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af7b07816c1a7d6b4634142fc349228ed" class="m-doc-self">modulation_period</a>(</span><span class="m-doc-wrap">) const -&gt; f32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Возвращает период модуляции зондирующего сигнала.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Период модуляции зондирующего сигнала.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>GetTm</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a368a07c0837957b09bec36a76f6f0054"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a368a07c0837957b09bec36a76f6f0054" class="m-doc-self">modulation_slope</a>(</span><span class="m-doc-wrap">) const noexcept -&gt; f32</span></span>
+            </h3>
+            <p>Возвращает крутизну модуляции ЛЧМ зондирующего сигнала.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Крутизна модуляции.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>GetMu</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="af47fa0a6bfae19f7101c8856c8fee6ce"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#af47fa0a6bfae19f7101c8856c8fee6ce" class="m-doc-self">period_count</a>(</span><span class="m-doc-wrap">f32 time) const noexcept -&gt; i32</span></span>
+            </h3>
+            <p>Возвращает количество периодов во временном промежутке.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">time</td>
+                  <td>Временной промежуток в секундах.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Returns</th>
+                  <td>Количество периодов во временном промежутке.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>Time2Np</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>функции</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a4ab341241380aa2e2baf5196804f9d1a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a4ab341241380aa2e2baf5196804f9d1a" class="m-doc-self">correction_factor</a>(</span><span class="m-doc-wrap">) const -&gt; f32 <span class="m-label m-primary">constexpr</span></span></span>
+            </h3>
+            <p>Коэффициент коррекции смещения отметок по дальности вследствие дробного отношения количества отсчетов АЦП за период модуляции.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <tfoot>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Коэффициент коррекции.</td>
+                </tr>
+              </tfoot>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Ранее имела название <strong>Mp</strong>.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>@readonly-property</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a3e8cc9414dd0f2b71d3af10b1aafa100"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3e8cc9414dd0f2b71d3af10b1aafa100" class="m-doc-self">handle</a>(</span><span class="m-doc-wrap">) const <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Возвращает дескриптор файла голограммы.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr>
+                  <th style="width: 1%">Returns</th>
+                  <td>Дескриптор файла голограммы.</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/runtime_error.html" class="m-doc-external">std::<wbr />runtime_error</a></td>
+                  <td>Если дескриптор файла не был инициализирован.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Недоступно в Python.</p>
+          </div></section>
+          <section class="m-doc-details" id="a3c7b86b6406743093e194ce74613f50a"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a3c7b86b6406743093e194ce74613f50a" class="m-doc-self">set_configuration</a>(</span><span class="m-doc-wrap">std::filesystem::path const&amp; path) -&gt; void</span></span>
+            </h3>
+            <p>Конфигурирует экземпляр радара из заданного файла конфигурации TOML.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">path</td>
+                  <td>Путь к файлу конфигурации.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/runtime_error.html" class="m-doc-external">std::<wbr />runtime_error</a></td>
+                  <td>Если не удалось прочитать или распарить файл конфигурации.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>функции</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a433356cb69794dbd58800e397096ce00"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a433356cb69794dbd58800e397096ce00" class="m-doc-self">read_image</a>(</span><span class="m-doc-wrap">usize period_count,
+              f32 time_shift,
+              usize sync_pos,
+              i32 freq_interpolation_coeff,
+              bool round,
+              bool remove_transition) const <span class="m-label m-warning">pure virtual</span> <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Производит считывание данных голограммы из заданного файла в новый объект изображения согласно параметрам текущего радара.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">period_count</td>
+                  <td>Количество периодов для считывания.</td>
+                </tr>
+                <tr>
+                  <td>time_shift</td>
+                  <td>Смещение стартовой позиции для чтения (в секундах).</td>
+                </tr>
+                <tr>
+                  <td>sync_pos</td>
+                  <td>Смещение до синхропаузы от начала файла (в отсчётах).</td>
+                </tr>
+                <tr>
+                  <td>freq_interpolation_coeff</td>
+                  <td>Коэффициент частотной интерполяции.</td>
+                </tr>
+                <tr>
+                  <td>round</td>
+                  <td>Режим округления количества отсчетов (округлять до следующей степени двойки или нет).</td>
+                </tr>
+                <tr>
+                  <td>remove_transition</td>
+                  <td>Удаление переходного процесса.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>Возвращает новый объект изображения в случае успеха.</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/logic_error.html" class="m-doc-external">std::<wbr />logic_error</a></td>
+                  <td>Если текущий экземпляр не был инициализирован файлом голограммы.</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html" class="m-doc-external">std::<wbr />invalid_argument</a></td>
+                  <td>Если параметры заданы некорректно (например, отрицательное смещение).</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/runtime_error.html" class="m-doc-external">std::<wbr />runtime_error</a></td>
+                  <td>Если не удалось считать голограмму.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-info"><h4>Note</h4><p>Если задан параметр <code>remove_transition</code>, то будет выполнена проверка на наличие синхропаузы размером <code>sync_samples_count</code> в начале позиции для считывания.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>функции</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a1696b811799582f499e21de11a6dedbe"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a1696b811799582f499e21de11a6dedbe" class="m-doc-self">find_sync_pos</a>(</span><span class="m-doc-wrap"><a href="classquasar_1_1CImage.html" class="m-doc">CImage</a> const&amp; image) const <span class="m-label m-warning">pure virtual</span> <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Производит поиск паттерна синхропаузы в существующем изображении</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">image</td>
+                  <td>Ссылка на действительное изображение.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>Кортеж с индексами начала и конца синхропаузы в случае успеха, сообщение об ошибке в случае неудачи.</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html" class="m-doc-external">std::<wbr />invalid_argument</a></td>
+                  <td>Если переданное изображение имеет неподдерживаемый тип данных.</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/runtime_error.html" class="m-doc-external">std::<wbr />runtime_error</a></td>
+                  <td>Если не удалось произвести поиск синхропаузы.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Первое значение в результирующем кортеже - это количество отсчётов от начала буфера изображения до начала синхропаузы. Второе значение - это количество отсчётов от начала буфера изображения до конца синхропаузы. Если синхропауза не обнаружена, то функция выбросит исключение.</p><aside class="m-note m-info"><h4>Note</h4><p>Если переданное изображение имеет тип данных в буфере, отличный от <code>float32</code>, то функция выбросит исключение.</p></aside><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>функции</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="a44d8169c5deab17ac26d20303588b5b6"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#a44d8169c5deab17ac26d20303588b5b6" class="m-doc-self">sync_pos</a>(</span><span class="m-doc-wrap">f32 time_shift,
+              usize offset) const <span class="m-label m-warning">pure virtual</span> <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Загружает часть изображения в буфер и производит поиск синхропаузы.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">time_shift</td>
+                  <td>Смещение стартовой позиции для чтения (в секундах).</td>
+                </tr>
+                <tr>
+                  <td>offset</td>
+                  <td>Смещение до синхропаузы от начала файла (в отсчётах).</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Returns</th>
+                  <td>Кортеж с индексами начала и конца синхропаузы в случае успеха, сообщение об ошибке в случае неудачи.</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/invalid_argument.html" class="m-doc-external">std::<wbr />invalid_argument</a></td>
+                  <td>Если параметры заданы некорректно (например, отрицательное смещение).</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/runtime_error.html" class="m-doc-external">std::<wbr />runtime_error</a></td>
+                  <td>Если не удалось считать голограмму.</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/logic_error.html" class="m-doc-external">std::<wbr />logic_error</a></td>
+                  <td>Если текущий экземпляр не был инициализирован файлом голограммы.</td>
+                </tr>
+              </tbody>
+            </table>
+<p>Эквивалентно следующему коду в Python:</p><pre class="m-code"><span class="n">image</span> <span class="o">=</span> <span class="n">radar</span><span class="o">.</span><span class="n">read_image</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">time_shift</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">pos</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="n">radar</span><span class="o">.</span><span class="n">find_sync_pos</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+<span class="n">pos</span> <span class="o">+=</span> <span class="n">offset</span>
+<span class="k">return</span> <span class="n">pos</span><span class="p">,</span> <span class="n">width</span></pre><aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>функции</strong>.</p></aside>
+          </div></section>
+          <section class="m-doc-details" id="ac9c734b7b5fa1568f2adecb5725d8e24"><div>
+            <h3>
+              <span class="m-doc-wrap-bumper">auto quasar::<wbr />IAbstractRadar::<wbr /></span><span class="m-doc-wrap"><span class="m-doc-wrap-bumper"><a href="#ac9c734b7b5fa1568f2adecb5725d8e24" class="m-doc-self">block_read</a>(</span><span class="m-doc-wrap">usize period_count,
+              i32 freq_interpolation_coeff) const <span class="m-label m-warning">pure virtual</span> <span class="m-label m-success">noexcept(…)</span></span></span>
+            </h3>
+            <p>Считывает блок голограммы для полосового режима.</p>
+            <table class="m-table m-fullwidth m-flat">
+              <thead>
+                <tr><th colspan="2">Parameters</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="width: 1%">period_count</td>
+                  <td>Количество отсчетов для считывания.</td>
+                </tr>
+                <tr>
+                  <td>freq_interpolation_coeff</td>
+                  <td>Коэффициент частотной интерполяции.</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr><th colspan="2">Exceptions</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.cppreference.com/w/cpp/error/logic_error.html" class="m-doc-external">std::<wbr />logic_error</a></td>
+                  <td>Если текущий экземпляр не был инициализирован файлом голограммы.</td>
+                </tr>
+              </tbody>
+            </table>
+<aside class="m-note m-success"><h4>Invariant</h4><p>Доступно в Python в виде <strong>функции</strong>.</p></aside><aside class="m-note m-default"><h4>See also</h4><p>block_init</p></aside>
+          </div></section>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">&hellip;</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input type="search" name="q" id="search-input" placeholder="Loading &hellip;" disabled="disabled" autofocus="autofocus" autocomplete="off" spellcheck="false" />
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div id="search-help" class="m-text m-dim m-text-center">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">&darr;</span>
+            / <span class="m-label m-dim">&uarr;</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div id="search-notfound" class="m-text m-warning m-text-center">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script>
+<script src="searchdata-v2.js" async="async"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <p>QuaSAR handbook is part of the <a href="https://github.com/Nikitamuraviev10/quasar">QuaSAR project</a><br />Generated by <a href="https://doxygen.org/">Doxygen</a> 1.8.17 and <a href="https://mcss.mosra.cz/">m.css</a>.</p>
+      </div>
+    </div>
+  </div>
+</nav></footer>
+</body>
+</html>
