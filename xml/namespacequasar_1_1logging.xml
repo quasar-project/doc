@@ -1,0 +1,1010 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacequasar_1_1logging" kind="namespace" language="C++">
+    <compoundname>quasar::logging</compoundname>
+    <innerclass refid="classquasar_1_1logging_1_1progress__bar" prot="public">quasar::logging::progress_bar</innerclass>
+    <innerclass refid="classquasar_1_1logging_1_1progress__spinner" prot="public">quasar::logging::progress_spinner</innerclass>
+    <innerclass refid="classquasar_1_1logging_1_1scoped__timer" prot="public">quasar::logging::scoped_timer</innerclass>
+    <innernamespace refid="namespacequasar_1_1logging_1_1level">quasar::logging::level</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacequasar_1_1logging_1a86bb1b7007cf5e302e820561225d23c5" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto line_up</definition>
+        <argsstring></argsstring>
+        <name>line_up</name>
+        <initializer>= &quot;\033[A&quot;sv</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/ansi_iomanip.h" line="9" column="18" bodyfile="private/logging/ansi_iomanip.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1logging_1a66366a03f4bb930ed352fc155a93703c" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto line_clear</definition>
+        <argsstring></argsstring>
+        <name>line_clear</name>
+        <initializer>= &quot;\033[2K&quot;sv</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/ansi_iomanip.h" line="10" column="18" bodyfile="private/logging/ansi_iomanip.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1logging_1a7566318e3683d626eb13f9fcc8174026" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto rewrite</definition>
+        <argsstring></argsstring>
+        <name>rewrite</name>
+        <initializer>= &quot;\033[2K\r&quot;sv</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/ansi_iomanip.h" line="11" column="18" bodyfile="private/logging/ansi_iomanip.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1logging_1aa620221d90ccc17a7a328fb63f718a73" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto clean</definition>
+        <argsstring></argsstring>
+        <name>clean</name>
+        <initializer>= &quot;\033[2K\r&quot;sv</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/ansi_iomanip.h" line="12" column="18" bodyfile="private/logging/ansi_iomanip.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacequasar_1_1logging_1a6c08f2dfd10e90707f2446d4ca1eb7c0" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto symbols</definition>
+        <argsstring></argsstring>
+        <name>symbols</name>
+        <initializer>= <ref refid="cpp/container/array" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::array</ref> {&quot;⢎&quot;sv, &quot;⢧&quot;sv, &quot;⢗&quot;sv, &quot;⢿&quot;sv, &quot;⣻&quot;sv, &quot;⣾&quot;sv}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_spinner.cc" line="11" column="18" bodyfile="private/logging/progress_spinner.cc" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacequasar_1_1logging_1a000164d6735b844b32272581c454222d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::trace_to</definition>
+        <argsstring>(spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>trace_to</name>
+        <param>
+          <type>spdlog::logger &amp;</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to given loger with level <bold>trace</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logger to log to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1a3f8d05d0c9b836e1d7dd45a1790294f6" kindref="member">trace</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="26" column="11" bodyfile="quasar/base/logging.h" bodystart="26" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1a3f8d05d0c9b836e1d7dd45a1790294f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::trace</definition>
+        <argsstring>(fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>trace</name>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to default logger with level <bold>trace</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1a000164d6735b844b32272581c454222d" kindref="member">trace_to</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="42" column="11" bodyfile="quasar/base/logging.h" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1aad6ce5c420d91e547b9dbdb9462cd070" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::debug_to</definition>
+        <argsstring>(spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>debug_to</name>
+        <param>
+          <type>spdlog::logger &amp;</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to given loger with level <bold>debug</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logger to log to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1a0481a94a89949c0dbab6e7008bc059f2" kindref="member">debug</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="58" column="11" bodyfile="quasar/base/logging.h" bodystart="58" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1a0481a94a89949c0dbab6e7008bc059f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::debug</definition>
+        <argsstring>(fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>debug</name>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to default logger with level <bold>debug</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1aad6ce5c420d91e547b9dbdb9462cd070" kindref="member">debug_to</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="74" column="11" bodyfile="quasar/base/logging.h" bodystart="74" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1a43b77a7b91c8294eeb279b663ad012b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::info_to</definition>
+        <argsstring>(spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>info_to</name>
+        <param>
+          <type>spdlog::logger &amp;</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to given loger with level <bold>info</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logger to log to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1ad38035cc26bb7736d678bef0b749c0f6" kindref="member">info</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="90" column="11" bodyfile="quasar/base/logging.h" bodystart="90" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1ad38035cc26bb7736d678bef0b749c0f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::info</definition>
+        <argsstring>(fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>info</name>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to default logger with level <bold>info</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1a43b77a7b91c8294eeb279b663ad012b8" kindref="member">info_to</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="106" column="11" bodyfile="quasar/base/logging.h" bodystart="106" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1abeb511a89004f94c1d44a232affc4d33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::warn_to</definition>
+        <argsstring>(spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>warn_to</name>
+        <param>
+          <type>spdlog::logger &amp;</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to given loger with level <bold>warn</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logger to log to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1a957f2c0106a75846f2c2a0d3c9d1f0e7" kindref="member">warn</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="122" column="11" bodyfile="quasar/base/logging.h" bodystart="122" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1a957f2c0106a75846f2c2a0d3c9d1f0e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::warn</definition>
+        <argsstring>(fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>warn</name>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to default logger with level <bold>warn</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1abeb511a89004f94c1d44a232affc4d33" kindref="member">warn_to</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="138" column="11" bodyfile="quasar/base/logging.h" bodystart="138" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1a5958dc3af0686de1dafbaab7ec771a48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::error_to</definition>
+        <argsstring>(spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>error_to</name>
+        <param>
+          <type>spdlog::logger &amp;</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to given loger with level <bold>err</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logger to log to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1ab66d124ba77bb2bd1a77d3a899b80e3f" kindref="member">error</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="154" column="11" bodyfile="quasar/base/logging.h" bodystart="154" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1ab66d124ba77bb2bd1a77d3a899b80e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::error</definition>
+        <argsstring>(fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>error</name>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to default logger with level <bold>err</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1a5958dc3af0686de1dafbaab7ec771a48" kindref="member">error_to</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="170" column="11" bodyfile="quasar/base/logging.h" bodystart="170" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1a1b4958b22ed424ad08a58b556551dd25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::critical_to</definition>
+        <argsstring>(spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>critical_to</name>
+        <param>
+          <type>spdlog::logger &amp;</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to given loger with level <bold>critical</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logger to log to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1ae40227fb4680ac1474438013622b491e" kindref="member">critical</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="186" column="11" bodyfile="quasar/base/logging.h" bodystart="186" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1ae40227fb4680ac1474438013622b491e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::critical</definition>
+        <argsstring>(fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>critical</name>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to default logger with level <bold>critical</bold>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1a1b4958b22ed424ad08a58b556551dd25" kindref="member">critical_to</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="202" column="11" bodyfile="quasar/base/logging.h" bodystart="202" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1a4935e3856bb54242fea94328dcb6b8b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::log_to</definition>
+        <argsstring>(level::level_enum level, spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>log_to</name>
+        <param>
+          <type>level::level_enum</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>spdlog::logger &amp;</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to given loger with given level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log level. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logger to log to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1afbe3aca8fd2102c1cd9d50711775a8b5" kindref="member">log</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="219" column="11" bodyfile="quasar/base/logging.h" bodystart="219" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1logging_1afbe3aca8fd2102c1cd9d50711775a8b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::logging::log</definition>
+        <argsstring>(level::level_enum level, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</argsstring>
+        <name>log</name>
+        <param>
+          <type>level::level_enum</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>fmt::format_string&lt; Args... &gt; const &amp;</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Logs message to default logger with given level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log level. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacequasar_1_1logging_1a4935e3856bb54242fea94328dcb6b8b3" kindref="member">log_to</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/base/logging.h" line="237" column="11" bodyfile="quasar/base/logging.h" bodystart="237" bodyend="243"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Пространство имен для логирования. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/base/logging.h" line="9" column="19"/>
+  </compounddef>
+</doxygen>

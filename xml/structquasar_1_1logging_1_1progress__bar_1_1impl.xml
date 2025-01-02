@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structquasar_1_1logging_1_1progress__bar_1_1impl" kind="struct" language="C++" prot="public">
+    <compoundname>quasar::logging::progress_bar::impl</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a6da50857fd0fea48b388d8e219419f00" prot="public" static="no" mutable="no">
+        <type>std::chrono::steady_clock::time_point</type>
+        <definition>std::chrono::steady_clock::time_point start_time_</definition>
+        <argsstring></argsstring>
+        <name>start_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="9" column="43" bodyfile="private/logging/progress_bar.cc" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1abded5092da2c3f27bf85f9a420b08625" prot="public" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool start_time_printed_</definition>
+        <argsstring></argsstring>
+        <name>start_time_printed_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="10" column="18" bodyfile="private/logging/progress_bar.cc" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1ae79346bdafd79119e9ee948a530790e6" prot="public" static="no" mutable="no">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string text_</definition>
+        <argsstring></argsstring>
+        <name>text_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="11" column="17" bodyfile="private/logging/progress_bar.cc" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a14d88392723c03ae8cda649bcd633307" prot="public" static="no" mutable="no">
+        <type>usize</type>
+        <definition>usize total_</definition>
+        <argsstring></argsstring>
+        <name>total_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="12" column="11" bodyfile="private/logging/progress_bar.cc" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a193fdcb6de1bf7d5585d110b09f2db38" prot="public" static="no" mutable="no">
+        <type>usize</type>
+        <definition>usize progress_</definition>
+        <argsstring></argsstring>
+        <name>progress_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="13" column="11" bodyfile="private/logging/progress_bar.cc" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1abb8a5e29c2e5456884ab2227f9aa0f34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>impl</definition>
+        <argsstring>(std::string_view const text, usize const total)</argsstring>
+        <name>impl</name>
+        <param>
+          <type>std::string_view const</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>usize const</type>
+          <declname>total</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="15" column="5" bodyfile="private/logging/progress_bar.cc" bodystart="15" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a2688373928f6449f98c9fd9eee75a18f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~impl</definition>
+        <argsstring>()</argsstring>
+        <name>~impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="24" column="5" bodyfile="private/logging/progress_bar.cc" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a3bc010d5cce013ed10512f1eccd020b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto update</definition>
+        <argsstring>(usize const progress) -&gt; void</argsstring>
+        <name>update</name>
+        <param>
+          <type>usize const</type>
+          <declname>progress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="29" column="10" bodyfile="private/logging/progress_bar.cc" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1ad166a8327e59abb6792834844e094d1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto inc</definition>
+        <argsstring>() -&gt; void</argsstring>
+        <name>inc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="34" column="10" bodyfile="private/logging/progress_bar.cc" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a8b31853ceec48a57122f13589e7c72a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto set_total</definition>
+        <argsstring>(usize const total) -&gt; void</argsstring>
+        <name>set_total</name>
+        <param>
+          <type>usize const</type>
+          <declname>total</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="36" column="10" bodyfile="private/logging/progress_bar.cc" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a5e5f993e33fa79e6784f7b9442a6f770" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto finish</definition>
+        <argsstring>() -&gt; void</argsstring>
+        <name>finish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="38" column="10" bodyfile="private/logging/progress_bar.cc" bodystart="38" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1aeb52c699d3a5cb189a169590de5a376a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto elapsed</definition>
+        <argsstring>() const -&gt; std::chrono::duration&lt; double &gt;</argsstring>
+        <name>elapsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="50" column="11" bodyfile="private/logging/progress_bar.cc" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a97fb6aa7d35b27b2b3204cc71ec47210" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto progress</definition>
+        <argsstring>() const -&gt; f32</argsstring>
+        <name>progress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="54" column="11" bodyfile="private/logging/progress_bar.cc" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a8451da59c671102f43e8ec8dec1970fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto print</definition>
+        <argsstring>() const -&gt; void</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/logging/progress_bar.cc" line="58" column="10" bodyfile="private/logging/progress_bar.cc" bodystart="58" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1abb8a5e29c2e5456884ab2227f9aa0f34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>impl</definition>
+        <argsstring>(std::string_view const text, usize const total)</argsstring>
+        <name>impl</name>
+        <param>
+          <type>std::string_view const</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>usize const</type>
+          <declname>total</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="progress_bar.cc" line="15" column="5" bodyfile="progress_bar.cc" bodystart="15" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a2688373928f6449f98c9fd9eee75a18f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~impl</definition>
+        <argsstring>()</argsstring>
+        <name>~impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="progress_bar.cc" line="24" column="5" bodyfile="progress_bar.cc" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a3bc010d5cce013ed10512f1eccd020b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto update</definition>
+        <argsstring>(usize const progress) -&gt; void</argsstring>
+        <name>update</name>
+        <param>
+          <type>usize const</type>
+          <declname>progress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="progress_bar.cc" line="29" column="10" bodyfile="progress_bar.cc" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1ad166a8327e59abb6792834844e094d1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto inc</definition>
+        <argsstring>() -&gt; void</argsstring>
+        <name>inc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="progress_bar.cc" line="34" column="10" bodyfile="progress_bar.cc" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a8b31853ceec48a57122f13589e7c72a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto set_total</definition>
+        <argsstring>(usize const total) -&gt; void</argsstring>
+        <name>set_total</name>
+        <param>
+          <type>usize const</type>
+          <declname>total</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="progress_bar.cc" line="36" column="10" bodyfile="progress_bar.cc" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a5e5f993e33fa79e6784f7b9442a6f770" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto finish</definition>
+        <argsstring>() -&gt; void</argsstring>
+        <name>finish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="progress_bar.cc" line="38" column="10" bodyfile="progress_bar.cc" bodystart="38" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1aeb52c699d3a5cb189a169590de5a376a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto elapsed</definition>
+        <argsstring>() const -&gt; std::chrono::duration&lt; double &gt;</argsstring>
+        <name>elapsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="progress_bar.cc" line="50" column="11" bodyfile="progress_bar.cc" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a97fb6aa7d35b27b2b3204cc71ec47210" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto progress</definition>
+        <argsstring>() const -&gt; f32</argsstring>
+        <name>progress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="progress_bar.cc" line="54" column="11" bodyfile="progress_bar.cc" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="structquasar_1_1logging_1_1progress__bar_1_1impl_1a8451da59c671102f43e8ec8dec1970fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto print</definition>
+        <argsstring>() const -&gt; void</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="progress_bar.cc" line="58" column="10" bodyfile="progress_bar.cc" bodystart="58" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>string</label>
+        <link refid="cpp/string/basic_string" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml"/>
+      </node>
+      <node id="3">
+        <label>time_point</label>
+      </node>
+      <node id="1">
+        <label>progress_bar::impl</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>total_</edgelabel>
+          <edgelabel>progress_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>start_time_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>text_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>start_time_printed_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>usize</label>
+      </node>
+      <node id="5">
+        <label>bool</label>
+      </node>
+    </collaborationgraph>
+    <location file="private/logging/progress_bar.cc" line="8" column="27" bodyfile="private/logging/progress_bar.cc" bodystart="8" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1aeb52c699d3a5cb189a169590de5a376a" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>elapsed</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1aeb52c699d3a5cb189a169590de5a376a" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>elapsed</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a5e5f993e33fa79e6784f7b9442a6f770" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>finish</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a5e5f993e33fa79e6784f7b9442a6f770" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>finish</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1abb8a5e29c2e5456884ab2227f9aa0f34" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>impl</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1abb8a5e29c2e5456884ab2227f9aa0f34" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>impl</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1ad166a8327e59abb6792834844e094d1c" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>inc</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1ad166a8327e59abb6792834844e094d1c" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>inc</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a8451da59c671102f43e8ec8dec1970fe" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>print</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a8451da59c671102f43e8ec8dec1970fe" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>print</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a97fb6aa7d35b27b2b3204cc71ec47210" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>progress</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a97fb6aa7d35b27b2b3204cc71ec47210" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>progress</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a193fdcb6de1bf7d5585d110b09f2db38" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>progress_</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a8b31853ceec48a57122f13589e7c72a2" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>set_total</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a8b31853ceec48a57122f13589e7c72a2" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>set_total</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a6da50857fd0fea48b388d8e219419f00" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>start_time_</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1abded5092da2c3f27bf85f9a420b08625" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>start_time_printed_</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1ae79346bdafd79119e9ee948a530790e6" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>text_</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a14d88392723c03ae8cda649bcd633307" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>total_</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a3bc010d5cce013ed10512f1eccd020b9" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>update</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a3bc010d5cce013ed10512f1eccd020b9" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>update</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a2688373928f6449f98c9fd9eee75a18f" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>~impl</name></member>
+      <member refid="structquasar_1_1logging_1_1progress__bar_1_1impl_1a2688373928f6449f98c9fd9eee75a18f" prot="public" virt="non-virtual"><scope>quasar::logging::progress_bar::impl</scope><name>~impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="composite__logger_8h" kind="file" language="C++">
+    <compoundname>composite_logger.h</compoundname>
+    <includes local="no">quasar/api/composite_logger.h</includes>
+    <includedby refid="composite__logger_8cc" local="no">composite_logger.cc</includedby>
+    <includedby refid="logger_8pybind_8cc" local="no">logger.pybind.cc</includedby>
+    <includedby refid="sar_8cc" local="no">sar.cc</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>composite_logger.h</label>
+        <link refid="composite__logger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>quasar/api/composite_logger.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>composite_logger.cc</label>
+        <link refid="composite__logger_8cc"/>
+      </node>
+      <node id="4">
+        <label>sar.cc</label>
+        <link refid="sar_8cc"/>
+      </node>
+      <node id="3">
+        <label>logger.pybind.cc</label>
+        <link refid="logger_8pybind_8cc"/>
+      </node>
+      <node id="1">
+        <label>composite_logger.h</label>
+        <link refid="composite__logger_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classquasar_1_1CompositeLogger" prot="public">quasar::CompositeLogger</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/logging/composite_logger.h"/>
+  </compounddef>
+</doxygen>

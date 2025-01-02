@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="cuda__qualifiers_8h" kind="file" language="C++">
+    <compoundname>cuda_qualifiers.h</compoundname>
+    <includes refid="export_8h" local="no">quasar/detail/export.h</includes>
+    <includedby refid="complex_8h" local="no">complex.h</includedby>
+    <includedby refid="math_8h" local="no">math.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>cuda_qualifiers.h</label>
+        <link refid="cuda__qualifiers_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>quasar/detail/export.h</label>
+        <link refid="export_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rolly/global/export.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>CStripStream.hpp</label>
+        <link refid="CStripStream_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>cuda_qualifiers.h</label>
+        <link refid="cuda__qualifiers_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>image.cc</label>
+        <link refid="image_8cc"/>
+      </node>
+      <node id="14">
+        <label>abstract_dsp.cc</label>
+        <link refid="abstract__dsp_8cc"/>
+      </node>
+      <node id="17">
+        <label>image.pybind.cc</label>
+        <link refid="image_8pybind_8cc"/>
+      </node>
+      <node id="11">
+        <label>sar.cc</label>
+        <link refid="sar_8cc"/>
+      </node>
+      <node id="18">
+        <label>radar.pybind.cc</label>
+        <link refid="radar_8pybind_8cc"/>
+      </node>
+      <node id="5">
+        <label>backprojection.cc</label>
+        <link refid="backprojection_8cc"/>
+      </node>
+      <node id="12">
+        <label>dsp_fftw.h</label>
+        <link refid="dsp__fftw_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>CStripStream.cpp</label>
+        <link refid="CStripStream_8cpp"/>
+      </node>
+      <node id="25">
+        <label>navgpx.cc</label>
+        <link refid="navgpx_8cc"/>
+      </node>
+      <node id="24">
+        <label>math.cc</label>
+        <link refid="math_8cc"/>
+      </node>
+      <node id="19">
+        <label>radar_stt.cc</label>
+        <link refid="radar__stt_8cc"/>
+      </node>
+      <node id="8">
+        <label>sar.h</label>
+        <link refid="sar_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>dsp_fftw.cc</label>
+        <link refid="dsp__fftw_8cc"/>
+      </node>
+      <node id="4">
+        <label>backprojection.h</label>
+        <link refid="backprojection_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>complex.h</label>
+        <link refid="complex_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>legacy.pybind.cc</label>
+        <link refid="legacy_8pybind_8cc"/>
+      </node>
+      <node id="15">
+        <label>dsp.pybind.cc</label>
+        <link refid="dsp_8pybind_8cc"/>
+      </node>
+      <node id="22">
+        <label>math.h</label>
+        <link refid="math_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>abstract_dsp.h</label>
+        <link refid="abstract__dsp_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>abstract_radar.cc</label>
+        <link refid="abstract__radar_8cc"/>
+      </node>
+      <node id="20">
+        <label>ranges.h</label>
+        <link refid="ranges_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>ranges.cc</label>
+        <link refid="ranges_8cc"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="cuda__qualifiers_8h_1afb80abacf17d0b74287f3f2e3bcaa2e8" prot="public" static="no">
+        <name>__host_or_device__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/cuda_qualifiers.h" line="13" column="11" bodyfile="quasar/misc/cuda_qualifiers.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__macros_1ga6e11a89bbdb2eb0d95b0780607e0a370" prot="public" static="no">
+        <name>QUASAR_NVCC_RUN</name>
+        <briefdescription>
+<para>Этот макрос определен при выполнении компиляции CUDA кода. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/cuda_qualifiers.h" line="17" column="11"/>
+      </memberdef>
+      <memberdef kind="define" id="group__macros_1ga10818ca7b8de84a019cb213af68fef83" prot="public" static="no">
+        <name>__cmath_namespace</name>
+        <briefdescription>
+<para>Раскрывается в пространство имен <computeroutput>std::</computeroutput> при выполнении компиляции обычного кода, или в пустое пространство при компиляции CUDA кода. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/misc/cuda_qualifiers.h" line="21" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Классы и макросы для унификации среды выполнения CPU/CUDA. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Рязанцев Дмитрий </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="quasar/misc/cuda_qualifiers.h"/>
+  </compounddef>
+</doxygen>

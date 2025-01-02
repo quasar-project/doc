@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_f55f6dc9e21b09a12acc690b19f5e964" kind="dir">
+    <compoundname>pybind</compoundname>
+    <innerfile refid="dsp_8pybind_8cc">dsp.pybind.cc</innerfile>
+    <innerfile refid="enums_8pybind_8cc">enums.pybind.cc</innerfile>
+    <innerfile refid="image_8pybind_8cc">image.pybind.cc</innerfile>
+    <innerfile refid="legacy_8pybind_8cc">legacy.pybind.cc</innerfile>
+    <innerfile refid="logger_8pybind_8cc">logger.pybind.cc</innerfile>
+    <innerfile refid="module_8pybind_8cc">module.pybind.cc</innerfile>
+    <innerfile refid="module_8pybind_8hh">module.pybind.hh</innerfile>
+    <innerfile refid="radar_8pybind_8cc">radar.pybind.cc</innerfile>
+    <innerfile refid="util_8h">util.h</innerfile>
+    <innerfile refid="utils_8pybind_8cc">utils.pybind.cc</innerfile>
+    <innerfile refid="window_8pybind_8cc">window.pybind.cc</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="pybind/"/>
+  </compounddef>
+</doxygen>

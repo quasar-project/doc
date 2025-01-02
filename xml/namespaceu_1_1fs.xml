@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceu_1_1fs" kind="namespace" language="C++">
+    <compoundname>u::fs</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceu_1_1fs_1a06ed8dd51df36364729838f2bcfe34d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto u::fs::get_specs_by_file_path</definition>
+        <argsstring>(string const &amp;path) -&gt; std::int64_t</argsstring>
+        <name>get_specs_by_file_path</name>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">string</ref> const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="hw_info.cc" line="71" column="10" bodyfile="hw_info.cc" bodystart="71" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="hw_info.cc" line="70" column="14"/>
+  </compounddef>
+</doxygen>

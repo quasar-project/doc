@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="logging_8h" kind="file" language="C++">
+    <compoundname>logging.h</compoundname>
+    <includes refid="base_2logging_8h" local="no">quasar/base/logging.h</includes>
+    <includedby refid="abstract__dsp_8cc" local="no">abstract_dsp.cc</includedby>
+    <includedby refid="abstract__radar_8cc" local="no">abstract_radar.cc</includedby>
+    <includedby refid="backprojection_8cc" local="no">backprojection.cc</includedby>
+    <includedby refid="dsp__fftw_8cc" local="no">dsp_fftw.cc</includedby>
+    <includedby refid="image_8cc" local="no">image.cc</includedby>
+    <includedby refid="nav_8cc" local="no">nav.cc</includedby>
+    <includedby refid="navgpx_8cc" local="no">navgpx.cc</includedby>
+    <includedby refid="ansi__iomanip_8h" local="no">ansi_iomanip.h</includedby>
+    <includedby refid="scoped__timer_8h" local="no">scoped_timer.h</includedby>
+    <includedby refid="sar_8cc" local="no">sar.cc</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>quasar/base/logging.h</label>
+        <link refid="base_2logging_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="4">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="5">
+        <label>quasar/detail/export.h</label>
+        <link refid="export_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>rolly/global/export.h</label>
+      </node>
+      <node id="1">
+        <label>logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>image.cc</label>
+        <link refid="image_8cc"/>
+      </node>
+      <node id="2">
+        <label>abstract_dsp.cc</label>
+        <link refid="abstract__dsp_8cc"/>
+      </node>
+      <node id="7">
+        <label>nav.cc</label>
+        <link refid="nav_8cc"/>
+      </node>
+      <node id="13">
+        <label>sar.cc</label>
+        <link refid="sar_8cc"/>
+      </node>
+      <node id="9">
+        <label>ansi_iomanip.h</label>
+        <link refid="ansi__iomanip_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>backprojection.cc</label>
+        <link refid="backprojection_8cc"/>
+      </node>
+      <node id="8">
+        <label>navgpx.cc</label>
+        <link refid="navgpx_8cc"/>
+      </node>
+      <node id="12">
+        <label>radar_stt.cc</label>
+        <link refid="radar__stt_8cc"/>
+      </node>
+      <node id="5">
+        <label>dsp_fftw.cc</label>
+        <link refid="dsp__fftw_8cc"/>
+      </node>
+      <node id="10">
+        <label>scoped_timer.cc</label>
+        <link refid="scoped__timer_8cc"/>
+      </node>
+      <node id="3">
+        <label>abstract_radar.cc</label>
+        <link refid="abstract__radar_8cc"/>
+      </node>
+      <node id="11">
+        <label>scoped_timer.h</label>
+        <link refid="scoped__timer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>logging.h</label>
+        <link refid="logging_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+<para>Интерфейс для логирования. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/logging.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1610 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1IAbstractRadar" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>quasar::IAbstractRadar</compoundname>
+    <basecompoundref refid="classnoncopyable" prot="private" virt="non-virtual">noncopyable</basecompoundref>
+    <derivedcompoundref refid="classquasar_1_1CRadarSTT" prot="public" virt="non-virtual">CRadarSTT</derivedcompoundref>
+    <includes refid="abstract__radar_8h" local="no">quasar/radar/abstract_radar.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>SampleSize</name>
+        <enumvalue id="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6aec0fc0100c4fc1ce4eea230c3dc10360" prot="public">
+          <name>Undefined</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Значение не определено </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6ad0f8c835858c71d21117f6d813657391" prot="public">
+          <name>OneBit</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>1 бит на отсчет </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6ae12e97e88bc2bcfa075b73b044406a8b" prot="public">
+          <name>TwoBit</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>2 бита на отсчет </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6a394203c80c708e3728c9e4c50be0372a" prot="public">
+          <name>FourBit</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>4 бита на отсчет </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6ae7cfb531ab37d769ced9d40d8ef6087f" prot="public">
+          <name>EightBit</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+<para>8 бит на отсчет </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6a40f5ab95bc1ef5377e682f7c61f523d0" prot="public">
+          <name>SixteenBit</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+<para>16 бит на отсчет </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Набор возможных значений, определяющий количество бит на один отсчет. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Доступно в Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="48" column="26" bodyfile="quasar/radar/abstract_radar.h" bodystart="48" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="enum" id="classquasar_1_1IAbstractRadar_1ad24111e9445bd94b798ec7f942df7164" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Ramp</name>
+        <enumvalue id="classquasar_1_1IAbstractRadar_1ad24111e9445bd94b798ec7f942df7164aec0fc0100c4fc1ce4eea230c3dc10360" prot="public">
+          <name>Undefined</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Закон не определен </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1IAbstractRadar_1ad24111e9445bd94b798ec7f942df7164ac551a26a97a7440529e861dff6933722" prot="public">
+          <name>Saw</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>Несимметричная модуляция </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classquasar_1_1IAbstractRadar_1ad24111e9445bd94b798ec7f942df7164a241f88afa7becb8633ca074c48e0d77c" prot="public">
+          <name>Triangular</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>Симметричная (треугольная) модуляция </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Набор возможных значений, определяющий закон ЛЧМ зондирующего сигнала. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Доступно в Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="59" column="20" bodyfile="quasar/radar/abstract_radar.h" bodystart="59" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classquasar_1_1IAbstractRadar_1ac54a7cbdf8112ca9778f3b4ee6dbd2dc" prot="protected" static="no" mutable="yes">
+        <type>i32</type>
+        <definition>i32 sample_count_rounded_</definition>
+        <argsstring></argsstring>
+        <name>sample_count_rounded_</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="383" column="17" bodyfile="quasar/radar/abstract_radar.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1IAbstractRadar_1aeea5503b42cf03ea61dc161055410b3e" prot="protected" static="no" mutable="yes">
+        <type>enum DSP</type>
+        <definition>enum DSP type_</definition>
+        <argsstring></argsstring>
+        <name>type_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="383" column="17" bodyfile="quasar/radar/abstract_radar.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classquasar_1_1IAbstractRadar_1a42627961afe9a72832f102c2b5d03693" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 initial_frequency_</definition>
+        <argsstring></argsstring>
+        <name>initial_frequency_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="387" column="9" bodyfile="quasar/radar/abstract_radar.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1IAbstractRadar_1af8720f1a3c6e37eb2eb275906337d6de" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 sampling_frequency_</definition>
+        <argsstring></argsstring>
+        <name>sampling_frequency_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="388" column="9" bodyfile="quasar/radar/abstract_radar.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1IAbstractRadar_1a9e7d0543a53ef33870d301399b7c2c80" prot="private" static="no" mutable="no">
+        <type>i32</type>
+        <definition>i32 sample_count_</definition>
+        <argsstring></argsstring>
+        <name>sample_count_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="389" column="9" bodyfile="quasar/radar/abstract_radar.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1IAbstractRadar_1afc94bf2923e6c99c7080cfe251de2706" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 lfm_deviation_</definition>
+        <argsstring></argsstring>
+        <name>lfm_deviation_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="390" column="9" bodyfile="quasar/radar/abstract_radar.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1IAbstractRadar_1acbc60d0c39e02a8d5036693090cdca2c" prot="private" static="no" mutable="no">
+        <type>i32</type>
+        <definition>i32 sync_sample_count_</definition>
+        <argsstring></argsstring>
+        <name>sync_sample_count_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="391" column="9" bodyfile="quasar/radar/abstract_radar.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1IAbstractRadar_1ab2f4fb02e6dca76a05e2dec80264a60f" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/utility/pair" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::pair</ref>&lt; i32, i32 &gt;</type>
+        <definition>std::pair&lt;i32, i32&gt; transient_samples_count_</definition>
+        <argsstring></argsstring>
+        <name>transient_samples_count_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="392" column="15" bodyfile="quasar/radar/abstract_radar.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1IAbstractRadar_1a30204e063314d0392e309925c3ff26ba" prot="private" static="no" mutable="no">
+        <type><ref refid="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6" kindref="member">SampleSize</ref></type>
+        <definition>SampleSize sample_size_</definition>
+        <argsstring></argsstring>
+        <name>sample_size_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="393" column="16" bodyfile="quasar/radar/abstract_radar.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1IAbstractRadar_1aa898c6919bd5e008b2e2bdd90f6e577b" prot="private" static="no" mutable="no">
+        <type><ref refid="classquasar_1_1IAbstractRadar_1ad24111e9445bd94b798ec7f942df7164" kindref="member">Ramp</ref></type>
+        <definition>Ramp ramp_type_</definition>
+        <argsstring></argsstring>
+        <name>ramp_type_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="394" column="10" bodyfile="quasar/radar/abstract_radar.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1IAbstractRadar_1a29f43a6b42a7da1a0eba284ab2e1c38a" prot="private" static="no" mutable="no">
+        <type>f32</type>
+        <definition>f32 modulation_period_</definition>
+        <argsstring></argsstring>
+        <name>modulation_period_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="395" column="9" bodyfile="quasar/radar/abstract_radar.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1IAbstractRadar_1a40eb968bea61354eeb83a6f897d2d7b0" prot="private" static="no" mutable="no">
+        <type>std::filesystem::path</type>
+        <definition>std::filesystem::path hologram_file_path_</definition>
+        <argsstring></argsstring>
+        <name>hologram_file_path_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="396" column="27" bodyfile="quasar/radar/abstract_radar.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1IAbstractRadar_1a1b6471713f768f9eed04400f874c7e86" prot="private" static="no" mutable="no">
+        <type><ref refid="cpp/memory/unique_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::unique_ptr</ref>&lt; <ref refid="cpp/io/basic_ifstream" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::ifstream</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;std::ifstream&gt; handle_</definition>
+        <argsstring></argsstring>
+        <name>handle_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="397" column="21" bodyfile="quasar/radar/abstract_radar.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a53505b9bf4660c6c2a313eb3bd8720c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IAbstractRadar</definition>
+        <argsstring>()</argsstring>
+        <name>IAbstractRadar</name>
+        <briefdescription>
+<para>Конструктор по умолчанию. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Доступно в Python. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="69" column="5" bodyfile="abstract_radar.cc" bodystart="11" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a50264095327d6cb45d6bb215ea94a7d4" prot="public" static="no" const="no" explicit="yes" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>IAbstractRadar</definition>
+        <argsstring>(std::filesystem::path const &amp;config_file_path, enum DSP type) noexcept(false)</argsstring>
+        <name>IAbstractRadar</name>
+        <param>
+          <type>std::filesystem::path const &amp;</type>
+          <declname>config_file_path</declname>
+        </param>
+        <param>
+          <type>enum DSP</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Создает и конфигурирует радар из файла конфигурации. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config_file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь к файлу конфигурации. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип радара. Определяет, где будет аллоцировано изображение - в памяти CUDA или в обычной памяти. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/runtime_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::runtime_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если файл конфигурации не существует или имеет некорректный формат. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Доступно в Python. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classquasar_1_1IAbstractRadar_1adaf0e53e341a669d4217d071431c8c75" kindref="member">IAbstractRadar::set_configuration</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="81" column="14" bodyfile="abstract_radar.cc" bodystart="25" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1abe6ad3d231f84a06686239300430bc51" prot="public" static="no" const="no" explicit="yes" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>IAbstractRadar</definition>
+        <argsstring>(std::filesystem::path const &amp;config_file_path, std::filesystem::path const &amp;hologram_file_path, enum DSP type) noexcept(false)</argsstring>
+        <name>IAbstractRadar</name>
+        <param>
+          <type>std::filesystem::path const &amp;</type>
+          <declname>config_file_path</declname>
+        </param>
+        <param>
+          <type>std::filesystem::path const &amp;</type>
+          <declname>hologram_file_path</declname>
+        </param>
+        <param>
+          <type>enum DSP</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Создает, конфигурирует радар из файла конфигурации и инициализирует его файлом голограммы. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config_file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь к файлу конфигурации. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hologram_file_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь к активному файлу голограммы. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип радара. Определяет, где будет аллоцировано изображение - в памяти CUDA или в обычной памяти. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/runtime_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::runtime_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если файл конфигурации не существует или имеет некорректный формат. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/invalid_argument" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::invalid_argument</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если файл голограммы не существует или имеет некорректный формат. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="invariant"><para>Доступно в Python. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classquasar_1_1IAbstractRadar_1adaf0e53e341a669d4217d071431c8c75" kindref="member">IAbstractRadar::set_configuration</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classquasar_1_1IAbstractRadar_1a6937f0095df968a8a980689cb96d903d" kindref="member">IAbstractRadar::set_hologram_path</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="99" column="14" bodyfile="abstract_radar.cc" bodystart="37" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1ac29574ee37719fc174c75e09eabf7a2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~IAbstractRadar</definition>
+        <argsstring>()</argsstring>
+        <name>~IAbstractRadar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="105" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1af9c3deef42ffbd86ba02855bd7993e74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IAbstractRadar</definition>
+        <argsstring>(IAbstractRadar &amp;&amp;)=delete</argsstring>
+        <name>IAbstractRadar</name>
+        <param>
+          <type><ref refid="classquasar_1_1IAbstractRadar" kindref="compound">IAbstractRadar</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="106" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a84ce94146685b11947ddb91a639785db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classquasar_1_1IAbstractRadar" kindref="compound">IAbstractRadar</ref> &amp;</type>
+        <definition>IAbstractRadar&amp; operator=</definition>
+        <argsstring>(IAbstractRadar &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classquasar_1_1IAbstractRadar" kindref="compound">IAbstractRadar</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="107" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a68959c716fe27c7aa6f07436374874c4" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr enum DSP</type>
+        <definition>constexpr enum DSP type</definition>
+        <argsstring>() const</argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Возвращает тип вычислителя радара. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Тип вычислителя радара. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="107" column="20" bodyfile="quasar/radar/abstract_radar.h" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1ab2aa949df7e3904668a46a08d645f5f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_type</definition>
+        <argsstring>(enum DSP const type)</argsstring>
+        <name>set_type</name>
+        <param>
+          <type>enum DSP const</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Задает тип вычислителя радара. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый тип вычислителя радара. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="119" column="10" bodyfile="quasar/radar/abstract_radar.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a3bae0b72b2b529afa25f694a659e377b" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr std::filesystem::path const  &amp;</type>
+        <definition>constexpr std::filesystem::path const&amp; hologram_path</definition>
+        <argsstring>() const</argsstring>
+        <name>hologram_path</name>
+        <briefdescription>
+<para>Возвращает путь к активному файлу голограммы. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Доступно в Python в виде <bold>@property</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Путь к активному файлу голограммы. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classquasar_1_1IAbstractRadar_1a6937f0095df968a8a980689cb96d903d" kindref="member">set_hologram_path</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="127" column="44" bodyfile="quasar/radar/abstract_radar.h" bodystart="127" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a6937f0095df968a8a980689cb96d903d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_hologram_path</definition>
+        <argsstring>(std::filesystem::path const &amp;path) noexcept(false)</argsstring>
+        <name>set_hologram_path</name>
+        <param>
+          <type>std::filesystem::path const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает путь к активному файлу голограммы. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь к файлу голограммы. Файл должен быть валидным файлом голограммы. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/invalid_argument" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::invalid_argument</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если файл не существует или имеет некорректный формат. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@property</bold>. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classquasar_1_1IAbstractRadar_1a3bae0b72b2b529afa25f694a659e377b" kindref="member">hologram_path</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="138" column="10" bodyfile="abstract_radar.cc" bodystart="46" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1ab008c65f5027e3bad9761d31a8507e9c" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr f32</type>
+        <definition>constexpr f32 initial_frequency</definition>
+        <argsstring>() const</argsstring>
+        <name>initial_frequency</name>
+        <briefdescription>
+<para>Начальная частота ЛЧМ зондирующего сигнала (Гц). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>F0</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Частота ЛЧМ зондирующего сигнала в Гц. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="146" column="20" bodyfile="quasar/radar/abstract_radar.h" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1ac2fe8aa78c4db55c3e934b49934c035c" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr f32</type>
+        <definition>constexpr f32 sampling_frequency</definition>
+        <argsstring>() const</argsstring>
+        <name>sampling_frequency</name>
+        <briefdescription>
+<para>Частота дискретизации АЦП (Гц). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>Fs</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Частота дискретизации АЦП в Гц. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="152" column="20" bodyfile="quasar/radar/abstract_radar.h" bodystart="152" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a8a10d9261a7fb85185c334755531a50f" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr i32</type>
+        <definition>constexpr i32 sample_count</definition>
+        <argsstring>() const</argsstring>
+        <name>sample_count</name>
+        <briefdescription>
+<para>Количество отсчётов за период зондирования. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>Ns</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Количество отсчётов за период зондирования. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="158" column="20" bodyfile="quasar/radar/abstract_radar.h" bodystart="158" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a69f94fb5ef35e8b8dd6bd9c7f8c9e2f0" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr i32</type>
+        <definition>constexpr i32 sample_count_rounded</definition>
+        <argsstring>() const</argsstring>
+        <name>sample_count_rounded</name>
+        <briefdescription>
+<para>Количество отсчётов за период зондирования округленное до степени двойки. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>Ns2</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Количество отсчётов за период зондирования округленное до степени двойки. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="164" column="20" bodyfile="quasar/radar/abstract_radar.h" bodystart="164" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1aabfa4c401dbc9917cd652ec7c1d62fc1" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr f32</type>
+        <definition>constexpr f32 lfm_deviation</definition>
+        <argsstring>() const</argsstring>
+        <name>lfm_deviation</name>
+        <briefdescription>
+<para>Девиация ЛЧМ зондирующего сигнала (Гц). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>Df</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Девиация ЛЧМ зондирующего сигнала в Гц. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="170" column="20" bodyfile="quasar/radar/abstract_radar.h" bodystart="170" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a995e59b5a02b96a9a0400e24f36e6b09" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr i32</type>
+        <definition>constexpr i32 sync_sample_count</definition>
+        <argsstring>() const</argsstring>
+        <name>sync_sample_count</name>
+        <briefdescription>
+<para>Количество отсчётов за период синхропаузы. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>sync</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Количество отсчетов в синхропаузе. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="176" column="20" bodyfile="quasar/radar/abstract_radar.h" bodystart="176" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1ac56f8e10a505a5327e692d6945105057" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="cpp/utility/pair" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::pair</ref>&lt; i32, i32 &gt;</type>
+        <definition>constexpr std::pair&lt;i32, i32&gt; transient_samples_count</definition>
+        <argsstring>() const</argsstring>
+        <name>transient_samples_count</name>
+        <briefdescription>
+<para>Количество отсчётов переходных процессов в начале и конце периода </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>Nope</bold> и <bold>apps</bold> соответственно. </para>
+</simplesect>
+<simplesect kind="return"><para>Пара из количества отсчетов ПП в начале и конце периода. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="182" column="26" bodyfile="quasar/radar/abstract_radar.h" bodystart="182" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1aa5211f91ca004afcd81d8545d8474f15" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6" kindref="member">SampleSize</ref></type>
+        <definition>constexpr SampleSize sample_size</definition>
+        <argsstring>() const</argsstring>
+        <name>sample_size</name>
+        <briefdescription>
+<para>Размер одного отсчёта в битах. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>Sample_Size</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Количество бит, отводимых на один отсчёт в виде перечисления <ref refid="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6" kindref="member">IAbstractRadar::SampleSize</ref>. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="190" column="27" bodyfile="quasar/radar/abstract_radar.h" bodystart="190" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a22b9b49c6a95782fdf018a56e5f01866" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr <ref refid="classquasar_1_1IAbstractRadar_1ad24111e9445bd94b798ec7f942df7164" kindref="member">Ramp</ref></type>
+        <definition>constexpr Ramp ramp_type</definition>
+        <argsstring>() const</argsstring>
+        <name>ramp_type</name>
+        <briefdescription>
+<para>Тип модуляции сигнала. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>RampType</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Тип модуляции сигнала в виде перечисления IAbstractRadar::RampType. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="196" column="21" bodyfile="quasar/radar/abstract_radar.h" bodystart="196" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a8947aef9e7c2900aa162f9b2326e17a6" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr f32</type>
+        <definition>constexpr f32 bytes_per_sample</definition>
+        <argsstring>() const</argsstring>
+        <name>bytes_per_sample</name>
+        <briefdescription>
+<para>Размер одного отсчета в байтах. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Количество байт, отводимых на один отсчет в виде числа с плавающей точкой. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="201" column="20" bodyfile="quasar/radar/abstract_radar.h" bodystart="201" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a11a94a1a1b67698aae93953cad27ec1a" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 wave_length</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>wave_length</name>
+        <briefdescription>
+<para>Возвращает длину волны зондирующего сигнала в метрах. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>GetLambda</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Длина волны зондирующего сигнала в метрах. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="210" column="10" bodyfile="abstract_radar.cc" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a84218fb7200e0607c77f1d5a753eebb2" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 repetition_period</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>repetition_period</name>
+        <briefdescription>
+<para>Возвращает период повторения зондирующего сигнала. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>GetTp</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Период повторения зондирующего сигнала. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="216" column="10" bodyfile="abstract_radar.cc" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1ae6cfa13952194f4ffcb592c800c190c8" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr f32</type>
+        <definition>constexpr f32 modulation_period</definition>
+        <argsstring>() const</argsstring>
+        <name>modulation_period</name>
+        <briefdescription>
+<para>Возвращает период модуляции зондирующего сигнала. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>GetTm</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Период модуляции зондирующего сигнала. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="222" column="20" bodyfile="quasar/radar/abstract_radar.h" bodystart="222" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1acbfbab85d20feced8b1b6d9e2920990e" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 modulation_slope</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>modulation_slope</name>
+        <briefdescription>
+<para>Возвращает крутизну модуляции ЛЧМ зондирующего сигнала. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>GetMu</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Крутизна модуляции. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>@readonly-property</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="228" column="10" bodyfile="abstract_radar.cc" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a87c6c7963fdfa959eac7ee9fe553f085" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>i32</type>
+        <definition>i32 period_count</definition>
+        <argsstring>(f32 time) const noexcept</argsstring>
+        <name>period_count</name>
+        <param>
+          <type>f32</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает количество периодов во временном промежутке. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Ранее имела название <bold>Time2Np</bold>. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Временной промежуток в секундах. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Количество периодов во временном промежутке. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="235" column="10" bodyfile="abstract_radar.cc" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1af0a2c3e1b4e2abe1e06e7bf70dab2251" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="cpp/io/basic_ifstream" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::ifstream</ref> &amp;</type>
+        <definition>std::ifstream &amp; handle</definition>
+        <argsstring>() const noexcept(false)</argsstring>
+        <name>handle</name>
+        <briefdescription>
+<para>Возвращает дескриптор файла голограммы. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Недоступно в Python. <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/runtime_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::runtime_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если дескриптор файла не был инициализирован. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Дескриптор файла голограммы. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="241" column="20" bodyfile="abstract_radar.cc" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1adaf0e53e341a669d4217d071431c8c75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_configuration</definition>
+        <argsstring>(std::filesystem::path const &amp;path)</argsstring>
+        <name>set_configuration</name>
+        <param>
+          <type>std::filesystem::path const &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Конфигурирует экземпляр радара из заданного файла конфигурации TOML. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь к файлу конфигурации. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/runtime_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::runtime_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если не удалось прочитать или распарить файл конфигурации. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="247" column="10" bodyfile="abstract_radar.cc" bodystart="78" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a3bb77d1363f49762b55f353cff5eaaa5" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type><ref refid="cpp/memory/shared_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::shared_ptr</ref>&lt; <ref refid="classquasar_1_1Image" kindref="compound">Image</ref> &gt;</type>
+        <definition>virtual std::shared_ptr&lt;Image&gt; read_image</definition>
+        <argsstring>(usize period_count, f32 time_shift, usize sync_pos, i32 freq_interpolation_coeff, bool round, bool remove_transition) const noexcept(false)=0</argsstring>
+        <name>read_image</name>
+        <reimplementedby refid="classquasar_1_1CRadarSTT_1a84a0c2de58745bcf1fc7dc6876e8482a">read_image</reimplementedby>
+        <param>
+          <type>usize</type>
+          <declname>period_count</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>time_shift</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>sync_pos</declname>
+        </param>
+        <param>
+          <type>i32</type>
+          <declname>freq_interpolation_coeff</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>round</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>remove_transition</declname>
+        </param>
+        <briefdescription>
+<para>Производит считывание данных голограммы из заданного файла в новый объект изображения согласно параметрам текущего радара. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>period_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество периодов для считывания. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_shift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Смещение стартовой позиции для чтения (в секундах). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sync_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Смещение до синхропаузы от начала файла (в отсчётах). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>freq_interpolation_coeff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Коэффициент частотной интерполяции. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>round</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Режим округления количества отсчетов (округлять до следующей степени двойки или нет). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>remove_transition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Удаление переходного процесса. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Если задан параметр <computeroutput>remove_transition</computeroutput>, то будет выполнена проверка на наличие синхропаузы размером <computeroutput>sync_samples_count</computeroutput> в начале позиции для считывания. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/logic_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::logic_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если текущий экземпляр не был инициализирован файлом голограммы. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/invalid_argument" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::invalid_argument</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если параметры заданы некорректно (например, отрицательное смещение). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/runtime_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::runtime_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если не удалось считать голограмму. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Возвращает новый объект изображения в случае успеха. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="268" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1af000fd6a5cfc29fc07b917f8e05a6764" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type><ref refid="cpp/utility/tuple" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::tuple</ref>&lt; ptrdiff_t, ptrdiff_t &gt;</type>
+        <definition>virtual std::tuple&lt;ptrdiff_t, ptrdiff_t&gt; find_sync_pos</definition>
+        <argsstring>(Image const &amp;image) const noexcept(false)=0</argsstring>
+        <name>find_sync_pos</name>
+        <reimplementedby refid="classquasar_1_1CRadarSTT_1a2b261794e7b6a5561c1544ae130e29a0">find_sync_pos</reimplementedby>
+        <param>
+          <type><ref refid="classquasar_1_1Image" kindref="compound">Image</ref> const &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Производит поиск паттерна синхропаузы в существующем изображении </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Первое значение в результирующем кортеже - это количество отсчётов от начала буфера изображения до начала синхропаузы. Второе значение - это количество отсчётов от начала буфера изображения до конца синхропаузы. Если синхропауза не обнаружена, то функция выбросит исключение. <simplesect kind="note"><para>Если переданное изображение имеет тип данных в буфере, отличный от <computeroutput>float32</computeroutput>, то функция выбросит исключение. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ссылка на действительное изображение. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/invalid_argument" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::invalid_argument</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если переданное изображение имеет неподдерживаемый тип данных. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/runtime_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::runtime_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если не удалось произвести поиск синхропаузы. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Кортеж с индексами начала и конца синхропаузы в случае успеха, сообщение об ошибке в случае неудачи. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="292" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1ac2f9acd18c9c42c2307275c3748bcb44" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type><ref refid="cpp/utility/tuple" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::tuple</ref>&lt; ptrdiff_t, ptrdiff_t &gt;</type>
+        <definition>virtual std::tuple&lt;ptrdiff_t, ptrdiff_t&gt; sync_pos</definition>
+        <argsstring>(f32 time_shift, usize offset) const noexcept(false)=0</argsstring>
+        <name>sync_pos</name>
+        <reimplementedby refid="classquasar_1_1CRadarSTT_1acc0f645d537641ef478728bfb241f23c">sync_pos</reimplementedby>
+        <param>
+          <type>f32</type>
+          <declname>time_shift</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Загружает часть изображения в буфер и производит поиск синхропаузы. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эквивалентно следующему коду в Python: <programlisting filename=".py"><codeline><highlight class="normal">image<sp/>=<sp/>radar.read_image(2,<sp/>time_shift,<sp/>offset,<sp/>-1,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">pos,<sp/>width<sp/>=<sp/>radar.find_sync_pos(image)</highlight></codeline>
+<codeline><highlight class="normal">pos<sp/>+=<sp/>offset</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pos,<sp/>width</highlight></codeline>
+</programlisting></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>time_shift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Смещение стартовой позиции для чтения (в секундах). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Смещение до синхропаузы от начала файла (в отсчётах). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/invalid_argument" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::invalid_argument</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если параметры заданы некорректно (например, отрицательное смещение). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/runtime_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::runtime_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если не удалось считать голограмму. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/logic_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::logic_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если текущий экземпляр не был инициализирован файлом голограммы. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Кортеж с индексами начала и конца синхропаузы в случае успеха, сообщение об ошибке в случае неудачи. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="314" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a9f3906b8442a29be17b4b6c9e9d67e97" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="pure-virtual">
+        <type><ref refid="cpp/memory/shared_ptr" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::shared_ptr</ref>&lt; <ref refid="classquasar_1_1Image" kindref="compound">Image</ref> &gt;</type>
+        <definition>virtual std::shared_ptr&lt;Image&gt; block_read</definition>
+        <argsstring>(usize period_count, i32 freq_interpolation_coeff) const noexcept(false)=0</argsstring>
+        <name>block_read</name>
+        <reimplementedby refid="classquasar_1_1CRadarSTT_1a68d060b62b2de4eacc14ea37c3f1761a">block_read</reimplementedby>
+        <param>
+          <type>usize</type>
+          <declname>period_count</declname>
+        </param>
+        <param>
+          <type>i32</type>
+          <declname>freq_interpolation_coeff</declname>
+        </param>
+        <briefdescription>
+<para>Считывает блок голограммы для полосового режима. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>period_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество отсчетов для считывания. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>freq_interpolation_coeff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Коэффициент частотной интерполяции. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="cpp/error/logic_error" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::logic_error</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Если текущий экземпляр не был инициализирован файлом голограммы. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>block_init </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="325" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1aee452d7cb590a60635846bc4046480b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>i32</type>
+        <definition>i32 strip_time</definition>
+        <argsstring>(f32 synthesis_time, f32 time_shift) const</argsstring>
+        <name>strip_time</name>
+        <param>
+          <type>f32</type>
+          <declname>synthesis_time</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>time_shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="330" column="10" bodyfile="abstract_radar.cc" bodystart="104" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1af312d4cf8d07709eda81e07773d8a3c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 nav_delay</definition>
+        <argsstring>(std::filesystem::path const &amp;nav_file_path) const</argsstring>
+        <name>nav_delay</name>
+        <param>
+          <type>std::filesystem::path const &amp;</type>
+          <declname>nav_file_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="331" column="10" bodyfile="abstract_radar.cc" bodystart="111" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a928a42541a9a14d2cb2ab306905f008a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>usize</type>
+        <definition>virtual usize current_pos</definition>
+        <argsstring>() const =0</argsstring>
+        <name>current_pos</name>
+        <reimplementedby refid="classquasar_1_1CRadarSTT_1a626a709f534e0f21e21e7d93afa08026">current_pos</reimplementedby>
+        <briefdescription>
+<para>Возвращает текущую позицию дескриптора открытого файла от начала файла. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Доступно в Python в виде <bold>@property</bold> под именем <computeroutput>pos</computeroutput>. </para>
+</simplesect>
+<simplesect kind="return"><para>Текущая позиция дескриптора в байтах. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="338" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a581f175ffc9e78487af5163981d1b46e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>f32</type>
+        <definition>virtual f32 current_time</definition>
+        <argsstring>() const =0</argsstring>
+        <name>current_time</name>
+        <reimplementedby refid="classquasar_1_1CRadarSTT_1a6ea972e5a1346bae71ba5cd53a82b72e">current_time</reimplementedby>
+        <briefdescription>
+<para>Возвращает текущую позицию дескриптора открытого файла отн. начала файла в секундах. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Эквивалентно следующему коду в Python: <programlisting filename=".py"><codeline><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>radar.current_pos<sp/>/<sp/>radar.sampling_frequency</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="remark"><para>Доступно в Python в виде <bold>@property</bold> под именем <computeroutput>time</computeroutput>. </para>
+</simplesect>
+<simplesect kind="return"><para>Текущая позиция дескриптора в секундах. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="349" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1ae170e8c34045f7d66b6209567c6f7243" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void set_current_pos</definition>
+        <argsstring>(usize pos)=0</argsstring>
+        <name>set_current_pos</name>
+        <reimplementedby refid="classquasar_1_1CRadarSTT_1ae1bc233ae2eb6e724fcf1e632a7bd37a">set_current_pos</reimplementedby>
+        <param>
+          <type>usize</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает текущую позицию дескриптора открытого файла от начала файла. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Доступно в Python в виде <bold>@property</bold> под именем <computeroutput>pos</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="355" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a2aa273c3c08825e4f72a063593e5d101" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>f32</type>
+        <definition>f32 frequency_to_range</definition>
+        <argsstring>(f32 frequency) const</argsstring>
+        <name>frequency_to_range</name>
+        <param>
+          <type>f32</type>
+          <declname>frequency</declname>
+        </param>
+        <briefdescription>
+<para>Конвертирует разностную частоту в наклонную дальность. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Расчет осуществляется по формуле <computeroutput>range = F * c / (2 * modulation_slope)</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение разностной частоты. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+<simplesect kind="return"><para>Наклонная дальность. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="364" column="18" bodyfile="abstract_radar.cc" bodystart="117" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a92b56d65e27b83f90dbe1967fa7fb0cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>f32</type>
+        <definition>f32 range_to_index</definition>
+        <argsstring>(f32 range) const</argsstring>
+        <name>range_to_index</name>
+        <param>
+          <type>f32</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000002"><xreftitle>Todo</xreftitle><xrefdescription><para>Добавить документацию для функции. </para>
+</xrefdescription></xrefsect><simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="370" column="18" bodyfile="abstract_radar.cc" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IAbstractRadar_1a12b47cbc747dd6a8f0728b86c184b651" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>result&lt; i32 &gt;</type>
+        <definition>result&lt; i32 &gt; approx_strip_time</definition>
+        <argsstring>(f32 synthesis_time, f32 time_shift) const</argsstring>
+        <name>approx_strip_time</name>
+        <param>
+          <type>f32</type>
+          <declname>synthesis_time</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>time_shift</declname>
+        </param>
+        <briefdescription>
+<para>Вычисляет приближенную длительность голограммы текущего полосового РЛИ. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Аналогично функции <computeroutput>QuaSAR_misc.CalcTstrip(fn, ts, time_shift)</computeroutput> из Python. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>synthesis_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Время синтезирования (в секундах). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time_shift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Смещение по времени (в секундах). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Приближенная длительность голограммы в секундах, либо сообщение об ошибке. </para>
+</simplesect>
+<simplesect kind="remark"><para>Доступно в Python в виде <bold>функции</bold>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/radar/abstract_radar.h" line="380" column="21" bodyfile="abstract_radar.cc" bodystart="126" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Абстрактный интерфейс радара. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Пример использования в Python: <programlisting filename=".py"><codeline><highlight class="keyword">import</highlight><highlight class="normal"><sp/>quasar</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>...<sp/>аргументы<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>инициализация<sp/>радара<sp/>с<sp/>использованием<sp/>конфигурационного<sp/>файла<sp/>и<sp/>файла<sp/>голограммы</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">radar<sp/>=<sp/>quasar.RadarSTT(args.paths[</highlight><highlight class="stringliteral">&apos;config&apos;</highlight><highlight class="normal">],<sp/>args.paths[</highlight><highlight class="stringliteral">&apos;data&apos;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>поиск<sp/>синхропаузы</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">pos,<sp/>width<sp/>=<sp/>radar.sync_pos(args.time_shift,<sp/>trash_offset)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>чтение<sp/>голограммы<sp/>для<sp/>работы<sp/>в<sp/>телескопическом<sp/>режиме</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">image<sp/>=<sp/>radar.read_image(radar.period_count(args.synthesis_time),<sp/>args.time_shift,<sp/>pos,</highlight></codeline>
+<codeline><highlight class="normal">args.fic,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">#<sp/>поблочное<sp/>чтение<sp/>голограммы<sp/>для<sp/>полосового<sp/>режима</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">block_chunk<sp/>=<sp/>radar.block_read(nb,<sp/>args.fic)</highlight></codeline>
+<codeline><highlight class="normal">bp.set_image(block_chunk)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>CRadarSTT</label>
+        <link refid="classquasar_1_1CRadarSTT"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>noncopyable</label>
+        <link refid="classnoncopyable"/>
+      </node>
+      <node id="1">
+        <label>IAbstractRadar</label>
+        <link refid="classquasar_1_1IAbstractRadar"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>noncopyable</label>
+        <link refid="classnoncopyable"/>
+      </node>
+      <node id="3">
+        <label>i32</label>
+      </node>
+      <node id="1">
+        <label>IAbstractRadar</label>
+        <link refid="classquasar_1_1IAbstractRadar"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>sample_count_rounded_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>type_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>DSP</label>
+      </node>
+    </collaborationgraph>
+    <location file="quasar/radar/abstract_radar.h" line="44" column="1" bodyfile="quasar/radar/abstract_radar.h" bodystart="43" bodyend="398"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1IAbstractRadar_1a12b47cbc747dd6a8f0728b86c184b651" prot="public" virt="virtual"><scope>quasar::IAbstractRadar</scope><name>approx_strip_time</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a9f3906b8442a29be17b4b6c9e9d67e97" prot="public" virt="pure-virtual"><scope>quasar::IAbstractRadar</scope><name>block_read</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a8947aef9e7c2900aa162f9b2326e17a6" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>bytes_per_sample</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a928a42541a9a14d2cb2ab306905f008a" prot="public" virt="pure-virtual"><scope>quasar::IAbstractRadar</scope><name>current_pos</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a581f175ffc9e78487af5163981d1b46e" prot="public" virt="pure-virtual"><scope>quasar::IAbstractRadar</scope><name>current_time</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1af000fd6a5cfc29fc07b917f8e05a6764" prot="public" virt="pure-virtual"><scope>quasar::IAbstractRadar</scope><name>find_sync_pos</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a2aa273c3c08825e4f72a063593e5d101" prot="public" virt="virtual"><scope>quasar::IAbstractRadar</scope><name>frequency_to_range</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1af0a2c3e1b4e2abe1e06e7bf70dab2251" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>handle</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a1b6471713f768f9eed04400f874c7e86" prot="private" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>handle_</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a40eb968bea61354eeb83a6f897d2d7b0" prot="private" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>hologram_file_path_</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a3bae0b72b2b529afa25f694a659e377b" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>hologram_path</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a53505b9bf4660c6c2a313eb3bd8720c5" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>IAbstractRadar</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a50264095327d6cb45d6bb215ea94a7d4" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>IAbstractRadar</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1abe6ad3d231f84a06686239300430bc51" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>IAbstractRadar</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1af9c3deef42ffbd86ba02855bd7993e74" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>IAbstractRadar</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1ab008c65f5027e3bad9761d31a8507e9c" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>initial_frequency</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a42627961afe9a72832f102c2b5d03693" prot="private" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>initial_frequency_</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1aabfa4c401dbc9917cd652ec7c1d62fc1" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>lfm_deviation</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1afc94bf2923e6c99c7080cfe251de2706" prot="private" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>lfm_deviation_</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1ae6cfa13952194f4ffcb592c800c190c8" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>modulation_period</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a29f43a6b42a7da1a0eba284ab2e1c38a" prot="private" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>modulation_period_</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1acbfbab85d20feced8b1b6d9e2920990e" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>modulation_slope</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1af312d4cf8d07709eda81e07773d8a3c4" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>nav_delay</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a84ce94146685b11947ddb91a639785db" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>operator=</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a87c6c7963fdfa959eac7ee9fe553f085" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>period_count</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1ad24111e9445bd94b798ec7f942df7164" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>Ramp</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a22b9b49c6a95782fdf018a56e5f01866" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>ramp_type</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1aa898c6919bd5e008b2e2bdd90f6e577b" prot="private" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>ramp_type_</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a92b56d65e27b83f90dbe1967fa7fb0cf" prot="public" virt="virtual"><scope>quasar::IAbstractRadar</scope><name>range_to_index</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a3bb77d1363f49762b55f353cff5eaaa5" prot="public" virt="pure-virtual"><scope>quasar::IAbstractRadar</scope><name>read_image</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a84218fb7200e0607c77f1d5a753eebb2" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>repetition_period</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a8a10d9261a7fb85185c334755531a50f" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>sample_count</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a9e7d0543a53ef33870d301399b7c2c80" prot="private" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>sample_count_</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a69f94fb5ef35e8b8dd6bd9c7f8c9e2f0" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>sample_count_rounded</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1ac54a7cbdf8112ca9778f3b4ee6dbd2dc" prot="protected" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>sample_count_rounded_</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1aa5211f91ca004afcd81d8545d8474f15" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>sample_size</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a30204e063314d0392e309925c3ff26ba" prot="private" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>sample_size_</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a6b9d9126b076d41c1ddffab924d9f1f6" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>SampleSize</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1ac2fe8aa78c4db55c3e934b49934c035c" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>sampling_frequency</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1af8720f1a3c6e37eb2eb275906337d6de" prot="private" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>sampling_frequency_</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1adaf0e53e341a669d4217d071431c8c75" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>set_configuration</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1ae170e8c34045f7d66b6209567c6f7243" prot="public" virt="pure-virtual"><scope>quasar::IAbstractRadar</scope><name>set_current_pos</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a6937f0095df968a8a980689cb96d903d" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>set_hologram_path</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1ab2aa949df7e3904668a46a08d645f5f3" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>set_type</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1aee452d7cb590a60635846bc4046480b0" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>strip_time</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1ac2f9acd18c9c42c2307275c3748bcb44" prot="public" virt="pure-virtual"><scope>quasar::IAbstractRadar</scope><name>sync_pos</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a995e59b5a02b96a9a0400e24f36e6b09" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>sync_sample_count</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1acbc60d0c39e02a8d5036693090cdca2c" prot="private" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>sync_sample_count_</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1ac56f8e10a505a5327e692d6945105057" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>transient_samples_count</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1ab2f4fb02e6dca76a05e2dec80264a60f" prot="private" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>transient_samples_count_</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a68959c716fe27c7aa6f07436374874c4" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>type</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1aeea5503b42cf03ea61dc161055410b3e" prot="protected" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>type_</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1a11a94a1a1b67698aae93953cad27ec1a" prot="public" virt="non-virtual"><scope>quasar::IAbstractRadar</scope><name>wave_length</name></member>
+      <member refid="classquasar_1_1IAbstractRadar_1ac29574ee37719fc174c75e09eabf7a2b" prot="public" virt="virtual"><scope>quasar::IAbstractRadar</scope><name>~IAbstractRadar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

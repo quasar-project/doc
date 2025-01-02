@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_f5ee4d51a4a18af8b7dc57e37909977c" kind="dir">
+    <compoundname>types</compoundname>
+    <innerfile refid="coordinate_8cc">coordinate.cc</innerfile>
+    <innerfile refid="coordinate_8pybind_8cc">coordinate.pybind.cc</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/types/"/>
+  </compounddef>
+</doxygen>

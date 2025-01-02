@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="nav_8h" kind="file" language="C++">
+    <compoundname>nav.h</compoundname>
+    <includes local="no">cstdarg</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">ctime</includes>
+    <includes local="no">tuple</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">limits</includes>
+    <includedby refid="nav_8cc" local="no">nav.cc</includedby>
+    <includedby refid="legacy_8pybind_8cc" local="no">legacy.pybind.cc</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>limits</label>
+      </node>
+      <node id="3">
+        <label>cstdint</label>
+      </node>
+      <node id="2">
+        <label>cstdarg</label>
+      </node>
+      <node id="1">
+        <label>nav.h</label>
+        <link refid="nav_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstdio</label>
+      </node>
+      <node id="7">
+        <label>tuple</label>
+      </node>
+      <node id="6">
+        <label>ctime</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>nav.cc</label>
+        <link refid="nav_8cc"/>
+      </node>
+      <node id="1">
+        <label>nav.h</label>
+        <link refid="nav_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>legacy.pybind.cc</label>
+        <link refid="legacy_8pybind_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classquasar_1_1CNav" prot="public">quasar::CNav</innerclass>
+    <innerclass refid="structquasar_1_1CNav_1_1nav__pack__t" prot="private">quasar::CNav::nav_pack_t</innerclass>
+    <innerclass refid="classquasar_1_1ParameterBase" prot="public">quasar::ParameterBase</innerclass>
+    <innerclass refid="classquasar_1_1Velocity" prot="public">quasar::Velocity</innerclass>
+    <innerclass refid="classquasar_1_1Elevation" prot="public">quasar::Elevation</innerclass>
+    <innerclass refid="classquasar_1_1Dim3" prot="public">quasar::Dim3</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/nav/nav.h"/>
+  </compounddef>
+</doxygen>

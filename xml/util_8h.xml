@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="util_8h" kind="file" language="C++">
+    <compoundname>util.h</compoundname>
+    <includes local="no">stdexcept</includes>
+    <includes local="no">rolly/types/result.h</includes>
+    <includedby refid="dsp_8pybind_8cc" local="no">dsp.pybind.cc</includedby>
+    <includedby refid="image_8pybind_8cc" local="no">image.pybind.cc</includedby>
+    <includedby refid="radar_8pybind_8cc" local="no">radar.pybind.cc</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>rolly/types/result.h</label>
+      </node>
+      <node id="2">
+        <label>stdexcept</label>
+      </node>
+      <node id="1">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>image.pybind.cc</label>
+        <link refid="image_8pybind_8cc"/>
+      </node>
+      <node id="4">
+        <label>radar.pybind.cc</label>
+        <link refid="radar_8pybind_8cc"/>
+      </node>
+      <node id="1">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dsp.pybind.cc</label>
+        <link refid="dsp_8pybind_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1pybind">quasar::pybind</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacequasar_1_1pybind_1a86ba1d18b5b7c39a59c0f86490a72e1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Exception</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T quasar::pybind::unwrap</definition>
+        <argsstring>(result&lt; T &gt; const &amp;result)</argsstring>
+        <name>unwrap</name>
+        <param>
+          <type>result&lt; T &gt; const &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pybind/util.h" line="10" column="5" bodyfile="pybind/util.h" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1pybind_1a97ec5d7c22d8121ffb54155e5ed4f026" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Exception</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void quasar::pybind::unwrap</definition>
+        <argsstring>(result&lt; void &gt; const &amp;result)</argsstring>
+        <name>unwrap</name>
+        <param>
+          <type>result&lt; void &gt; const &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="pybind/util.h" line="17" column="8" bodyfile="pybind/util.h" bodystart="17" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="pybind/util.h"/>
+  </compounddef>
+</doxygen>

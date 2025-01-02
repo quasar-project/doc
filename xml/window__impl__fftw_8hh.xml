@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="window__impl__fftw_8hh" kind="file" language="C++">
+    <compoundname>window_impl_fftw.hh</compoundname>
+    <includes local="no">rolly/types/stdint.h</includes>
+    <includes local="no">quasar/api/span.h</includes>
+    <includedby refid="window__impl__fftw_8cc" local="no">window_impl_fftw.cc</includedby>
+    <includedby refid="window_8cc" local="no">window.cc</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>window_impl_fftw.hh</label>
+        <link refid="window__impl__fftw_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="3">
+        <label>quasar/api/span.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>window_impl_fftw.cc</label>
+        <link refid="window__impl__fftw_8cc"/>
+      </node>
+      <node id="1">
+        <label>window_impl_fftw.hh</label>
+        <link refid="window__impl__fftw_8hh"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>window.cc</label>
+        <link refid="window_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <innernamespace refid="namespacequasar_1_1dsp">quasar::dsp</innernamespace>
+    <innernamespace refid="namespacequasar_1_1dsp_1_1impl">quasar::dsp::impl</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacequasar_1_1dsp_1_1impl_1abdc4b9d4c110a0d4ebe67aa493f49168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto hamming_ram</definition>
+        <argsstring>(f32 *out, usize size) -&gt; void</argsstring>
+        <name>hamming_ram</name>
+        <param>
+          <type>f32 *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="12" column="8" bodyfile="private/window/window_impl_fftw.cc" bodystart="12" bodyend="21" declfile="private/window/window_impl_fftw.hh" declline="9" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1dsp_1_1impl_1a416dcf2e8689d62747f70cc1986d5939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto blackman_ram</definition>
+        <argsstring>(f32 *out, usize size) -&gt; void</argsstring>
+        <name>blackman_ram</name>
+        <param>
+          <type>f32 *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="23" column="8" bodyfile="private/window/window_impl_fftw.cc" bodystart="23" bodyend="36" declfile="private/window/window_impl_fftw.hh" declline="10" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1dsp_1_1impl_1ad84fa355f8792d4dadab38421c304d63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto nuttall_ram</definition>
+        <argsstring>(f32 *out, usize size) -&gt; void</argsstring>
+        <name>nuttall_ram</name>
+        <param>
+          <type>f32 *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/window/window_impl_fftw.cc" line="38" column="8" bodyfile="private/window/window_impl_fftw.cc" bodystart="38" bodyend="53" declfile="private/window/window_impl_fftw.hh" declline="11" declcolumn="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/window/window_impl_fftw.hh"/>
+  </compounddef>
+</doxygen>

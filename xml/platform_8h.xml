@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="platform_8h" kind="file" language="C++">
+    <compoundname>platform.h</compoundname>
+    <includes local="no">limits</includes>
+    <includes local="no">rolly/types/stdint.h</includes>
+    <includedby refid="image_8cc" local="no">image.cc</includedby>
+    <includedby refid="nav_8cc" local="no">nav.cc</includedby>
+    <includedby refid="navgpx_8cc" local="no">navgpx.cc</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>platform.h</label>
+        <link refid="platform_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>limits</label>
+      </node>
+      <node id="3">
+        <label>rolly/types/stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>platform.h</label>
+        <link refid="platform_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>image.cc</label>
+        <link refid="image_8cc"/>
+      </node>
+      <node id="3">
+        <label>nav.cc</label>
+        <link refid="nav_8cc"/>
+      </node>
+      <node id="4">
+        <label>navgpx.cc</label>
+        <link refid="navgpx_8cc"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classquasar_1_1platform" prot="public">quasar::platform</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/platform.h"/>
+  </compounddef>
+</doxygen>

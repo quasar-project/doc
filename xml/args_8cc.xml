@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="args_8cc" kind="file" language="C++">
+    <compoundname>args.cc</compoundname>
+    <includes local="no">quasar/api/args.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>args.cc</label>
+        <link refid="args_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>quasar/api/args.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="args.cc"/>
+  </compounddef>
+</doxygen>

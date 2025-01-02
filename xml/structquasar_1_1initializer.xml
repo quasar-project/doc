@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structquasar_1_1initializer" kind="struct" language="C++" prot="public">
+    <compoundname>quasar::initializer</compoundname>
+    <includes refid="init_8h" local="no">/home/runner/work/quasar/quasar/src/private/init.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structquasar_1_1initializer_1a6f6d18139db96a2e39678040b92c72fa" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>initializer</definition>
+        <argsstring>(std::initializer_list&lt; std::string &gt; list) noexcept(false)</argsstring>
+        <name>initializer</name>
+        <param>
+          <type><ref refid="cpp/utility/initializer_list" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::initializer_list</ref>&lt; <ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::string</ref> &gt;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/init.h" line="9" column="5" bodyfile="init.cc" bodystart="10" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structquasar_1_1initializer_1a5c6e2477794a37222116e356b8deaf17" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto create_local_directory</definition>
+        <argsstring>(std::string_view name) -&gt; void</argsstring>
+        <name>create_local_directory</name>
+        <param>
+          <type>std::string_view</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/init.h" line="11" column="17" bodyfile="init.cc" bodystart="27" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/init.h" line="8" column="20" bodyfile="private/init.h" bodystart="8" bodyend="12"/>
+    <listofallmembers>
+      <member refid="structquasar_1_1initializer_1a5c6e2477794a37222116e356b8deaf17" prot="public" virt="non-virtual"><scope>quasar::initializer</scope><name>create_local_directory</name></member>
+      <member refid="structquasar_1_1initializer_1a6f6d18139db96a2e39678040b92c72fa" prot="public" virt="non-virtual"><scope>quasar::initializer</scope><name>initializer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

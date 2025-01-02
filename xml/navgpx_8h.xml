@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="navgpx_8h" kind="file" language="C++">
+    <compoundname>navgpx.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes local="no">rolly/types/stdint.h</includes>
+    <includedby refid="navgpx_8cc" local="no">navgpx.cc</includedby>
+    <includedby refid="legacy_8pybind_8cc" local="no">legacy.pybind.cc</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>rolly/types/stdint.h</label>
+      </node>
+      <node id="1">
+        <label>navgpx.h</label>
+        <link refid="navgpx_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>navgpx.cc</label>
+        <link refid="navgpx_8cc"/>
+      </node>
+      <node id="3">
+        <label>legacy.pybind.cc</label>
+        <link refid="legacy_8pybind_8cc"/>
+      </node>
+      <node id="1">
+        <label>navgpx.h</label>
+        <link refid="navgpx_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classquasar_1_1CNavGPX" prot="public">quasar::CNavGPX</innerclass>
+    <innerclass refid="structquasar_1_1CNavGPX_1_1nav__pack__t" prot="private">quasar::CNavGPX::nav_pack_t</innerclass>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="navgpx_8h_1a525335710b53cb064ca56b936120431e" prot="public" static="no">
+        <name>_USE_MATH_DEFINES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/nav/navgpx.h" line="3" column="9" bodyfile="quasar/nav/navgpx.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="quasar/nav/navgpx.h"/>
+  </compounddef>
+</doxygen>

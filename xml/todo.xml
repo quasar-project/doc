@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Todo List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Class <ref refid="structquasar_1_1math_1_1Complex" kindref="compound">Complex</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000001"/>Закончить остальные операторы </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classquasar_1_1IAbstractRadar_1a92b56d65e27b83f90dbe1967fa7fb0cf" kindref="member">IAbstractRadar::range_to_index</ref>  (f32 range) const</term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000002"/>Добавить документацию для функции.  </para>
+</listitem>
+<varlistentry><term>Module <ref refid="group__python" kindref="compound">python</ref>  </term></varlistentry>
+<listitem><para><anchor id="todo_1_todo000003"/>Описание интерфейса в Python </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

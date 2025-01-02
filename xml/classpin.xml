@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classpin" kind="class" language="C++" prot="public">
+    <compoundname>pin</compoundname>
+    <derivedcompoundref refid="classquasar_1_1IImageDataHolder" prot="private" virt="non-virtual">IImageDataHolder</derivedcompoundref>
+    <derivedcompoundref refid="classquasar_1_1SAR" prot="public" virt="non-virtual">SAR</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>SAR</label>
+        <link refid="classquasar_1_1SAR"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>pin</label>
+        <link refid="classpin"/>
+      </node>
+      <node id="4">
+        <label>ImageDataHolderRAM</label>
+        <link refid="classquasar_1_1ImageDataHolderRAM"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IImageDataHolder</label>
+        <link refid="classquasar_1_1IImageDataHolder"/>
+        <childnode refid="1" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ImageDataHolderCUDA</label>
+        <link refid="classquasar_1_1ImageDataHolderCUDA"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="quasar/sar.h" line="23" column="23"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

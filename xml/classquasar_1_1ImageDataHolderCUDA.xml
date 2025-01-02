@@ -1,0 +1,442 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1ImageDataHolderCUDA" kind="class" language="C++" prot="public">
+    <compoundname>quasar::ImageDataHolderCUDA</compoundname>
+    <basecompoundref refid="classquasar_1_1IImageDataHolder" prot="public" virt="non-virtual">IImageDataHolder</basecompoundref>
+    <includes refid="data__holder__cuda_8hh" local="no">quasar/image/data_holder_cuda.hh</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classquasar_1_1ImageDataHolderCUDA_1a7b24176d394890c1567b43bf7d82f2d4" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="38" column="10" bodyfile="quasar/image/data_holder_cuda.hh" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1ab0e7418f121e272b0c854fdea7f5330f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImageDataHolderCUDA</definition>
+        <argsstring>()</argsstring>
+        <name>ImageDataHolderCUDA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="11" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1a619086d382c83d61d08fb700c0152c13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImageDataHolderCUDA</definition>
+        <argsstring>(usize size)</argsstring>
+        <name>ImageDataHolderCUDA</name>
+        <param>
+          <type>usize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="12" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1a8bc757980faf8dadd97aa023dc10ec79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImageDataHolderCUDA</definition>
+        <argsstring>(usize width, usize height, ImageUnderlyingType type)</argsstring>
+        <name>ImageDataHolderCUDA</name>
+        <param>
+          <type>usize</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>ImageUnderlyingType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="13" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1ab7381721abc78130090280335b11fab7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImageDataHolderCUDA</definition>
+        <argsstring>(void *data, usize size)</argsstring>
+        <name>ImageDataHolderCUDA</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>usize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="14" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1a0a24e4c8a3d5462dad00f164e2283995" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~ImageDataHolderCUDA</definition>
+        <argsstring>()</argsstring>
+        <name>~ImageDataHolderCUDA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="16" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1a5fcd7f5694e159960cb5490a9e586a5e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>auto</type>
+        <definition>virtual auto type</definition>
+        <argsstring>() const -&gt; DSP override</argsstring>
+        <name>type</name>
+        <reimplements refid="classquasar_1_1IImageDataHolder_1ab0147843827ae4f13ed24b255ba34b25">type</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="18" column="19" bodyfile="quasar/image/data_holder_cuda.hh" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1aafe6dd77e05ddc3d226c23c4e9fdc4fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>auto</type>
+        <definition>virtual auto data_raw</definition>
+        <argsstring>() const -&gt; void *override</argsstring>
+        <name>data_raw</name>
+        <reimplements refid="classquasar_1_1IImageDataHolder_1aab357641408f6693064fed549486fedb">data_raw</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="20" column="19" bodyfile="quasar/image/data_holder_cuda.hh" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1a6bde9791248bdf5dd97d3c4ac88a360b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>auto</type>
+        <definition>virtual auto alloc</definition>
+        <argsstring>() -&gt; void override</argsstring>
+        <name>alloc</name>
+        <reimplements refid="classquasar_1_1IImageDataHolder_1a1867fe0492e6ee5dc7d5564c1149ee6e">alloc</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="22" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1a3904edf5ababc7a4d097434b3fc63112" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>auto</type>
+        <definition>virtual auto free</definition>
+        <argsstring>() -&gt; void override</argsstring>
+        <name>free</name>
+        <reimplements refid="classquasar_1_1IImageDataHolder_1ad837c791013ed01de5359d42790cf204">free</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="23" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1a6217d79d45b424541eb96bf6398166df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>auto</type>
+        <definition>virtual auto clone</definition>
+        <argsstring>() const -&gt; std::unique_ptr&lt; IImageDataHolder &gt; override</argsstring>
+        <name>clone</name>
+        <reimplements refid="classquasar_1_1IImageDataHolder_1a7ce431f0a3c36f5fd0acee885fdf4619">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="24" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1a82fe1bd4e5310a02a009a4d1073e3e19" prot="public" static="no" const="yes" explicit="yes" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual operator bool</definition>
+        <argsstring>() const override</argsstring>
+        <name>operator bool</name>
+        <reimplements refid="classquasar_1_1IImageDataHolder_1aecd9240fe1fa34049e5998dd3dbc03c8">operator bool</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="26" column="23" bodyfile="quasar/image/data_holder_cuda.hh" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IImageDataHolder_1afbfbf72db3db2fe25c7386b1bcc4d0e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto size</definition>
+        <argsstring>() const -&gt; usize</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_interface.hh" line="19" column="18" bodyfile="quasar/image/data_holder_interface.hh" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IImageDataHolder_1a4403a23f6d9900208d45f1ce8e6aed26" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto data</definition>
+        <argsstring>() const -&gt; T *</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_interface.hh" line="25" column="11" bodyfile="quasar/image/data_holder_interface.hh" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IImageDataHolder_1a148c06d17729626fd7cde4601d74692b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto view</definition>
+        <argsstring>() const -&gt; span&lt; T &gt;</argsstring>
+        <name>view</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_interface.hh" line="30" column="11" bodyfile="quasar/image/data_holder_interface.hh" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IImageDataHolder_1a909e676391b8765ca349c59d4450fd0c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto view</definition>
+        <argsstring>(usize size) const -&gt; span&lt; T &gt;</argsstring>
+        <name>view</name>
+        <param>
+          <type>usize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_interface.hh" line="35" column="11" bodyfile="quasar/image/data_holder_interface.hh" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IImageDataHolder_1a0bd8f7974a0fb38caadf48c625857fa0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto operator*</definition>
+        <argsstring>() const -&gt; void *</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_interface.hh" line="43" column="11" bodyfile="quasar/image/data_holder_interface.hh" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1IImageDataHolder_1a949a76440f0bc0ff4dac9405d1365777" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto operator-&gt;</definition>
+        <argsstring>() const -&gt; void *</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_interface.hh" line="45" column="11" bodyfile="quasar/image/data_holder_interface.hh" bodystart="45" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1af6413e308c387e203218a7da023ca853" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto allocate_raw</definition>
+        <argsstring>(usize n) -&gt; void *</argsstring>
+        <name>allocate_raw</name>
+        <param>
+          <type>usize</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="28" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1a395b1f1024f64deaa7c47c7ad5660fa5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>static auto allocate</definition>
+        <argsstring>(usize n) -&gt; T *</argsstring>
+        <name>allocate</name>
+        <param>
+          <type>usize</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="31" column="18" bodyfile="quasar/image/data_holder_cuda.hh" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1ImageDataHolderCUDA_1a95283f45e7dd5231304e54b3c975cb7f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>static auto deallocate</definition>
+        <argsstring>(void *ptr) -&gt; void</argsstring>
+        <name>deallocate</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_cuda.hh" line="35" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classquasar_1_1IImageDataHolder_1a9825ae27d9ec9c83d5fbfce6070db419" prot="protected" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto fftw_allocation_offset</definition>
+        <argsstring></argsstring>
+        <name>fftw_allocation_offset</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/image/data_holder_interface.hh" line="50" column="27" bodyfile="quasar/image/data_holder_interface.hh" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>pin</label>
+        <link refid="classpin"/>
+      </node>
+      <node id="2">
+        <label>IImageDataHolder</label>
+        <link refid="classquasar_1_1IImageDataHolder"/>
+        <childnode refid="3" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ImageDataHolderCUDA</label>
+        <link refid="classquasar_1_1ImageDataHolderCUDA"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>pin</label>
+        <link refid="classpin"/>
+      </node>
+      <node id="4">
+        <label>static constexpr auto</label>
+      </node>
+      <node id="2">
+        <label>IImageDataHolder</label>
+        <link refid="classquasar_1_1IImageDataHolder"/>
+        <childnode refid="3" relation="private-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>fftw_allocation_offset</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ImageDataHolderCUDA</label>
+        <link refid="classquasar_1_1ImageDataHolderCUDA"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="quasar/image/data_holder_cuda.hh" line="9" column="1" bodyfile="quasar/image/data_holder_cuda.hh" bodystart="8" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1a6bde9791248bdf5dd97d3c4ac88a360b" prot="public" virt="virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>alloc</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1a395b1f1024f64deaa7c47c7ad5660fa5" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>allocate</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1af6413e308c387e203218a7da023ca853" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>allocate_raw</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1a6217d79d45b424541eb96bf6398166df" prot="public" virt="virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>clone</name></member>
+      <member refid="classquasar_1_1IImageDataHolder_1a4403a23f6d9900208d45f1ce8e6aed26" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>data</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1a7b24176d394890c1567b43bf7d82f2d4" prot="private" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>data_</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1aafe6dd77e05ddc3d226c23c4e9fdc4fe" prot="public" virt="virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>data_raw</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1a95283f45e7dd5231304e54b3c975cb7f" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>deallocate</name></member>
+      <member refid="classquasar_1_1IImageDataHolder_1a9825ae27d9ec9c83d5fbfce6070db419" prot="protected" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>fftw_allocation_offset</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1a3904edf5ababc7a4d097434b3fc63112" prot="public" virt="virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>free</name></member>
+      <member refid="classquasar_1_1IImageDataHolder_1a2abfc82444dac1631e16ba4afbcf8136" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>IImageDataHolder</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1ab0e7418f121e272b0c854fdea7f5330f" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>ImageDataHolderCUDA</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1a619086d382c83d61d08fb700c0152c13" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>ImageDataHolderCUDA</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1a8bc757980faf8dadd97aa023dc10ec79" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>ImageDataHolderCUDA</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1ab7381721abc78130090280335b11fab7" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>ImageDataHolderCUDA</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1a82fe1bd4e5310a02a009a4d1073e3e19" prot="public" virt="virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>operator bool</name></member>
+      <member refid="classquasar_1_1IImageDataHolder_1a0bd8f7974a0fb38caadf48c625857fa0" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>operator*</name></member>
+      <member refid="classquasar_1_1IImageDataHolder_1a949a76440f0bc0ff4dac9405d1365777" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>operator-&gt;</name></member>
+      <member refid="classquasar_1_1IImageDataHolder_1afbfbf72db3db2fe25c7386b1bcc4d0e5" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>size</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1a5fcd7f5694e159960cb5490a9e586a5e" prot="public" virt="virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>type</name></member>
+      <member refid="classquasar_1_1IImageDataHolder_1a148c06d17729626fd7cde4601d74692b" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>view</name></member>
+      <member refid="classquasar_1_1IImageDataHolder_1a909e676391b8765ca349c59d4450fd0c" prot="public" virt="non-virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>view</name></member>
+      <member refid="classquasar_1_1IImageDataHolder_1a5bf896bb40f7bb88334ec047b089c62f" prot="public" virt="virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>~IImageDataHolder</name></member>
+      <member refid="classquasar_1_1ImageDataHolderCUDA_1a0a24e4c8a3d5462dad00f164e2283995" prot="public" virt="virtual"><scope>quasar::ImageDataHolderCUDA</scope><name>~ImageDataHolderCUDA</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

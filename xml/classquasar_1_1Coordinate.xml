@@ -1,0 +1,454 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classquasar_1_1Coordinate" kind="class" language="C++" prot="public">
+    <compoundname>quasar::Coordinate</compoundname>
+    <includes refid="coordinate_8h" local="no">quasar/types/coordinate.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classquasar_1_1Coordinate_1aff5b099533ff913b8f10976342ecc7b2" prot="public" static="no" mutable="no">
+        <type>f64</type>
+        <definition>f64 latitude</definition>
+        <argsstring></argsstring>
+        <name>latitude</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="63" column="9" bodyfile="quasar/types/coordinate.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Coordinate_1acab00f1832301980e339c6b19c6c7501" prot="public" static="no" mutable="no">
+        <type>f64</type>
+        <definition>f64 longitude</definition>
+        <argsstring></argsstring>
+        <name>longitude</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="64" column="9" bodyfile="quasar/types/coordinate.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Coordinate_1ab78221f1d9d8e3f70496aced2c4dd2af" prot="public" static="no" mutable="no">
+        <type>optional&lt; f32 &gt;</type>
+        <definition>optional&lt;f32&gt; altitude</definition>
+        <argsstring></argsstring>
+        <name>altitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="65" column="14" bodyfile="quasar/types/coordinate.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classquasar_1_1Coordinate_1a8f77320c1eeb55a6a964a101df92bc15" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto comparison_tolerance</definition>
+        <argsstring></argsstring>
+        <name>comparison_tolerance</name>
+        <initializer>= .0000045</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="67" column="34" bodyfile="quasar/types/coordinate.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classquasar_1_1Coordinate_1a5d950025621c537e4af6c4018b4406e8" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto valid_threshold</definition>
+        <argsstring></argsstring>
+        <name>valid_threshold</name>
+        <initializer>= .00001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="68" column="34" bodyfile="quasar/types/coordinate.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1a7f3bcd1fb611a4bbdcfbbb51cb6a1dcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Coordinate</definition>
+        <argsstring>()</argsstring>
+        <name>Coordinate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="17" column="5" bodyfile="private/types/coordinate.cc" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1a17b5a0c1ce022d232afbb2fbf918ad4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Coordinate</definition>
+        <argsstring>(f64 latitude, f64 longitude)</argsstring>
+        <name>Coordinate</name>
+        <param>
+          <type>f64</type>
+          <declname>latitude</declname>
+        </param>
+        <param>
+          <type>f64</type>
+          <declname>longitude</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="18" column="5" bodyfile="private/types/coordinate.cc" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1a51658778047114109e0caf9d3ab0b7e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Coordinate</definition>
+        <argsstring>(f64 latitude, f64 longitude, f32 altitude)</argsstring>
+        <name>Coordinate</name>
+        <param>
+          <type>f64</type>
+          <declname>latitude</declname>
+        </param>
+        <param>
+          <type>f64</type>
+          <declname>longitude</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>altitude</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="19" column="5" bodyfile="private/types/coordinate.cc" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1abde0508013b240ef80db8cc31c1ab95f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Coordinate</definition>
+        <argsstring>(Coordinate const &amp;)=default</argsstring>
+        <name>Coordinate</name>
+        <param>
+          <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="27" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1a763eb44e178915249137b6ea9f837a42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Coordinate</definition>
+        <argsstring>(Coordinate &amp;&amp;)=default</argsstring>
+        <name>Coordinate</name>
+        <param>
+          <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="28" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1ac8784ace95209266af3ef878894c6264" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> &amp;</type>
+        <definition>Coordinate&amp; operator=</definition>
+        <argsstring>(Coordinate const &amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="29" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1afdf6d46980b14558f0c8b7bf7dd60dc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> &amp;</type>
+        <definition>Coordinate&amp; operator=</definition>
+        <argsstring>(Coordinate &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="30" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1a88209586b6064779730cddad873b0bf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~Coordinate</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Coordinate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="31" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1a315419f26d3c59fa143b49b90a019049" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool valid</definition>
+        <argsstring>() const</argsstring>
+        <name>valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="33" column="11" bodyfile="private/types/coordinate.cc" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1a04f00baf7fabd2228b88d882bfcae896" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 azimuth_to</definition>
+        <argsstring>(Coordinate const &amp;other) const</argsstring>
+        <name>azimuth_to</name>
+        <param>
+          <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="35" column="10" bodyfile="private/types/coordinate.cc" bodystart="92" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1a66163762ed268968e7ff2ca85fc7fc37" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>f32</type>
+        <definition>f32 distance_to</definition>
+        <argsstring>(Coordinate const &amp;other) const</argsstring>
+        <name>distance_to</name>
+        <param>
+          <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> const &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="36" column="10" bodyfile="private/types/coordinate.cc" bodystart="107" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1ab28512e6ef78f7d6bccb7f1b88d5b023" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref></type>
+        <definition>Coordinate at_distance_and_azimuth</definition>
+        <argsstring>(f32 distance, f32 azimuth) const</argsstring>
+        <name>at_distance_and_azimuth</name>
+        <param>
+          <type>f32</type>
+          <declname>distance</declname>
+        </param>
+        <param>
+          <type>f32</type>
+          <declname>azimuth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="37" column="17" bodyfile="private/types/coordinate.cc" bodystart="121" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1aac993ecccd3d88aafefb6b8e3caa1dee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string to_string</definition>
+        <argsstring>() const</argsstring>
+        <name>to_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="39" column="18" bodyfile="private/types/coordinate.cc" bodystart="146" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classquasar_1_1Coordinate_1a420e60e9788bfa3b52aa3aab72ea3a5e" prot="public" static="no" const="yes" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>operator bool</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="56" column="22" bodyfile="quasar/types/coordinate.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classquasar_1_1Coordinate_1a37cdd757ec923993f47179e406757e83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(Coordinate const &amp;lhs, Coordinate const &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="58" column="18" bodyfile="private/types/coordinate.cc" bodystart="154" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="friend" id="classquasar_1_1Coordinate_1a962edbd3edb83c0ddb83daa0df9a5d2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(Coordinate const &amp;lhs, Coordinate const &amp;rhs)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="59" column="18" bodyfile="private/types/coordinate.cc" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="friend" id="classquasar_1_1Coordinate_1a00142b89555da2bacbf110a79f42bfc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator&lt;</definition>
+        <argsstring>(Coordinate const &amp;lhs, Coordinate const &amp;rhs)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> const &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> const &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="60" column="13" bodyfile="private/types/coordinate.cc" bodystart="164" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="friend" id="classquasar_1_1Coordinate_1a2038250d9f78ad9e5eb1d1ca2c59fa56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend <ref refid="cpp/io/basic_ostream" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::ostream</ref> &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, Coordinate const &amp;coordinate)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type><ref refid="cpp/io/basic_ostream" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::ostream</ref> &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classquasar_1_1Coordinate" kindref="compound">Coordinate</ref> const &amp;</type>
+          <declname>coordinate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="quasar/types/coordinate.h" line="61" column="13" bodyfile="private/types/coordinate.cc" bodystart="171" bodyend="173"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>optional&lt; f32 &gt;</label>
+      </node>
+      <node id="3">
+        <label>static constexpr auto</label>
+      </node>
+      <node id="1">
+        <label>Coordinate</label>
+        <link refid="classquasar_1_1Coordinate"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>altitude</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>comparison_tolerance</edgelabel>
+          <edgelabel>valid_threshold</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>latitude</edgelabel>
+          <edgelabel>longitude</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>f64</label>
+      </node>
+    </collaborationgraph>
+    <location file="quasar/types/coordinate.h" line="15" column="20" bodyfile="quasar/types/coordinate.h" bodystart="15" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classquasar_1_1Coordinate_1ab78221f1d9d8e3f70496aced2c4dd2af" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>altitude</name></member>
+      <member refid="classquasar_1_1Coordinate_1ab28512e6ef78f7d6bccb7f1b88d5b023" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>at_distance_and_azimuth</name></member>
+      <member refid="classquasar_1_1Coordinate_1a04f00baf7fabd2228b88d882bfcae896" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>azimuth_to</name></member>
+      <member refid="classquasar_1_1Coordinate_1a8f77320c1eeb55a6a964a101df92bc15" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>comparison_tolerance</name></member>
+      <member refid="classquasar_1_1Coordinate_1a7f3bcd1fb611a4bbdcfbbb51cb6a1dcb" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>Coordinate</name></member>
+      <member refid="classquasar_1_1Coordinate_1a17b5a0c1ce022d232afbb2fbf918ad4d" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>Coordinate</name></member>
+      <member refid="classquasar_1_1Coordinate_1a51658778047114109e0caf9d3ab0b7e6" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>Coordinate</name></member>
+      <member refid="classquasar_1_1Coordinate_1abde0508013b240ef80db8cc31c1ab95f" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>Coordinate</name></member>
+      <member refid="classquasar_1_1Coordinate_1a763eb44e178915249137b6ea9f837a42" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>Coordinate</name></member>
+      <member refid="classquasar_1_1Coordinate_1a66163762ed268968e7ff2ca85fc7fc37" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>distance_to</name></member>
+      <member refid="classquasar_1_1Coordinate_1aff5b099533ff913b8f10976342ecc7b2" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>latitude</name></member>
+      <member refid="classquasar_1_1Coordinate_1acab00f1832301980e339c6b19c6c7501" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>longitude</name></member>
+      <member refid="classquasar_1_1Coordinate_1a420e60e9788bfa3b52aa3aab72ea3a5e" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>operator bool</name></member>
+      <member refid="classquasar_1_1Coordinate_1a962edbd3edb83c0ddb83daa0df9a5d2f" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>operator!=</name></member>
+      <member refid="classquasar_1_1Coordinate_1a00142b89555da2bacbf110a79f42bfc1" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>operator&lt;</name></member>
+      <member refid="classquasar_1_1Coordinate_1a2038250d9f78ad9e5eb1d1ca2c59fa56" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classquasar_1_1Coordinate_1ac8784ace95209266af3ef878894c6264" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>operator=</name></member>
+      <member refid="classquasar_1_1Coordinate_1afdf6d46980b14558f0c8b7bf7dd60dc3" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>operator=</name></member>
+      <member refid="classquasar_1_1Coordinate_1a37cdd757ec923993f47179e406757e83" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>operator==</name></member>
+      <member refid="classquasar_1_1Coordinate_1aac993ecccd3d88aafefb6b8e3caa1dee" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>to_string</name></member>
+      <member refid="classquasar_1_1Coordinate_1a315419f26d3c59fa143b49b90a019049" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>valid</name></member>
+      <member refid="classquasar_1_1Coordinate_1a5d950025621c537e4af6c4018b4406e8" prot="public" virt="non-virtual"><scope>quasar::Coordinate</scope><name>valid_threshold</name></member>
+      <member refid="classquasar_1_1Coordinate_1a88209586b6064779730cddad873b0bf4" prot="public" virt="virtual"><scope>quasar::Coordinate</scope><name>~Coordinate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

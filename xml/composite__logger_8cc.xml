@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="composite__logger_8cc" kind="file" language="C++">
+    <compoundname>composite_logger.cc</compoundname>
+    <includes refid="composite__logger_8h" local="no">private/logging/composite_logger.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">spdlog/sinks/rotating_file_sink.h</includes>
+    <includes local="no">spdlog/sinks/stdout_color_sinks.h</includes>
+    <includes local="no">rolly/contracts.h</includes>
+    <includes local="no">rolly/utility.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>composite_logger.cc</label>
+        <link refid="composite__logger_8cc"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>spdlog/sinks/rotating_file_sink.h</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>spdlog/sinks/stdout_color_sinks.h</label>
+      </node>
+      <node id="2">
+        <label>private/logging/composite_logger.h</label>
+        <link refid="composite__logger_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>rolly/utility.h</label>
+      </node>
+      <node id="3">
+        <label>quasar/api/composite_logger.h</label>
+      </node>
+      <node id="7">
+        <label>rolly/contracts.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacequasar">quasar</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/logging/composite_logger.cc"/>
+  </compounddef>
+</doxygen>

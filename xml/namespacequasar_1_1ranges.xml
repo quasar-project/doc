@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacequasar_1_1ranges" kind="namespace" language="C++">
+    <compoundname>quasar::ranges</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacequasar_1_1ranges_1a563d4d21c0afbb6a1fedd3281af6ecd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename To</type>
+          </param>
+          <param>
+            <type>typename InputIt</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::ranges::copying_convert</definition>
+        <argsstring>(InputIt begin, InputIt end) -&gt; std::vector&lt; To &gt;</argsstring>
+        <name>copying_convert</name>
+        <param>
+          <type>InputIt</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>InputIt</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Копирует коллекцию одного типа в новый вектор другого типа. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>To</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип элемента результирующего вектора. Должен быть арифметическим типом (целое или вещественное число). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InputIt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип итератора исходной коллекции. Должен хранить арифметический тип (целое или вещественное число).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Начало исходной коллекции. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Конец исходной коллекции. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Новый вектор размером <computeroutput>std::distance(begin, end)</computeroutput> c типом элемента <computeroutput>To</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/ranges.h" line="23" column="9" bodyfile="private/ranges.h" bodystart="23" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1ranges_1a25237e8bb28cf7516a64817567550276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIt</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto quasar::ranges::mean_stddev</definition>
+        <argsstring>(InputIt begin, InputIt end) -&gt; std::pair&lt; typename std::iterator_traits&lt; InputIt &gt;::value_type, typename std::iterator_traits&lt; InputIt &gt;::value_type &gt;</argsstring>
+        <name>mean_stddev</name>
+        <param>
+          <type>InputIt</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>InputIt</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Вычисляет среднее значение и СКО для диапазона. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Пример использования: <programlisting filename=".cpp"><codeline><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>vec<sp/>=<sp/><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector&lt;int&gt;</ref>{1,<sp/>2,<sp/>3,<sp/>4,<sp/>5};</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>[mean,<sp/>stddev]<sp/>=<sp/><ref refid="namespacequasar_1_1ranges_1a25237e8bb28cf7516a64817567550276" kindref="member">ranges::mean_stddev</ref>(vec.cbegin(),<sp/>vec.cend());</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="cpp/io/basic_ostream" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::cout</ref><sp/>&lt;&lt;<sp/>mean<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>stddev<sp/>&lt;&lt;<sp/><ref refid="cpp/io/manip/endl" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::endl</ref>;</highlight></codeline>
+</programlisting> <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>InputIt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип итератора исходной коллекции. Должен хранить арифметический тип (целое или вещественное число).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Начало исходной коллекции.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Конец исходной коллекции. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Среднее значение и СКО для диапазона в виде пары элементов. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/ranges.h" line="46" column="9" bodyfile="private/ranges.h" bodystart="46" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1ranges_1a99a3125f5b2d279b0b8a5beadcf48f23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto complex_magnitude</definition>
+        <argsstring>(span&lt; math::Complex &gt; data, u32 n, u32 m) -&gt; std::vector&lt; f32 &gt;</argsstring>
+        <name>complex_magnitude</name>
+        <param>
+          <type>span&lt; <ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> &gt;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ranges.cc" line="4" column="8" bodyfile="ranges.cc" bodystart="4" bodyend="12" declfile="private/ranges.h" declline="63" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1ranges_1a5f8d4e2b4f87e06865ac12b1626e8933" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto complex_magnitude_unsafe</definition>
+        <argsstring>(math::Complex const *in, f32 *out, u32 n, u32 m) -&gt; void</argsstring>
+        <name>complex_magnitude_unsafe</name>
+        <param>
+          <type><ref refid="structquasar_1_1math_1_1Complex" kindref="compound">math::Complex</ref> const *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>f32 *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>u32</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ranges.cc" line="14" column="8" bodyfile="ranges.cc" bodystart="14" bodyend="21" declfile="private/ranges.h" declline="64" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1ranges_1ad1648e95e5473b585bcd2e165c7aeb1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/home/runner/work/quasar/quasar/doxygen/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; quasar::ranges::transpose</definition>
+        <argsstring>(span&lt; T const &gt; const data, u32 const rows, u32 const columns)</argsstring>
+        <name>transpose</name>
+        <param>
+          <type>span&lt; T const &gt; const</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>u32 const</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>u32 const</type>
+          <declname>columns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/ranges.h" line="67" column="16" bodyfile="private/ranges.h" bodystart="67" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacequasar_1_1ranges_1a120aa4689c0e2a4223486b475610b9e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void quasar::ranges::transpose_inplace</definition>
+        <argsstring>(span&lt; T const &gt; source, span&lt; T &gt; dest, u32 const rows, u32 const columns)</argsstring>
+        <name>transpose_inplace</name>
+        <param>
+          <type>span&lt; T const &gt;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>span&lt; T &gt;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>u32 const</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>u32 const</type>
+          <declname>columns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="private/ranges.h" line="87" column="8" bodyfile="private/ranges.h" bodystart="87" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="private/ranges.h" line="14" column="24"/>
+  </compounddef>
+</doxygen>
