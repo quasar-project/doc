@@ -1,0 +1,4504 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.9.8">
+  <compound kind="file">
+    <name>checksum.h</name>
+    <filename>checksum_8h.html</filename>
+    <includes id="span_8h" name="span.h" local="no" import="no" module="no" objc="no">quasar/api/span.h</includes>
+    <namespace>quasar</namespace>
+    <namespace>quasar::api</namespace>
+    <namespace>quasar::api::detail</namespace>
+  </compound>
+  <compound kind="file">
+    <name>export.h</name>
+    <filename>api_2include_2quasar_2api_2detail_2export_8h.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>QUASAR_API</name>
+      <anchorfile>api_2include_2quasar_2api_2detail_2export_8h.html</anchorfile>
+      <anchor>a71869e272f7ff49258b4bb28c47909b1</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>export.h</name>
+    <filename>include_2quasar_2detail_2export_8h.html</filename>
+    <namespace>quasar</namespace>
+    <member kind="define">
+      <type>#define</type>
+      <name>QUASAR_IMPL_API</name>
+      <anchorfile>include_2quasar_2detail_2export_8h.html</anchorfile>
+      <anchor>af2900af33a3f46353b260d3db8fbbfdb</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>span_impl.h</name>
+    <filename>span__impl_8h.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>dsp.h</name>
+    <filename>dsp_8h.html</filename>
+    <class kind="struct">fmt::formatter&lt; quasar::DSP &gt;</class>
+    <class kind="struct">fmt::formatter&lt; quasar::WindowFunction &gt;</class>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="file">
+    <name>image.h</name>
+    <filename>api_2include_2quasar_2api_2image_8h.html</filename>
+    <includes id="span_8h" name="span.h" local="no" import="no" module="no" objc="no">quasar/api/span.h</includes>
+    <includes id="api_2include_2quasar_2api_2detail_2export_8h" name="export.h" local="no" import="no" module="no" objc="no">quasar/api/detail/export.h</includes>
+    <class kind="struct">quasar::api::Metadata</class>
+    <class kind="struct">quasar::api::Metadata::MetadataExifHeader</class>
+    <class kind="struct">fmt::formatter&lt; quasar::ImageFormat &gt;</class>
+    <class kind="struct">fmt::formatter&lt; quasar::ImageUnderlyingType &gt;</class>
+    <class kind="struct">fmt::formatter&lt; quasar::ImageKind &gt;</class>
+    <namespace>quasar</namespace>
+    <namespace>quasar::api</namespace>
+  </compound>
+  <compound kind="file">
+    <name>image.h</name>
+    <filename>include_2quasar_2image_2image_8h.html</filename>
+    <includes id="dsp_8h" name="dsp.h" local="no" import="no" module="no" objc="no">quasar/api/dsp.h</includes>
+    <includes id="api_2include_2quasar_2api_2image_8h" name="image.h" local="no" import="no" module="no" objc="no">quasar/api/image.h</includes>
+    <includes id="span_8h" name="span.h" local="no" import="no" module="no" objc="no">quasar/api/span.h</includes>
+    <includes id="complex_8h" name="complex.h" local="no" import="no" module="no" objc="no">quasar/misc/complex.h</includes>
+    <class kind="class">quasar::Image</class>
+    <namespace>cv</namespace>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="file">
+    <name>request.h</name>
+    <filename>request_8h.html</filename>
+    <class kind="struct">quasar::api::PowerSwitchRequest</class>
+    <namespace>quasar</namespace>
+    <namespace>quasar::api</namespace>
+  </compound>
+  <compound kind="file">
+    <name>response.h</name>
+    <filename>response_8h.html</filename>
+    <class kind="struct">quasar::api::PowerSwitchResponse</class>
+    <namespace>quasar</namespace>
+    <namespace>quasar::api</namespace>
+  </compound>
+  <compound kind="file">
+    <name>span.h</name>
+    <filename>span_8h.html</filename>
+    <includes id="span__impl_8h" name="span_impl.h" local="no" import="no" module="no" objc="no">quasar/api/detail/span_impl.h</includes>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="file">
+    <name>data.h</name>
+    <filename>data_8h.html</filename>
+    <class kind="class">TestData</class>
+  </compound>
+  <compound kind="file">
+    <name>backprojection.h</name>
+    <filename>backprojection_8h.html</filename>
+    <includes id="include_2quasar_2image_2image_8h" name="image.h" local="no" import="no" module="no" objc="no">quasar/image/image.h</includes>
+    <includes id="sar_8h" name="sar.h" local="no" import="no" module="no" objc="no">quasar/sar.h</includes>
+    <includes id="dsp_8h" name="dsp.h" local="no" import="no" module="no" objc="no">quasar/api/dsp.h</includes>
+    <includes id="abstract__dsp_8h" name="abstract_dsp.h" local="no" import="no" module="no" objc="no">quasar/dsp/abstract_dsp.h</includes>
+    <includes id="window_8h" name="window.h" local="no" import="no" module="no" objc="no">quasar/dsp/window.h</includes>
+    <class kind="class">quasar::CBackProjection</class>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="file">
+    <name>base.h</name>
+    <filename>base_8h.html</filename>
+    <includes id="include_2quasar_2detail_2export_8h" name="export.h" local="no" import="no" module="no" objc="no">quasar/detail/export.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>composite_logger.h</name>
+    <filename>composite__logger_8h.html</filename>
+    <includes id="api_2include_2quasar_2api_2detail_2export_8h" name="export.h" local="no" import="no" module="no" objc="no">quasar/api/detail/export.h</includes>
+    <includes id="log_8h" name="log.h" local="no" import="no" module="no" objc="no">quasar/log.h</includes>
+    <class kind="class">quasar::ICompositeLogger</class>
+    <class kind="struct">quasar::ICompositeLogger::Parameters</class>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="file">
+    <name>abstract_dsp.h</name>
+    <filename>abstract__dsp_8h.html</filename>
+    <includes id="window_8h" name="window.h" local="no" import="no" module="no" objc="no">quasar/dsp/window.h</includes>
+    <includes id="include_2quasar_2image_2image_8h" name="image.h" local="no" import="no" module="no" objc="no">quasar/image/image.h</includes>
+    <includes id="complex_8h" name="complex.h" local="no" import="no" module="no" objc="no">quasar/misc/complex.h</includes>
+    <includes id="abstract__radar_8h" name="abstract_radar.h" local="no" import="no" module="no" objc="no">quasar/radar/abstract_radar.h</includes>
+    <class kind="class">quasar::dsp::IDSP</class>
+    <class kind="struct">quasar::dsp::IDSP::PixelProcParams</class>
+    <namespace>quasar</namespace>
+    <namespace>quasar::dsp</namespace>
+  </compound>
+  <compound kind="file">
+    <name>dsp_fftw.h</name>
+    <filename>dsp__fftw_8h.html</filename>
+    <includes id="abstract__dsp_8h" name="abstract_dsp.h" local="no" import="no" module="no" objc="no">quasar/dsp/abstract_dsp.h</includes>
+    <class kind="class">quasar::dsp::CDSP_FFTW</class>
+    <namespace>quasar</namespace>
+    <namespace>quasar::dsp</namespace>
+    <member kind="typedef">
+      <type>struct fftwf_plan_s *</type>
+      <name>fftwf_plan</name>
+      <anchorfile>dsp__fftw_8h.html</anchorfile>
+      <anchor>abedb9d05aaac60917c9f992aefbaf7c0</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>memory_entity.h</name>
+    <path>quasar/dsp/</path>
+    <filename>memory__entity_8h.html</filename>
+    <includes id="dsp_8h" name="dsp.h" local="no" import="no" module="no" objc="no">quasar/api/dsp.h</includes>
+    <class kind="class">quasar::dsp::IMemoryEntity</class>
+    <namespace>quasar</namespace>
+    <namespace>quasar::dsp</namespace>
+  </compound>
+  <compound kind="file">
+    <name>window.h</name>
+    <path>quasar/dsp/</path>
+    <filename>window_8h.html</filename>
+    <includes id="dsp_8h" name="dsp.h" local="no" import="no" module="no" objc="no">quasar/api/dsp.h</includes>
+    <includes id="span_8h" name="span.h" local="no" import="no" module="no" objc="no">quasar/api/span.h</includes>
+    <includes id="memory__entity_8h" name="memory_entity.h" local="no" import="no" module="no" objc="no">quasar/dsp/memory_entity.h</includes>
+    <class kind="class">quasar::dsp::Window</class>
+    <namespace>quasar</namespace>
+    <namespace>quasar::dsp</namespace>
+  </compound>
+  <compound kind="file">
+    <name>log.h</name>
+    <path>quasar/</path>
+    <filename>log_8h.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>QUASAR_LOG_LEVEL_TRACE</name>
+      <anchorfile>log_8h.html</anchorfile>
+      <anchor>a637fa49a81514f2a29b1b1e32cf85e84</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>QUASAR_LOG_LEVEL_DEBUG</name>
+      <anchorfile>log_8h.html</anchorfile>
+      <anchor>a2b3c7f55f1d8efaf627281acf6278f30</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>QUASAR_LOG_LEVEL_INFO</name>
+      <anchorfile>log_8h.html</anchorfile>
+      <anchor>ae146802d8e266f013dc2aaf8f0820247</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>QUASAR_LOG_LEVEL_WARN</name>
+      <anchorfile>log_8h.html</anchorfile>
+      <anchor>a5bd7e2e4fbfacc84595873d1397746ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>QUASAR_LOG_LEVEL_ERROR</name>
+      <anchorfile>log_8h.html</anchorfile>
+      <anchor>afa45b42d809b1a15b7aaaedc92024042</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>QUASAR_LOG_LEVEL_CRITICAL</name>
+      <anchorfile>log_8h.html</anchorfile>
+      <anchor>a969b7b2df78be78a23b0757ff463a392</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>QUASAR_LOG_ACTIVE_LEVEL</name>
+      <anchorfile>log_8h.html</anchorfile>
+      <anchor>a60dc38f1fd022863730c28fd52f18bb7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SPDLOG_ACTIVE_LEVEL</name>
+      <anchorfile>log_8h.html</anchorfile>
+      <anchor>ae4fda6f71f35120e2ff48157fca961b5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>QUASAR_LOG_TO</name>
+      <anchorfile>log_8h.html</anchorfile>
+      <anchor>aed114e190c969fcc0083dcb2a328f667</anchor>
+      <arglist>(logger_name, log_level,...)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>QUASAR_LOG</name>
+      <anchorfile>log_8h.html</anchorfile>
+      <anchor>aa8041a231f98b51f9bcb5f1caafb319d</anchor>
+      <arglist>(log_level,...)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>QUASAR_LOG_FLUSH</name>
+      <anchorfile>log_8h.html</anchorfile>
+      <anchor>a25af24b160e48893905fe2b42e8aded7</anchor>
+      <arglist>(logger_name)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>logging.h</name>
+    <path>quasar/base/</path>
+    <filename>base_2logging_8h.html</filename>
+    <includes id="include_2quasar_2detail_2export_8h" name="export.h" local="no" import="no" module="no" objc="no">quasar/detail/export.h</includes>
+    <namespace>quasar</namespace>
+    <namespace>quasar::logging</namespace>
+    <namespace>quasar::logging::level</namespace>
+  </compound>
+  <compound kind="file">
+    <name>logging.h</name>
+    <path>quasar/</path>
+    <filename>logging_8h.html</filename>
+    <includes id="base_2logging_8h" name="logging.h" local="no" import="no" module="no" objc="no">quasar/base/logging.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>complex.h</name>
+    <path>quasar/misc/</path>
+    <filename>complex_8h.html</filename>
+    <includes id="cuda__qualifiers_8h" name="cuda_qualifiers.h" local="no" import="no" module="no" objc="no">quasar/misc/cuda_qualifiers.h</includes>
+    <includes id="include_2quasar_2detail_2export_8h" name="export.h" local="no" import="no" module="no" objc="no">quasar/detail/export.h</includes>
+    <class kind="struct">quasar::math::Complex</class>
+    <class kind="struct">fmt::formatter&lt; quasar::math::Complex &gt;</class>
+    <namespace>quasar</namespace>
+    <namespace>quasar::math</namespace>
+  </compound>
+  <compound kind="file">
+    <name>cuda_qualifiers.h</name>
+    <path>quasar/misc/</path>
+    <filename>cuda__qualifiers_8h.html</filename>
+    <includes id="include_2quasar_2detail_2export_8h" name="export.h" local="no" import="no" module="no" objc="no">quasar/detail/export.h</includes>
+    <member kind="define">
+      <type>#define</type>
+      <name>__host_or_device__</name>
+      <anchorfile>group__macros.html</anchorfile>
+      <anchor>gafb80abacf17d0b74287f3f2e3bcaa2e8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>__cmath_namespace</name>
+      <anchorfile>group__macros.html</anchorfile>
+      <anchor>ga10818ca7b8de84a019cb213af68fef83</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>lockfile.h</name>
+    <path>quasar/misc/</path>
+    <filename>lockfile_8h.html</filename>
+    <includes id="include_2quasar_2detail_2export_8h" name="export.h" local="no" import="no" module="no" objc="no">quasar/detail/export.h</includes>
+    <class kind="class">quasar::Lockfile</class>
+    <class kind="class">quasar::LockfileGuard</class>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="file">
+    <name>nav.h</name>
+    <path>quasar/nav/</path>
+    <filename>nav_8h.html</filename>
+    <class kind="class">quasar::CNav</class>
+    <class kind="class">quasar::ParameterBase</class>
+    <class kind="class">quasar::Velocity</class>
+    <class kind="class">quasar::Elevation</class>
+    <class kind="class">quasar::Dim3</class>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="file">
+    <name>navgpx.h</name>
+    <path>quasar/nav/</path>
+    <filename>navgpx_8h.html</filename>
+    <includes id="include_2quasar_2detail_2export_8h" name="export.h" local="no" import="no" module="no" objc="no">quasar/detail/export.h</includes>
+    <class kind="class">quasar::CNavGPX</class>
+    <namespace>quasar</namespace>
+    <member kind="define">
+      <type>#define</type>
+      <name>_USE_MATH_DEFINES</name>
+      <anchorfile>navgpx_8h.html</anchorfile>
+      <anchor>a525335710b53cb064ca56b936120431e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>abstract_radar.h</name>
+    <path>quasar/radar/</path>
+    <filename>abstract__radar_8h.html</filename>
+    <includes id="base_8h" name="base.h" local="no" import="no" module="no" objc="no">quasar/base.h</includes>
+    <includes id="dsp_8h" name="dsp.h" local="no" import="no" module="no" objc="no">quasar/api/dsp.h</includes>
+    <class kind="class">quasar::IAbstractRadar</class>
+    <class kind="struct">fmt::formatter&lt; quasar::IAbstractRadar::SampleSize &gt;</class>
+    <class kind="struct">fmt::formatter&lt; quasar::IAbstractRadar::Ramp &gt;</class>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="file">
+    <name>radar_stt.h</name>
+    <path>quasar/radar/</path>
+    <filename>radar__stt_8h.html</filename>
+    <includes id="abstract__radar_8h" name="abstract_radar.h" local="no" import="no" module="no" objc="no">quasar/radar/abstract_radar.h</includes>
+    <class kind="class">quasar::CRadarSTT</class>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="file">
+    <name>sar.h</name>
+    <path>quasar/</path>
+    <filename>sar_8h.html</filename>
+    <includes id="composite__logger_8h" name="composite_logger.h" local="no" import="no" module="no" objc="no">quasar/composite_logger.h</includes>
+    <includes id="abstract__dsp_8h" name="abstract_dsp.h" local="no" import="no" module="no" objc="no">quasar/dsp/abstract_dsp.h</includes>
+    <includes id="window_8h" name="window.h" local="no" import="no" module="no" objc="no">quasar/dsp/window.h</includes>
+    <includes id="include_2quasar_2image_2image_8h" name="image.h" local="no" import="no" module="no" objc="no">quasar/image/image.h</includes>
+    <includes id="abstract__radar_8h" name="abstract_radar.h" local="no" import="no" module="no" objc="no">quasar/radar/abstract_radar.h</includes>
+    <class kind="class">quasar::SAR</class>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="file">
+    <name>file_sender.h</name>
+    <path>quasar/sender/</path>
+    <filename>file__sender_8h.html</filename>
+    <includes id="api_2include_2quasar_2api_2image_8h" name="image.h" local="no" import="no" module="no" objc="no">quasar/api/image.h</includes>
+    <includes id="include_2quasar_2detail_2export_8h" name="export.h" local="no" import="no" module="no" objc="no">quasar/detail/export.h</includes>
+    <class kind="class">quasar::IFileSender</class>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="file">
+    <name>file_sender_fsend.h</name>
+    <path>quasar/sender/</path>
+    <filename>file__sender__fsend_8h.html</filename>
+    <includes id="file__sender_8h" name="file_sender.h" local="no" import="no" module="no" objc="no">quasar/sender/file_sender.h</includes>
+    <class kind="class">quasar::FileSenderFsend</class>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="file">
+    <name>strip_stream.h</name>
+    <path>quasar/</path>
+    <filename>strip__stream_8h.html</filename>
+    <includes id="backprojection_8h" name="backprojection.h" local="no" import="no" module="no" objc="no">quasar/backprojection.h</includes>
+    <includes id="span_8h" name="span.h" local="no" import="no" module="no" objc="no">quasar/api/span.h</includes>
+    <class kind="class">quasar::CStripStream</class>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="file">
+    <name>coordinate.h</name>
+    <path>quasar/types/</path>
+    <filename>coordinate_8h.html</filename>
+    <includes id="include_2quasar_2detail_2export_8h" name="export.h" local="no" import="no" module="no" objc="no">quasar/detail/export.h</includes>
+    <class kind="class">quasar::Coordinate</class>
+    <class kind="struct">std::hash&lt; quasar::Coordinate &gt;</class>
+    <class kind="struct">fmt::formatter&lt; quasar::Coordinate &gt;</class>
+    <namespace>quasar</namespace>
+  </compound>
+  <compound kind="class">
+    <name>quasar::CBackProjection</name>
+    <filename>classquasar_1_1_c_back_projection.html</filename>
+    <member kind="typedef">
+      <type>std::vector&lt; std::vector&lt; T &gt; &gt;</type>
+      <name>Matrix</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>a6fdaa1b58cbc2d864d0a4e68e891c86d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CBackProjection</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>a665f3e020e29ff0ba524653f0bb12cac</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CBackProjection</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>a2a54b83f9c814699026f01ea018297d0</anchor>
+      <arglist>(SAR *sar, Image *image)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~CBackProjection</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>a06b90488c226565037365e9bd5528758</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>set_image</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>aa063e726ec608ebf0b8cae6c957dc4f4</anchor>
+      <arglist>(Image *image) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_pixel_size</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>a85c2cadff4a964672dfbf4004f915155</anchor>
+      <arglist>(float pix_size)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_pixel_size</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>acd77dd436183054e56bd0ec50c2bc930</anchor>
+      <arglist>(float dx, float dy)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>telescopic</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>ab1e1578132318bf535b788340f747e6a</anchor>
+      <arglist>(f32 x0, f32 lx, f32 angle, f32 div, std::vector&lt; f32 &gt; const &amp;v, std::vector&lt; f32 &gt; const &amp;h, std::vector&lt; f32 &gt; const &amp;x)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>phaseCorrection</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>a821d3dbb125497ff322b82e347429f37</anchor>
+      <arglist>(float x, float y)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>stripInit</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>a7b2d4170988ab109895a1e27ff5e56fc</anchor>
+      <arglist>(float dx_, float lx, float Tstrip, float Ts)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; f32 &gt;</type>
+      <name>strip</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>a36783b60ba4c015afe6c15878e387196</anchor>
+      <arglist>(f32 x0, f32 y0, int n, f32 angle, std::vector&lt; f32 &gt; const &amp;v, std::vector&lt; f32 &gt; const &amp;h, std::vector&lt; f32 &gt; const &amp;x)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>retrieve_strip_image</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>af5fb514e2c8b82feb55e2a4455f3b772</anchor>
+      <arglist>() const -&gt; std::shared_ptr&lt; Image &gt;</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>strip_shot</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>a32d8fe92f35f8131344104e870453555</anchor>
+      <arglist>(f32 x0, f32 y0, int n, f32 angle, std::vector&lt; f32 &gt; const &amp;v, std::vector&lt; f32 &gt; const &amp;h, std::vector&lt; f32 &gt; const &amp;x)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>autofocus</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>a57d76a7405b68e1051c6abc3bf70aaed</anchor>
+      <arglist>(float v_start, float v_stop, float point_x, float point_y, float Ts, float ang, float ls, int n_steps, float v, float h, float x, std::string filename)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>dx</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>a8ee1e9a4ae641f3b8db433a9d5385850</anchor>
+      <arglist>() const -&gt; float</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>snx</name>
+      <anchorfile>classquasar_1_1_c_back_projection.html</anchorfile>
+      <anchor>a185c7f4b8f1e1262361d8c089be02a59</anchor>
+      <arglist>() const -&gt; int</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::dsp::CDSP_FFTW</name>
+    <filename>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</filename>
+    <base>quasar::dsp::IDSP</base>
+    <member kind="function">
+      <type></type>
+      <name>CDSP_FFTW</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>acc796b6c704bfd398668b1430fb2a1bc</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~CDSP_FFTW</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>ae640e0b055a24b076016088114af1eb7</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual auto</type>
+      <name>print_description</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>ad4050b152fdd4f0b89d99a451189876a</anchor>
+      <arglist>(std::FILE *out) const noexcept -&gt; void override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual auto</type>
+      <name>type</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>a97b6739a0b602d00f80f340958baf3ab</anchor>
+      <arglist>() const noexcept -&gt; DSP override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual float</type>
+      <name>mean</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>ac4da79943d35b47ef8c809664cc662f1</anchor>
+      <arglist>(f32 *pImageData, int N) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual auto</type>
+      <name>fft</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>a0130fb4e0ae565d0b468a564d6464563</anchor>
+      <arglist>(f32 *data, i32 n, i32 m) -&gt; void override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>fft</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>a9f4dd38a3b3cf76f482e6dad4f5a7683</anchor>
+      <arglist>(math::Complex *pImageData, int N, int M) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>ifft</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>a2d6626677322d7fa7021b527fdaad588</anchor>
+      <arglist>(math::Complex *pImageData, int N, int M) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>hamming</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>acef759745239392457f5c1bc02bb4275</anchor>
+      <arglist>(math::Complex *pImageData, int W, int H, int W0, int H0) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>hamming</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>a2c22a9e04eb8fabcc0cf9b887d5886c2</anchor>
+      <arglist>(float *pImageData, int W, int H, int W0, int H0) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>fftshift</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>a58ee2124bc80aa493108d96aa7bf8c0c</anchor>
+      <arglist>(math::Complex *pImageData, int N, int M) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>rmc</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>afdf39fd1b41a21ba1ca270a1ad3f1419</anchor>
+      <arglist>(math::Complex *pData, int w, int h, int hb, float lambda, float tp, float v) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>phocus</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>ae6ccfc7247a02e926ee451a271b0151e</anchor>
+      <arglist>(math::Complex *pData, int W, int H, int Hmax, float Rb, float Tp, float lambda, float V, float Rmax, int Np) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual float</type>
+      <name>entropy</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>a2f554c685765f04d41a8a612a2502793</anchor>
+      <arglist>(math::Complex *pData, int W, int H) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual float</type>
+      <name>entropyf</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>a0bf5c845bd2ca2f8ac6051a53d594e17</anchor>
+      <arglist>(f32 *pData, int W, int H) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>complexMul</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>a42fb457f6aeb1c287f3c4928f5fd5fef</anchor>
+      <arglist>(math::Complex *SrcDst1, math::Complex *Src2, int len) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>complexMul</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>ae6adeb334ae851b2f5021fb27302ec0a</anchor>
+      <arglist>(math::Complex *SrcDst1, float *Src2, int len) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>complexSum</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>acea14ddb75dab8709c4c942a6ed90f06</anchor>
+      <arglist>(math::Complex *Src, math::Complex *Dst, int len) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>window_weighting</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>a67ad4381943b00926745ec87640d93ec</anchor>
+      <arglist>(Image &amp;image, Window const &amp;window) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>result</type>
+      <name>remove_dc</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>a1ec0b9a72fa609de3c6b260ce3a8da6b</anchor>
+      <arglist>(Image &amp;image) const noexcept override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual auto</type>
+      <name>bp</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>a3ed5b4a74a8074a5c4fe7766861b7ad4</anchor>
+      <arglist>(Image *image, IAbstractRadar *radar, f32 *outdata, f32 *wnd, std::vector&lt; f32 &gt; const &amp;velocity, f32 x0, f32 y0, f32 dx, f32 dy, std::vector&lt; f32 &gt; const &amp;elevation, std::vector&lt; f32 &gt; const &amp;diffx, int nx, int ny, bool bCorr, f32 angle, f32 div, math::Complex *pc) -&gt; int override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual auto</type>
+      <name>bp_strip</name>
+      <anchorfile>classquasar_1_1dsp_1_1_c_d_s_p___f_f_t_w.html</anchorfile>
+      <anchor>a8301d66164c8ce2617c0cd6ed60f00b7</anchor>
+      <arglist>(Image *in, Image *out, IAbstractRadar *radar, f32 *window, std::vector&lt; f32 &gt; const &amp;velocity, f32 x0, f32 dx, std::vector&lt; f32 &gt; const &amp;elevation, std::vector&lt; f32 &gt; const &amp;diffx, int nx, int line, bool bCorr, math::Complex *pc, f32 angle) -&gt; int override</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>hamming</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>ab53f28bea3a71a725c81e0f2f9b782f0</anchor>
+      <arglist>(f32 *pImageData, int W, int H, int W0, int H0)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual auto</type>
+      <name>fft</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>ae8c8cb06452681641cc6003fd250567e</anchor>
+      <arglist>(f32 *data, int n, int m) -&gt; void=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual result</type>
+      <name>range_compress</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>acda7680e94942d309c217b1236914d81</anchor>
+      <arglist>(Image &amp;image) const noexcept</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual result</type>
+      <name>azimuth_compress</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a7e7a06e335f792b65a428fa3d20b307f</anchor>
+      <arglist>(Image &amp;image) const noexcept</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::CNav</name>
+    <filename>classquasar_1_1_c_nav.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>CNav</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>acbb17fa379eeab355e893d1515bdcd57</anchor>
+      <arglist>(char const *fn)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~CNav</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a32dee59ea6de29ff553edd15de6cea97</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>read_msec_from</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>ace6043252edac16d0e0588df186474e5</anchor>
+      <arglist>(uint32_t from_msec, uint32_t msec)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>read_msec</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a053340d5f1a3ea952271aa1657dcf3cd</anchor>
+      <arglist>(uint32_t msec)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>read_sec_from</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a683cb3e46140c327863bdfad1a8c4605</anchor>
+      <arglist>(float sec_from, float sec)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>read_sec</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a743c8ff3d69738dfe19c11b5a38c6dcd</anchor>
+      <arglist>(float sec)</arglist>
+    </member>
+    <member kind="function">
+      <type>size_t</type>
+      <name>size</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>ae0cf1fae4c5fea30967e591b6f3faf82</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_update_rate</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a33a35d3ceb43872a07e02bd6a5261f5f</anchor>
+      <arglist>(float rate)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>set_time_offset</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a0ed1b65ed29aeb645916d092cf86c0c8</anchor>
+      <arglist>(float time)</arglist>
+    </member>
+    <member kind="function">
+      <type>Velocity</type>
+      <name>velocity</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a2e2393745d66435fc0f779e8a728e3f9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>Elevation</type>
+      <name>elevation</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a80eac5fc7d8525cdc5b49d1d364d1eab</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>lat</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a2759af7cd8fccd333b24947013e9f117</anchor>
+      <arglist>(size_t n=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>lon</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a806a4d8133747c8a6ac1a00b14ce59dd</anchor>
+      <arglist>(size_t n=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>course</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a20b8a571d64535758328c99fdb06688a</anchor>
+      <arglist>(size_t n=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>course_by_time</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>ad6c54f9c142236b9d4520860fc759c73</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; Dim3 &gt;</type>
+      <name>gyro</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a7289f65bc17a39a4364f524edd01f167</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; Dim3 &gt;</type>
+      <name>accel</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a321b53f0a5f6b693efcf08c6ad87a19f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; Dim3 &gt;</type>
+      <name>compass</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a061c2db08ac3a6b960ab4899896b9847</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend class</type>
+      <name>Velocity</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a3c3d011364ba6b36097b4108e788d614</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend">
+      <type>friend class</type>
+      <name>Elevation</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a007a1f1c18d6897f5ee0a87e6b8a70bc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend">
+      <type>friend class</type>
+      <name>ParameterBase</name>
+      <anchorfile>classquasar_1_1_c_nav.html</anchorfile>
+      <anchor>a7118b9a8f756107192eab9019b221f99</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::CNavGPX</name>
+    <filename>classquasar_1_1_c_nav_g_p_x.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>CNavGPX</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a06afac157079752debc0eb63222fe1cf</anchor>
+      <arglist>(char const *fn)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~CNavGPX</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>ae47bba6a322506db2aef830a66cadc09</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>lat</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>ae5d98abbfc5fcd46dbb86428332cc791</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>lon</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>ad75eff4668225ca9f63c1f64247c2a84</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>x</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a38c901fd6c3801fe590bfda11f448a7a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>y</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a25e1c420f6022ba3b12faad3ddb62dbe</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>ele</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>aa9f2f583a134c087a3837a29b4b66883</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>speed</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a7bc25dc9fd3933b761f4d629dafc9ed1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>direction</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a034bc8b176b417ab3e9802023e1ed94a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; int &gt;</type>
+      <name>sats</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a66049772d6a62e56c26838c9a98397a8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>time</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a52bbb5140cdd15aa5f4fb443e706b008</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; std::string &gt;</type>
+      <name>gpxtime</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a317911e57d6bac02392caf700d3e0ad6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>azimuth</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a8a68157736b5a76e908fde7a834eb8c0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>GetXAtTime</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a197fd0f727ddc71322ec5c1a8f5aec06</anchor>
+      <arglist>(std::vector&lt; double &gt; const &amp;time)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>GetYAtTime</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a2086847ee6664463c9ee560ef0abf7d6</anchor>
+      <arglist>(std::vector&lt; double &gt; const &amp;time)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>GetEleAtTime</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>ae75364743ddf92e8a66dea4dd5fff4c6</anchor>
+      <arglist>(std::vector&lt; double &gt; const &amp;time)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>GetSpeedAtTime</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a651c21e2d56019eaece75b9d56f1089b</anchor>
+      <arglist>(std::vector&lt; double &gt; const &amp;time)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>GetDirectionAtTime</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a97278bd6090c6f0478ff62070296bdfd</anchor>
+      <arglist>(std::vector&lt; double &gt; const &amp;time)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>GetLatAtTime</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>ac894c5042f12e556baf84d60d433ff70</anchor>
+      <arglist>(std::vector&lt; double &gt; const &amp;time)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>GetLonAtTime</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a55d9fe5db4d1f950aa73f0d289be6009</anchor>
+      <arglist>(std::vector&lt; double &gt; const &amp;time)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; double &gt;</type>
+      <name>GetAzimuthAtTime</name>
+      <anchorfile>classquasar_1_1_c_nav_g_p_x.html</anchorfile>
+      <anchor>a1751148cd99e23aeca1512b8a56fd744</anchor>
+      <arglist>(std::vector&lt; double &gt; const &amp;time)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>quasar::math::Complex</name>
+    <filename>structquasar_1_1math_1_1_complex.html</filename>
+    <member kind="function">
+      <type>auto</type>
+      <name>abs</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>a33c4940e9b978d95c6f29df87b0ed080</anchor>
+      <arglist>() const -&gt; f32</arglist>
+    </member>
+    <member kind="function">
+      <type>std::complex&lt; T &gt;</type>
+      <name>to_std_complex</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>a7131a66ed4facbb6488c8a144c5834cd</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator==</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>acf667cba4957551e8d707aaa8c47a79b</anchor>
+      <arglist>(Complex const &amp;other) const -&gt; bool</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator!=</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>a8ac533d5d066ca8d1f51863cfb85f885</anchor>
+      <arglist>(Complex const &amp;other) const -&gt; bool</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>operator&lt;</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>aec2d0d94e999b4ee2010846bc7377054</anchor>
+      <arglist>(Complex const &amp;other) const -&gt; bool</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>operator&lt;=</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>a3dd35a6b6d989ae3a56f5a39b30abd72</anchor>
+      <arglist>(Complex const &amp;other) const -&gt; bool</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>operator&gt;=</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>a091ff02ecfa4e93cf5c88ee9bde902c3</anchor>
+      <arglist>(Complex const &amp;other) const -&gt; bool</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>operator&gt;</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>afb821157224383d8bdcf7e800dedbff6</anchor>
+      <arglist>(Complex const &amp;other) const -&gt; bool</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator+</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>aa05a3a7903921052f94b1e232f16843f</anchor>
+      <arglist>() const -&gt; Complex</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator-</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>a128b9d50b08e7cc07538884bbb897d3c</anchor>
+      <arglist>() const -&gt; Complex</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator*</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>aa7f77fddd9c5211f28d20360f435e1e8</anchor>
+      <arglist>(Complex const &amp;other) const -&gt; Complex</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator*</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>a744e8db5c70a8b6ce1d7314279add593</anchor>
+      <arglist>(f32 other) const -&gt; Complex</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator/</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>a2c0b1a7d038655f28c5e10da7b567561</anchor>
+      <arglist>(Complex const &amp;other) const -&gt; Complex</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator/</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>ab63c1c8edaf656831c806ca12838457f</anchor>
+      <arglist>(f32 other) const -&gt; Complex</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator+=</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>a55e9664605c980ca4282fec6f6d891dd</anchor>
+      <arglist>(Complex const &amp;other) -&gt; Complex &amp;</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator-=</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>aa8b4197ceae9342d8a89d7a577b39d29</anchor>
+      <arglist>(Complex const &amp;other) -&gt; Complex &amp;</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator*=</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>ae2582fadac2ab3002aab14c1c816da08</anchor>
+      <arglist>(Complex const &amp;other) -&gt; Complex &amp;</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator/=</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>abe14321a3d12a8a6975e2385736aaf55</anchor>
+      <arglist>(Complex const &amp;other) -&gt; Complex &amp;</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator*=</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>a17c43780537c53e6f3e7651265aa7827</anchor>
+      <arglist>(f32 other) -&gt; Complex &amp;</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>operator/=</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>a29fa3049c94395bce0547178d5f83764</anchor>
+      <arglist>(f32 other) -&gt; Complex &amp;</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static Complex</type>
+      <name>from_std_complex</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>aec1d6ccef906a4a478fa563eb3754fbc</anchor>
+      <arglist>(std::complex&lt; T &gt; c)</arglist>
+    </member>
+    <member kind="variable">
+      <type>f32</type>
+      <name>re</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>aedab7e5810eb057772dd403b325a4233</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>f32</type>
+      <name>im</name>
+      <anchorfile>structquasar_1_1math_1_1_complex.html</anchorfile>
+      <anchor>a54e7565cebd00cae5295a889034b3fef</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::Coordinate</name>
+    <filename>classquasar_1_1_coordinate.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Coordinate</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>ade9ad900d8608ab2225cac3653fe4d37</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Coordinate</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>ab8a9f4674d1d92e872d5164f246b2b8b</anchor>
+      <arglist>(f64 latitude, f64 longitude)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Coordinate</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a84283353192dd3909c52d35d6280ffe5</anchor>
+      <arglist>(f64 latitude, f64 longitude, f32 altitude)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Coordinate</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>ad31dea2c84dae128dee6de35097afef9</anchor>
+      <arglist>(Coordinate const &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Coordinate</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>ae928f1e48cdc4a6c4e288faaff506303</anchor>
+      <arglist>(Coordinate &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>Coordinate &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a4bf07832d4b6942477e6893c063b72fb</anchor>
+      <arglist>(Coordinate const &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>Coordinate &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a453d8c0843ceb9e066be7cd7c35197ae</anchor>
+      <arglist>(Coordinate &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Coordinate</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a383038c71d290442a5486ef86921ad41</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>valid</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>acb77b16fd10ef78c852184ce1ca45fd0</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>f32</type>
+      <name>azimuth_to</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a63f0d4c07e4d7dc7f2676fafa1de3521</anchor>
+      <arglist>(Coordinate const &amp;other) const</arglist>
+    </member>
+    <member kind="function">
+      <type>f32</type>
+      <name>distance_to</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a77b0694188106189f91f206357ab07ad</anchor>
+      <arglist>(Coordinate const &amp;other) const</arglist>
+    </member>
+    <member kind="function">
+      <type>Coordinate</type>
+      <name>at_distance_and_azimuth</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a87d6f4f2ee82bf7fde2eca4a224fa8bc</anchor>
+      <arglist>(f32 distance, f32 azimuth) const</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>to_string</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a255489d89f377420178704bd8629d824</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>operator bool</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a489b13ede9bd55a3d16af42a13a45fde</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="variable">
+      <type>f64</type>
+      <name>latitude</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>aa875b92e00d8c86985e3e9aa177620b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>f64</type>
+      <name>longitude</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>ac9cdc3caf0c35915f4d26593fd13e237</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>optional&lt; f32 &gt;</type>
+      <name>altitude</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>aeb7d2ceec688123ba270f973ac204999</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static auto constexpr</type>
+      <name>comparison_tolerance</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a2ec1e63b0f8a1128146bb53a2bc19dff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static auto constexpr</type>
+      <name>valid_threshold</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>ad2216b2d122a1f0d10fb72c1d776a936</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend">
+      <type>friend bool</type>
+      <name>operator==</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a37cdd757ec923993f47179e406757e83</anchor>
+      <arglist>(Coordinate const &amp;lhs, Coordinate const &amp;rhs)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend bool</type>
+      <name>operator!=</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a962edbd3edb83c0ddb83daa0df9a5d2f</anchor>
+      <arglist>(Coordinate const &amp;lhs, Coordinate const &amp;rhs)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend bool</type>
+      <name>operator&lt;</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a00142b89555da2bacbf110a79f42bfc1</anchor>
+      <arglist>(Coordinate const &amp;lhs, Coordinate const &amp;rhs)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>classquasar_1_1_coordinate.html</anchorfile>
+      <anchor>a655b6b0bd5fa238820d104e3bafed51b</anchor>
+      <arglist>(std::ostream &amp;os, Coordinate const &amp;coordinate)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::CRadarSTT</name>
+    <filename>classquasar_1_1_c_radar_s_t_t.html</filename>
+    <base>quasar::IAbstractRadar</base>
+    <member kind="enumeration">
+      <type></type>
+      <name>SampleSize</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a568a49468d36c990ae2fd8af249b959f</anchor>
+      <arglist></arglist>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a568a49468d36c990ae2fd8af249b959faec0fc0100c4fc1ce4eea230c3dc10360">Undefined</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a568a49468d36c990ae2fd8af249b959fad0f8c835858c71d21117f6d813657391">OneBit</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a568a49468d36c990ae2fd8af249b959fae12e97e88bc2bcfa075b73b044406a8b">TwoBit</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a568a49468d36c990ae2fd8af249b959fa394203c80c708e3728c9e4c50be0372a">FourBit</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a568a49468d36c990ae2fd8af249b959fae7cfb531ab37d769ced9d40d8ef6087f">EightBit</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a568a49468d36c990ae2fd8af249b959fa40f5ab95bc1ef5377e682f7c61f523d0">SixteenBit</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Ramp</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a9476555d6cbe9efddce62037b306bf10</anchor>
+      <arglist></arglist>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a9476555d6cbe9efddce62037b306bf10aec0fc0100c4fc1ce4eea230c3dc10360">Undefined</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a9476555d6cbe9efddce62037b306bf10ac551a26a97a7440529e861dff6933722">Saw</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a9476555d6cbe9efddce62037b306bf10a241f88afa7becb8633ca074c48e0d77c">Triangular</enumvalue>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; Image &gt;</type>
+      <name>read_image</name>
+      <anchorfile>classquasar_1_1_c_radar_s_t_t.html</anchorfile>
+      <anchor>a1d698a9e1200e57a3b0da9bfecbf4355</anchor>
+      <arglist>(usize period_count, f32 time_shift, usize sync_pos, i32 freq_interpolation_coeff, bool round, bool remove_transition) const noexcept(false) override</arglist>
+    </member>
+    <member kind="function">
+      <type>std::tuple&lt; ptrdiff_t, ptrdiff_t &gt;</type>
+      <name>find_sync_pos</name>
+      <anchorfile>classquasar_1_1_c_radar_s_t_t.html</anchorfile>
+      <anchor>a656dd82d9b9661f3c973d8c71168aa78</anchor>
+      <arglist>(Image const &amp;image) const noexcept(false) override</arglist>
+    </member>
+    <member kind="function">
+      <type>std::tuple&lt; ptrdiff_t, ptrdiff_t &gt;</type>
+      <name>sync_pos</name>
+      <anchorfile>classquasar_1_1_c_radar_s_t_t.html</anchorfile>
+      <anchor>a971ca6de452129ad011010b6807837cd</anchor>
+      <arglist>(f32 time_shift, usize offset) const noexcept(false) override</arglist>
+    </member>
+    <member kind="function">
+      <type>std::shared_ptr&lt; Image &gt;</type>
+      <name>block_read</name>
+      <anchorfile>classquasar_1_1_c_radar_s_t_t.html</anchorfile>
+      <anchor>ae61372199e452e76a9cbe9efa3616859</anchor>
+      <arglist>(usize period_count, i32 freq_interpolation_coeff) const noexcept(false) override</arglist>
+    </member>
+    <member kind="function">
+      <type>usize</type>
+      <name>current_pos</name>
+      <anchorfile>classquasar_1_1_c_radar_s_t_t.html</anchorfile>
+      <anchor>aec2f9f75327d51721eefcf95566be6ab</anchor>
+      <arglist>() const override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_current_pos</name>
+      <anchorfile>classquasar_1_1_c_radar_s_t_t.html</anchorfile>
+      <anchor>a90b1e14b1897f881320f5d46a20843fa</anchor>
+      <arglist>(usize pos) override</arglist>
+    </member>
+    <member kind="function">
+      <type>f32</type>
+      <name>current_time</name>
+      <anchorfile>classquasar_1_1_c_radar_s_t_t.html</anchorfile>
+      <anchor>a1b792220ab514e031d556381839e1140</anchor>
+      <arglist>() const override</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IAbstractRadar</name>
+      <anchorfile>classquasar_1_1_c_radar_s_t_t.html</anchorfile>
+      <anchor>aaffe8a4e8ccf834f8d66a8c1258a410a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IAbstractRadar</name>
+      <anchorfile>classquasar_1_1_c_radar_s_t_t.html</anchorfile>
+      <anchor>af523bba67ed21da69c7524a5d3050d3d</anchor>
+      <arglist>(std::filesystem::path const &amp;config_file_path, enum DSP type) noexcept(false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IAbstractRadar</name>
+      <anchorfile>classquasar_1_1_c_radar_s_t_t.html</anchorfile>
+      <anchor>a01f8252feb2d87f645abc1d2670e81f3</anchor>
+      <arglist>(std::filesystem::path const &amp;config_file_path, std::filesystem::path const &amp;hologram_file_path, enum DSP type) noexcept(false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IAbstractRadar</name>
+      <anchorfile>classquasar_1_1_c_radar_s_t_t.html</anchorfile>
+      <anchor>a297423bc27783821625c4f3d9407a354</anchor>
+      <arglist>(IAbstractRadar const &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IAbstractRadar</name>
+      <anchorfile>classquasar_1_1_c_radar_s_t_t.html</anchorfile>
+      <anchor>ac33198336bd28f7e63670d591e1672e4</anchor>
+      <arglist>(IAbstractRadar &amp;&amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr enum DSP</type>
+      <name>type</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a233413c2777f6b61e2d04daab0dfa58e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_type</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a3878fc6dbc6cc42b8fa95cc5d31b86ee</anchor>
+      <arglist>(enum DSP const type)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr std::filesystem::path const &amp;</type>
+      <name>hologram_path</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ada1c51c745dc4c31a4c49312ee651d89</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_hologram_path</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ad547d1ecdacf6452143ee869bbb3fe1b</anchor>
+      <arglist>(std::filesystem::path const &amp;path) noexcept(false)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr f32</type>
+      <name>initial_frequency</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a8a4132b4c8ef62de438e03acd9481d6b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr f32</type>
+      <name>sampling_frequency</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ace4546bf02cb7b05996d0aa97fe4ac3a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr i32</type>
+      <name>sample_count</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a8cc198acba1dde255faa612efce76aa9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr i32</type>
+      <name>sample_count_rounded</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>abb1bf26b2b3aeae1d8073b7c0c9809af</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr f32</type>
+      <name>lfm_deviation</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>af393c5dfe04e9c1e283c57d9735afd12</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr i32</type>
+      <name>sync_sample_count</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a04661a0b92ce503ea9895017850cdffe</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr std::pair&lt; i32, i32 &gt;</type>
+      <name>transient_samples_count</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ade5d46b976f47e40b5b2109da14239e2</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr SampleSize</type>
+      <name>sample_size</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ab3cb9596c92eca5eb0bfd5487b24ce5f</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Ramp</type>
+      <name>ramp_type</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a96541f999d62f0d2c33c1c8014930f53</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr f32</type>
+      <name>bytes_per_sample</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>af2765990cfa9df6c56ed7fa652773872</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>f32</type>
+      <name>wave_length</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a22a171904d18198e933f3180c4e8e74c</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>f32</type>
+      <name>repetition_period</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a063ca39f3bf67d5b3e810be6886b9356</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr f32</type>
+      <name>modulation_period</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a95a9b383af45b8b92b3bc33cd847f924</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>f32</type>
+      <name>modulation_slope</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a39996865f02f92c1f25aa38058441f2f</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>i32</type>
+      <name>period_count</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a3c55ae155ceffa2691cc63501f79b4bf</anchor>
+      <arglist>(f32 time) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>std::ifstream &amp;</type>
+      <name>handle</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ae499a79048b76cca62f6dee77438acfe</anchor>
+      <arglist>() const noexcept(false)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_configuration</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a62897e06c5ade6ffd52ba3308505d09a</anchor>
+      <arglist>(std::filesystem::path const &amp;path)</arglist>
+    </member>
+    <member kind="function">
+      <type>i32</type>
+      <name>strip_time</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a6e4c45256c792a57c2520aea1078834a</anchor>
+      <arglist>(f32 synthesis_time, f32 time_shift) const</arglist>
+    </member>
+    <member kind="function">
+      <type>f32</type>
+      <name>nav_delay</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a92dd305a44b24404fb043930ce0ee24d</anchor>
+      <arglist>(std::filesystem::path const &amp;nav_file_path) const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual f32</type>
+      <name>frequency_to_range</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a59ef074e9b1f0495299c8330c497214b</anchor>
+      <arglist>(f32 frequency) const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual f32</type>
+      <name>range_to_index</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a3325328f5c63538e32c4ba06dbeef05a</anchor>
+      <arglist>(f32 range) const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual result&lt; i32 &gt;</type>
+      <name>approx_strip_time</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a83b1014bedf22c116ba45aa33313c49c</anchor>
+      <arglist>(f32 synthesis_time, f32 time_shift) const</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>i32</type>
+      <name>sample_count_rounded_</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a849d040f5ad5d133dd34cb5389a4e8e7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>enum DSP</type>
+      <name>type_</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ab0f4b8cc8101fb7d8e5eaeb91eabf108</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::CStripStream</name>
+    <filename>classquasar_1_1_c_strip_stream.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>CStripStream</name>
+      <anchorfile>classquasar_1_1_c_strip_stream.html</anchorfile>
+      <anchor>aa8dcae5afa9596e9099c6046f8c2c119</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CStripStream</name>
+      <anchorfile>classquasar_1_1_c_strip_stream.html</anchorfile>
+      <anchor>a27d2e59b6891e101139925c480d6b220</anchor>
+      <arglist>(CBackProjection *bp)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~CStripStream</name>
+      <anchorfile>classquasar_1_1_c_strip_stream.html</anchorfile>
+      <anchor>a2fd33786b1ea9ab9a09ac2419e316eaa</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; u8 &gt;</type>
+      <name>strip_stream</name>
+      <anchorfile>classquasar_1_1_c_strip_stream.html</anchorfile>
+      <anchor>a035cf237d6b993221a510965e874d3b0</anchor>
+      <arglist>(f32 x0, f32 y0, int n, f32 angle, std::vector&lt; f32 &gt; const &amp;v, std::vector&lt; f32 &gt; const &amp;h, std::vector&lt; f32 &gt; const &amp;x)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_nav_data</name>
+      <anchorfile>classquasar_1_1_c_strip_stream.html</anchorfile>
+      <anchor>ac3b28f1a973964675397be6bd1be2b68</anchor>
+      <arglist>(double lat, double lon, float velocity, float ele, float course, float drift_ang, float pitch, float roll)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::Dim3</name>
+    <filename>classquasar_1_1_dim3.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Dim3</name>
+      <anchorfile>classquasar_1_1_dim3.html</anchorfile>
+      <anchor>aea08c7f355028134de0d404139bcb7b2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Dim3</name>
+      <anchorfile>classquasar_1_1_dim3.html</anchorfile>
+      <anchor>ab5f410a7db56c1985ed93df6e0be4afa</anchor>
+      <arglist>(int16_t _x, int16_t _y, int16_t _z)</arglist>
+    </member>
+    <member kind="variable">
+      <type>int16_t</type>
+      <name>x</name>
+      <anchorfile>classquasar_1_1_dim3.html</anchorfile>
+      <anchor>addd99d67a2a9192f72888ac2f5f18a98</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int16_t</type>
+      <name>y</name>
+      <anchorfile>classquasar_1_1_dim3.html</anchorfile>
+      <anchor>adc17c73602e2884d806525356eb8610e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int16_t</type>
+      <name>z</name>
+      <anchorfile>classquasar_1_1_dim3.html</anchorfile>
+      <anchor>a259e809a6d1bcf1f801c0b0d4dad469a</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::Elevation</name>
+    <filename>classquasar_1_1_elevation.html</filename>
+    <base>quasar::ParameterBase</base>
+    <member kind="function">
+      <type></type>
+      <name>Elevation</name>
+      <anchorfile>classquasar_1_1_elevation.html</anchorfile>
+      <anchor>a8d7da10add3136328149bba7156a4978</anchor>
+      <arglist>(CNav *_nav)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>mean</name>
+      <anchorfile>classquasar_1_1_elevation.html</anchorfile>
+      <anchor>a2291e50ac85f26cff8af4b03dbac993a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>mean_above</name>
+      <anchorfile>classquasar_1_1_elevation.html</anchorfile>
+      <anchor>a002be5af0c1cc38808a84ace89814eea</anchor>
+      <arglist>(float above)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>CNav *</type>
+      <name>Nav</name>
+      <anchorfile>classquasar_1_1_parameter_base.html</anchorfile>
+      <anchor>a769cdc1df25efb8cc7fad8f97e45ae3c</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::FileSenderFsend</name>
+    <filename>classquasar_1_1_file_sender_fsend.html</filename>
+    <base>quasar::IFileSender</base>
+    <member kind="function">
+      <type></type>
+      <name>FileSenderFsend</name>
+      <anchorfile>classquasar_1_1_file_sender_fsend.html</anchorfile>
+      <anchor>a443d72bc76a55625566f2e97f1bf5dca</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~FileSenderFsend</name>
+      <anchorfile>classquasar_1_1_file_sender_fsend.html</anchorfile>
+      <anchor>a6ce4e25755db09279243edff8d9d3891</anchor>
+      <arglist>() override=default</arglist>
+    </member>
+    <member kind="function">
+      <type>result</type>
+      <name>send_file</name>
+      <anchorfile>classquasar_1_1_file_sender_fsend.html</anchorfile>
+      <anchor>a33721d468df2bf4119e5e30cf6cb8b68</anchor>
+      <arglist>(std::filesystem::path const &amp;path, net::ip_address const &amp;ip, std::uint16_t port) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>result</type>
+      <name>send_file</name>
+      <anchorfile>classquasar_1_1_file_sender_fsend.html</anchorfile>
+      <anchor>a2b1a2848b80fbd1bab521d9133bc5549</anchor>
+      <arglist>(std::filesystem::path const &amp;path, std::string_view sockaddr) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>result</type>
+      <name>send_image</name>
+      <anchorfile>classquasar_1_1_file_sender_fsend.html</anchorfile>
+      <anchor>a3fe8b8815a734aecb16a55420a0b7005</anchor>
+      <arglist>(std::filesystem::path const &amp;path, api::Metadata const &amp;metadata, net::ip_address const &amp;ip, std::uint16_t port) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>result</type>
+      <name>send_image</name>
+      <anchorfile>classquasar_1_1_file_sender_fsend.html</anchorfile>
+      <anchor>ae8e0e761196e96aac9bf01b3ef7f067e</anchor>
+      <arglist>(std::filesystem::path const &amp;path, api::Metadata const &amp;metadata, std::string_view sockaddr) const override</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>fmt::formatter&lt; quasar::Coordinate &gt;</name>
+    <filename>structfmt_1_1formatter_3_01quasar_1_1_coordinate_01_4.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>fmt::formatter&lt; quasar::DSP &gt;</name>
+    <filename>structfmt_1_1formatter_3_01quasar_1_1_d_s_p_01_4.html</filename>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>parse</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_d_s_p_01_4.html</anchorfile>
+      <anchor>ac912b894dd6aa28646f05194d2360de2</anchor>
+      <arglist>(ParseContext &amp;ctx)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>format</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_d_s_p_01_4.html</anchorfile>
+      <anchor>ae1bb91f4a716882ba0440f86c20f03ae</anchor>
+      <arglist>(quasar::DSP const &amp;value, FormatContext &amp;ctx) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>fmt::formatter&lt; quasar::IAbstractRadar::Ramp &gt;</name>
+    <filename>structfmt_1_1formatter_3_01quasar_1_1_i_abstract_radar_1_1_ramp_01_4.html</filename>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>parse</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_i_abstract_radar_1_1_ramp_01_4.html</anchorfile>
+      <anchor>aeef0e9390e8529007118c00d0ad1c15a</anchor>
+      <arglist>(ParseContext &amp;ctx)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>format</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_i_abstract_radar_1_1_ramp_01_4.html</anchorfile>
+      <anchor>a3cc3db42971fb2aec6d98671283d176f</anchor>
+      <arglist>(quasar::IAbstractRadar::Ramp const &amp;value, FormatContext &amp;ctx) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>fmt::formatter&lt; quasar::IAbstractRadar::SampleSize &gt;</name>
+    <filename>structfmt_1_1formatter_3_01quasar_1_1_i_abstract_radar_1_1_sample_size_01_4.html</filename>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>parse</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_i_abstract_radar_1_1_sample_size_01_4.html</anchorfile>
+      <anchor>ac17028959a2a32752b7d2deb33866778</anchor>
+      <arglist>(ParseContext &amp;ctx)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>format</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_i_abstract_radar_1_1_sample_size_01_4.html</anchorfile>
+      <anchor>a499caa5d299370eb2cb6534e6641d624</anchor>
+      <arglist>(quasar::IAbstractRadar::SampleSize const &amp;value, FormatContext &amp;ctx) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>fmt::formatter&lt; quasar::ImageFormat &gt;</name>
+    <filename>structfmt_1_1formatter_3_01quasar_1_1_image_format_01_4.html</filename>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>parse</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_image_format_01_4.html</anchorfile>
+      <anchor>a8505fecd3e551bc061d3f8233c381828</anchor>
+      <arglist>(ParseContext &amp;ctx)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>format</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_image_format_01_4.html</anchorfile>
+      <anchor>a20f4aa221c8c7a63342ee7e7e2e0c47f</anchor>
+      <arglist>(quasar::ImageFormat const &amp;value, FormatContext &amp;ctx) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>fmt::formatter&lt; quasar::ImageKind &gt;</name>
+    <filename>structfmt_1_1formatter_3_01quasar_1_1_image_kind_01_4.html</filename>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>parse</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_image_kind_01_4.html</anchorfile>
+      <anchor>aad710e85902284f042a65b0bdcbd6bb6</anchor>
+      <arglist>(ParseContext &amp;ctx)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>format</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_image_kind_01_4.html</anchorfile>
+      <anchor>a332b95f6272e5b113e17fe8dde131e4f</anchor>
+      <arglist>(quasar::ImageKind const &amp;value, FormatContext &amp;ctx) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>fmt::formatter&lt; quasar::ImageUnderlyingType &gt;</name>
+    <filename>structfmt_1_1formatter_3_01quasar_1_1_image_underlying_type_01_4.html</filename>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>parse</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_image_underlying_type_01_4.html</anchorfile>
+      <anchor>ae6110d29b03814696de5904a6dee1a01</anchor>
+      <arglist>(ParseContext &amp;ctx)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>format</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_image_underlying_type_01_4.html</anchorfile>
+      <anchor>ad318c1ac3ff634869b12f037e345a958</anchor>
+      <arglist>(quasar::ImageUnderlyingType const &amp;value, FormatContext &amp;ctx) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>fmt::formatter&lt; quasar::math::Complex &gt;</name>
+    <filename>structfmt_1_1formatter_3_01quasar_1_1math_1_1_complex_01_4.html</filename>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>parse</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1math_1_1_complex_01_4.html</anchorfile>
+      <anchor>a74135e570024687a47b79b0399a7e77c</anchor>
+      <arglist>(ParseContext &amp;ctx)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>format</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1math_1_1_complex_01_4.html</anchorfile>
+      <anchor>a7ac27aa567d889ed3924cbfc1f0282a9</anchor>
+      <arglist>(quasar::math::Complex const &amp;c, FormatContext &amp;ctx)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>fmt::formatter&lt; quasar::WindowFunction &gt;</name>
+    <filename>structfmt_1_1formatter_3_01quasar_1_1_window_function_01_4.html</filename>
+    <member kind="function">
+      <type>constexpr auto</type>
+      <name>parse</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_window_function_01_4.html</anchorfile>
+      <anchor>a27be11cddc0ef233c6d88de2de8bce07</anchor>
+      <arglist>(ParseContext &amp;ctx)</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>format</name>
+      <anchorfile>structfmt_1_1formatter_3_01quasar_1_1_window_function_01_4.html</anchorfile>
+      <anchor>a902935bc6427446b2ddfeaff1c965289</anchor>
+      <arglist>(quasar::WindowFunction const &amp;value, FormatContext &amp;ctx) const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>std::hash&lt; quasar::Coordinate &gt;</name>
+    <filename>structstd_1_1hash_3_01quasar_1_1_coordinate_01_4.html</filename>
+    <member kind="function">
+      <type>std::size_t</type>
+      <name>operator()</name>
+      <anchorfile>structstd_1_1hash_3_01quasar_1_1_coordinate_01_4.html</anchorfile>
+      <anchor>a518c624c5222548d485d9bf5e5577f62</anchor>
+      <arglist>(quasar::Coordinate const &amp;c) const noexcept</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::IAbstractRadar</name>
+    <filename>classquasar_1_1_i_abstract_radar.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>SampleSize</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a568a49468d36c990ae2fd8af249b959f</anchor>
+      <arglist></arglist>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a568a49468d36c990ae2fd8af249b959faec0fc0100c4fc1ce4eea230c3dc10360">Undefined</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a568a49468d36c990ae2fd8af249b959fad0f8c835858c71d21117f6d813657391">OneBit</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a568a49468d36c990ae2fd8af249b959fae12e97e88bc2bcfa075b73b044406a8b">TwoBit</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a568a49468d36c990ae2fd8af249b959fa394203c80c708e3728c9e4c50be0372a">FourBit</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a568a49468d36c990ae2fd8af249b959fae7cfb531ab37d769ced9d40d8ef6087f">EightBit</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a568a49468d36c990ae2fd8af249b959fa40f5ab95bc1ef5377e682f7c61f523d0">SixteenBit</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Ramp</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a9476555d6cbe9efddce62037b306bf10</anchor>
+      <arglist></arglist>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a9476555d6cbe9efddce62037b306bf10aec0fc0100c4fc1ce4eea230c3dc10360">Undefined</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a9476555d6cbe9efddce62037b306bf10ac551a26a97a7440529e861dff6933722">Saw</enumvalue>
+      <enumvalue file="classquasar_1_1_i_abstract_radar.html" anchor="a9476555d6cbe9efddce62037b306bf10a241f88afa7becb8633ca074c48e0d77c">Triangular</enumvalue>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IAbstractRadar</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>aaffe8a4e8ccf834f8d66a8c1258a410a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IAbstractRadar</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>af523bba67ed21da69c7524a5d3050d3d</anchor>
+      <arglist>(std::filesystem::path const &amp;config_file_path, enum DSP type) noexcept(false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IAbstractRadar</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a01f8252feb2d87f645abc1d2670e81f3</anchor>
+      <arglist>(std::filesystem::path const &amp;config_file_path, std::filesystem::path const &amp;hologram_file_path, enum DSP type) noexcept(false)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~IAbstractRadar</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ae2f8cef3e188797159ad248a6c02648e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IAbstractRadar</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a297423bc27783821625c4f3d9407a354</anchor>
+      <arglist>(IAbstractRadar const &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>IAbstractRadar &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a9e3fac65cf1cc1bc27f2421e6340ec84</anchor>
+      <arglist>(IAbstractRadar const &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IAbstractRadar</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ac33198336bd28f7e63670d591e1672e4</anchor>
+      <arglist>(IAbstractRadar &amp;&amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>IAbstractRadar &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ad1688489f0b1bd42b7533b4c4a3f0633</anchor>
+      <arglist>(IAbstractRadar &amp;&amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr enum DSP</type>
+      <name>type</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a233413c2777f6b61e2d04daab0dfa58e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_type</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a3878fc6dbc6cc42b8fa95cc5d31b86ee</anchor>
+      <arglist>(enum DSP const type)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr std::filesystem::path const &amp;</type>
+      <name>hologram_path</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ada1c51c745dc4c31a4c49312ee651d89</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_hologram_path</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ad547d1ecdacf6452143ee869bbb3fe1b</anchor>
+      <arglist>(std::filesystem::path const &amp;path) noexcept(false)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr f32</type>
+      <name>initial_frequency</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a8a4132b4c8ef62de438e03acd9481d6b</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr f32</type>
+      <name>sampling_frequency</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ace4546bf02cb7b05996d0aa97fe4ac3a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr i32</type>
+      <name>sample_count</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a8cc198acba1dde255faa612efce76aa9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr i32</type>
+      <name>sample_count_rounded</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>abb1bf26b2b3aeae1d8073b7c0c9809af</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr f32</type>
+      <name>lfm_deviation</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>af393c5dfe04e9c1e283c57d9735afd12</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr i32</type>
+      <name>sync_sample_count</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a04661a0b92ce503ea9895017850cdffe</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr std::pair&lt; i32, i32 &gt;</type>
+      <name>transient_samples_count</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ade5d46b976f47e40b5b2109da14239e2</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr SampleSize</type>
+      <name>sample_size</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ab3cb9596c92eca5eb0bfd5487b24ce5f</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Ramp</type>
+      <name>ramp_type</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a96541f999d62f0d2c33c1c8014930f53</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr f32</type>
+      <name>bytes_per_sample</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>af2765990cfa9df6c56ed7fa652773872</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>f32</type>
+      <name>wave_length</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a22a171904d18198e933f3180c4e8e74c</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>f32</type>
+      <name>repetition_period</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a063ca39f3bf67d5b3e810be6886b9356</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr f32</type>
+      <name>modulation_period</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a95a9b383af45b8b92b3bc33cd847f924</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>f32</type>
+      <name>modulation_slope</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a39996865f02f92c1f25aa38058441f2f</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>i32</type>
+      <name>period_count</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a3c55ae155ceffa2691cc63501f79b4bf</anchor>
+      <arglist>(f32 time) const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>std::ifstream &amp;</type>
+      <name>handle</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ae499a79048b76cca62f6dee77438acfe</anchor>
+      <arglist>() const noexcept(false)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_configuration</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a62897e06c5ade6ffd52ba3308505d09a</anchor>
+      <arglist>(std::filesystem::path const &amp;path)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual std::shared_ptr&lt; Image &gt;</type>
+      <name>read_image</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>aed8435b5ce9b24e3ede12d1063112c5f</anchor>
+      <arglist>(usize period_count, f32 time_shift, usize sync_pos, i32 freq_interpolation_coeff, bool round, bool remove_transition) const noexcept(false)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual std::tuple&lt; ptrdiff_t, ptrdiff_t &gt;</type>
+      <name>find_sync_pos</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a8885d4dcae838d439ba335f5f181145a</anchor>
+      <arglist>(Image const &amp;image) const noexcept(false)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual std::tuple&lt; ptrdiff_t, ptrdiff_t &gt;</type>
+      <name>sync_pos</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>aab55285396c0c1e459f1aa3efb669cf4</anchor>
+      <arglist>(f32 time_shift, usize offset) const noexcept(false)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual std::shared_ptr&lt; Image &gt;</type>
+      <name>block_read</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a9ab4ecf830442d4bea3df962af6da83d</anchor>
+      <arglist>(usize period_count, i32 freq_interpolation_coeff) const noexcept(false)=0</arglist>
+    </member>
+    <member kind="function">
+      <type>i32</type>
+      <name>strip_time</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a6e4c45256c792a57c2520aea1078834a</anchor>
+      <arglist>(f32 synthesis_time, f32 time_shift) const</arglist>
+    </member>
+    <member kind="function">
+      <type>f32</type>
+      <name>nav_delay</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a92dd305a44b24404fb043930ce0ee24d</anchor>
+      <arglist>(std::filesystem::path const &amp;nav_file_path) const</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual usize</type>
+      <name>current_pos</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a235b61a09e3dac28fa886fc289285528</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual f32</type>
+      <name>current_time</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>aa321f0947f459f40bce0a415706e9f69</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>set_current_pos</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>add7c7cbf53a75807bdc5b8617f3b238a</anchor>
+      <arglist>(usize pos)=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual f32</type>
+      <name>frequency_to_range</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a59ef074e9b1f0495299c8330c497214b</anchor>
+      <arglist>(f32 frequency) const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual f32</type>
+      <name>range_to_index</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a3325328f5c63538e32c4ba06dbeef05a</anchor>
+      <arglist>(f32 range) const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual result&lt; i32 &gt;</type>
+      <name>approx_strip_time</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a83b1014bedf22c116ba45aa33313c49c</anchor>
+      <arglist>(f32 synthesis_time, f32 time_shift) const</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>i32</type>
+      <name>sample_count_rounded_</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>a849d040f5ad5d133dd34cb5389a4e8e7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>enum DSP</type>
+      <name>type_</name>
+      <anchorfile>classquasar_1_1_i_abstract_radar.html</anchorfile>
+      <anchor>ab0f4b8cc8101fb7d8e5eaeb91eabf108</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::ICompositeLogger</name>
+    <filename>classquasar_1_1_i_composite_logger.html</filename>
+    <class kind="struct">quasar::ICompositeLogger::Parameters</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>Target</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>ac2a279e12eea84f7f8251fcd9426704c</anchor>
+      <arglist></arglist>
+      <enumvalue file="classquasar_1_1_i_composite_logger.html" anchor="ac2a279e12eea84f7f8251fcd9426704ca21d983484658a89e3070776fae2261f5">Stdout</enumvalue>
+      <enumvalue file="classquasar_1_1_i_composite_logger.html" anchor="ac2a279e12eea84f7f8251fcd9426704ca0b27918290ff5323bea1e3b78a9cf04e">File</enumvalue>
+      <enumvalue file="classquasar_1_1_i_composite_logger.html" anchor="ac2a279e12eea84f7f8251fcd9426704cab1c94ca2fbc3e78fc30069c8d0f01680">All</enumvalue>
+    </member>
+    <member kind="typedef">
+      <type>std::shared_ptr&lt; spdlog::logger &gt;(*)(std::vector&lt; spdlog::sink_ptr &gt;)</type>
+      <name>register_fn_type</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>a24edda45ffe5315117e1799410c6717f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>spdlog::logger</type>
+      <name>logger_type</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>ac85026cfb09b0d889870e0c8b52b11d0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>spdlog::level::level_enum</type>
+      <name>level_type</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>a2f7bf10beb8772ccfe15b96aef792015</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ICompositeLogger</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>a7172efc54870f6a71aa00071331a287c</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual std::shared_ptr&lt; logger_type &gt; &amp;</type>
+      <name>get</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>a5a2530ebc351deed6083ab721ebde6a2</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual std::shared_ptr&lt; logger_type &gt; const &amp;</type>
+      <name>get</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>a6e3ded26eecb8bcbb30cf1d3dd0169f2</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual Parameters const &amp;</type>
+      <name>parameters</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>a1380950f629b7a46f83f903ab63e2050</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual</type>
+      <name>operator bool</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>ae38b03c4fcb2bef179c3a8a46b7c5135</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual std::shared_ptr&lt; logger_type &gt; &amp;</type>
+      <name>operator*</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>a21a7135e770949a165c14568c32fa528</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual std::shared_ptr&lt; logger_type &gt; const &amp;</type>
+      <name>operator*</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>a8bf5323a6e4513e1b90b0e02b84d154e</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual std::shared_ptr&lt; logger_type &gt; &amp;</type>
+      <name>operator-&gt;</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>aed952f13efed2e44ab5757e81abb4000</anchor>
+      <arglist>()=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual std::shared_ptr&lt; logger_type &gt; const &amp;</type>
+      <name>operator-&gt;</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>aaf2db503a3ee20b66c42781701b24d74</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>register_from_this</name>
+      <anchorfile>classquasar_1_1_i_composite_logger.html</anchorfile>
+      <anchor>a6425a069ae3a9761558da5318bd998d4</anchor>
+      <arglist>(ICompositeLogger::register_fn_type register_fn)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::dsp::IDSP</name>
+    <filename>classquasar_1_1dsp_1_1_i_d_s_p.html</filename>
+    <class kind="struct">quasar::dsp::IDSP::PixelProcParams</class>
+    <member kind="function">
+      <type></type>
+      <name>IDSP</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>aa4838d9fe16ccb2964cc28078fbf2f42</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~IDSP</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>aebc4fd32cfc43e736109514529d0dd2a</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual auto</type>
+      <name>print_description</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>ad02ce9c2bde65d2bfbec25f4b937b920</anchor>
+      <arglist>(std::FILE *out) const noexcept -&gt; void=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual auto</type>
+      <name>type</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a3d3355f9e30e5494c7577a9f73f174f2</anchor>
+      <arglist>() const noexcept -&gt; enum DSP=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>mean</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a01c840b2686f4db35bf0a95175ebd841</anchor>
+      <arglist>(f32 *pImageData, int N)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>hamming</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>ab53f28bea3a71a725c81e0f2f9b782f0</anchor>
+      <arglist>(f32 *pImageData, int W, int H, int W0, int H0)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>hamming</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a280bcd25a876f9faa4c9b5c7b7d8d1a5</anchor>
+      <arglist>(math::Complex *pImageData, int W, int H, int W0, int H0)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual auto</type>
+      <name>fft</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>ae8c8cb06452681641cc6003fd250567e</anchor>
+      <arglist>(f32 *data, int n, int m) -&gt; void=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>fft</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a8830171e082d7b45d2f0fad146c58d3b</anchor>
+      <arglist>(math::Complex *pImageData, int N, int M)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>ifft</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>aa707007c9ad2c426e22a6d26114da2cb</anchor>
+      <arglist>(math::Complex *pImageData, int N, int M)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>fftshift</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a48d6ec7c0383ec0d5626a0f8552ffc2d</anchor>
+      <arglist>(math::Complex *pImageData, int N, int M)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>rmc</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a704ac2b583db05ecc50d45c5549108ff</anchor>
+      <arglist>(math::Complex *pData, int w, int h, int hb, float lambda, float tp, float v)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>phocus</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a058e8b27b718052d82ae58e5fc52b8cc</anchor>
+      <arglist>(math::Complex *pData, int W, int H, int Hmax, float Rb, float Tp, float lambda, float V, float Rmax, int Np)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>entropy</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>aec99f8c246eaf5b21c38a29105ca6a56</anchor>
+      <arglist>(math::Complex *pData, int W, int H)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual float</type>
+      <name>entropyf</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a331c5a40b7ac93503db9290544637b9d</anchor>
+      <arglist>(f32 *pData, int W, int H)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>complexMul</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a2a2c4e4c765deefe65ad622b68ff9c70</anchor>
+      <arglist>(math::Complex *SrcDst1, math::Complex *Src2, int len)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>complexMul</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>af6a5fa0dfbde99a32cd9368a80d0ce3b</anchor>
+      <arglist>(math::Complex *SrcDst1, float *Src2, int len)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>complexSum</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>aeab0b6037d3e5bd06fdd55a66177699c</anchor>
+      <arglist>(math::Complex *Src, math::Complex *Dst, int len)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>window_weighting</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>aeb1a70a6b1160a2d6938c5cc2fdb272b</anchor>
+      <arglist>(Image &amp;image, Window const &amp;window) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual result</type>
+      <name>range_compress</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>acda7680e94942d309c217b1236914d81</anchor>
+      <arglist>(Image &amp;image) const noexcept</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual result</type>
+      <name>azimuth_compress</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a7e7a06e335f792b65a428fa3d20b307f</anchor>
+      <arglist>(Image &amp;image) const noexcept</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual result</type>
+      <name>remove_dc</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a075d6d4c256d4dcde3df0f4906faff70</anchor>
+      <arglist>(Image &amp;image) const noexcept=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>bp</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a9b3817bbcbf1700140ff14820055381d</anchor>
+      <arglist>(Image *image, IAbstractRadar *radar, f32 *outdata, f32 *wnd, std::vector&lt; f32 &gt; const &amp;velocity, f32 x0, f32 y0, f32 dx, f32 dy, std::vector&lt; f32 &gt; const &amp;elevation, std::vector&lt; f32 &gt; const &amp;diffx, int nx, int ny, bool bCorr, f32 angle, f32 div, math::Complex *pc)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>bp_strip</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_d_s_p.html</anchorfile>
+      <anchor>a02f837649e3c64cb552a129d2143c1e2</anchor>
+      <arglist>(Image *in, Image *out, IAbstractRadar *radar, f32 *window, std::vector&lt; f32 &gt; const &amp;velocity, f32 x0, f32 dx, std::vector&lt; f32 &gt; const &amp;elevation, std::vector&lt; f32 &gt; const &amp;diffx, int nx, int line, bool bCorr, math::Complex *pc, f32 angle)=0</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::IFileSender</name>
+    <filename>classquasar_1_1_i_file_sender.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~IFileSender</name>
+      <anchorfile>classquasar_1_1_i_file_sender.html</anchorfile>
+      <anchor>a6b3cf9c9d38dfe696ac20d4f56c2fff4</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual result</type>
+      <name>send_file</name>
+      <anchorfile>classquasar_1_1_i_file_sender.html</anchorfile>
+      <anchor>a492a6323fa4da81e126a243254284042</anchor>
+      <arglist>(std::filesystem::path const &amp;path, net::ip_address const &amp;ip, std::uint16_t port) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual result</type>
+      <name>send_file</name>
+      <anchorfile>classquasar_1_1_i_file_sender.html</anchorfile>
+      <anchor>acf0957dcc636e1b4ccefb0df9335056c</anchor>
+      <arglist>(std::filesystem::path const &amp;path, std::string_view sockaddr) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual result</type>
+      <name>send_image</name>
+      <anchorfile>classquasar_1_1_i_file_sender.html</anchorfile>
+      <anchor>a118a888e1f66369ccafcaa6a3ff24117</anchor>
+      <arglist>(std::filesystem::path const &amp;path, api::Metadata const &amp;metadata, net::ip_address const &amp;ip, std::uint16_t port) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual result</type>
+      <name>send_image</name>
+      <anchorfile>classquasar_1_1_i_file_sender.html</anchorfile>
+      <anchor>a217be9090931f8d80e3fdf366935435a</anchor>
+      <arglist>(std::filesystem::path const &amp;path, api::Metadata const &amp;metadata, std::string_view sockaddr) const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::Image</name>
+    <filename>classquasar_1_1_image.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>ColorMap</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a38ace678c1729440c4581353859ae43d</anchor>
+      <arglist></arglist>
+      <enumvalue file="classquasar_1_1_image.html" anchor="a38ace678c1729440c4581353859ae43dad3f6975213fb5546d8486b54b025dbd7">Grayscale</enumvalue>
+      <enumvalue file="classquasar_1_1_image.html" anchor="a38ace678c1729440c4581353859ae43da252ce7e80c1ffd8c2558ad9b13d4ca2b">Jet</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Dimension</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a470595d69cbaeeba4b08a7cd61da62e9</anchor>
+      <arglist></arglist>
+      <enumvalue file="classquasar_1_1_image.html" anchor="a470595d69cbaeeba4b08a7cd61da62e9a32954654ac8fe66a1d09be19001de2d4">Width</enumvalue>
+      <enumvalue file="classquasar_1_1_image.html" anchor="a470595d69cbaeeba4b08a7cd61da62e9aeec6c4bdbd339edf8cbea68becb85244">Height</enumvalue>
+      <enumvalue file="classquasar_1_1_image.html" anchor="a470595d69cbaeeba4b08a7cd61da62e9a168b82d33f8073018c50a4f658a02559">Columns</enumvalue>
+      <enumvalue file="classquasar_1_1_image.html" anchor="a470595d69cbaeeba4b08a7cd61da62e9a530f488f7a9800411efc6926ab189708">Rows</enumvalue>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Image</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>aaf53dcf5ba55b3038d52e47d8c9a6653</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Image</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a1e38b6c4f12a93e6ace4df49804dfd39</anchor>
+      <arglist>(DSP type)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Image</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>af848f9c43f3f7e4f6e459bf94650cab6</anchor>
+      <arglist>(DSP type, u32 width, u32 height, ImageUnderlyingType underlying_type)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Image</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>aa60a46312657e5a55a82f74aaa3841af</anchor>
+      <arglist>(Image const &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Image</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a57d584f37808176658de001464d66010</anchor>
+      <arglist>(Image &amp;&amp;other) noexcept</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Image</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>ae1fcb53f8edb83cc0949e208df961e6c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>T *</type>
+      <name>data</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a76829518750b668b3e7b05e4d587b8ac</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr enum DSP</type>
+      <name>type</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>ab3bb2eb32f2f50f2ec24413e400e1e67</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>IImageDataHolder const &amp;</type>
+      <name>data_interface</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a72a278cd9ac8b1cdf28d0ced813ab5c8</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>IImageDataHolder &amp;</type>
+      <name>data_interface_mut</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a9f266fbbd4c6845d79a9d796ce3082dc</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>api::Metadata const &amp;</type>
+      <name>metadata</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>ada100da2c340c635ac3e7150f6ec9917</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>api::Metadata &amp;</type>
+      <name>metadata_mut</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a70482efa26e1399a20e8bb2ad8a619f8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr u32</type>
+      <name>width</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a0e9afde02e84d221ed5f63487c331a61</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr u32</type>
+      <name>height</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>ab55fa7394e4f298afd991cceaa554283</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr u32</type>
+      <name>size</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a4be1d3d7b852ae09819416583b0553f9</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>usize</type>
+      <name>size_bytes</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a410fbc55172e556893f2909aa5a19dec</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr u32</type>
+      <name>width_rounded</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a4cdbb1566d33c5539899ced63176c945</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr u32</type>
+      <name>height_rounded</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a773431833dd2bdfdfe8d5b903507eb77</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr u32</type>
+      <name>size_rounded</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a9212064d2b1cb186bedc74206c2991aa</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>usize</type>
+      <name>size_rounded_bytes</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a9ad2142090ba15289b1883c7b668d607</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr ImageUnderlyingType</type>
+      <name>underlying_type</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>af6aa2a01e029afa176af7f7c51906fc5</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr usize</type>
+      <name>near_range_index</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>ad478b5d0dbb4a0b85562f39e5718bfe4</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr isize</type>
+      <name>actual_index</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a5609f222abdae42a5ae2d766dccb9608</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>span&lt; T const &gt;</type>
+      <name>view</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>af6919f6a5d2420c902b7e9ff14a5544f</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>span&lt; T &gt;</type>
+      <name>view_mut</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a50f38150c60c0c54f9b9b78fe0fe6a45</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>is_subnormal</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a017171b847ab3ad110880996188efc52</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; T &gt;</type>
+      <name>to_vec</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a10b4a0cfb7b1c7a3454ace0b0bed2d1e</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; T &gt;</type>
+      <name>to_vec</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>af0ef6ddc0dda6c40155e37956b5a339c</anchor>
+      <arglist>(usize start, usize end) const</arglist>
+    </member>
+    <member kind="function">
+      <type>Image &amp;</type>
+      <name>move_to</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>ab3b54047730be30c986de904a7e275d9</anchor>
+      <arglist>(enum DSP destination)</arglist>
+    </member>
+    <member kind="function">
+      <type>f32</type>
+      <name>pixel</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a40e985da62202efe340182ff112099e9</anchor>
+      <arglist>(int w, int h) const noexcept(false)</arglist>
+    </member>
+    <member kind="function">
+      <type>f32 &amp;</type>
+      <name>pixel_mut</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a5938be3901bf7052e8792326cd390bfb</anchor>
+      <arglist>(int w, int h)</arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>pixel_unsafe</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a31ea9ca40ba864f9e93ea5c14fe4a0a9</anchor>
+      <arglist>(int w, int h) const noexcept(false)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_pixel_unsafe</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>ae2739cd9a757e1eee3425b10ede4b479</anchor>
+      <arglist>(int w, int h, T value) noexcept(false)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reset_interface</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a5402d91eca5baa15649c80c91813553b</anchor>
+      <arglist>(std::unique_ptr&lt; IImageDataHolder &gt; &amp;&amp;data)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_width</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>aaa951ae36944254a1162042262f57a5b</anchor>
+      <arglist>(u32 width)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_height</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a746bce09c0a46c1caf4fb03021e3bab7</anchor>
+      <arglist>(u32 height)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_width_rounded</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a038f52ef3a2e5b948dc0fe3aaeb9f741</anchor>
+      <arglist>(u32 width)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_height_rounded</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a87f9fa4d150c48a520582d6d706496ec</anchor>
+      <arglist>(u32 height)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_underlying_type</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a298d09bb43edb67132ebfe9896f66d49</anchor>
+      <arglist>(ImageUnderlyingType type)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_near_range_index</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a2c210f1a7955f2b236adde3aa581b3cd</anchor>
+      <arglist>(usize index)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_actual_index</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>ac50458d19c3b7d01d07678a5c069ffbe</anchor>
+      <arglist>(isize index)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr bool</type>
+      <name>is_broken</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>aec15fea12b1b28dba7108d9b6eb26aaa</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr void</type>
+      <name>set_broken</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>aa6715847e41e262e997ca1d7c9ead8b0</anchor>
+      <arglist>(bool const status)</arglist>
+    </member>
+    <member kind="function">
+      <type>cv::Mat</type>
+      <name>as_cv_mat</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a81f5928e78ffb628cdf4815e02801785</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>save</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a1a942bd4a2729661c5af9d5ca7311298</anchor>
+      <arglist>(std::filesystem::path const &amp;path, ImageFormat format, f32 brightness_multiplier, i32 quality, ColorMap colormap=ColorMap::Grayscale) const noexcept(false)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>save_as_binary</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a79e970985beb321bbe85b87d33854c3d</anchor>
+      <arglist>(std::filesystem::path const &amp;path) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>save_signal_as_csv</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a6391afd787bb415d9d300a3ad9593bbf</anchor>
+      <arglist>(std::filesystem::path const &amp;path) const</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>AbsAndNorm</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a5525ba1df0ba50a3e75540078e78abd7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>Binarize</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a00b55a343e7f6c9d4838d68010446a5b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>MedianBlur</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a62819f1d9061977d0e7709288ce753a9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>Roll</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a2f054f5c5eb2f403a2689af343736722</anchor>
+      <arglist>(int n)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>RangeBrightness</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>adf9d989c914cc7aa0223e71af3d9d40b</anchor>
+      <arglist>(float x0, float dx) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>VerticalMirror</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a42bc39140a7f232d670bc8248dd1b449</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Rotate</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a1b83845ac81769a9b99449c1096eaf60</anchor>
+      <arglist>(float angle)</arglist>
+    </member>
+    <member kind="function">
+      <type>Image &amp;</type>
+      <name>accumulate_from</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a2cc46ffd91e6df59d7a13aa07181ce68</anchor>
+      <arglist>(Image const &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>f32</type>
+      <name>index_to_range</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a46740148acb5c0eaf7ca50413043cd75</anchor>
+      <arglist>(IAbstractRadar const &amp;radar, usize index) const</arglist>
+    </member>
+    <member kind="function">
+      <type>usize</type>
+      <name>range_to_index</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a2dc976a0333e3405020a3bb1f654712b</anchor>
+      <arglist>(IAbstractRadar const &amp;radar, f32 range) const</arglist>
+    </member>
+    <member kind="function">
+      <type>std::pair&lt; usize, usize &gt;</type>
+      <name>range_to_index</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>aec7c2c65b12eaaf7526b8046a7459a7f</anchor>
+      <arglist>(IAbstractRadar const &amp;radar, std::pair&lt; f32, f32 &gt; const &amp;range_pair) const</arglist>
+    </member>
+    <member kind="function">
+      <type>result</type>
+      <name>transpose</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>acca9ea59954fa25884ac3974eeb0845f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>result</type>
+      <name>cut</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a646478e5efad04c408a364217cad6c44</anchor>
+      <arglist>(Dimension mode, usize start, usize end)</arglist>
+    </member>
+    <member kind="function">
+      <type>result&lt; std::vector&lt; f32 &gt; &gt;</type>
+      <name>mean</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a50e4bb1adcad5b7b3bc22de799568bf7</anchor>
+      <arglist>(Dimension mode) const</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static std::shared_ptr&lt; Image &gt;</type>
+      <name>load</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a5fe8fd4f24382e7cb2adc81ca71fb4f6</anchor>
+      <arglist>(std::filesystem::path const &amp;path, u32 width, u32 height, ImageUnderlyingType type)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>std::vector&lt; f32 &gt;</type>
+      <name>brightness_corrected_buffer</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>ad82461ca2f21b6f67837bbe1a9cfe925</anchor>
+      <arglist>(f32 multiplier, f32 *autobrightness=nullptr) const</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>cv::Mat</type>
+      <name>clahe</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>aac0f9f682e88175b9d4453ed07b3e68c</anchor>
+      <arglist>(span&lt; f32 const &gt; data, f32 clip_limit=1.F) const noexcept(false)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>f32</type>
+      <name>operator()</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a8ad5a0f9bb2570a51cb09434ac9a7b48</anchor>
+      <arglist>(int w, int h) const</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>f32 &amp;</type>
+      <name>operator()</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a30517ae5a0190be4ae9bd07904ff2915</anchor>
+      <arglist>(int w, int h)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>Image &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a0f08afeda06d3d571ee9007cefd02921</anchor>
+      <arglist>(Image const &amp;other)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>Image &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>ab0b58086f582a38e164437813f828031</anchor>
+      <arglist>(Image &amp;&amp;other) noexcept</arglist>
+    </member>
+    <member kind="function" protection="protected" static="yes">
+      <type>static std::filesystem::path</type>
+      <name>save_mat</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>a84fc7fd16b83426a32a923ce5c035524</anchor>
+      <arglist>(cv::Mat const &amp;matrix, std::filesystem::path const &amp;path, ImageFormat format) noexcept(false)</arglist>
+    </member>
+    <member kind="function" protection="protected" static="yes">
+      <type>static void</type>
+      <name>write_exif_tag</name>
+      <anchorfile>classquasar_1_1_image.html</anchorfile>
+      <anchor>aa9ed88c9bccea6a121dd4721993933cb</anchor>
+      <arglist>(std::filesystem::path const &amp;path, api::Metadata &amp;metadata)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::dsp::IMemoryEntity</name>
+    <filename>classquasar_1_1dsp_1_1_i_memory_entity.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>IMemoryEntity</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_memory_entity.html</anchorfile>
+      <anchor>a54310e58f49136188239cf153cbc81b9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IMemoryEntity</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_memory_entity.html</anchorfile>
+      <anchor>a5b21e864b924a89876e8885cce305a68</anchor>
+      <arglist>(DSP const memory_space)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~IMemoryEntity</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_memory_entity.html</anchorfile>
+      <anchor>a9baf6ea63bd432232cf58056033af871</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IMemoryEntity</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_memory_entity.html</anchorfile>
+      <anchor>a7aed10ddc629b93285b5e3e5d46766c0</anchor>
+      <arglist>(IMemoryEntity const &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>IMemoryEntity &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_memory_entity.html</anchorfile>
+      <anchor>ac283aa961d464269fa1c0d79bf77cd4b</anchor>
+      <arglist>(IMemoryEntity const &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IMemoryEntity</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_memory_entity.html</anchorfile>
+      <anchor>ae3f6b0d0b21c323d74034e2ad9d87f43</anchor>
+      <arglist>(IMemoryEntity &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>IMemoryEntity &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_memory_entity.html</anchorfile>
+      <anchor>a7c6308d0792af6b0a394d855d4baa77a</anchor>
+      <arglist>(IMemoryEntity &amp;&amp;)=default</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual enum DSP</type>
+      <name>memory_space</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_memory_entity.html</anchorfile>
+      <anchor>ad91b86d3ea8bf5d69147e189543f5b1a</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>set_memory_space</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_memory_entity.html</anchorfile>
+      <anchor>ae82ff2940ec476baf050d27709403f78</anchor>
+      <arglist>(DSP memory_space)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::Lockfile</name>
+    <filename>classquasar_1_1_lockfile.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Lockfile</name>
+      <anchorfile>classquasar_1_1_lockfile.html</anchorfile>
+      <anchor>a8486ae9230b940deb0b50eaf6bb2cd6f</anchor>
+      <arglist>(std::filesystem::path path)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::filesystem::path const &amp;</type>
+      <name>path</name>
+      <anchorfile>classquasar_1_1_lockfile.html</anchorfile>
+      <anchor>a362594cfad8c644985810be8693da8d1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>is_locked</name>
+      <anchorfile>classquasar_1_1_lockfile.html</anchorfile>
+      <anchor>a70b3ccad5c5f53e952cf11d8f627f0c7</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>try_lock</name>
+      <anchorfile>classquasar_1_1_lockfile.html</anchorfile>
+      <anchor>a2675b887f32d86436b00953d3e2282b5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>lock</name>
+      <anchorfile>classquasar_1_1_lockfile.html</anchorfile>
+      <anchor>a40775430cbb11d7db12068fc2b0cd1e5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>unlock</name>
+      <anchorfile>classquasar_1_1_lockfile.html</anchorfile>
+      <anchor>a1d8dca5e994401d611aec2e966d6cde8</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::LockfileGuard</name>
+    <filename>classquasar_1_1_lockfile_guard.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>LockfileGuard</name>
+      <anchorfile>classquasar_1_1_lockfile_guard.html</anchorfile>
+      <anchor>a65a8691c478159b676316465f9eb227a</anchor>
+      <arglist>(Lockfile &amp;lockfile)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>LockfileGuard</name>
+      <anchorfile>classquasar_1_1_lockfile_guard.html</anchorfile>
+      <anchor>a87975e01c5c357a5f0537448ed2e9235</anchor>
+      <arglist>(LockfileGuard const &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>LockfileGuard &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classquasar_1_1_lockfile_guard.html</anchorfile>
+      <anchor>ac515524d57e6dc95ea92a187c16f8e83</anchor>
+      <arglist>(LockfileGuard const &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>LockfileGuard</name>
+      <anchorfile>classquasar_1_1_lockfile_guard.html</anchorfile>
+      <anchor>a9f66493387a263b71abb4ab483bd06f3</anchor>
+      <arglist>(LockfileGuard &amp;&amp;other) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>LockfileGuard &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classquasar_1_1_lockfile_guard.html</anchorfile>
+      <anchor>af213c9f5987c272e045e2624404a81f1</anchor>
+      <arglist>(LockfileGuard &amp;&amp;other) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~LockfileGuard</name>
+      <anchorfile>classquasar_1_1_lockfile_guard.html</anchorfile>
+      <anchor>ae69bf890f0d17c17debce57ef0433ff7</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>quasar::api::Metadata</name>
+    <filename>structquasar_1_1api_1_1_metadata.html</filename>
+    <class kind="struct">quasar::api::Metadata::MetadataExifHeader</class>
+    <member kind="function">
+      <type>std::uint16_t</type>
+      <name>checksum</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a31663bf586d2e62a1a7219ff5ac3b3f4</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>to_json</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>adfe31e77fca4c741846a5dac37e50c2c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static result&lt; Metadata &gt;</type>
+      <name>from_bytes</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a3f10c0a0e96b777d4890e249aaca92d1</anchor>
+      <arglist>(span&lt; std::byte const &gt; data)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static result&lt; Metadata &gt;</type>
+      <name>from_json</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>ac7e063a95e67666bc1ed4a3018326d8d</anchor>
+      <arglist>(std::string_view json)</arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>latitude</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a128de7d7fef419669cb14ef88fcc2b34</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>longitude</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a2b645223a921842acb90de04980df29a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>dx</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a52e1c6778518fe0fccafca5432c37f66</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>dy</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>af36b27f01b842b5faa7ee368ce08eb60</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>x0</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a53783d67f6bf16734bc2da14e82a2f6e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>y0</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>ac460bbe12b416374e83919e0a10907c5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>azimuth</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a07ad61bea87942878e448afc4c585e9a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>drift_angle</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a44d5fa775fd52a6540291d593dd2994b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>lx</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a4b5f3dd44fe65cba8816f724f288f326</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>ly</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a8870185696dc5ec85cb09eac7a8fb9fa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>div</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a7294b0e5adc9a19cf7cd15bd3ba8e079</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>velocity</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a88f51a1355dfee733d9402c61a63879d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>altitude</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a6f7b99eacd870ea4d404fbae42ff32eb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>fic</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a3d962e1171b281ff32a5dbfd0e0a79ed</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>time_offset</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a5619caeb975156040bef766747923bff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>time_duration</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a426ebbdfbfab7247e93fb1c5861991df</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::byte</type>
+      <name>reserved</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a160e36ef2dcdbf6156dfabe083b5b339</anchor>
+      <arglist>[8]</arglist>
+    </member>
+    <member kind="variable">
+      <type>std::uint8_t</type>
+      <name>mode</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a872f263eb396c9eaf560f1a3d97d9d2f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ImageKind</type>
+      <name>image_type</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a668b3484cbf22c3de8b890fa59ac86e0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::byte</type>
+      <name>reserved_2</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a1f915e5314a63a7afccc8ff29e2c4e7a</anchor>
+      <arglist>[8]</arglist>
+    </member>
+    <member kind="variable">
+      <type>std::uint16_t</type>
+      <name>crc</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a65d954a5812024101560f1d57a96902c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
+      <name>exif_header_offset</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>a19137ff3fca33fec957b9bcfa5b34505</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::uint16_t</type>
+      <name>exif_metadata_marker</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata.html</anchorfile>
+      <anchor>af055c274dd750e30ec3b424d21399e78</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>quasar::api::Metadata::MetadataExifHeader</name>
+    <filename>structquasar_1_1api_1_1_metadata_1_1_metadata_exif_header.html</filename>
+    <member kind="variable">
+      <type>std::uint16_t</type>
+      <name>marker</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata_1_1_metadata_exif_header.html</anchorfile>
+      <anchor>aa90f8d204272c5955534ef9938dd1d5f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::uint16_t</type>
+      <name>length</name>
+      <anchorfile>structquasar_1_1api_1_1_metadata_1_1_metadata_exif_header.html</anchorfile>
+      <anchor>adb6ff1c29b8ee9b41b487ce6e9cb89ed</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::ParameterBase</name>
+    <filename>classquasar_1_1_parameter_base.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ParameterBase</name>
+      <anchorfile>classquasar_1_1_parameter_base.html</anchorfile>
+      <anchor>a0b4cc5265805b7b85d86325159ee0bf4</anchor>
+      <arglist>(CNav *_nav)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>CNav *</type>
+      <name>Nav</name>
+      <anchorfile>classquasar_1_1_parameter_base.html</anchorfile>
+      <anchor>a769cdc1df25efb8cc7fad8f97e45ae3c</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>quasar::ICompositeLogger::Parameters</name>
+    <filename>structquasar_1_1_i_composite_logger_1_1_parameters.html</filename>
+    <member kind="variable">
+      <type>bool</type>
+      <name>is_default</name>
+      <anchorfile>structquasar_1_1_i_composite_logger_1_1_parameters.html</anchorfile>
+      <anchor>a9ced626d9220acadaa5138ec43c1ca41</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::string</type>
+      <name>name</name>
+      <anchorfile>structquasar_1_1_i_composite_logger_1_1_parameters.html</anchorfile>
+      <anchor>ad0b611fc627e91c5faf30d9e377adafe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ICompositeLogger::level_type</type>
+      <name>level</name>
+      <anchorfile>structquasar_1_1_i_composite_logger_1_1_parameters.html</anchorfile>
+      <anchor>a4c6afaaed3cf86eecd8ab5e434aebcd4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Target</type>
+      <name>target</name>
+      <anchorfile>structquasar_1_1_i_composite_logger_1_1_parameters.html</anchorfile>
+      <anchor>a233fe3320c86d73350b781dda411b0fa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>std::string</type>
+      <name>pattern</name>
+      <anchorfile>structquasar_1_1_i_composite_logger_1_1_parameters.html</anchorfile>
+      <anchor>adc8a2ba3261955ed1dc74fa8426f0c80</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>optional&lt; std::string &gt;</type>
+      <name>filename</name>
+      <anchorfile>structquasar_1_1_i_composite_logger_1_1_parameters.html</anchorfile>
+      <anchor>a8b90a1e12d13f633b42abfe34ec4dd53</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>optional&lt; std::filesystem::path &gt;</type>
+      <name>folder</name>
+      <anchorfile>structquasar_1_1_i_composite_logger_1_1_parameters.html</anchorfile>
+      <anchor>a697900561aad138e794aa46a8d68fbcf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>f32</type>
+      <name>max_file_size_mb</name>
+      <anchorfile>structquasar_1_1_i_composite_logger_1_1_parameters.html</anchorfile>
+      <anchor>ad3ae9954e850bb3e047c72e252202db5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>usize</type>
+      <name>max_files</name>
+      <anchorfile>structquasar_1_1_i_composite_logger_1_1_parameters.html</anchorfile>
+      <anchor>af1b1ea015fb4094f781747a5fb1eeaab</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>quasar::dsp::IDSP::PixelProcParams</name>
+    <filename>structquasar_1_1dsp_1_1_i_d_s_p_1_1_pixel_proc_params.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>PixelProcParams</name>
+      <anchorfile>structquasar_1_1dsp_1_1_i_d_s_p_1_1_pixel_proc_params.html</anchorfile>
+      <anchor>a5d93f8a6f3045d829611b328962cb7f1</anchor>
+      <arglist>(IAbstractRadar &amp;radar, Image const &amp;image)</arglist>
+    </member>
+    <member kind="variable">
+      <type>f32</type>
+      <name>dt</name>
+      <anchorfile>structquasar_1_1dsp_1_1_i_d_s_p_1_1_pixel_proc_params.html</anchorfile>
+      <anchor>ac324a93175e11208b153ea8d6eb6fc02</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>f32</type>
+      <name>c1</name>
+      <anchorfile>structquasar_1_1dsp_1_1_i_d_s_p_1_1_pixel_proc_params.html</anchorfile>
+      <anchor>aceff9f21194f3ef11f84c2a9f44924d8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>f32</type>
+      <name>c2</name>
+      <anchorfile>structquasar_1_1dsp_1_1_i_d_s_p_1_1_pixel_proc_params.html</anchorfile>
+      <anchor>a4b4ee630c206a44df5f41ced60e770f6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>f32</type>
+      <name>c5</name>
+      <anchorfile>structquasar_1_1dsp_1_1_i_d_s_p_1_1_pixel_proc_params.html</anchorfile>
+      <anchor>aeceec5869f00d8b027df84b92c98b864</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>f32</type>
+      <name>dfr</name>
+      <anchorfile>structquasar_1_1dsp_1_1_i_d_s_p_1_1_pixel_proc_params.html</anchorfile>
+      <anchor>a678059878d21d4ed0a02e8c9075363aa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>f32</type>
+      <name>dr</name>
+      <anchorfile>structquasar_1_1dsp_1_1_i_d_s_p_1_1_pixel_proc_params.html</anchorfile>
+      <anchor>ab797b3160cb167d084cbc8342533b0b3</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>quasar::api::PowerSwitchRequest</name>
+    <filename>structquasar_1_1api_1_1_power_switch_request.html</filename>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>marker</name>
+      <anchorfile>structquasar_1_1api_1_1_power_switch_request.html</anchorfile>
+      <anchor>a4021a2670b1d0bcb521eb4bbf9974f1c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>channel</name>
+      <anchorfile>structquasar_1_1api_1_1_power_switch_request.html</anchorfile>
+      <anchor>a8d67b97f5ce19699e28c46b13509620d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>response_port</name>
+      <anchorfile>structquasar_1_1api_1_1_power_switch_request.html</anchorfile>
+      <anchor>a32e2bedf40818471168c93641b34fdc2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>checksum</name>
+      <anchorfile>structquasar_1_1api_1_1_power_switch_request.html</anchorfile>
+      <anchor>acd6ea22cfdd7847fb8a09643211e6e14</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr auto</type>
+      <name>request_marker</name>
+      <anchorfile>structquasar_1_1api_1_1_power_switch_request.html</anchorfile>
+      <anchor>a6e7c23a0d4221b7d50d97f63f52ece0e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr auto</type>
+      <name>dummy_channel</name>
+      <anchorfile>structquasar_1_1api_1_1_power_switch_request.html</anchorfile>
+      <anchor>ad544ca7e2023a58c586b43a24653970d</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>quasar::api::PowerSwitchResponse</name>
+    <filename>structquasar_1_1api_1_1_power_switch_response.html</filename>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>marker</name>
+      <anchorfile>structquasar_1_1api_1_1_power_switch_response.html</anchorfile>
+      <anchor>a49a421760da5bbb0b144bf5211f6bc89</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint8_t</type>
+      <name>channel</name>
+      <anchorfile>structquasar_1_1api_1_1_power_switch_response.html</anchorfile>
+      <anchor>a242e145adda3eefedb5beee270c6d436</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint8_t</type>
+      <name>enabled</name>
+      <anchorfile>structquasar_1_1api_1_1_power_switch_response.html</anchorfile>
+      <anchor>a047c2b60024f4d59cb0d00bf431d1077</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>voltage</name>
+      <anchorfile>structquasar_1_1api_1_1_power_switch_response.html</anchorfile>
+      <anchor>ab7314a1e8c53ca79603b622b7cef70e4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>current</name>
+      <anchorfile>structquasar_1_1api_1_1_power_switch_response.html</anchorfile>
+      <anchor>afe217cac810e4d99b558433f25618027</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr auto</type>
+      <name>response_marker</name>
+      <anchorfile>structquasar_1_1api_1_1_power_switch_response.html</anchorfile>
+      <anchor>afd74e563095fca54145ce9ae2f8305cf</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::SAR</name>
+    <filename>classquasar_1_1_s_a_r.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>WindowType</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a7fea281be46d185e3280bfb86c3c9f01</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>HAMMING</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a7fea281be46d185e3280bfb86c3c9f01ab1b746da56bf136416ed068ed211cc9d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BLACKMAN</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a7fea281be46d185e3280bfb86c3c9f01ac85005b40fe4df05ecc7c68c42a4e6b2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NUTTALL</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a7fea281be46d185e3280bfb86c3c9f01ab01d9e183a477ad506ea228325d32e6b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NONE</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a7fea281be46d185e3280bfb86c3c9f01a8fd8ae3cdbb8b12bbb7b6b2079ed98fc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>HAMMING</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a7fea281be46d185e3280bfb86c3c9f01ab1b746da56bf136416ed068ed211cc9d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BLACKMAN</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a7fea281be46d185e3280bfb86c3c9f01ac85005b40fe4df05ecc7c68c42a4e6b2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NUTTALL</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a7fea281be46d185e3280bfb86c3c9f01ab01d9e183a477ad506ea228325d32e6b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>NONE</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a7fea281be46d185e3280bfb86c3c9f01a8fd8ae3cdbb8b12bbb7b6b2079ed98fc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>SAR</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>acd163fdb934dce42709310d4d1d655a3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>SAR</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a383add3b709b1d6ab73b71aafdb7db6e</anchor>
+      <arglist>(std::shared_ptr&lt; IAbstractRadar &gt; radar)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~SAR</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>af064830b66ef45205c9622319a248c6a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>dsp::IDSP const &amp;</type>
+      <name>dsp</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a5857ed9e33c9d30ffa6a617af55d5bde</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>dsp::IDSP &amp;</type>
+      <name>dsp_mut</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a469bb87aae0e9388a2172437342734ae</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>IAbstractRadar const &amp;</type>
+      <name>radar</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a6b92a94d53f30ebb364e243080a5977d</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>IAbstractRadar &amp;</type>
+      <name>radar_mut</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a778137201ce21a480d970caa3682f882</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>ICompositeLogger const &amp;</type>
+      <name>logger</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a89b6f7d88e960c4fd1f76902cd060799</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>ICompositeLogger &amp;</type>
+      <name>logger</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a6b9b99f661d58b2d5ddaf466c782c952</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>IFileSender const &amp;</type>
+      <name>file_sender</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>ab9654f055344b5440f7bcd1d61414a05</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>IFileSender &amp;</type>
+      <name>file_sender</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a106b3e4e0f371948f7e7a0b59e1103b5</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>print_elapsed_time</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a7c8eba466636591035677f377a24667a</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>rmc</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a86fbb7a6f8104fdfb123699c0ed20ce1</anchor>
+      <arglist>(Image *image, float V)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>fsrmc</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a705a2467b1e7dbf9f54dfe1f29bb1fbd</anchor>
+      <arglist>(Image *image, float V)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>phocus</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>aec3360fd3bd6c073154a8326c8b2a907</anchor>
+      <arglist>(Image *image, float V)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>enthropy</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>ac520dd88b94f789b73a75cfa8cfbe354</anchor>
+      <arglist>(Image *image)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>hamming</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>ae94b6ee9504810892071b10a58981dd5</anchor>
+      <arglist>(Image *image)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>interpolate</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a26ed33f4f64768ddb7ef3c5729cb055b</anchor>
+      <arglist>(Image *image, int kr)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>rdcurvepoints</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>abb2147ba71144a37b783aaa6455dd686</anchor>
+      <arglist>(Image *image, int startfdidx, float alt_min, float alt_max)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::tuple&lt; double, double &gt;</type>
+      <name>estimateVH</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a66feab29b7ca52abab5a6f3e57e34230</anchor>
+      <arglist>(float start_altitude, float start_velocity)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>acc_dcm</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a5982636c93583f589e718e1043a64ccd</anchor>
+      <arglist>(Image *image, float Vmax, int Np)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>range2fr</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a03d534431751238b8cbf35b66ad350e5</anchor>
+      <arglist>(float r)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>index2range</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>ae4771ca7336241930e7096ee42802494</anchor>
+      <arglist>(int ind)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>get_range</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a17040a5e4d2368d6c0f1e9bb95987569</anchor>
+      <arglist>(float x, float y, float h, float V, float t)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>downrange</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>acbb25163c4a5bb0491b0d034eead3f0e</anchor>
+      <arglist>(Image *image, float decim, float rb, float re, float H)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>angleCorrection</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a16938e457dafd2d8e718c1ad857f7202</anchor>
+      <arglist>(Image *image, float x0, float lx)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>resize</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a32f0774e8a54087e1333d695b8f0687a</anchor>
+      <arglist>(Image *image, int newW, int newH)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>driftAngle</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>a85724d5643df545ef71eab8542f23646</anchor>
+      <arglist>(Image *image, float V, char *FnPlot=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>altitude</name>
+      <anchorfile>classquasar_1_1_s_a_r.html</anchorfile>
+      <anchor>aea4b8f71db42ff2042f478ff4079dd2e</anchor>
+      <arglist>(Image *image, char *FnPlot=nullptr)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>TestData</name>
+    <filename>class_test_data.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>TestData</name>
+      <anchorfile>class_test_data.html</anchorfile>
+      <anchor>aa4a3dd519ba3a3ae02956b627d42d123</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::filesystem::path</type>
+      <name>path</name>
+      <anchorfile>class_test_data.html</anchorfile>
+      <anchor>a50d6e9456c4c94f8d44b0af93008b67c</anchor>
+      <arglist>(std::string_view const filename) const</arglist>
+    </member>
+    <member kind="function">
+      <type>std::filesystem::path</type>
+      <name>operator[]</name>
+      <anchorfile>class_test_data.html</anchorfile>
+      <anchor>a1f172ced2be95543a9b09b612ea262ab</anchor>
+      <arglist>(std::string_view const filename) const</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>read</name>
+      <anchorfile>class_test_data.html</anchorfile>
+      <anchor>a28a99356a350e1f64ba234d0992287dc</anchor>
+      <arglist>(std::string_view const filename) const</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; std::byte &gt;</type>
+      <name>read_binary</name>
+      <anchorfile>class_test_data.html</anchorfile>
+      <anchor>a9a09ab1b7de73d7e71f64651ab64bb82</anchor>
+      <arglist>(std::string_view const filename) const</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static std::filesystem::path</type>
+      <name>root</name>
+      <anchorfile>class_test_data.html</anchorfile>
+      <anchor>a278f7b6157f18d119565df7fecbedf97</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::Velocity</name>
+    <filename>classquasar_1_1_velocity.html</filename>
+    <base>quasar::ParameterBase</base>
+    <member kind="function">
+      <type></type>
+      <name>Velocity</name>
+      <anchorfile>classquasar_1_1_velocity.html</anchorfile>
+      <anchor>a171b071f2a0008baa7ffc15d10bc8ae2</anchor>
+      <arglist>(CNav *_nav)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>mean</name>
+      <anchorfile>classquasar_1_1_velocity.html</anchorfile>
+      <anchor>ac855e93cce43954a545b4fd60f35ccf2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>get</name>
+      <anchorfile>classquasar_1_1_velocity.html</anchorfile>
+      <anchor>a11b54399ace646ef5aabfeae50ba6d57</anchor>
+      <arglist>(int n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Velocity</type>
+      <name>as_kmh</name>
+      <anchorfile>classquasar_1_1_velocity.html</anchorfile>
+      <anchor>a6830e098028024421517bd5ed187c904</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>Velocity</type>
+      <name>as_si</name>
+      <anchorfile>classquasar_1_1_velocity.html</anchorfile>
+      <anchor>a06bc2eb7391c878f2f979c494a681c1f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>CNav *</type>
+      <name>Nav</name>
+      <anchorfile>classquasar_1_1_parameter_base.html</anchorfile>
+      <anchor>a769cdc1df25efb8cc7fad8f97e45ae3c</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>quasar::dsp::Window</name>
+    <filename>classquasar_1_1dsp_1_1_window.html</filename>
+    <base>quasar::dsp::IMemoryEntity</base>
+    <member kind="function">
+      <type></type>
+      <name>Window</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>a45997a9b740e0919ef622e45566299d6</anchor>
+      <arglist>(WindowFunction kind, usize size)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Window</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>afe36829a304a53e9e453ad5833ae021c</anchor>
+      <arglist>(DSP memory_space, WindowFunction kind, usize size)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Window</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>ab9ea543b13b3a16a1447c6f4c2301420</anchor>
+      <arglist>() override=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Window</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>a4c775e83c377688af087f213355b0999</anchor>
+      <arglist>(Window const &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>operator=</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>ac7551b8b3d91d1f7ec863f3948d99381</anchor>
+      <arglist>(Window const &amp;) -&gt; Window &amp;=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Window</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>a1eea02f1f335f9b30fd76d5383480ac9</anchor>
+      <arglist>(Window &amp;&amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>operator=</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>a3163027d2867bb95644a24cbab030019</anchor>
+      <arglist>(Window &amp;&amp;) -&gt; Window &amp;=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>kind</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>ab7db45be5006e404b91cfb65ce6a9d41</anchor>
+      <arglist>() const noexcept -&gt; WindowFunction</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>data</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>a7cbc262e0e706ed4f7f597d40588caee</anchor>
+      <arglist>() const noexcept -&gt; f32 const *</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>data_mut</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>a00fec70954f32ed002c4f16a7c8ff6fc</anchor>
+      <arglist>() noexcept -&gt; f32 *</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>view</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>a7c6c83e752441dc6d8b8b183d25ed115</anchor>
+      <arglist>() const noexcept -&gt; span&lt; f32 const &gt;</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>view_mut</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>a54d3f57675239c01777e49a3ed240621</anchor>
+      <arglist>() noexcept -&gt; span&lt; f32 &gt;</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>size</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>ab235f79ab0742c94b388e0c695878e9f</anchor>
+      <arglist>() const noexcept -&gt; usize</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>operator[]</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>ac319c4a94a809853d670a6b1f90f5822</anchor>
+      <arglist>(usize index) -&gt; f32 &amp;</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>operator[]</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>a14c3a1d0633884a30bf8ed3d9d4c5101</anchor>
+      <arglist>(usize index) const -&gt; f32 const &amp;</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual enum DSP</type>
+      <name>memory_space</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_memory_entity.html</anchorfile>
+      <anchor>ad91b86d3ea8bf5d69147e189543f5b1a</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>set_memory_space</name>
+      <anchorfile>classquasar_1_1dsp_1_1_i_memory_entity.html</anchorfile>
+      <anchor>ae82ff2940ec476baf050d27709403f78</anchor>
+      <arglist>(DSP memory_space)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static auto</type>
+      <name>window</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>a3ac649d2c6f763c93cabb0c34530cc54</anchor>
+      <arglist>(WindowFunction kind, span&lt; f32 &gt; out) -&gt; void</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static auto</type>
+      <name>window</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>a6f287df65f1ca8c805c00a9b9bf4d680</anchor>
+      <arglist>(DSP memory_space, WindowFunction kind, span&lt; f32 &gt; out) -&gt; void</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static auto</type>
+      <name>window_unsafe</name>
+      <anchorfile>classquasar_1_1dsp_1_1_window.html</anchorfile>
+      <anchor>a85b6b6ca08e992bd3fb542641bbe4ec3</anchor>
+      <arglist>(WindowFunction kind, f32 *out, usize size) -&gt; void</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>cv</name>
+    <filename>namespacecv.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>quasar</name>
+    <filename>namespacequasar.html</filename>
+    <namespace>quasar::api</namespace>
+    <namespace>quasar::dsp</namespace>
+    <namespace>quasar::logging</namespace>
+    <namespace>quasar::math</namespace>
+    <class kind="class">quasar::CBackProjection</class>
+    <class kind="class">quasar::CNav</class>
+    <class kind="class">quasar::CNavGPX</class>
+    <class kind="class">quasar::Coordinate</class>
+    <class kind="class">quasar::CRadarSTT</class>
+    <class kind="class">quasar::CStripStream</class>
+    <class kind="class">quasar::Dim3</class>
+    <class kind="class">quasar::Elevation</class>
+    <class kind="class">quasar::FileSenderFsend</class>
+    <class kind="class">quasar::IAbstractRadar</class>
+    <class kind="class">quasar::ICompositeLogger</class>
+    <class kind="class">quasar::IFileSender</class>
+    <class kind="class">quasar::Image</class>
+    <class kind="class">quasar::Lockfile</class>
+    <class kind="class">quasar::LockfileGuard</class>
+    <class kind="class">quasar::ParameterBase</class>
+    <class kind="class">quasar::SAR</class>
+    <class kind="class">quasar::Velocity</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>DSP</name>
+      <anchorfile>namespacequasar.html</anchorfile>
+      <anchor>a8b9aad0f59a26bf6a813416c949ef30f</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacequasar.html" anchor="a8b9aad0f59a26bf6a813416c949ef30fa3cd83d70384961681d706f822f8b69eb">FFTW</enumvalue>
+      <enumvalue file="namespacequasar.html" anchor="a8b9aad0f59a26bf6a813416c949ef30faa33b7755e5f9b504d2d038eaca4ff28d">CUDA</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>WindowFunction</name>
+      <anchorfile>namespacequasar.html</anchorfile>
+      <anchor>a7dbda0ac89f634ccf9a01e3ad4f4fa13</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacequasar.html" anchor="a7dbda0ac89f634ccf9a01e3ad4f4fa13a718179b3bcff69a9d3f010aca0e9901a">Hamming</enumvalue>
+      <enumvalue file="namespacequasar.html" anchor="a7dbda0ac89f634ccf9a01e3ad4f4fa13ab3935d5829173f20d58fc5f0405867b9">Blackman</enumvalue>
+      <enumvalue file="namespacequasar.html" anchor="a7dbda0ac89f634ccf9a01e3ad4f4fa13a8ca4648e9bb4205ed74e977a3b005e41">Nuttall</enumvalue>
+      <enumvalue file="namespacequasar.html" anchor="a7dbda0ac89f634ccf9a01e3ad4f4fa13aec0fc0100c4fc1ce4eea230c3dc10360">Undefined</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>ImageFormat</name>
+      <anchorfile>namespacequasar.html</anchorfile>
+      <anchor>ab5b9106d97917eba89b3b1d8f2dc1fc2</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacequasar.html" anchor="ab5b9106d97917eba89b3b1d8f2dc1fc2a92769fe7c40229f4301d6125e0a9e928">JPG</enumvalue>
+      <enumvalue file="namespacequasar.html" anchor="ab5b9106d97917eba89b3b1d8f2dc1fc2a55505ba281b015ec31f03ccb151b2a34">PNG</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>ImageUnderlyingType</name>
+      <anchorfile>namespacequasar.html</anchorfile>
+      <anchor>a53c554fe546f49d625f2f65816ab3f9f</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacequasar.html" anchor="a53c554fe546f49d625f2f65816ab3f9faec0fc0100c4fc1ce4eea230c3dc10360">Undefined</enumvalue>
+      <enumvalue file="namespacequasar.html" anchor="a53c554fe546f49d625f2f65816ab3f9faedf6d540edaa0ca6d4765967e862540e">Unsigned8</enumvalue>
+      <enumvalue file="namespacequasar.html" anchor="a53c554fe546f49d625f2f65816ab3f9fa39bc2ae44b184207f560ff8619823208">Int16</enumvalue>
+      <enumvalue file="namespacequasar.html" anchor="a53c554fe546f49d625f2f65816ab3f9fa166495adc0d0f53bee6baecc577f5204">Float32</enumvalue>
+      <enumvalue file="namespacequasar.html" anchor="a53c554fe546f49d625f2f65816ab3f9fa752e62fe7414fea7a934adc462359dcc">FloatComplex64</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>ImageKind</name>
+      <anchorfile>namespacequasar.html</anchorfile>
+      <anchor>a1047d44afaec2aaccf3d3f16c2f78589</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacequasar.html" anchor="a1047d44afaec2aaccf3d3f16c2f78589a696a3373829ddd7d19b4bc4fb6e0d2da">Telescopic</enumvalue>
+      <enumvalue file="namespacequasar.html" anchor="a1047d44afaec2aaccf3d3f16c2f78589a031b9e77f5c85a66723c832a06ba2735">Strip</enumvalue>
+    </member>
+    <member kind="function">
+      <type>constexpr std::size_t</type>
+      <name>size_of</name>
+      <anchorfile>namespacequasar.html</anchorfile>
+      <anchor>af55b7c6b1573ad34e0646157187f2b59</anchor>
+      <arglist>(ImageUnderlyingType const &amp;type)</arglist>
+    </member>
+    <member kind="function">
+      <type>To</type>
+      <name>coordinate_cast</name>
+      <anchorfile>namespacequasar.html</anchorfile>
+      <anchor>ae64aa8b99c0e41b374091f582ba43b6c</anchor>
+      <arglist>(From const &amp;coordinate)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>quasar::api</name>
+    <filename>namespacequasar_1_1api.html</filename>
+    <namespace>quasar::api::detail</namespace>
+    <class kind="struct">quasar::api::Metadata</class>
+    <class kind="struct">quasar::api::PowerSwitchRequest</class>
+    <class kind="struct">quasar::api::PowerSwitchResponse</class>
+    <member kind="function">
+      <type>constexpr std::uint16_t</type>
+      <name>crc16</name>
+      <anchorfile>namespacequasar_1_1api.html</anchorfile>
+      <anchor>a489ae7e102c8095b0694f54fc10bff23</anchor>
+      <arglist>(std::byte const *data, size_t const size)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr std::uint16_t</type>
+      <name>crc16</name>
+      <anchorfile>namespacequasar_1_1api.html</anchorfile>
+      <anchor>a588844ecc3c936489dd2a9fdd878f488</anchor>
+      <arglist>(span&lt; std::byte const &gt; const data)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr std::uint16_t</type>
+      <name>crc16_ccitt</name>
+      <anchorfile>namespacequasar_1_1api.html</anchorfile>
+      <anchor>aaf708c2b4ae6cf97045227db774e050c</anchor>
+      <arglist>(std::byte const *data, std::size_t size)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr std::uint16_t</type>
+      <name>crc16_ccitt</name>
+      <anchorfile>namespacequasar_1_1api.html</anchorfile>
+      <anchor>a86563993572067b88ebb1901c13921ea</anchor>
+      <arglist>(span&lt; std::byte const &gt; const data)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>quasar::api::detail</name>
+    <filename>namespacequasar_1_1api_1_1detail.html</filename>
+    <member kind="function">
+      <type>D</type>
+      <name>byte_cast</name>
+      <anchorfile>namespacequasar_1_1api_1_1detail.html</anchorfile>
+      <anchor>a1d5b61cd4226a4b996151bf1e3b0aec1</anchor>
+      <arglist>(S const *source)</arglist>
+    </member>
+    <member kind="variable">
+      <type>auto constexpr</type>
+      <name>CCITT_TABLE</name>
+      <anchorfile>namespacequasar_1_1api_1_1detail.html</anchorfile>
+      <anchor>ac5dfd858a74372a6a0c18dea6e71d1ac</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>quasar::dsp</name>
+    <filename>namespacequasar_1_1dsp.html</filename>
+    <class kind="class">quasar::dsp::CDSP_FFTW</class>
+    <class kind="class">quasar::dsp::IDSP</class>
+    <class kind="class">quasar::dsp::IMemoryEntity</class>
+    <class kind="class">quasar::dsp::Window</class>
+  </compound>
+  <compound kind="namespace">
+    <name>quasar::logging</name>
+    <filename>namespacequasar_1_1logging.html</filename>
+    <namespace>quasar::logging::level</namespace>
+    <member kind="function">
+      <type>auto</type>
+      <name>trace_to</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>a000164d6735b844b32272581c454222d</anchor>
+      <arglist>(spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>trace</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>a3f8d05d0c9b836e1d7dd45a1790294f6</anchor>
+      <arglist>(fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>debug_to</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>aad6ce5c420d91e547b9dbdb9462cd070</anchor>
+      <arglist>(spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>debug</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>a0481a94a89949c0dbab6e7008bc059f2</anchor>
+      <arglist>(fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>info_to</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>a43b77a7b91c8294eeb279b663ad012b8</anchor>
+      <arglist>(spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>info</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>ad38035cc26bb7736d678bef0b749c0f6</anchor>
+      <arglist>(fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>warn_to</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>abeb511a89004f94c1d44a232affc4d33</anchor>
+      <arglist>(spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>warn</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>a957f2c0106a75846f2c2a0d3c9d1f0e7</anchor>
+      <arglist>(fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>error_to</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>a5958dc3af0686de1dafbaab7ec771a48</anchor>
+      <arglist>(spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>error</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>ab66d124ba77bb2bd1a77d3a899b80e3f</anchor>
+      <arglist>(fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>critical_to</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>a1b4958b22ed424ad08a58b556551dd25</anchor>
+      <arglist>(spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>critical</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>ae40227fb4680ac1474438013622b491e</anchor>
+      <arglist>(fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>log_to</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>a4935e3856bb54242fea94328dcb6b8b3</anchor>
+      <arglist>(level::level_enum level, spdlog::logger &amp;logger, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+    <member kind="function">
+      <type>auto</type>
+      <name>log</name>
+      <anchorfile>namespacequasar_1_1logging.html</anchorfile>
+      <anchor>afbe3aca8fd2102c1cd9d50711775a8b5</anchor>
+      <arglist>(level::level_enum level, fmt::format_string&lt; Args... &gt; const &amp;fmt, Args &amp;&amp;... args) -&gt; void</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>quasar::logging::level</name>
+    <filename>namespacequasar_1_1logging_1_1level.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>quasar::math</name>
+    <filename>namespacequasar_1_1math.html</filename>
+    <class kind="struct">quasar::math::Complex</class>
+  </compound>
+  <compound kind="group">
+    <name>macros</name>
+    <title>Macros</title>
+    <filename>group__macros.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>__host_or_device__</name>
+      <anchorfile>group__macros.html</anchorfile>
+      <anchor>gafb80abacf17d0b74287f3f2e3bcaa2e8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>__cmath_namespace</name>
+      <anchorfile>group__macros.html</anchorfile>
+      <anchor>ga10818ca7b8de84a019cb213af68fef83</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+</tagfile>

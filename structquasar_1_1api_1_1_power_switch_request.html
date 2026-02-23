@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8"/>
+  <title>quasar::api::PowerSwitchRequest struct | QuaSAR SAR image processing library</title>
+  <link href="favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#22272e" name="theme-color"/>
+  <link href="poxy/poxy.css" referrerpolicy="no-referrer" rel="stylesheet"/>
+  <script src="poxy/poxy.js"></script>
+  <script>initialize_theme("dark");</script>
+  <meta content="QuaSAR" name="twitter:title"/>
+  <meta content="QuaSAR" property="og:title"/>
+  <meta content="QuaSAR" itemprop="name"/>
+  <meta content="kernel386 &lt;kernel386@mail.ru&gt;" name="author"/>
+  <meta content="kernel386 &lt;kernel386@mail.ru&gt;" property="article:author"/>
+  <meta content="SAR image processing library" name="description"/>
+  <meta content="SAR image processing library" name="twitter:description"/>
+  <meta content="SAR image processing library" property="og:description"/>
+  <meta content="SAR image processing library" itemprop="description"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="Poxy v0.20.1" name="generator"/>
+  <meta content="strict-origin-when-cross-origin" name="referrer"/>
+</head>
+<body class="poxy-has-toc">
+<header><nav id="navigation">
+  <div class="m-container">
+    <div class="m-row">
+      <a class="m-col-t-8 m-col-m-none m-left-m" href="index.html" id="m-navbar-brand"><svg class="poxy-injected-svg" fill="none" height="128" id="poxy-injected-svg-0" version="1.1" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg"><circle cx="64" cy="64" fill="#1E1E2E" r="64"></circle><path d="M31.5927 32.8847L28.7415 35.9866L39.671 46.9625L37.295 51.0188L35.1567 56.5067L34.2063 61.9946V66.2895L35.1567 71.0617L36.5822 76.7882L40.1462 82.0375L42.9974 85.378L48.9373 90.1501L54.1645 92.5362L60.342 93.252H65.5692L70.0836 92.5362L73.1723 91.5818L76.2611 90.1501L79.8251 88.2413L84.577 93.252L82.2011 94.9222L77.2115 97.3083L69.6084 99.6944L62.718 100.172H58.6788L51.5509 98.5013L46.799 96.3539L42.5222 93.9678L39.4334 91.5818L35.8695 88.2413L33.7311 85.378C32.7807 83.9464 30.8799 80.9877 30.8799 80.6059C30.8799 80.2241 29.7711 77.9017 29.2167 76.7882L28.2663 72.9705L27.3159 67.244V62.7104C27.4743 61.1197 27.8386 57.8429 28.0287 57.4611C28.2663 56.9839 28.7415 54.5979 28.7415 54.3592C28.7415 54.1684 29.0583 52.8481 29.2167 52.2118L30.8799 48.6327L24.94 42.429L22.8016 45.7694L21.1384 49.3485L19.4752 56.0295L19 63.6649V68.437L19.4752 73.2091L21.1384 79.6515L23.2768 84.6622L27.0783 90.6273L31.8303 96.3539L37.7702 101.365L44.8982 105.421L50.6005 107.091L55.3525 108.523L61.53 109H65.5692L71.2715 108.523L76.2611 107.091L80.7755 105.421L84.577 103.512L87.4282 101.603L90.517 98.9786L97.6449 105.898H110L85.765 82.0375L86.4778 81.0831L88.3786 78.2198L90.0418 74.4021L91.2298 71.0617L91.705 67.0054V63.1877L91.2298 58.6541L90.0418 54.8365L88.3786 51.0188L85.2898 46.2466L81.4883 42.429L78.8747 40.2815L75.5483 38.3727L71.0339 36.941L66.9948 35.9866L62.4804 35.748L59.1541 35.9866L55.1149 36.4638L52.2637 37.4182L58.4413 44.3378H65.8068L70.0836 45.0536L73.4099 46.9625L76.7363 49.1099L79.3499 52.2118L82.4386 57.2225L83.1514 61.9946V67.0054L82.2011 71.3003L81.2507 73.9249L79.8251 76.0724L76.7363 73.2091H64.8564L73.1723 82.0375L70.0836 83.7078L65.5692 84.6622H59.6292L54.1645 82.992L50.6005 80.6059L47.7493 77.9812L45.611 74.8794L43.7102 71.0617L42.5222 65.5737L42.9974 60.563L43.9478 56.9839L45.8486 53.1662L48.9373 49.3485L51.5509 47.2011L40.859 36.4638L41.8094 35.2708L46.3238 32.4075L52.0261 30.0214L57.9661 28.5898L63.6684 28.3512L69.3708 28.8284L73.1723 29.7828L77.9243 31.4531L82.2011 33.8391L86.2402 36.941L90.0418 40.9973L93.6057 46.008L96.6945 52.2118L97.6449 55.3137L98.3577 58.6541L98.8329 62.7104V66.2895L98.5953 69.8686L97.6449 73.6863L96.2193 78.2198L94.7937 81.3217L100.971 87.0483L102.634 83.9464L104.06 81.0831L105.01 77.7426L106.198 73.6863L106.911 69.1528L107.149 65.3351V61.0402L106.674 57.2225L105.723 52.689L104.06 48.1555L102.872 45.0536L101.209 41.9517L99.5457 39.3271L96.9321 35.9866L94.7937 33.6005L90.7546 29.7828L87.4282 27.3968L83.8642 25.0107L79.8251 23.3405L75.0731 21.6702L70.3212 20.4772L66.282 20H62.0052L57.7285 20.4772L52.0261 21.4316L47.2742 22.8633L43.235 24.7721L39.9086 26.4424L37.5326 27.874L34.4439 30.2601L31.5927 32.8847Z" fill="#EFF1F5"></path></svg>QuaSAR <span class="m-thin">SAR image processing library</span></a>
+      <div class="m-col-t-4 m-hide-m m-text-right m-nopadr">
+        <a class="m-doc-search-icon" href="#search" onclick="return showSearch()" title="Search"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+          <path d="m6 0c-3.31 0-6 2.69-6 6 0 3.31 2.69 6 6 6 1.49 0 2.85-0.541 3.89-1.44-0.0164 0.338 0.147 0.759 0.5 1.15l3.22 3.79c0.552 0.614 1.45 0.665 2 0.115 0.55-0.55 0.499-1.45-0.115-2l-3.79-3.22c-0.392-0.353-0.812-0.515-1.15-0.5 0.895-1.05 1.44-2.41 1.44-3.89 0-3.31-2.69-6-6-6zm0 1.56a4.44 4.44 0 0 1 4.44 4.44 4.44 4.44 0 0 1-4.44 4.44 4.44 4.44 0 0 1-4.44-4.44 4.44 4.44 0 0 1 4.44-4.44z" id="m-doc-search-icon-path"></path>
+        </svg></a>
+        <a href="#navigation" id="m-navbar-show" title="Show navigation"></a>
+        <a href="#" id="m-navbar-hide" title="Hide navigation"></a>
+      </div>
+      <div class="m-col-t-12 m-show-m m-col-m-none m-right-m" id="m-navbar-collapse">
+        <div class="m-row">
+          <ol class="m-col-t-6 m-col-m-none">
+            <li><a href="namespaces.html">Namespaces</a></li>
+            <li><a href="annotated.html">Classes</a></li>
+          </ol>
+          <ol class="m-col-t-6 m-col-m-none" start="3">
+            <li><a class="poxy-icon theme" href="javascript:void(null);" id="poxy-theme-switch" onclick="toggle_theme(); return false;" role="button" title="Toggle dark and light themes"><svg id="poxy-theme-switch-img" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><circle cx="185.6708" cy="183.8122" fill="currentColor" r="65.625"></circle><path d="M185.6708,87.5622a13.1256,13.1256,0,0,0,13.125-13.125V52.5622a13.125,13.125,0,1,0-26.25,0v21.875A13.1257,13.1257,0,0,0,185.6708,87.5622Z" fill="currentColor"></path><path d="M99.051,115.7519a13.1236,13.1236,0,1,0,18.56-18.56L102.1442,81.726a13.1236,13.1236,0,0,0-18.5595,18.56Z" fill="currentColor"></path><path d="M89.4208,183.8122a13.1257,13.1257,0,0,0-13.125-13.125H54.4208a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,89.4208,183.8122Z" fill="currentColor"></path><path d="M99.051,251.8725,83.5847,267.3431a13.1236,13.1236,0,1,0,18.56,18.56l15.4663-15.4706a13.1236,13.1236,0,1,0-18.5595-18.56Z" fill="currentColor"></path><path d="M185.6708,280.0622a13.1258,13.1258,0,0,0-13.125,13.125v21.875a13.125,13.125,0,0,0,26.25,0v-21.875A13.1257,13.1257,0,0,0,185.6708,280.0622Z" fill="currentColor"></path><path d="M272.2907,251.8725a13.1236,13.1236,0,1,0-18.56,18.56l15.4663,15.4706a13.1236,13.1236,0,1,0,18.56-18.56Z" fill="currentColor"></path><path d="M330.0458,183.8122a13.1257,13.1257,0,0,0-13.125-13.125h-21.875a13.125,13.125,0,0,0,0,26.25h21.875A13.1256,13.1256,0,0,0,330.0458,183.8122Z" fill="currentColor"></path><path d="M263.0109,119.5971a13.0824,13.0824,0,0,0,9.28-3.8452l15.4663-15.4663a13.1236,13.1236,0,1,0-18.56-18.56L253.7312,97.1923a13.125,13.125,0,0,0,9.28,22.4048Z" fill="currentColor"></path><path d="M456.9379,401.6714a63.97,63.97,0,0,1-14.9963,7.2055c-19.6448,6.5283-41.8787,2.9566-58.1439-9.8523a68.9311,68.9311,0,0,1-10.835-10.8339c-12.8088-16.2663-16.3806-38.5-9.8523-58.1471a63.8444,63.8444,0,0,1,7.2077-14.9931,8.8036,8.8036,0,0,0-10.1172-13.3034,87.5188,87.5188,0,1,0,110.0372,110.04A8.8,8.8,0,0,0,456.9379,401.6714Z" fill="currentColor"></path></svg></a></li>
+            <li class="m-show-m"><a class="m-doc-search-icon" href="#search" onclick="return showSearch()" title="Search"><svg style="height: 0.9rem;" viewBox="0 0 16 16">
+              <use href="#m-doc-search-icon-path"></use>
+            </svg></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav></header>
+<main><article>
+  <div class="m-container m-container-inflatable">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        <h1>
+          <span class="m-breadcrumb"><a href="namespacequasar.html">quasar</a>::<wbr/></span><span class="m-breadcrumb"><a href="namespacequasar_1_1api.html">api</a>::<wbr/></span>PowerSwitchRequest <span class="m-thin">struct</span>
+          <div class="m-doc-include m-code m-inverted m-text-right"><span class="cp">#include</span> <a class="cpf" href="request_8h.html">&lt;include/quasar/api/powerswitch/request.h&gt;</a></div>
+        </h1>
+        <p></p>
+        <nav class="m-block m-default poxy-toc" id="poxy-toc">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#pub-static-attribs">Public static variables</a></li>
+                <li><a href="#pub-attribs">Public variables</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <section id="pub-static-attribs">
+          <h2><a href="#pub-static-attribs">Public static variables</a></h2>
+          <dl class="m-doc">
+            <dt id="ad544ca7e2023a58c586b43a24653970d">
+              static auto <a class="m-doc-self" href="#ad544ca7e2023a58c586b43a24653970d">dummy_channel</a> <span class="m-label m-flat m-primary">constexpr</span>
+            </dt>
+            <dd></dd>
+            <dt id="a6e7c23a0d4221b7d50d97f63f52ece0e">
+              static auto <a class="m-doc-self" href="#a6e7c23a0d4221b7d50d97f63f52ece0e">request_marker</a> <span class="m-label m-flat m-primary">constexpr</span>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+        <section id="pub-attribs">
+          <h2><a href="#pub-attribs">Public variables</a></h2>
+          <dl class="m-doc">
+            <dt id="a4021a2670b1d0bcb521eb4bbf9974f1c"> <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint32_t</a> <a class="m-doc-self" href="#a4021a2670b1d0bcb521eb4bbf9974f1c">marker</a>
+            </dt>
+            <dd></dd>
+            <dt id="a8d67b97f5ce19699e28c46b13509620d"> <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint16_t</a> <a class="m-doc-self" href="#a8d67b97f5ce19699e28c46b13509620d">channel</a>
+            </dt>
+            <dd></dd>
+            <dt id="a32e2bedf40818471168c93641b34fdc2"> <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint16_t</a> <a class="m-doc-self" href="#a32e2bedf40818471168c93641b34fdc2">response_port</a>
+            </dt>
+            <dd></dd>
+            <dt id="acd6ea22cfdd7847fb8a09643211e6e14"> <a class="m-doc poxy-injected poxy-external poxy-cppreference" href="https://en.cppreference.com/w/cpp/types/integer" target="_blank">uint16_t</a> <a class="m-doc-self" href="#acd6ea22cfdd7847fb8a09643211e6e14">checksum</a>
+            </dt>
+            <dd></dd>
+          </dl>
+        </section>
+      </div>
+    </div>
+  </div>
+</article></main>
+<div class="m-doc-search" id="search">
+  <a href="#!" onclick="return hideSearch()"></a>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-m-8 m-push-m-2">
+        <div class="m-doc-search-header m-text m-small">
+          <div><span class="m-label m-default">Tab</span> / <span class="m-label m-default">T</span> to search, <span class="m-label m-default">Esc</span> to close</div>
+          <div id="search-symbolcount">…</div>
+        </div>
+        <div class="m-doc-search-content">
+          <form>
+            <input autocomplete="off" autofocus="autofocus" disabled="disabled" id="search-input" name="q" placeholder="Loading …" spellcheck="false" type="search"/>
+          </form>
+          <noscript class="m-text m-danger m-text-center">Unlike everything else in the docs, the search functionality <em>requires</em> JavaScript.</noscript>
+          <div class="m-text m-dim m-text-center" id="search-help">
+            <p class="m-noindent">Search for symbols, directories, files, pages or
+            modules. You can omit any prefix from the symbol or file path; adding a
+            <code>:</code> or <code>/</code> suffix lists all members of given symbol or
+            directory.</p>
+            <p class="m-noindent">Use <span class="m-label m-dim">↓</span>
+            / <span class="m-label m-dim">↑</span> to navigate through the list,
+            <span class="m-label m-dim">Enter</span> to go.
+            <span class="m-label m-dim">Tab</span> autocompletes common prefix, you can
+            copy a link to the result using <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">L</span> while <span class="m-label m-dim">⌘</span>
+            <span class="m-label m-dim">M</span> produces a Markdown link.</p>
+          </div>
+          <div class="m-text m-warning m-text-center" id="search-notfound">Sorry, nothing was found.</div>
+          <ul id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="search-v2.js"></script><script>install_mcss_search_shim();</script>
+<script async="async" src="searchdata-v2.js"></script>
+<footer><nav>
+  <div class="m-container">
+    <div class="m-row">
+      <div class="m-col-l-10 m-push-l-1">
+        
+<a download="" href="QuaSAR.tagfile.xml" target="_blank" type="text/xml">Doxygen tagfile</a>
+<br/><br/>
+Site generated using <a class="poxy-external" href="https://github.com/marzer/poxy/" target="_blank">Poxy</a>
+
+      </div>
+    </div>
+  </div>
+</nav></footer>
+
+
+</body></html>
